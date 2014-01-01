@@ -9,6 +9,7 @@ tags:
   - duathlon
   - mountain bike
   - race report
+draft: true
 ---
 November 7th 2013: Human race off road duathlon series, race #2. 4 weeks ago was the Wildman and I thought it was hard. Pah! The Mudman was on another level. I&#8217;ve since been told that this one would be the hardest of the series, so it reassures me that the increasing difficulty isn&#8217;t a trend as the season progresses, otherwise we&#8217;d have to prepare harnesses and ropes for the last one!
 

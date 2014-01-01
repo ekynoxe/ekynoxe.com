@@ -1,5 +1,6 @@
 ---
 layout: page
+section: news
 ---
 
 <section>
@@ -12,18 +13,31 @@ layout: page
 
         {% if post.content contains '<!--more-->' %}
             {{ post.content | split: '<!--more-->' | first }}
-
+            <a class="button more" href="{{ post.url }}" title="read more">read more</a>
+        {% else %}
+            {{ post.content }}
         {% endif %}
 
-        <a class="button more" href="{{ post.url }}" title="read more">read more</a>
     </article>
     {% endfor %}
 </section>
 
+{% if paginator.total_pages > 1 %}
 <nav class="pagination">
-    <a class="button previous" href="" title="Previous posts">Previous posts</a>
-    <a class="button next" href="" title="Next posts">Next posts</a>
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+        {% assign prev_path="/news" %}
+    {% else %}
+        {% assign prev_path=paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' %}
+    {% endif %}
+    <a class="button previous" href="{{ prev_path }}" title="Previous posts">Previous posts</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a class="button next" href="{{ paginator.next_page_path }}" title="Next posts">Next posts</a>
+  {% endif %}
 </nav>
+{% endif %}
 
 <section class="tag_list">
     <header>
@@ -64,10 +78,8 @@ layout: page
         </ul>
 </section>
 
-<section class="ads">
-    <!--START MERCHANT:merchant name Chain Reaction Cycles from affiliatewindow.com.-->
+<!-- <section class="ads">
     <a href="http://www.awin1.com/cread.php?s=207271&amp;v=2698&amp;q=106887&amp;r=177361">
         <img src="http://www.awin1.com/cshow.php?s=207271&amp;v=2698&amp;q=106887&amp;r=177361">
     </a>
-    <!--END MERCHANT:merchant name Chain Reaction Cycles from affiliatewindow.com-->
-</section>
+</section> -->

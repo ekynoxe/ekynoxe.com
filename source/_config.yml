@@ -3,7 +3,7 @@ permalink: /:title
 markdown: rdiscount
 lsi: false
 title: Ekynoxe - Web development in London
-paginate: 10
+paginate: 7
 paginate_path: "news/page:num"
 
 rdiscount:
