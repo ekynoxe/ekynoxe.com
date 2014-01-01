@@ -1,0 +1,73 @@
+---
+layout: page
+---
+
+<section>
+    {% for post in paginator.posts %}
+    <article>
+        <header>
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+        </header>
+
+        {% if post.content contains '<!--more-->' %}
+            {{ post.content | split: '<!--more-->' | first }}
+
+        {% endif %}
+
+        <a class="button more" href="{{ post.url }}" title="read more">read more</a>
+    </article>
+    {% endfor %}
+</section>
+
+<nav class="pagination">
+    <a class="button previous" href="" title="Previous posts">Previous posts</a>
+    <a class="button next" href="" title="Next posts">Next posts</a>
+</nav>
+
+<section class="tag_list">
+    <header>
+        <h1>Categories</h1>
+    </header>
+    <ul>
+        <li><a href="http://blog.ekynoxe.com/category/apache/" title="Apache">Apache</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/authlogic/" title="authlogic">authlogic</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/betfair/" title="Betfair">Betfair</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/code/" title="code">code</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/conferences/" title="conferences">conferences</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/css/" title="CSS">CSS</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/cycling/" title="cycling">cycling</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/design/" title="design">design</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/games/" title="games">games</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/gear-review/" title="gear review">gear review</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/git/" title="git">git</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/javascript/" title="javascript">javascript</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/link/" title="link">link</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/mobile/" title="mobile">mobile</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/orange/" title="Orange">Orange</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/photoshop/" title="photoshop">photoshop</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/potd/" title="potd">potd</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/ruby/" title="ruby">ruby</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/shopify/" title="shopify">shopify</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/solex/" title="Solex">Solex</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/testing/" title="testing">testing</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/thoughts/" title="thoughts">thoughts</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/tools/" title="tools">tools</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/travel/" title="travel">travel</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/triathlon/" title="triathlon">triathlon</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/uncategorized/" title="Uncategorized">Uncategorized</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/ux/" title="UX">UX</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/wordpress/" title="wordpress">wordpress</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/work/" title="work">work</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/work-project/" title="work project">work project</a></li>
+        <li><a href="http://blog.ekynoxe.com/category/zend/" title="Zend">Zend</a></li>
+        </ul>
+</section>
+
+<section class="ads">
+    <!--START MERCHANT:merchant name Chain Reaction Cycles from affiliatewindow.com.-->
+    <a href="http://www.awin1.com/cread.php?s=207271&amp;v=2698&amp;q=106887&amp;r=177361">
+        <img src="http://www.awin1.com/cshow.php?s=207271&amp;v=2698&amp;q=106887&amp;r=177361">
+    </a>
+    <!--END MERCHANT:merchant name Chain Reaction Cycles from affiliatewindow.com-->
+</section>

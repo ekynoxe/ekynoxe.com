@@ -1,0 +1,22 @@
+{% assign homeclass='' %}
+{% assign workclass='' %}
+{% assign newsclass='' %}
+{% assign contactclass='' %}
+
+{% if page.section == "work" %}
+    {% assign workclass='class="selected"' %}
+{% elsif page.section == "news" %}
+    {% assign newsclass='class="selected"' %}
+{% elsif page.section == "contact" %}
+    {% assign contactclass='class="selected"' %}
+{% else %}
+    {% assign homeclass='class="selected"' %}
+{% endif %}
+
+<ul>
+    <li class="sep"><a title="home" href="/"></a></li>
+    <li class="home"><a title="home" {{ homeclass }} href="/">HOME</a></li>
+    <li><a title="work" {{ workclass }} href="/work">WORK</a></li>
+    <li><a title="news" {{ newsclass }} href="/news">NEWS</a></li>
+    <li><a title="contact me" {{ contactclass }} href="/#contact">CONTACT</a></li>
+</ul>

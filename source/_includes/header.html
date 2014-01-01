@@ -1,9 +1,16 @@
-<div id="masthead">
-{% if index %}
-    <h1><a href="/">Timbo’s Kitchen</a></h1>
-{% else %}
-    <a href="/" class="title">Timbo’s Kitchen</a>
-{% endif %}
-
-    <ul><li><a href="/">Home</a></li><li><a href="/archive.html">Archive</a></li><li><a href="/about.html">About</a></li></ul>
-</div>
+<header class="main{% if index %} home{% endif %}">
+    <nav role="navigation">
+        <div class="content">
+            <div class="inner">
+                {% include nav.html %}
+            </div>
+        </div>
+    </nav>
+    {% if index %}
+    <div class="content">
+        <img class="logo" src="/assets/img/style/logo-dark-grey.png" alt="ekynoxe logo" />
+        <span class="tagline">&#150; The work of Mathieu Davy &#150;</span>
+        <p>I am a web developer and designer creating unique web experiences in west London, United Kingdom</p>
+    </div>
+    {% endif %}
+</header>

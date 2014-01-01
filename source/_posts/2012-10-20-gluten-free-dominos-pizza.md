@@ -2,6 +2,7 @@
 layout: post
 title: "Gluten-free Dominos Pizza"
 date: 2012-10-20 13:19
+permalink: /2012/10/20/gluten-free-dominos-pizza/
 categories:
 image: /assets/img/dom-logo.jpg
 ---

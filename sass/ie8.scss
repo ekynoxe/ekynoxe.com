@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    ie8.CSS for IE8 only
+\*------------------------------------*/
+/**
+ *
+ * sass --watch ie8.scss:ie8.min.css --style compressed
+ *
+ */
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "inuit.css/inuit";
+

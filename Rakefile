@@ -4,7 +4,7 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 
-domain          = "timboskitchen.com"
+domain          = "ekynoxe.com"
 
 public_dir      = "public"  # compiled site directory
 source_dir      = "source"  # source file directory

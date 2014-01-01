@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    min_768.CSS for minimum 768px wide
+\*------------------------------------*/
+/**
+ *
+ * sass --watch min_768.scss:min_768.min.css --style compressed
+ *
+ */
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "inuit.css/inuit";
+
+
+
+
+footer {
+    /*background-image: url('img/map.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    .overlay {
+        background: $dark-gray;
+        background-color: rgba(0,0,0,0.82);
+
+        color: $white;
+        margin-top: 3rem;
+        padding: 1rem;
+    }*/
+
+    header {
+        /*h1, a {
+            font-size: 1.8em;
+            margin-bottom: 0;
+        }
+
+        a {
+            border-bottom: 2px solid rgba(0,0,0,0);
+            display: block;
+        }
+        a:hover {
+            border-bottom: 2px solid $highlight_rgba_over;
+        }*/
+    }
+    
+    dl, dt, dd {
+        /*margin: 0;*/
+    }
+
+    dl {
+        margin: 2rem 0;
+
+        a,
+        a:visited,
+        a:hover,
+        a:active {
+            color: $white;
+        }
+
+        a,
+        a:visited, {
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+        }
+
+        dd {
+            margin: 1rem 0;
+        }
+
+        dd a {
+            background-size: 976px 1308px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 55px;
+        }
+        .twitter a { background-position: 0 -1090px; line-height: 45px; height: 45px; }
+        .linkedin a { background-position: 0 -1176px; line-height: 45px; height: 45px; }
+
+      
+    }
+
+    small{
+        /*color: $light-gray;
+        padding-top: 1rem;*/
+    }
+}
