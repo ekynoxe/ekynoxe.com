@@ -2,7 +2,6 @@
 title: 'The web has evolved&#8230; Get used to it'
 author: Matt
 layout: post
-permalink: /2012/09/13/the-web-has-evolved-get-used-to-it/
 categories:
   - tools
   - wordpress

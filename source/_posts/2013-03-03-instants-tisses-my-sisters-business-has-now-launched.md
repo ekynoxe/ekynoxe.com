@@ -2,7 +2,6 @@
 title: 'Instants Tissés, my sister&#8217;s business, has now launched!'
 author: Matt
 layout: post
-permalink: /2013/03/03/instants-tisses-my-sisters-business-has-now-launched/
 categories:
   - shopify
   - work project

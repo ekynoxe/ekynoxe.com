@@ -2,7 +2,6 @@
 title: Gorilla signage
 author: Matt
 layout: post
-permalink: /2012/09/07/gorilla-signage/
 categories:
   - travel
 ---

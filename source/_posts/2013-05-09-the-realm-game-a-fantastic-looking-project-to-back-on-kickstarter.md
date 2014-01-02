@@ -2,7 +2,6 @@
 title: 'The Realm Game: a fantastic looking project to back on kickstarter'
 author: Matt
 layout: post
-permalink: /2013/05/09/the-realm-game-a-fantastic-looking-project-to-back-on-kickstarter/
 categories:
   - design
   - games

@@ -2,7 +2,6 @@
 title: Should you know TCP/IP to work for a web company?
 author: Matt
 layout: post
-permalink: /2012/09/25/should-you-know-tcpip-to-work-for-a-web-company/
 categories:
   - work
 tags:
@@ -16,7 +15,8 @@ An interesting discussion (argument?) popped in my tweets yesterday in the form 
 
 <p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/09/20120924-1836191.jpg" rel="lightbox[1397]" title="20120924-183619.jpg"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/09/20120924-1836191-300x217.jpg" alt="The tweet that prompted it all"/></a></p>
 
-That quickly prompted quite a few replies from developers and techs leads of different levels and knowledge, including myself, but none of us asked the question: &#8220;for which role?&#8221;<!--more-->
+That quickly prompted quite a few replies from developers and techs leads of different levels and knowledge, including myself, but none of us asked the question: &#8220;for which role?&#8221;
+<!--more-->
 
 There are a lot of different roles at a web company, and if we exclude the obvious non techies ones (I doubt the receptionist gives a damn about MTU and error control), we can still argue about the depth of network knowledge required to occupy a technical role.
 Let&#8217;s be clear here: we&#8217;re **not** talking about connecting your laptop to your corporate wifi network, but about network protocols and how they work.

@@ -2,7 +2,6 @@
 title: Ideas for Twickenham city center
 author: Matt
 layout: post
-permalink: /2012/10/30/ideas-for-twickenham-city-center/
 categories:
   - cycling
   - link

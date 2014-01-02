@@ -2,7 +2,6 @@
 title: The day one image brought my server down
 author: Matt
 layout: post
-permalink: /2012/09/15/the-day-one-image-brought-my-server-down/
 categories:
   - Apache
 tags:
