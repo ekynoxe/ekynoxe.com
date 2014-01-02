@@ -2,7 +2,6 @@
 title: 2013 mudman off-road duathlon
 author: Matt
 layout: post
-permalink: /2013/12/07/2013-mudman-off-road-duathlon/
 categories:
   - triathlon
 tags:
