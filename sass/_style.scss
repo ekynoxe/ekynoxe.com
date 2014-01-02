@@ -53,6 +53,8 @@ body {
     color: $text-color;
     margin: 0;
     padding: 0;
+
+    overflow-x: hidden;
 }
 
 h1 {
@@ -272,11 +274,9 @@ header.main {
 
                 a,
                 a:visited {
-                    @include spriteBg(52%, -1570px);
-                    /*border-bottom: 4px solid rgba(255,255,255,0);*/
                     color: $white;
                     display: block;
-                    line-height: 50px;
+                    line-height: 3rem;
                     padding: 0 0 4px 0;
                     text-decoration: none;
                     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
@@ -286,24 +286,18 @@ header.main {
                 a:hover,
                 a:active,
                 a.selected {
-                    /*border-bottom: 4px solid rgba(255,255,255,0.6);*/
-
-                    background-position: 52% -1581px;
                     text-decoration: none;
                     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
                     opacity: 1;
                 }
             }
 
-            li.sep {
-                padding: 0;
+            li.home {
 
                 a {
                     background-image: url('/assets/img/style/e_white.png');
                     background-repeat: no-repeat;
-                    background-position: center center;
-                    border: none;
-                    display: inline-block;
+                    background-position: left 8px;
                 }
             }
         }
@@ -325,11 +319,7 @@ header.home {
     }
 
     nav ul {
-        li.sep { display: none; }
 
-        li.home {
-            display: inline-block;
-        }
     }
 
     span.tagline {
@@ -370,10 +360,13 @@ section {
     }
 
     article {
-        margin: 0 0 5.5rem;
+        border-bottom: 5px solid #e1e1e1;
+        margin: 1.5rem 0 4rem;
+        padding-bottom: 1.5rem;
 
         &:last-child {
             margin-bottom: 0;
+            border-bottom: none;
         }
 
         header {
@@ -384,6 +377,16 @@ section {
                 font-size: 1.75rem;
                 padding: 0 0.2rem 0.5rem;
                 text-align: left;
+
+                span.draft {
+                    background: #f00;
+                    color: $white;
+                    font-size: 0.5em;
+                    padding: 5px;
+                    margin-left: 0.5rem;
+                    text-shadow: 0 1px 0 #c00;
+                    text-transform: lowercase;
+                }
             }
 
             time {
@@ -487,7 +490,7 @@ section {
     }
 }
 section.work {
-    padding-top: 0;
+    padding: 0;
 
     header,
     article header,
@@ -507,9 +510,9 @@ section.work {
     }
 
     article {
-        margin-bottom: 0;
-        margin-top: 0.5rem;
+        margin: 0;
         padding: 2.5rem 0;
+        border: none;
 
         header {
             margin-bottom: 2.5rem;
@@ -831,8 +834,11 @@ footer.main {
                         font-weight: 400;
                         line-height: 2.25rem;
                     }
+                    &.home a {
+                        background: none;
+                    }
                 }
-                .sep { display: none; }
+                /*.sep { display: none; }*/
             }
         }
     }
@@ -901,17 +907,6 @@ footer.main {
                 font-size: 0.7rem;
             }
         }
-
-        li.sep {
-            padding: 0;
-
-            a {
-                background-size: 1.5rem 1.5rem;
-                height: 1.5rem;
-                margin-bottom: -0.4rem;
-                width: 1.5rem;
-            }
-        }
     }
 }
 /* Smartphones (landscape) ----------- */
@@ -921,30 +916,16 @@ footer.main {
         nav ul {
             li {
                 padding: 0 0.5rem;
-                width: 21%;
-
-                a {
-                }
-
-                a:hover {
-
-                }
-            }
-
-            li.sep {
-                padding: 0;
-                width: 10%;
-
-                a {
-                    background-size: 2rem 2rem;
-                    height: 2rem;
-                    margin-bottom: -0.6rem;
-                    width: 2rem;
-                }
             }
 
             li.home {
-                display: none;
+                padding: 0;
+
+                a {
+                    background-size: 2rem 2rem;
+                    text-indent: -999em;
+                    width: 2rem;
+                }
             }
         }
 
@@ -957,11 +938,6 @@ footer.main {
 
         span.tagline {
             font-size: 0.9rem;
-        }
-        nav ul {
-            li.home {
-                display: inline-block;
-            }
         }
     }
 
@@ -993,25 +969,22 @@ footer.main {
         margin-bottom: 0;
 
         nav {
-            padding: 0.5rem 0 0;
+            padding: 0.5rem 0;
 
             ul {
 
-                li,
-                li.home {
+                li {
                     padding: 0 1rem;
-                    width: 24%;
                 }
 
-                li.sep {
+                li.home {
                     padding: 0 0.75rem;
-                    width: 18%;
 
                     a {
                         background-size: 3rem 3rem;
+                        background-position: left top;
                         height: 3rem;
-                        margin-bottom: -1.2rem;
-                        width: 3.5rem;
+                        width: 3rem;
                     }
                 }
             }
@@ -1085,19 +1058,15 @@ footer.main {
         }
 
         nav {
-            padding: 1rem 0 0;
+            padding: 1rem 0;
 
             ul {
                 li.home {
-                    display: inline-block;
-                }
-
-                li,
-                li.home {
-                    width: 18%;
-                }
-                li.sep {
-                    width: 14%;
+                    a {
+                        padding-left: 4rem;
+                        text-indent: 0;
+                        width: auto;
+                    }
                 }
             }
 
@@ -1197,6 +1166,19 @@ footer.main {
 @media screen and (min-width: 50.000em) { /* min-width: 800px */
     html {
         font-size: 1.15rem;
+    }
+
+    header.main {
+        nav {
+            ul {
+                li.home {
+                    a {
+                        text-indent: 0;
+                        width: auto;
+                    }
+                }
+            }
+        }
     }
 
     .tag_list ul {

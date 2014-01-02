@@ -45,7 +45,7 @@
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-/**
+/*!*
  *
  * inuitcss.com -- @inuitcss -- @csswizardry
  *
@@ -381,7 +381,7 @@
  *
  * We work out your end points for you:
  */
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -2523,7 +2523,7 @@ label,
  * Add/remove floats
  */
 .float--right {
-  float: right!important;
+  float: right !important;
 }
 
 .float--left {
@@ -2542,7 +2542,7 @@ label,
 }
 
 .text--center {
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .text--right {
@@ -2553,15 +2553,15 @@ label,
  * Font weights
  */
 .weight--light {
-  font-weight: 300!important;
+  font-weight: 300 !important;
 }
 
 .weight--normal {
-  font-weight: 400!important;
+  font-weight: 400 !important;
 }
 
 .weight--semibold {
-  font-weight: 600!important;
+  font-weight: 600 !important;
 }
 
 /**
@@ -2628,33 +2628,33 @@ label,
 }
 
 .flush {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .flush--top {
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
 .flush--right {
-  margin-right: 0!important;
+  margin-right: 0 !important;
 }
 
 .flush--bottom {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 .flush--left {
-  margin-left: 0!important;
+  margin-left: 0 !important;
 }
 
 .flush--ends {
-  margin-top: 0!important;
-  margin-bottom: 0!important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .flush--sides {
-  margin-right: 0!important;
-  margin-left: 0!important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 /**
@@ -2721,33 +2721,33 @@ label,
 }
 
 .hard {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .hard--top {
-  padding-top: 0!important;
+  padding-top: 0 !important;
 }
 
 .hard--right {
-  padding-right: 0!important;
+  padding-right: 0 !important;
 }
 
 .hard--bottom {
-  padding-bottom: 0!important;
+  padding-bottom: 0 !important;
 }
 
 .hard--left {
-  padding-left: 0!important;
+  padding-left: 0 !important;
 }
 
 .hard--ends {
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .hard--sides {
-  padding-right: 0!important;
-  padding-left: 0!important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 /**
@@ -2767,14 +2767,14 @@ label,
  * `:hover`.
  */
 .informative {
-  cursor: help!important;
+  cursor: help !important;
 }
 
 /**
  * Mute an object by reducing its opacity.
  */
 .muted {
-  opacity: 0.5!important;
+  opacity: 0.5 !important;
   filter: alpha(opacity=50) !important;
 }
 
@@ -2785,7 +2785,7 @@ label,
  *
  */
 .proceed {
-  text-align: right!important;
+  text-align: right !important;
 }
 
 /**
@@ -2795,14 +2795,14 @@ label,
  *
  */
 .go:after {
-  content: "\00A0" "\00BB"!important;
+  content: "\00A0" "\00BB" !important;
 }
 
 /**
  * Apply capital case to an element (usually a `strong`).
  */
 .caps {
-  text-transform: uppercase!important;
+  text-transform: uppercase !important;
 }
 
 /**
@@ -2811,92 +2811,92 @@ label,
  */
 .accessibility,
 .visuallyhidden {
-  border: 0!important;
+  border: 0 !important;
   clip: rect(0 0 0 0) !important;
-  height: 1px!important;
+  height: 1px !important;
   margin: -1px !important;
-  overflow: hidden!important;
-  padding: 0!important;
-  position: absolute!important;
-  width: 1px!important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
 }
 
 @media only screen and (max-width: 480px) {
   .accessibility--palm,
   .visuallyhidden--palm {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
+    height: 1px !important;
     margin: -1px !important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .accessibility--lap,
   .visuallyhidden--lap {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
+    height: 1px !important;
     margin: -1px !important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
   }
 }
 @media only screen and (min-width: 481px) {
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
+    height: 1px !important;
     margin: -1px !important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
   }
 }
 @media only screen and (max-width: 1023px) {
   .accessibility--portable,
   .visuallyhidden--portable {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
+    height: 1px !important;
     margin: -1px !important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
   }
 }
 @media only screen and (min-width: 1024px) {
   .accessibility--desk,
   .visuallyhidden--desk {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
+    height: 1px !important;
     margin: -1px !important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
   }
 }
 @media only screen and (min-width: 1200px) {
   .accessibility--desk-wide,
   .visuallyhidden--desk-wide {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
+    height: 1px !important;
     margin: -1px !important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
   }
 }
 /* endif */
@@ -2947,6 +2947,7 @@ body {
   color: black;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -3165,13 +3166,9 @@ header.main nav ul li {
 }
 header.main nav ul li a,
 header.main nav ul li a:visited {
-  background-image: url("/assets/img/style/sprite.png");
-  background-repeat: no-repeat;
-  background-position: 52% -1570px;
-  /*border-bottom: 4px solid rgba(255,255,255,0);*/
   color: white;
   display: block;
-  line-height: 50px;
+  line-height: 3rem;
   padding: 0 0 4px 0;
   text-decoration: none;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
@@ -3180,21 +3177,14 @@ header.main nav ul li a:visited {
 header.main nav ul li a:hover,
 header.main nav ul li a:active,
 header.main nav ul li a.selected {
-  /*border-bottom: 4px solid rgba(255,255,255,0.6);*/
-  background-position: 52% -1581px;
   text-decoration: none;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
-header.main nav ul li.sep {
-  padding: 0;
-}
-header.main nav ul li.sep a {
+header.main nav ul li.home a {
   background-image: url("/assets/img/style/e_white.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  border: none;
-  display: inline-block;
+  background-position: left 8px;
 }
 header.main p {
   padding: 0 1rem;
@@ -3208,12 +3198,6 @@ header.home .logo {
   margin: 4rem auto 0.5rem;
   width: 78%;
   max-width: 587px;
-}
-header.home nav ul li.sep {
-  display: none;
-}
-header.home nav ul li.home {
-  display: inline-block;
 }
 header.home span.tagline {
   display: block;
@@ -3247,10 +3231,13 @@ section footer {
   padding: 1.5rem 1rem 1rem;
 }
 section article {
-  margin: 0 0 5.5rem;
+  border-bottom: 5px solid #e1e1e1;
+  margin: 1.5rem 0 4rem;
+  padding-bottom: 1.5rem;
 }
 section article:last-child {
   margin-bottom: 0;
+  border-bottom: none;
 }
 section article header {
   padding: 0 1rem;
@@ -3260,6 +3247,15 @@ section article header h1 {
   font-size: 1.75rem;
   padding: 0 0.2rem 0.5rem;
   text-align: left;
+}
+section article header h1 span.draft {
+  background: #f00;
+  color: white;
+  font-size: 0.5em;
+  padding: 5px;
+  margin-left: 0.5rem;
+  text-shadow: 0 1px 0 #c00;
+  text-transform: lowercase;
 }
 section article header time {
   color: #aaaaaa;
@@ -3345,7 +3341,7 @@ section .table_container table tbody tr:nth-child(2n+1) {
 }
 
 section.work {
-  padding-top: 0;
+  padding: 0;
 }
 section.work header,
 section.work article header,
@@ -3362,9 +3358,9 @@ section.work > header h1 {
   text-shadow: 1px 2px 0 white;
 }
 section.work article {
-  margin-bottom: 0;
-  margin-top: 0.5rem;
+  margin: 0;
   padding: 2.5rem 0;
+  border: none;
 }
 section.work article header {
   margin-bottom: 2.5rem;
@@ -3643,6 +3639,7 @@ footer.main small {
     float: none;
     font-size: 0.8rem;
     margin: 0 0.15rem;
+    /*.sep { display: none; }*/
   }
   header.main nav ul li {
     display: block;
@@ -3659,8 +3656,8 @@ footer.main small {
     font-weight: 400;
     line-height: 2.25rem;
   }
-  header.main nav ul .sep {
-    display: none;
+  header.main nav ul li.home a {
+    background: none;
   }
 
   header.home {
@@ -3702,35 +3699,20 @@ footer.main small {
   header.main nav ul li a {
     font-size: 0.7rem;
   }
-  header.main nav ul li.sep {
-    padding: 0;
-  }
-  header.main nav ul li.sep a {
-    background-size: 1.5rem 1.5rem;
-    height: 1.5rem;
-    margin-bottom: -0.4rem;
-    width: 1.5rem;
-  }
 }
 /* Smartphones (landscape) ----------- */
 @media screen and (min-width: 20em) {
   /*320px*/
   header.main nav ul li {
     padding: 0 0.5rem;
-    width: 21%;
-  }
-  header.main nav ul li.sep {
-    padding: 0;
-    width: 10%;
-  }
-  header.main nav ul li.sep a {
-    background-size: 2rem 2rem;
-    height: 2rem;
-    margin-bottom: -0.6rem;
-    width: 2rem;
   }
   header.main nav ul li.home {
-    display: none;
+    padding: 0;
+  }
+  header.main nav ul li.home a {
+    background-size: 2rem 2rem;
+    text-indent: -999em;
+    width: 2rem;
   }
   header.main p {
     font-size: 1.5rem;
@@ -3738,9 +3720,6 @@ footer.main small {
 
   header.home span.tagline {
     font-size: 0.9rem;
-  }
-  header.home nav ul li.home {
-    display: inline-block;
   }
 
   footer.main dl {
@@ -3779,22 +3758,19 @@ footer.main small {
     margin-bottom: 0;
   }
   header.main nav {
-    padding: 0.5rem 0 0;
+    padding: 0.5rem 0;
   }
-  header.main nav ul li,
-  header.main nav ul li.home {
+  header.main nav ul li {
     padding: 0 1rem;
-    width: 24%;
   }
-  header.main nav ul li.sep {
+  header.main nav ul li.home {
     padding: 0 0.75rem;
-    width: 18%;
   }
-  header.main nav ul li.sep a {
+  header.main nav ul li.home a {
     background-size: 3rem 3rem;
+    background-position: left top;
     height: 3rem;
-    margin-bottom: -1.2rem;
-    width: 3.5rem;
+    width: 3rem;
   }
   header.main p {
     font-size: 1.8rem;
@@ -3846,17 +3822,12 @@ footer.main small {
     width: 90%;
   }
   header.main nav {
-    padding: 1rem 0 0;
+    padding: 1rem 0;
   }
-  header.main nav ul li.home {
-    display: inline-block;
-  }
-  header.main nav ul li,
-  header.main nav ul li.home {
-    width: 18%;
-  }
-  header.main nav ul li.sep {
-    width: 14%;
+  header.main nav ul li.home a {
+    padding-left: 4rem;
+    text-indent: 0;
+    width: auto;
   }
   header.main p {
     font-size: 2.2rem;
@@ -3936,6 +3907,11 @@ footer.main small {
   /* min-width: 800px */
   html {
     font-size: 1.15rem;
+  }
+
+  header.main nav ul li.home a {
+    text-indent: 0;
+    width: auto;
   }
 
   .tag_list ul {

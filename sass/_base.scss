@@ -1,3 +1,5 @@
+@import "compass";
+
 @mixin spriteBg($x:0, $y:0, $w:false, $h:false) {
     background-image: url('/assets/img/style/sprite.png');
     background-repeat: no-repeat;
@@ -8,5 +10,4 @@
     }
 }
 
-@import "compass";
 @import "style";
