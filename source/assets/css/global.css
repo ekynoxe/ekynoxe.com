@@ -3046,17 +3046,18 @@ a:active {
 a#scrollToTop {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
-  background-position: -671px -1476px;
+  background-position: -420px -892px;
+  background-size: 634px 991px;
   border: none;
   cursor: pointer;
-  display: none;
+  /*display: none;*/
   position: fixed;
   bottom: 20px;
   right: 20px;
   text-align: center;
   text-indent: -999em;
-  height: 62px;
-  width: 62px;
+  height: 40px;
+  width: 40px;
 }
 
 .attachement {
@@ -3284,7 +3285,6 @@ section article header h1 span.draft {
   text-transform: lowercase;
   vertical-align: top;
   line-height: 2rem;
-  /*40px;*/
 }
 section article header time {
   color: #aaaaaa;
@@ -3736,9 +3736,6 @@ footer.main small {
   header.main nav ul li {
     padding: 0 0.5rem;
   }
-  header.main nav ul li.home {
-    padding: 0;
-  }
   header.main nav ul li.home a {
     background-size: 2rem 2rem;
     text-indent: -999em;
@@ -3756,26 +3753,26 @@ footer.main small {
     margin: 1rem 2rem 1rem 0;
   }
   footer.main dl dd a {
-    background-size: 982px 1536px;
+    background-size: 1011px 1638px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 60px;
   }
   footer.main dl .twitter a {
-    background-position: -32px -1103px;
+    background-position: -32px -1086px;
     line-height: 65px;
     height: 65px;
   }
   footer.main dl .linkedin a {
-    background-position: -32px -1184px;
+    background-position: -32px -1177px;
     line-height: 65px;
     height: 65px;
   }
   footer.main dl .twitter a:hover {
-    background-position: -25px -1103px;
+    background-position: -25px -1086px;
   }
   footer.main dl .linkedin a:hover {
-    background-position: -25px -1184px;
+    background-position: -25px -1177px;
   }
 }
 @media screen and (min-width: 25em) {
@@ -3842,6 +3839,13 @@ footer.main small {
 
   h5 {
     font-size: 1.375em;
+  }
+
+  a#scrollToTop {
+    background-size: 1011px 1638px;
+    background-position: -671px -1476px;
+    height: 62px;
+    width: 62px;
   }
 
   .attachement a,
@@ -3916,19 +3920,6 @@ footer.main small {
     -o-column-count: 3;
     column-count: 3;
     font-size: 1.2rem;
-  }
-
-  footer.main dl .twitter a {
-    background-position: -32px -1100px;
-  }
-  footer.main dl .linkedin a {
-    background-position: -32px -1181px;
-  }
-  footer.main dl .twitter a:hover {
-    background-position: -25px -1100px;
-  }
-  footer.main dl .linkedin a:hover {
-    background-position: -25px -1181px;
   }
 }
 @media screen and (min-height: 43.75em) {
