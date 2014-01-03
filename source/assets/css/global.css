@@ -3050,7 +3050,6 @@ a#scrollToTop {
   background-size: 634px 991px;
   border: none;
   cursor: pointer;
-  /*display: none;*/
   position: fixed;
   bottom: 20px;
   right: 20px;

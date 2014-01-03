@@ -4,7 +4,10 @@ $(function() {
     $link = $("#scrollToTop"); // your link to show when user scrolls down
     $link.click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow"); // this is the gist of the script, scroll to top (scrollTop: 0)
+        return false;
     });
+
+    $link.hide();
 
     $window.scroll(function() {
         if ($window.scrollTop() <= 200) {

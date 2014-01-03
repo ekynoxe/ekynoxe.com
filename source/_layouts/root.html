@@ -20,5 +20,24 @@
     <body>
     <!--<![endif]-->
         {{ content }}
+        <script>
+
+        if (document.documentElement.clientWidth > 768) {
+            var jQueryJs = document.createElement("script"),
+                mainJs = document.createElement("script");
+
+            jQueryJs.type = "text/javascript";
+            jQueryJs.src = "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js";
+
+            mainJs.type = "text/javascript";
+            mainJs.src = "/assets/js/main.js";
+
+            jQueryJs.onload = function () {
+                document.body.appendChild(mainJs);
+            }
+
+            document.body.appendChild(jQueryJs);
+        }
+        </script>
     </body>
 </html>
