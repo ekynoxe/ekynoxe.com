@@ -386,6 +386,8 @@ section {
                     margin-left: 0.5rem;
                     text-shadow: 0 1px 0 #c00;
                     text-transform: lowercase;
+                    vertical-align: top;
+                    line-height: 2rem;
                 }
             }
 
@@ -669,6 +671,7 @@ section.testimonials {
         font-size: 1rem;
         margin: 0 1.5rem;
         padding: 0;
+        list-style-type: none;
 
         li {
             padding: 0.3rem 0;
@@ -952,10 +955,10 @@ footer.main {
                 padding-bottom: 14px;
                 padding-left: 60px;
             }
-            .twitter a { background-position: -32px -1095px; line-height: 65px; height: 65px; }
-            .linkedin a { background-position: -32px -1176px; line-height: 65px; height: 65px; }
-            .twitter a:hover { background-position: -25px -1095px; }
-            .linkedin a:hover { background-position: -25px -1176px; }
+            .twitter a { background-position: -32px -1103px; line-height: 65px; height: 65px; }
+            .linkedin a { background-position: -32px -1184px; line-height: 65px; height: 65px; }
+            .twitter a:hover { background-position: -25px -1103px; }
+            .linkedin a:hover { background-position: -25px -1184px; }
         }
     }
 }
@@ -1030,6 +1033,7 @@ footer.main {
 @media screen and (min-width: 37.500em) { /*600px*/
     .content{
         width: 80%;
+        max-width: 850px;
     }
     body {
         font-size: 112.5%;
@@ -1134,6 +1138,16 @@ footer.main {
         @include vendor(column-count, 3);
 
         font-size: 1.2rem;
+    }
+
+    footer.main {
+
+        dl {
+            .twitter a { background-position: -32px -1100px; }
+            .linkedin a { background-position: -32px -1181px; }
+            .twitter a:hover { background-position: -25px -1100px; }
+            .linkedin a:hover { background-position: -25px -1181px; }
+        }
     }
 }
 

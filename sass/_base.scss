@@ -1,4 +1,5 @@
 @import "compass";
+@import "fonts";
 
 @mixin spriteBg($x:0, $y:0, $w:false, $h:false) {
     background-image: url('/assets/img/style/sprite.png');
