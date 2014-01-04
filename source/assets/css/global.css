@@ -2988,6 +2988,7 @@ h2 {
   font-size: 1.5rem;
   /* 1.875rem; */
   line-height: 1.6;
+  margin-top: 3rem;
 }
 
 h3 {
@@ -2995,6 +2996,7 @@ h3 {
   font-size: 1.25rem;
   /* 1.5rem; */
   line-height: 1;
+  margin-top: 2.5rem;
 }
 
 h4 {
@@ -3002,6 +3004,7 @@ h4 {
   font-size: 1.0625rem;
   /* 1.25rem; */
   line-height: 1.2;
+  margin-top: 2.125rem;
 }
 
 h5 {
@@ -3009,6 +3012,7 @@ h5 {
   font-size: 0.9375rem;
   /* 1rem; */
   line-height: 1.5;
+  margin-top: 1.875rem;
 }
 
 h6 {
@@ -3016,6 +3020,18 @@ h6 {
   font-size: 0.875rem;
   /* 0.875rem; */
   line-height: 1.71429;
+  margin-top: 1.75rem;
+}
+
+hr {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 55% -825px;
+  background-size: 634px 991px;
+  border: none;
+  height: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .content {
@@ -3064,19 +3080,22 @@ a#scrollToTop {
   padding: 0;
   text-align: center;
 }
-.attachement a {
+.attachement a,
+.attachement span {
   border: none;
   display: inline-block;
   position: relative;
   text-align: center;
   text-decoration: none;
 }
-.attachement a img {
+.attachement a img,
+.attachement span img {
   display: block;
   margin: 0;
   border: 0;
 }
-.attachement a span {
+.attachement a span,
+.attachement span span {
   background-color: #333;
   background-color: rgba(0, 0, 0, 0.6);
   bottom: 0;
@@ -3830,14 +3849,13 @@ footer.main small {
     line-height: 1.6;
   }
 
-  h2, h3, h4, h5 {
-    font-size: 1.875em;
-    line-height: 1.3em;
-    text-align: left;
-  }
-
-  h5 {
-    font-size: 1.375em;
+  hr {
+    background-size: 1011px 1638px;
+    background-position: 55% -1363px;
+    border: none;
+    height: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   a#scrollToTop {
@@ -3848,8 +3866,16 @@ footer.main small {
   }
 
   .attachement a,
-  .attachement iframe {
+  .attachement img,
+  .attachement iframe,
+  .attachement span {
     border: 0.5rem solid #e1e1e1;
+  }
+  .attachement a img,
+  .attachement span img,
+  .attachement span span,
+  .attachement a span {
+    border: none;
   }
 
   header.main .content {

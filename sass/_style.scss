@@ -67,30 +67,43 @@ h2 {
   font-size: 24px;
   font-size: 1.5rem; /* 1.875rem; */
   line-height: 1.6;
+  margin-top: 3rem;
 }
 
 h3 {
   font-size: 20px;
   font-size: 1.25rem; /* 1.5rem; */
   line-height: 1;
+  margin-top: 2.5rem;
 }
 
 h4 {
   font-size: 17px;
   font-size: 1.0625rem; /* 1.25rem; */
   line-height: 1.2;
+  margin-top: 2.125rem;
 }
 
 h5 {
   font-size: 15px;
   font-size: 0.9375rem; /* 1rem; */
   line-height: 1.5;
+  margin-top: 1.875rem;
 }
 
 h6 {
   font-size: 14px;
   font-size: 0.875rem; /* 0.875rem; */
   line-height: 1.71429;
+  margin-top: 1.75rem;
+}
+
+hr {
+    @include spriteBg(55%, -825px, 634px, 991px);
+    border: none;
+    height: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .content {
@@ -133,7 +146,8 @@ a#scrollToTop {
     padding: 0;
     text-align: center;
 
-    a {
+    a,
+    span {
         border: none;
         display: inline-block;
         position: relative;
@@ -145,6 +159,7 @@ a#scrollToTop {
             margin: 0;
             border: 0;
         }
+
         span {
             background-color: #333;
             background-color: rgba(0,0,0,0.6);
@@ -1040,15 +1055,14 @@ footer.main {
         line-height: 1.6;
     }
 
-    h2, h3, h4, h5 {
-        font-size: 1.875em;
-        line-height: 1.3em;
-        text-align: left;
-    }
-
-    h5{
-        font-size: 1.375em;
-    }
+hr {
+    background-size: 1011px 1638px;
+    background-position: 55% -1363px;
+    border: none;
+    height: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
 
     a#scrollToTop {
         background-size: 1011px 1638px;
@@ -1059,9 +1073,19 @@ footer.main {
 
     .attachement {
         a,
-        iframe {
+        img,
+        iframe,
+        span {
             border: 0.5rem solid #e1e1e1;
         }
+
+        a img,
+        span img,
+        span span,
+        a span {
+            border: none;
+        }
+
     }
 
     header.main {
