@@ -18,7 +18,7 @@ One of the biggest problem is understanding the scope and load/execution time of
 
 ## Scope
 
-First of all, if you look for a functions.php file in your wordpress installation: beware! There is also a file called functions.php in the wordpress core files in the wp-includes folder. We&#8217;re NOT talking about this one! We are talking about creating your own functions.php file in your <span style="text-decoration: underline;">theme folder</span>. So don&#8217;t go edit the core one (one should NEVER edit the core files anyways) and instead work on your own, clean and empty version located in your theme directory.
+First of all, if you look for a functions.php file in your wordpress installation: beware! There is also a file called functions.php in the wordpress core files in the wp-includes folder. We&#8217;re NOT talking about this one! We are talking about creating your own functions.php file in your *theme folder*. So don&#8217;t go edit the core one (one should NEVER edit the core files anyways) and instead work on your own, clean and empty version located in your theme directory.
 
 Now, about scope: the functions.php file in your theme is included from the following flow:
 
@@ -39,7 +39,7 @@ That&#8217;s where it gets interesting, these functions are available to use, bu
 
 Basically, I was coding my theme the wrong way by not wrapping these tests in a hook or action, well before the WP init was called, as described on a <a title="Doing it wrong" href="http://core.trac.wordpress.org/ticket/11526#comment:14" target="_blank">wordpress development track ticket</a>. Like many theme developers, I guess, I started to write my new theme by using an existing one, and modified the functions.php file. Along the way I found great resources like <a title="digwp's functions.php template" href="http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/" target="_blank">digwp&#8217;s functions.php template</a>. Initially happy enough to have something working, while blissfully ignorant about its internals, I started to get a strange behaviour when I wanted to include scripts only on some specific pages of my theme.
 
-At the top of my <span style="text-decoration: underline;">functions.php</span>, I had left the template file function calls to enqueue the scripts:
+At the top of my *functions.php*, I had left the template file function calls to enqueue the scripts:
 
 <pre class="brush: php; title: ; notranslate" title="">wp_deregister_script('jquery');
 wp_register_script('jquery', (get_bloginfo('stylesheet_directory')."/js/jquery-1.4.2.min.js"));
@@ -70,7 +70,7 @@ Access any of these pages and the required scripts will not get loaded.
 
 The answer is fairly simple, providing you know the existence of the WP and WP_Query objects, and if you followed until here (and understood where I was going with the inclusion of php scripts).
 
-At the point where the functions.php file is loaded, when the is\_front\_page and is\_page\_template functions are called (Remember? When you include a php script it gets evaluated as part of the include process!), <span style="text-decoration: underline;">no query has been made yet, therefore both functions will return false</span>!
+At the point where the functions.php file is loaded, when the is\_front\_page and is\_page\_template functions are called (Remember? When you include a php script it gets evaluated as part of the include process!), *no query has been made yet, therefore both functions will return false*!
 
 So how can I include only the scripts I require on the pages I want? <a title="Wordpress actions" href="http://codex.wordpress.org/Plugin_API#Actions" target="_blank">Actions</a> to the rescue!!
 

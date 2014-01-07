@@ -99,7 +99,7 @@ As you can see, the brushes being quite wide, the shape of the patterns are quit
 
 If you want to give your background the impression that it&#8217;s been painted on canvas (yeah, space is always being painted on canvas!) then you can add a nice texture to your image.
 
-Create a layer <span style="text-decoration: underline;">under</span> the gradient fade-in layer, and fill it with the paint bucket tool (G) with white: #ffffff
+Create a layer *under* the gradient fade-in layer, and fill it with the paint bucket tool (G) with white: #ffffff
 
 Then, apply the texturizer filter with 130% scale and 12% relief.
 

@@ -22,9 +22,9 @@ Now, receiving an invite on LinkedIn can be normal, and if you use the site regu
 
 ## The problem
 
-Now, what&#8217;s not normal is that the invite I received, which sparked this train of thoughts (or rant, as you wish), was sent to an address I <span style="text-decoration: underline;">do not publish on LinkedIn</span>.
+Now, what&#8217;s not normal is that the invite I received, which sparked this train of thoughts (or rant, as you wish), was sent to an address I *do not publish on LinkedIn*.
 
-And that&#8217;s where things start to get tasty: it seems that on LinkedIn, you can send invites to any email you want, whether or not you know these persons, or are linked at all with them through any Nth degree of contact. Maybe for this you need a special account, possibly paid, but basically, it means that any moronic recruiter may send god knows how many emails, <span style="text-decoration: underline;">through LinkedIn</span>, to whichever addresses they want, under the LinkedIn, generally trusted, banner, as an &#8220;invite to connect&#8221;. (1)
+And that&#8217;s where things start to get tasty: it seems that on LinkedIn, you can send invites to any email you want, whether or not you know these persons, or are linked at all with them through any Nth degree of contact. Maybe for this you need a special account, possibly paid, but basically, it means that any moronic recruiter may send god knows how many emails, *through LinkedIn*, to whichever addresses they want, under the LinkedIn, generally trusted, banner, as an &#8220;invite to connect&#8221;. (1)
 
 Let me rephrase that: &#8220;Any moron with the correct LinkedIn account can send spam-phishing emails to anyone through an established and trusted corporation (in email domains terms) without any problems, without getting caught by spam filters, and without being flagged as high spammers&#8221; (2)
 
@@ -34,11 +34,11 @@ Right, I see you coming with your &#8220;But you can unsubscribe your email from
 
 ## Explanation
 
-When you decide to &#8220;unsubscribe&#8221; an email address you&#8217;ve been contacted on, you are actually <span style="text-decoration: underline;">registering</span> it into a &#8220;do not contact&#8221; list&#8230; That&#8217;s a lot of negations, I know, but basically, you&#8217;re GIVING another email address to LinkedIn. What they do with it, only they know&#8230; But I would bet that&#8217;s not all pretty business.
+When you decide to &#8220;unsubscribe&#8221; an email address you&#8217;ve been contacted on, you are actually *registering* it into a &#8220;do not contact&#8221; list&#8230; That&#8217;s a lot of negations, I know, but basically, you&#8217;re GIVING another email address to LinkedIn. What they do with it, only they know&#8230; But I would bet that&#8217;s not all pretty business.
 
 So in order to NOT get spammed by LinkedIn&#8217;s service, I have to GIVE them an email address?? Is it just me or is this just plain old racketeering?
 
-Furthermore, when the &#8220;unsubscribe&#8221; link leads to a page <span style="text-decoration: underline;">not working/not finished/building in progress</span>, for the past 3 months that&#8217;s more than enough to raise alarm bells. (At the time of writing this, it seems that LinkedIn only just fixed the issue: you can now give them your email addresses!)
+Furthermore, when the &#8220;unsubscribe&#8221; link leads to a page *not working/not finished/building in progress*, for the past 3 months that&#8217;s more than enough to raise alarm bells. (At the time of writing this, it seems that LinkedIn only just fixed the issue: you can now give them your email addresses!)
 
 Please LinkedIn! Fix your service! It should be a tool, not a chore!
 

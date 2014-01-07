@@ -27,7 +27,7 @@ It all started with a large project. And I really mean large: a full website for
 All seemed nice.
 However, even how promising and problem-less it looked, given a previous bad experience with a &#8220;client&#8221; leaving with work and money, and not acknowledging that a contract of work had been accepted both sides and ultimately delivered, I was determined not to fall in the same trap.
 
-Never again will I be duped in <span style="text-decoration: underline;">delivering</span> work not paid&#8230;
+Never again will I be duped in *delivering* work not paid&#8230;
 
 So we (the client and myself) both signed a contract, agreed on deliverables and schedules, and agreed on payments.
 
@@ -64,7 +64,7 @@ Eventually, the site got finished, the client was notified about it and&#8230; I
 
 What can I do?
 
-At the end of the day, I kept me promise to myself: I did not <span style="text-decoration: underline;">deliver</span> work that have not been paid, but I have still taken all this time to <span style="text-decoration: underline;">do</span> the work, and this is time I could have used on other projects and other clients. Also, I got paid half of the overall contract amount, and the client doesn&#8217;t have anything except some screenshots, but it still feels awfully wrong!
+At the end of the day, I kept me promise to myself: I did not *deliver* work that have not been paid, but I have still taken all this time to *do* the work, and this is time I could have used on other projects and other clients. Also, I got paid half of the overall contract amount, and the client doesn&#8217;t have anything except some screenshots, but it still feels awfully wrong!
 
 So dear client, you know who you are, and if you read these lines, I do hope you&#8217;ll think about your site and the money you lost so far. I&#8217;m willing to deliver it to you so you can at least have what&#8217;s been done. Of course for this, you&#8217;d have to honor your part of the contract.
 
