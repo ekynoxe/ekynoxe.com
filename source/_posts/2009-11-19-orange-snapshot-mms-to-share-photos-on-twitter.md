@@ -10,7 +10,6 @@ tags:
   - CSS
   - mobile
   - work
-draft: true
 ---
 Sometimes you are requested to do a quick job at work, that &#8220;should not last longer than 2/3 days&#8221;.
 

@@ -2,7 +2,6 @@
 title: 'I&#8217;m a front-end dev!!'
 author: Matt
 layout: post
-draft: true
 categories:
   - Betfair
   - thoughts
