@@ -5,6 +5,7 @@ lsi: false
 title: Ekynoxe - Web development in London
 paginate: 7
 paginate_path: "news/page:num"
+cdn: http://cdn.ekynoxe.com
 
 rdiscount:
     extensions: [smart]
