@@ -56,37 +56,37 @@ It&#8217;s easy to charge up at work on a USB port, and back at home, I quickly 
 <div class='gallery'>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-          <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/4x4.jpg' title='4x4' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/4x4-150x150.jpg" alt="4x4" /></a>
+          <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/4x4.jpg" title="4x4" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/4x4-150x150.jpg" alt="4x4" /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/hammersmith_lane.jpg' title='hammersmith_lane' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/hammersmith_lane-150x150.jpg" alt="hammersmith_lane" /></a>
+            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/hammersmith_lane.jpg" title="hammersmith_lane" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/hammersmith_lane-150x150.jpg" alt="hammersmith_lane" /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/helmet_cam.jpg' title='Helmet Cam' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/helmet_cam-150x150.jpg" alt="Helmet Cam" /><span>Helmet Cam</span></a>
+            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/helmet_cam.jpg" title="Helmet Cam" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/helmet_cam-150x150.jpg" alt="Helmet Cam" /><span>Helmet Cam</span></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/migration.jpg' title='Migration' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/migration-150x150.jpg" alt="Migration" /><span>Migration</span></a>
+            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/migration.jpg" title="Migration" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/migration-150x150.jpg" alt="Migration" /><span>Migration</span></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/bus_passing.jpg' title='Passing a bus' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/bus_passing-150x150.jpg" alt="Passing a bus" /><span>Passing a bus</span></a>
+            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/bus_passing.jpg" title="Passing a bus" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/bus_passing-150x150.jpg" alt="Passing a bus" /><span>Passing a bus</span></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/snow.jpg' title='snow' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/snow-150x150.jpg" alt="snow" /></a>
+            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/snow.jpg" title="snow" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/snow-150x150.jpg" alt="snow" /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href='http://blog.ekynoxe.com/wp-content/uploads/2012/06/barrier.jpg' title='South barrier' rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/barrier-150x150.jpg" alt="South barrier" /><span>South barrier</span></a>
+            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/06/barrier.jpg" title="South barrier" rel="lightbox[1167]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/06/barrier-150x150.jpg" alt="South barrier" /><span>South barrier</span></a>
         </dt>
     </dl>
 </div>
