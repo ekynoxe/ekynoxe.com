@@ -14,7 +14,7 @@ tags:
 ---
 Ivan came back today from a long week-end in Bruges and brought back with him&#8230; yes, chocolate.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2011/02/choco.jpg" title="Sweet little treats from Belgium" rel="lightbox[419]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/02/choco-300x224.jpg" alt="Sweet little treats from Belgium" /><span>Sweet little treats from Belgium</span></a></p>
+<p class="attachement"><a href="{{ "choco.jpg" | image_path | cdn }}" title="Sweet little treats from Belgium" rel="lightbox[419]"><img src="{{ "choco_r500.jpg" | image_path | cdn }}" alt="Sweet little treats from Belgium" /><span>Sweet little treats from Belgium</span></a></p>
 
 <!--more-->
 Now, that&#8217;s a fairly large pack of white chocolate discs that is better shared, and that&#8217;s why after offering a few around the team, he left it on the desk at the end of our row in the office. This desk happens to be right along the path of a busy corridor where people walk by to go around the office, and this has led to seeing many different and hilarious behaviours to actually GET one little chocolate from the bag.

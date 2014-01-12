@@ -12,7 +12,7 @@ tags:
 My sister sent me these graphics this morning. It couldn&#8217;t be more true!
 
 ### In French
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/08/20120828-095124.jpg" title="In French" rel="lightbox[1329]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/08/20120828-095124-225x300.jpg" alt="In French" /></a></p>
+<p class="attachement"><a title="In French" href="{{ "en_francais.jpg" | image_path | cdn }}" rel="lightbox[1329]"><img src="{{ "en_francais_r500.jpg" | image_path | cdn }}" alt="In French" /></a></p>
 
 ### En Anglais
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/08/20120828-095140.jpg" title="En Anglais" rel="lightbox[1329]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/08/20120828-095140-300x225.jpg" alt="En Anglais" /></a></p>
+<p class="attachement"><img src="{{ "in_english.jpg" | image_path | cdn }}" alt="En Anglais" /></p>

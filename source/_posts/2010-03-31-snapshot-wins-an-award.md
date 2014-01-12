@@ -17,12 +17,12 @@ Thanks again to everyone that made the service to go live, all the users and eve
 <div class='gallery'>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href="http://blog.ekynoxe.com/wp-content/uploads/2010/03/snapshot_award_full.jpg" title="snapshot award in full" rel="lightbox[176]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2010/03/snapshot_award_full-300x225.jpg" alt="snapshot award in full" /></a>
+          <a href="{{ "snapshot_award_full.jpg" | image_path | cdn }}" title="snapshot award in full" rel="lightbox[176]"><img src="{{ "snapshot_award_full_r300.jpg" | image_path | cdn }}" alt="snapshot award in full" /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href="http://blog.ekynoxe.com/wp-content/uploads/2010/03/snapshot_award_mobile.jpg" rel="lightbox[176]" title="snapshot award withmobile"><img src="http://blog.ekynoxe.com/wp-content/uploads/2010/03/snapshot_award_mobile-225x300.jpg" alt="snapshot award withmobile" /></a>
+          <a href="{{ "snapshot_award_mobile.jpg" | image_path | cdn }}" title="snapshot award with mobile" rel="lightbox[176]"><img src="{{ "snapshot_award_mobile_r300.jpg" | image_path | cdn }}" alt="snapshot award with mobile" /></a>
         </dt>
     </dl>
 </div>

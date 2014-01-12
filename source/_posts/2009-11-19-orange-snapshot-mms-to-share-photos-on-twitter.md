@@ -17,14 +17,16 @@ We&#8217;ve all been there, all done it and in my case in R&D with Orange, seen 
 
 However, this time, I have been assigned on that &#8220;little project&#8221; called snapshot, for which the goal was simple: our team racing designer was creating the graphical design and I was translating that into XHTML/CSS as well as XHTML-MP templates for mobiles as quickly as I could
 <!--more-->
+
 <div class='gallery'>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-          <a href="http://blog.ekynoxe.com/wp-content/uploads/2009/11/snapshot-mob.jpg" rel="lightbox[136]" title="snapshot-mobile"><img src="http://blog.ekynoxe.com/wp-content/uploads/2009/11/snapshot-mob-93x300.jpg" alt="snapshot-mobile" /><span>The mobile interface</span></a>
+          <a href="{{ "snapshot-mob.jpg" | image_path | cdn }}" title="snapshot-mobile" rel="lightbox[136]"><img src="{{ "snapshot-mob_r300.jpg" | image_path | cdn }}" alt="snapshot-mobile" /><span>The mobile interface</span></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
-        <dt class='gallery-icon attachement'><a href="http://blog.ekynoxe.com/wp-content/uploads/2009/11/snapshot.jpg" rel="lightbox[136]" title="snapshot"><img src="http://blog.ekynoxe.com/wp-content/uploads/2009/11/snapshot-300x225.jpg" alt="snapshot" /><span>The website</span></a>
+        <dt class='gallery-icon attachement'>
+          <a href="{{ "snapshot.jpg" | image_path | cdn }}" title="snapshot" rel="lightbox[136]"><img src="{{ "snapshot_r300.jpg" | image_path | cdn }}" alt="snapshot" /><span>The website</span></a>
         </dt>
     </dl>
 </div>

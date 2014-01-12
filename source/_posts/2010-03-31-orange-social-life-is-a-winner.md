@@ -12,14 +12,16 @@ tags:
   - work
 ---
 On March 18 2010, Orange Social Life won the [mobile news award][1] of the most innovative service
+social_life_web_r500
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2010/03/social_life_web.jpg" title="social_life_web" rel="lightbox[162]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2010/03/social_life_web-219x300.jpg" alt="social_life_web" /></a></p>
+<p class="attachement"><a href="{{ "social_life_web.jpg" | image_path | cdn }}" title="Orange social life mobile web interface" rel="lightbox[162]"><img src="{{ "social_life_web_r500.jpg" | image_path | cdn }}" alt="Orange social life mobile web interface" /></a></p>
 
 Launched in August 2009, Social Life has consistently attracted customers and offers a wide range of social networks integration.
 
 Having worked on it since it&#8217;s very very early stages, it feels great to look at it and feel proud that we all made it!
 I remember the day when my boss came around and asked my availabilities for &#8216;the months to come&#8217; =)
 <!--more-->
+
 These months started by creating an HTML and JavaScript mobile prototype to be demonstrated around the business units. It already has live update of a twitter feed and notifications.
 
 The interface was going to be really different from anything that had been done so far, promoting social activity through some cleverly expanding friends icons on the home screen depending on their amount of activity, easy access to communication functions directly from there, and deep integration of the social networks in the usual device capabilities.

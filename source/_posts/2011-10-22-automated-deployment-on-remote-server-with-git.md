@@ -13,7 +13,9 @@ tags:
 Some time back, I wanted to setup my server so I could push code to my repositories, and have it automatically deployed to a website root directory after doing a git push from my local machine.
 I can&#8217;t remember where I found the instructions so I can&#8217;t give credit to whom I got it from, but here&#8217;s how I did it.
 
-This is followed by a tutorial on [how to extend this setup to multiple branches and work-trees][1] for &#8220;live&#8221; and &#8220;development&#8221; versions of a website.<!--more-->I use this method for small personal projects where I really only need one branch to be automatically deployed. I will assume you already have a local git repository (
+This is followed by a tutorial on [how to extend this setup to multiple branches and work-trees][1] for &#8220;live&#8221; and &#8220;development&#8221; versions of a website.
+<!--more-->
+I use this method for small personal projects where I really only need one branch to be automatically deployed. I will assume you already have a local git repository (
 
 <a title="Hosting Git repositories, The Easy (and Secure) Way" href="scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way" target="_blank">Head here</a> for instructions how to, this is still somewhat valid!) with some code in it under a branch called &#8216;master&#8217;, and that you will push code to a remote server holding both your repository and your web server.
 

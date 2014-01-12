@@ -9,7 +9,7 @@ tags:
 ---
 A while ago I set up my server to automatically deploy new content from my git repositories when changes where pushed to them. This automatic workflow is great and fairly simple to setup, but I recently needed to add a twist to it: what if I want to deploy separate remote branches to their own individual work-trees? Here&#8217;s how&#8230;
 
-<p class="attachement">  <a href="http://blog.ekynoxe.com/wp-content/uploads/2011/10/gitflow.png" rel="lightbox[772]" title="Gitflow"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/10/gitflow.png" alt="Gitflow" /></a></p>
+<p class="attachement"><span><img src="{{ "gitflow.png" | image_path | cdn }}" alt="Gitflow" /></span></p>
 
 <!--more-->
 

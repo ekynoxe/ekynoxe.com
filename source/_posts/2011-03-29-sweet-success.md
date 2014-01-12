@@ -17,7 +17,7 @@ In between bad news from client #1 and client #2, There is a bit of bright news.
 
 Through international DJ <a href="http://www.shur-i-kan.com/" target="_blank">Shur-I-Kan</a>, whith whom I work at Orange, I came to meet Steve Maud of <a href="http://cloudninemedia.co.uk" target="_blank">Cloud Nine Media</a>, who was at the time looking to create a new website to showcase his videos, while providing him with the ability to do it all himself from a CMS.
 
-<p class="attachement"><a href="http://cdn.ekynoxe.com/2011-03-29-sweet-success/cloudninemedia_v1.jpg" title="Cloud Nine Media"><img src="http://cdn.ekynoxe.com/2011-03-29-sweet-success/cloudninemedia_v1_500.png" alt="Cloud Nine Media" /></a></p>
+<p class="attachement"><a href="{{ "cloudninemedia_v1.jpg" | image_path | cdn }}" title="Cloud Nine Media" rel="lightbox[7]"><img src="{{ "cloudninemedia_v1_r500.jpg" | image_path | cdn }}" alt="Cloud Nine Media" /><span>Cloud Nine Media</span></a></p>
 
 <!--more-->
 

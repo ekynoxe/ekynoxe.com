@@ -9,7 +9,7 @@ tags:
 ---
 Latest fun tiny project: creating a small mastermind game in javascript in less than 1k for <http://js1k.com/>.
 
-<p class="attachement"><a href="http://mastermind.ekynoxe.com" title="play mastermind"><img src="http://blog.ekynoxe.com/wp-content/uploads/2010/08/mastermind.jpg" alt="mastermind" /></a></p>
+<p class="attachement"><a href="http://mastermind.ekynoxe.com" title="play mastermind"><img src="{{ "mastermind.jpg" | image_path | cdn }}" alt="mastermind" /></a></p>
 
 Play here: <http://mastermind.ekynoxe.com/> or download it from [github][1] and run it offline!
 

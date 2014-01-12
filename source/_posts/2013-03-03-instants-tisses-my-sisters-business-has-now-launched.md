@@ -14,7 +14,7 @@ tags:
 ---
 Several months in the making to sort out all the details and go around the inevitable changes of mind that my sister always goes through, her business online store, [Instants Tissés][1], is now open!
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2013/03/logo_IT.png" rel="lightbox[6103]" title="Instants Tissés"><img src="http://blog.ekynoxe.com/wp-content/uploads/2013/03/logo_IT-300x127.png" alt="Instants Tissés" /></a></p>
+<p class="attachement"><a href="http://www.instantstisses.com/" title="Instants Tissés"><img src="{{ "logo_IT.png" | image_path | cdn }}" alt="Instants Tissés" /></a></p>
 
 &#8220;Instants Tissés&#8221; is French for &#8220;Woven instants&#8221;, and her business is all about special occasion cards and paper supports with a twist: fabric! Marrying high quality printed paper and light fabrics should bring an extra personal touch to your special occasions. At the moment she has an extensive collection of [wedding][2] invitations, menus, dinner table plans and cards, but a [birth][3] section is coming as well.
 

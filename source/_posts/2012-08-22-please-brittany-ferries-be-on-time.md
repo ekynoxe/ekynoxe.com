@@ -24,7 +24,7 @@ Twitter timeline (<a title="Brittany Ferries on twitter" href="https://twitter.c
 
 I unfortunately didn&#8217;t spot this before leaving on Friday, but they even seemed to know and acknowledge the problem!
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/08/Screen-shot-2012-08-22-at-10.56.23.png" title="known problem" rel="lightbox[1264]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/08/Screen-shot-2012-08-22-at-10.56.23-300x37.png" alt="known problem" /></a></p>
+<p class="attachement"><a href="{{ "running_late.png" | image_path | cdn }}" title="known problem" rel="lightbox[1264]"><img src="{{ "running_late_r500.png" | image_path | cdn }}" alt="known problem" /></a></p>
 
 This is seriously disrespecting their passengers and not taking the problem seriously enough.
 
@@ -32,7 +32,7 @@ I wrote them an open letter that is available at the bottom of this post. Hopefu
 
 Everyone gets annoyed at these delays, first of all their staff which is under pressure to deliver despite bad planning. They even recently went on strike to protest against what Brittany Ferries calls their &#8220;measures to improve competitiveness&#8221;&#8230; What competition except their own finances?
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/08/bf-on-strike.png" title="Crew on strike" rel="lightbox[1264]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/08/bf-on-strike-300x39.png" alt="Crew on strike" /></a></p>
+<p class="attachement"><a href="{{ "bf-on-strike.png" | image_path | cdn }}" title="Crew on strike" rel="lightbox[1264]"><img src="{{ "bf-on-strike_r500.png" | image_path | cdn }}" alt="Crew on strike" /></a></p>
 
 While  upper deck staff tries to make up for it by being always smiling, cheerful and helpful, I can&#8217;t say the same about below deck staff, with its all too often monosyllabic grunts at cyclists and failure to understand how much a proper bike is worth. And No! It cannot be tied up next to the bins, outside, in the spray, at the back of the boat! Some of my rides are more expensive than some of the cars in the ferry! They deserve every single bit of attention possible, if not more, and that should include a proper area to transport them. It&#8217;s not that bikes take much space do they?
 
@@ -52,7 +52,7 @@ So I&#8217;m afraid I don&#8217;t have the choice! I&#8217;ve got to use this fe
 So please please Brittany Ferries, don&#8217;t advertise arrival times you can&#8217;t hold, and stop thinking all your passengers are traveling in a car for which 1/2h delay won&#8217;t make much difference! I&#8217;m on a bike by choice and for financial reasons, owning a car doesn&#8217;t make sense for me, and I&#8217;d like this to be respected.
 If you&#8217;re late, own up to it and propose solutions to the ones who&#8217;s travel plans you&#8217;ve ruined by overlooking the time it takes to load and unload your boats. In these cases a twitter apology is nowhere near enough. "Inconvenience"? A bit more than that I'd say! <a title="Apology?" href="https://twitter.com/brittanyferries/status/237304111509422080" target="_blank">https://twitter.com/brittanyferries/status/237304111509422080</a>
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/08/Screen-shot-2012-08-22-at-11.19.03.png" title="&quot;inconvenience&quot;... A bit more than that I'd say!" rel="lightbox[1264]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/08/Screen-shot-2012-08-22-at-11.19.03-300x162.png" alt="&quot;inconvenience&quot;... A bit more than that I'd say!" /></a></p>
+<p class="attachement"><a href="{{ "knock_on_effect.png" | image_path | cdn }}" title="&quot;inconvenience&quot;... A bit more than that I'd say!" rel="lightbox[1264]"><img src="{{ "knock_on_effect_r500.png" | image_path | cdn }}" alt="&quot;inconvenience&quot;... A bit more than that I'd say!" /></a></p>
 
 Thank you!
 

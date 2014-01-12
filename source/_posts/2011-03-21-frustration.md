@@ -30,6 +30,6 @@ If you&#8217;re in a big agency, maybe it&#8217;s ok, maybe it&#8217;s part of i
 I let you guess which site this one should have been for:
 
 
-<p class="attachement"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/03/the_one_not_released.png" alt="The One Not Released" /></p>
+<p class="attachement"><span><img src="{{ "the_one_not_released_r500.png" | image_path | cdn }}" alt="The One Not Released" /><span>The One Not Released</span></span></p>
 
 Thanks for your custom&#8230;

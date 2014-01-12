@@ -12,7 +12,7 @@ tags:
   - security
   - thoughts
 ---
-<p class="attachement"><a href="http://blog.ekynoxe.com/2011/12/05/why-linked-in-does-it-wrong/" title="Linkedin is crumpling"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/12/linkedin-logo.jpg" alt="Linkedin is crumpling" /></a></p>
+<p class="attachement"><span><img src="{{ "linkedin-logo.jpg" | image_path | cdn }}" alt="Linkedin is crumpling" /></span></p>
 
 A [while back][1], I wrote about an experience with a scam/recruiter who managed to call me over at work, trying to get names and emails of people I worked with. I&#8217;ve been recently very annoyed at linked-in for a similar issue. Here&#8217;s the story.<!--more-->
 

@@ -13,7 +13,7 @@ tags:
 ---
 An interesting discussion (argument?) popped in my tweets yesterday in the form of TCP/IP knowledge depth to be able to work at a web company.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/09/20120924-1836191.jpg" rel="lightbox[1397]" title="20120924-183619.jpg"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/09/20120924-1836191-300x217.jpg" alt="The tweet that prompted it all"/></a></p>
+<p class="attachement"><span><img src="{{ "tweetshot.jpg" | image_path | cdn }}" alt="The tweet that prompted it all"/></span></p>
 
 That quickly prompted quite a few replies from developers and techs leads of different levels and knowledge, including myself, but none of us asked the question: &#8220;for which role?&#8221;
 <!--more-->

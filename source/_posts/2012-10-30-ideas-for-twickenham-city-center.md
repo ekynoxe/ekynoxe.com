@@ -15,4 +15,4 @@ Please repost and discuss! I&#8217;m sure there will be plenty of different view
 
 <a title="Love Twickenham, Go Dutch" href="http://pedestrianiselondon.tumblr.com/post/34477053931/love-twickenham-go-dutch">http://pedestrianiselondon.tumblr.com/post/34477053931/love-twickenham-go-dutch</a>
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/10/twick.png" rel="lightbox[5985]" title="Twickenham"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/10/twick-300x233.png" alt="Twickenham" /></a></p>
+<p class="attachement"><a href="http://pedestrianiselondon.tumblr.com/post/34477053931/love-twickenham-go-dutch" title="Twickenham"><img src="{{ "twick.png" | image_path | cdn }}" alt="Twickenham" /></a></p>

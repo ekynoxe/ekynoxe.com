@@ -13,7 +13,7 @@ tags:
   - scam
   - thoughts
 ---
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2011/08/parcelfarce.jpg" title="Parcel Farce" rel="lightbox[600]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/08/parcelfarce-150x150.jpg" alt="Parcel Farce" /><span>Parcel Farce</span></a></p>
+<p class="attachement"><span><img src="{{ "parcelfarce.jpg" | image_path | cdn }}" alt="Parcel Farce" /><span>Parcel Farce</span></span></p>
 
 Today I received a strange phone call. Someone whom I forgot the name from claimed to be from parcelforce, and told me there was a parcel waiting to be delivered to me, but for security reasons, in case I wasn&#8217;t able to receive it myself, he needed me to give me &#8220;two security names&#8221;&#8230;
 

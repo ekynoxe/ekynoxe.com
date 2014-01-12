@@ -10,13 +10,13 @@ tags:
   - wordpress
 ---
 
-<p class="attachement"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/02/Picture-5.png" alt="Social links hooks plugin panel" /></p>
+<p class="attachement"><img src="{{ "Picture-5.png" | image_path | cdn }}" alt="Social links hooks plugin panel" /></p>
 
 I&#8217;ve created a very simple plugin to display handy little icons where you want in your wordpress theme.<!--more-->
 
-<p class="attachement"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/02/Picture-7.png" alt="example 1" /></p>
+<p class="attachement"><img src="{{ "Picture-7.png" | image_path | cdn }}" alt="example 1" /></p>
 
-<p class="attachement"><img src="http://blog.ekynoxe.com/wp-content/uploads/2011/02/Picture-6.png" alt="example 2"  /></p>
+<p class="attachement"><img src="{{ "Picture-6.png" | image_path | cdn }}" alt="example 2" /></p>
 
 Download on github at <https://github.com/ekynoxe/Social-link-hooks-for-Wordpress>
 

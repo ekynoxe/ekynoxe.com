@@ -14,7 +14,7 @@ My latest client requested a &#8220;careers&#8221; section on his website, with 
 
 As I developed the website using WordPress and a custom theme, I dug in the excellent [contact form 7][1] plugin and created easily my custom forms.<!--more-->
 
-<p class="attachement"><img class="alignleft size-full wp-image-225" title="cf7-hpt" src="http://blog.ekynoxe.com/wp-content/uploads/2010/09/cf7-hpt.png" alt="" width="180" height="276" /></p>
+<p class="attachement"><img src="{{ "cf7-hpt.png" | image_path | cdn }}" alt="contact form 7 extra option" /></p>
 
 An obvious requirement: if the careers department receives an email sent from a form on the website, it should contain the job title or reference.
 However, there is nothing in contact form 7 that allows you to include out of the box such a reference that could be a post custom field or the title of the page.

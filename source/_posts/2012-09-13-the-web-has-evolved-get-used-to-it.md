@@ -23,8 +23,7 @@ However, for the D3triathlon site, I used WordPress. I really believe that it ha
 
 Yesterday, I received an email asking me my views on scrapping (or not) what I&#8217;ve done to use [THIS][2]
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/09/SWIM_ESC.png" rel="lightbox[1370]" title="SWIM_ESC"><img src="http://blog.ekynoxe.com/wp-content/uploads/2012/09/SWIM_ESC-300x166.png" alt="Ealing Swimming club &quot;new&quot; site" /><span>Ealing Swimming club &#8220;new&#8221; site</span></a>
-</p>
+<p class="attachement"><a href="{{ "SWIM_ESC.png" | image_path | cdn }}" title="Ealing Swimming club &quot;new&quot; site" rel="lightbox[1370]"><img src="{{ "SWIM_ESC_r500.png" | image_path | cdn }}" alt="Ealing Swimming club &quot;new&quot; site" /><span>Ealing Swimming club &quot;new&quot; site</span></a></p>
 
 Passed my shock horror reaction when looking at what was labeled a &#8220;new site&#8221;, it was apparent what was the only reason for the idea to move: ease of content edition. The email read literally:
 

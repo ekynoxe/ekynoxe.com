@@ -18,7 +18,7 @@ tags:
 ---
 When I initially registered ekynoxe as my freelance practice, I already had a potential client, there was going to be quite some work to do, short term future was looking exciting, albeit a little bit unknown.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2021/12/business.jpg" title="Afriq Consulting" rel="lightbox[438]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2021/12/business.jpg" alt="Afriq Consulting" /></a></p>
+<p class="attachement"><img src="{{ "business.jpg" | image_path | cdn }}" alt="Afriq Consulting" /></p>
 
 <!--more-->
 
@@ -37,9 +37,9 @@ Things went well! Really well! In a few weeks, three designs mocks had been revi
 
 Branding has then been delivered, with logo, business cards designs and around 15 pages of content fully created in Photoshop, ready to be sliced up!
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2021/12/screenshots-home.jpg" title="Home page" rel="lightbox[438]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2021/12/screenshots-home-150x150.jpg" alt="Home page" /><span>Home page</span></a></p>
+<p class="attachement"><a href="{{ "screenshots-home.jpg" | image_path | cdn }}" title="Home page" rel="lightbox[438]"><img src="{{ "screenshots-home_r500.jpg" | image_path | cdn }}" alt="Home page" /><span>Home page</span></a></p>
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2021/12/screenshots-about.jpg" title="About page" rel="lightbox[438]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2021/12/screenshots-about-150x150.jpg" alt="About page" /><span>About page</span></a></p>
+<p class="attachement"><a href="{{ "screenshots-about.jpg" | image_path | cdn }}" title="About page" rel="lightbox[438]"><img src="{{ "screenshots-about_r500.jpg" | image_path | cdn }}" alt="About page" /><span>About page</span></a></p>
 
 This usually marks my first deliverable: design work complete. Not counting in some inevitable little tweaks, that&#8217;s where design mainly stops and coding starts to get really deep. That&#8217;s also when I was sending a second invoice for an extra 25% of the total of the contract.
 
