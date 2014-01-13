@@ -137,5 +137,5 @@ I'm yet to understand what environment variables are set and used by the hook, b
 You will notice I have added the master branch in there too, and you can expand the script with whatever branch you want to checkout, along with the correct work-tree.
 
  [1]: #rightsol
- [2]: http://blog.ekynoxe.com/2011/10/22/automated-deployment-on-remote-server-with-git/ "automated deployment on remote server with git"
- [3]: http://blog.ekynoxe.com/2011/10/22/automated-deployment-on-remote-server-with-git/ "Automated deployment on remote server with git"
+ [2]: /automated-deployment-on-remote-server-with-git/ "automated deployment on remote server with git"
+ [3]: /automated-deployment-on-remote-server-with-git/ "Automated deployment on remote server with git"

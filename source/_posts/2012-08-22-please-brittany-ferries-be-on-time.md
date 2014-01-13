@@ -85,11 +85,11 @@ Thank you!
 >
 > Also, if you&#8217;re interested to know why I still use your services, I invite you to read my article, accompanied by this letter which I&#8217;m making public, at the following address:
 >
-> [http://blog.ekynoxe.com/2012/08/22/please-brittany-ferries-be-on-time][1]
+> [http://{{ site.hostname }}/please-brittany-ferries-be-on-time/][1]
 >
 > Thanks for taking the time to read.
 > Kindest regards
 >
 > Mathieu Davy
 
- [1]: http://blog.ekynoxe.com/2012/08/22/please-brittany-ferries-be-on-time "Please Brittany Ferries be on time!"
+ [1]: /please-brittany-ferries-be-on-time "Please Brittany Ferries be on time!"

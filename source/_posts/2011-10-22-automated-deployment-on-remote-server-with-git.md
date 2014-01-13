@@ -71,4 +71,4 @@ And voilà! Next time you push new changes from your local machine to the main s
 
 ***EDIT:** Following Luca&#8217;s comments below, it&#8217;s worth noting that if you have no local changes, nothing will get pushed, and the hook will not be fired! So when you do your next push (after all the setup), remember to edit a file to somewhat &#8220;force&#8221; a push. Then your content will be checked out by the hook. No update, no deployment*
 
- [1]: http://blog.ekynoxe.com/2011/10/22/git-post-receive-for-multiple-remote-branches-and-work-trees/ "Git post-receive for multiple remote branches and work-trees"
+ [1]: /git-post-receive-for-multiple-remote-branches-and-work-trees/ "Git post-receive for multiple remote branches and work-trees"

@@ -89,4 +89,4 @@ Is there anything you can do about this?
 I repeat the issue: I&#8217;m receiving invites and reminders on an address not adrvertised on linked in, and I can&#8217;t unsubscribe from them.
 Thanks
 
- [1]: http://blog.ekynoxe.com/2011/08/17/recruiters-scammers/ "Recruiters = Scammers?"
+ [1]: /recruiters-scammers/ "Recruiters = Scammers?"

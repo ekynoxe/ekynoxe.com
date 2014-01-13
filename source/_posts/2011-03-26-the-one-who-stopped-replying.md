@@ -53,7 +53,7 @@ There was loads to do, and it has all been done:
 *   custom comments
 *   integration on absolutely all pages of the <a href="http://wpml.org/" target="_blank">WPML language plugin</a> to have a bilingual website.
 *   dealing with the CSS rendering in all browsers, including IE6. Yes, in Africa, IE6 is still present a lot.
-*   extension of some wordpress plugins like <a href="http://blog.ekynoxe.com/2010/09/06/extending-contact-form-7/" target="_self">contact form 7</a>
+*   extension of some wordpress plugins like <a href="/extending-contact-form-7/" target="_self">contact form 7</a>
 *   etc etc&#8230;
 
 This was all exciting and I ploughed on, having here and there some feedback, and here and there some issues.

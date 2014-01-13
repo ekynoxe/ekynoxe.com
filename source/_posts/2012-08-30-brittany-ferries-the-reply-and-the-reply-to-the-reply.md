@@ -69,4 +69,4 @@ Shame on you BF, you really know how to make people unwelcome. Too bad there&#82
 > Kind regards
 > Mathieu Davy
 
- [1]: http://blog.ekynoxe.com/2012/08/22/please-brittany-ferries-be-on-time/ "Please Brittany Ferries be on time!!"
+ [1]: /please-brittany-ferries-be-on-time/ "Please Brittany Ferries be on time!!"

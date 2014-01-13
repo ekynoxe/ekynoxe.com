@@ -29,10 +29,9 @@ The interface was going to be really different from anything that had been done 
 Things have slightly changed since then, but the concept is the same, and it works!
 The whole service sits on top of a pretty big architecture to allow integration through a single access point into all the required social networks. We&#8217;ve worked together countless hours into the specifications of this API, the integration with Orange&#8217;s partners, developers, manufacturers and vendors, done quite a few business trips around Europe to finally bring it all together!
 
-Now, it&#8217;s been [rewarded][2] for it&#8217;s simplicity over some bigger players in the market and from the point where I stand in R&D, for most of my work to be hidden from the outside world, I am exstatic to see that what we do in R&D (along with [Snapshot][3]) is real stuff that makes it out.
+Now, it&#8217;s been [rewarded][2] for it&#8217;s simplicity over some bigger players in the market and from the point where I stand in R&D, for most of my work to be hidden from the outside world, I am exstatic to see that what we do in R&D (along with [Snapshot](/orange-snapshot-mms-to-share-photos-on-twitter/)) is real stuff that makes it out.
 
 Happy about my second award in the month =)
 
  [1]: http://www.mobilenewsawards.co.uk/
  [2]: http://newsroom.orange.co.uk/2010/03/19/orange-scores-hatrick-at-the-mobile-news-awards-2010/
- [3]: http://blog.ekynoxe.com/2009/11/19/orange-snapshot-mms-to-share-photos-on-twitter/
