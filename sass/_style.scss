@@ -99,7 +99,7 @@ h6 {
 }
 
 hr {
-    @include spriteBg(55%, -825px, 634px, 991px);
+    @include spriteBg(55%, -310px);
     border: none;
     height: 1rem;
     margin-left: 1rem;
@@ -341,8 +341,12 @@ header.home {
     }
 
     span.tagline {
+        @include spriteBg(50%, -130px);
+
         display: block;
         margin-bottom: 3rem;
+        margin-top: 70px;
+        padding-top: 120px;
         font-family: $title-font-family;
         text-transform: uppercase;
         font-weight: 400;

@@ -68,6 +68,7 @@
 /**
  * Colors
  */
+/* TODO clean thos up */
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
@@ -3026,8 +3027,7 @@ h6 {
 hr {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
-  background-position: 55% -825px;
-  background-size: 634px 991px;
+  background-position: 55% -310px;
   border: none;
   height: 1rem;
   margin-left: 1rem;
@@ -3249,8 +3249,13 @@ header.home .logo {
   max-width: 587px;
 }
 header.home span.tagline {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 50% -130px;
   display: block;
   margin-bottom: 3rem;
+  margin-top: 70px;
+  padding-top: 120px;
   font-family: "Montserrat", "nexa_boldregular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;

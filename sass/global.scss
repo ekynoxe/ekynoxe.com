@@ -11,4 +11,14 @@
     }
 }
 
+@mixin spriteBg2x($x:0, $y:0, $w:false, $h:false) {
+    background-image: url('/assets/img/style/sprite2x.png');
+    background-repeat: no-repeat;
+    background-position: $x $y;
+
+    @if $w != false and $h != false {
+        background-size: $w $h;
+    }
+}
+
 @import "style";
