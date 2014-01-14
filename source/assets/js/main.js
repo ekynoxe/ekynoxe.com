@@ -1,16 +1,19 @@
-// javascript
 $(function() {
+    var SCROLL_THRESHOLD = 200;
     $window = $(window);
-    $link = $("#scrollToTop"); // your link to show when user scrolls down
+    $link = $("#scrollToTop");
+
     $link.click(function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow"); // this is the gist of the script, scroll to top (scrollTop: 0)
+        $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
 
-    $link.hide();
+    if (!$window.scrollTop()) {
+        $link.hide();
+    }
 
     $window.scroll(function() {
-        if ($window.scrollTop() <= 200) {
+        if ($window.scrollTop() <= SCROLL_THRESHOLD) {
             $link.fadeOut("fast");
         } else {
             $link.fadeIn("fast");

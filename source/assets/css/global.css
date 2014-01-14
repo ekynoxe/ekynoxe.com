@@ -3509,8 +3509,6 @@ section.work .instantstisses ul {
 
 section.testimonials {
   background: #fbaa19 url("/assets/img/style/sunrays.png") bottom center no-repeat;
-  /*background: url("img/sunrays.png") bottom center no-repeat,
-              url("img/bg_FBAA19.png") top left repeat;*/
   color: white;
 }
 section.testimonials header {
