@@ -134,7 +134,7 @@ a:active {
     border-color: $highlight_rgba_over;
 }
 a#scrollToTop {
-    @include spriteBg(-420px, -892px, 634px, 991px);
+    @include spriteBg(-347px, 0px, 452px, 145px);
     border: none;
     cursor: pointer;
     position: fixed;
@@ -142,8 +142,8 @@ a#scrollToTop {
     right: 20px;
     text-align: center;
     text-indent: -999em;
-    height: 40px;
-    width: 40px;
+    height: 41px;
+    width: 41px;
 }
 .attachement {
     margin-bottom: 2rem;
@@ -1056,10 +1056,9 @@ hr {
 }
 
     a#scrollToTop {
-        background-size: 1011px 1638px;
-        background-position: -671px -1476px;
-        height: 62px;
-        width: 62px;
+        @include spriteBg(-537px, 0px, 700px, 225px);
+        height: 63px;
+        width: 63px;
     }
 
     .attachement {
