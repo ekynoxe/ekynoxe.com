@@ -3243,19 +3243,15 @@ header.home {
   margin-bottom: 0;
   padding-bottom: 2.5rem;
 }
-header.home .logo {
-  margin: 4rem auto 0.5rem;
-  width: 78%;
-  max-width: 587px;
-}
 header.home span.tagline {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
-  background-position: 50% -130px;
+  background-position: 50% -44px;
+  background-size: 230px 74px;
   display: block;
-  margin-bottom: 3rem;
-  margin-top: 70px;
-  padding-top: 120px;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  padding-top: 38px;
   font-family: "Montserrat", "nexa_boldregular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -3715,17 +3711,6 @@ footer.main small {
     background: none;
   }
 
-  header.home {
-    padding-bottom: 0.5rem;
-  }
-  header.home .logo {
-    margin: 2.5rem auto 0;
-  }
-  header.home span.tagline {
-    font-size: 0.7rem;
-    margin-bottom: 2rem;
-  }
-
   section article header h1 {
     font-size: 1.5rem;
   }
@@ -3771,7 +3756,14 @@ footer.main small {
   }
 
   header.home span.tagline {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 50% -62px;
+    background-size: 330px 106px;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
     font-size: 0.9rem;
+    padding-top: 60px;
   }
 
   footer.main dl {
@@ -3829,7 +3821,14 @@ footer.main small {
   }
 
   header.home span.tagline {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 50% -76px;
+    background-size: 401px 129px;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
     font-size: 1.2rem;
+    padding-top: 70px;
   }
 
   section article header h1 {
@@ -3901,7 +3900,14 @@ footer.main small {
   }
 
   header.home span.tagline {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 50% -115px;
+    background-size: 619px 199px;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
     font-size: 1.8rem;
+    padding-top: 100px;
   }
 
   section header h1 {
@@ -3979,6 +3985,18 @@ footer.main small {
   header.main nav ul li.home a {
     text-indent: 0;
     width: auto;
+  }
+
+  header.home span.tagline {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 50% -130px;
+    background-size: 700px 225px;
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 4.375rem;
+    font-size: 1.8rem;
+    padding-top: 115px;
   }
 
   .tag_list ul {
