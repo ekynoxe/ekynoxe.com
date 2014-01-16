@@ -134,7 +134,8 @@ a:active {
     border-color: $highlight_rgba_over;
 }
 a#scrollToTop {
-    @include spriteBg(-347px, 0px, 452px, 145px);
+    @include spriteBg(-347px, 0px, 452px, 290px);
+    display: none;
     border: none;
     cursor: pointer;
     position: fixed;
@@ -335,7 +336,7 @@ header.home {
     }
 
     span.tagline {
-        @include spriteBg(50%, -44px, 230px, 74px);
+        @include spriteBg(50%, -44px, 230px, 148px);
 
         display: block;
         margin-top: 2rem;
@@ -769,22 +770,21 @@ footer.main {
         }
 
         dd {
-            display: inline;
+            display: inline-block;
             margin: 1rem 2rem 1rem 0;
         }
 
         dd a {
-            @include spriteBg(-17px, -543px, 491px, 768px);
+            @include spriteBg(0, -147px, 280px, 180px);
             border: none;
+            display: inline-block;
             opacity: 0.5;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 25px;
+            padding-left: 30px;
             margin-right: 1rem;
         }
         dd a:hover { opacity: 1; }
-        .twitter a { background-position: -17px -543px; line-height: 23px; height: 23px; }
-        .linkedin a { background-position: -17px -584px; line-height: 23px; height: 23px; }
+        .twitter a { background-position: 0 -146px; height: 25px; }
+        .linkedin a { background-position: -256px -146px; height: 25px; }
     }
 
     small{
@@ -911,6 +911,9 @@ footer.main {
 }
 /* Smartphones (landscape) ----------- */
 @media screen and (min-width: 20.000em) { /*320px*/
+    a#scrollToTop {
+        display: block;
+    }
 
     header.main {
         nav ul {
@@ -936,7 +939,7 @@ footer.main {
     header.home {
 
         span.tagline {
-            @include spriteBg(50%, -62px, 330px, 106px);
+            @include spriteBg(50%, -62px, 330px, 212px);
             margin-top: 4rem;
             margin-bottom: 2.5rem;
             font-size: 0.9rem;
@@ -949,16 +952,19 @@ footer.main {
         dl {
             margin: 1rem 2rem 1rem 0;
 
-            dd a {
-                background-size: 1011px 1638px;
-                padding-top: 14px;
-                padding-bottom: 14px;
-                padding-left: 60px;
+            dd {
+                margin: 0 2rem 1rem 0;
             }
-            .twitter a { background-position: -32px -1086px; line-height: 65px; height: 65px; }
-            .linkedin a { background-position: -32px -1177px; line-height: 65px; height: 65px; }
-            .twitter a:hover { background-position: -25px -1086px; }
-            .linkedin a:hover { background-position: -25px -1177px; }
+
+            dd a {
+                @include spriteBg(0, -147px, 560px, 360px);
+                display: block;
+                padding-left: 57px;
+                margin-right: 0;
+                padding-top: 12px;
+            }
+            .twitter a { background-position: 0 -293px; height: 49px; }
+            .linkedin a { background-position: -512px -293px; height: 49px; }
         }
     }
 }
@@ -1001,7 +1007,7 @@ footer.main {
     header.home {
 
         span.tagline {
-            @include spriteBg(50%, -76px, 401px, 129px);
+            @include spriteBg(50%, -76px, 401px, 258px);
             margin-top: 4rem;
             margin-bottom: 2.5rem;
             font-size: 1.2rem;
@@ -1029,6 +1035,15 @@ footer.main {
             }
         }
     }
+
+    footer dl {
+        dd {
+            a {
+                display: inline-block;
+                padding-top: 12px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 37.438em) { /*599px*/
@@ -1046,17 +1061,17 @@ footer.main {
         line-height: 1.6;
     }
 
-hr {
-    background-size: 1011px 1638px;
-    background-position: 55% -1363px;
-    border: none;
-    height: 1.5rem;
-    margin-left: 0;
-    margin-right: 0;
-}
+    hr {
+        background-size: 1011px 1638px;
+        background-position: 55% -1363px;
+        border: none;
+        height: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     a#scrollToTop {
-        @include spriteBg(-537px, 0px, 700px, 225px);
+        @include spriteBg(-537px, 0px, 700px, 450px);
         height: 63px;
         width: 63px;
     }
@@ -1106,7 +1121,7 @@ hr {
     header.home {
 
         span.tagline {
-            @include spriteBg(50%, -115px, 619px, 199px);
+            @include spriteBg(50%, -115px, 619px, 398px);
             margin-top: 4rem;
             margin-bottom: 2.5rem;
             font-size: 1.8rem;
@@ -1166,6 +1181,23 @@ hr {
 
         font-size: 1.2rem;
     }
+
+    footer.main {
+
+        dl {
+
+            dd a {
+                @include spriteBg(-200px, 0px, 700px, 450px);
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 80px;
+            }
+            .twitter a { background-position: 0 -365px; height: 66px; }
+            .linkedin a { background-position: -640px -365px; height: 66px; }
+            .twitter a:hover { background-position: 10px -365px; }
+            .linkedin a:hover { background-position: -630px -365px; }
+        }
+    }
 }
 
 @media screen and (min-height:43.750em) { /* min-height: 700px */
@@ -1214,7 +1246,7 @@ hr {
 
     header.home {
         span.tagline {
-            @include spriteBg(50%, -130px, 700px, 225px);
+            @include spriteBg(50%, -130px, 700px, 450px);
 
             display: block;
             margin-bottom: 3rem;

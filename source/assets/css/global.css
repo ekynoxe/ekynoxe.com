@@ -3067,7 +3067,8 @@ a#scrollToTop {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
   background-position: -347px 0px;
-  background-size: 452px 145px;
+  background-size: 452px 290px;
+  display: none;
   border: none;
   cursor: pointer;
   position: fixed;
@@ -3247,7 +3248,7 @@ header.home span.tagline {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
   background-position: 50% -44px;
-  background-size: 230px 74px;
+  background-size: 230px 148px;
   display: block;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
@@ -3620,33 +3621,30 @@ footer.main dl a:visited {
   text-decoration: none;
 }
 footer.main dl dd {
-  display: inline;
+  display: inline-block;
   margin: 1rem 2rem 1rem 0;
 }
 footer.main dl dd a {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
-  background-position: -17px -543px;
-  background-size: 491px 768px;
+  background-position: 0 -147px;
+  background-size: 280px 180px;
   border: none;
+  display: inline-block;
   opacity: 0.5;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 25px;
+  padding-left: 30px;
   margin-right: 1rem;
 }
 footer.main dl dd a:hover {
   opacity: 1;
 }
 footer.main dl .twitter a {
-  background-position: -17px -543px;
-  line-height: 23px;
-  height: 23px;
+  background-position: 0 -146px;
+  height: 25px;
 }
 footer.main dl .linkedin a {
-  background-position: -17px -584px;
-  line-height: 23px;
-  height: 23px;
+  background-position: -256px -146px;
+  height: 25px;
 }
 footer.main small {
   color: #aaaaaa;
@@ -3743,6 +3741,10 @@ footer.main small {
 /* Smartphones (landscape) ----------- */
 @media screen and (min-width: 20em) {
   /*320px*/
+  a#scrollToTop {
+    display: block;
+  }
+
   header.main nav ul li {
     padding: 0 0.5rem;
   }
@@ -3759,7 +3761,7 @@ footer.main small {
     background-image: url("/assets/img/style/sprite.png");
     background-repeat: no-repeat;
     background-position: 50% -62px;
-    background-size: 330px 106px;
+    background-size: 330px 212px;
     margin-top: 4rem;
     margin-bottom: 2.5rem;
     font-size: 0.9rem;
@@ -3769,27 +3771,26 @@ footer.main small {
   footer.main dl {
     margin: 1rem 2rem 1rem 0;
   }
+  footer.main dl dd {
+    margin: 0 2rem 1rem 0;
+  }
   footer.main dl dd a {
-    background-size: 1011px 1638px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 60px;
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 -147px;
+    background-size: 560px 360px;
+    display: block;
+    padding-left: 57px;
+    margin-right: 0;
+    padding-top: 12px;
   }
   footer.main dl .twitter a {
-    background-position: -32px -1086px;
-    line-height: 65px;
-    height: 65px;
+    background-position: 0 -293px;
+    height: 49px;
   }
   footer.main dl .linkedin a {
-    background-position: -32px -1177px;
-    line-height: 65px;
-    height: 65px;
-  }
-  footer.main dl .twitter a:hover {
-    background-position: -25px -1086px;
-  }
-  footer.main dl .linkedin a:hover {
-    background-position: -25px -1177px;
+    background-position: -512px -293px;
+    height: 49px;
   }
 }
 @media screen and (min-width: 25em) {
@@ -3824,7 +3825,7 @@ footer.main small {
     background-image: url("/assets/img/style/sprite.png");
     background-repeat: no-repeat;
     background-position: 50% -76px;
-    background-size: 401px 129px;
+    background-size: 401px 258px;
     margin-top: 4rem;
     margin-bottom: 2.5rem;
     font-size: 1.2rem;
@@ -3838,6 +3839,11 @@ footer.main small {
   section.work article ul li {
     display: inline-block;
     padding: 0 2rem 0 2rem;
+  }
+
+  footer dl dd a {
+    display: inline-block;
+    padding-top: 12px;
   }
 }
 @media screen and (max-width: 37.438em) {
@@ -3868,7 +3874,7 @@ footer.main small {
     background-image: url("/assets/img/style/sprite.png");
     background-repeat: no-repeat;
     background-position: -537px 0px;
-    background-size: 700px 225px;
+    background-size: 700px 450px;
     height: 63px;
     width: 63px;
   }
@@ -3905,7 +3911,7 @@ footer.main small {
     background-image: url("/assets/img/style/sprite.png");
     background-repeat: no-repeat;
     background-position: 50% -115px;
-    background-size: 619px 199px;
+    background-size: 619px 398px;
     margin-top: 4rem;
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
@@ -3961,6 +3967,30 @@ footer.main small {
     column-count: 3;
     font-size: 1.2rem;
   }
+
+  footer.main dl dd a {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -200px 0px;
+    background-size: 700px 450px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 80px;
+  }
+  footer.main dl .twitter a {
+    background-position: 0 -365px;
+    height: 66px;
+  }
+  footer.main dl .linkedin a {
+    background-position: -640px -365px;
+    height: 66px;
+  }
+  footer.main dl .twitter a:hover {
+    background-position: 10px -365px;
+  }
+  footer.main dl .linkedin a:hover {
+    background-position: -630px -365px;
+  }
 }
 @media screen and (min-height: 43.75em) {
   /* min-height: 700px */
@@ -3993,7 +4023,7 @@ footer.main small {
     background-image: url("/assets/img/style/sprite.png");
     background-repeat: no-repeat;
     background-position: 50% -130px;
-    background-size: 700px 225px;
+    background-size: 700px 450px;
     display: block;
     margin-bottom: 3rem;
     margin-top: 4.375rem;
