@@ -3231,11 +3231,6 @@ header.main nav ul li a.selected {
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
-header.main nav ul li.home a {
-  background-image: url("/assets/img/style/e_white.png");
-  background-repeat: no-repeat;
-  background-position: left 8px;
-}
 header.main p {
   padding: 0 1rem;
 }
@@ -3749,7 +3744,10 @@ footer.main small {
     padding: 0 0.5rem;
   }
   header.main nav ul li.home a {
-    background-size: 2rem 2rem;
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    background-size: 407px 262px;
     text-indent: -999em;
     width: 2rem;
   }
@@ -3812,8 +3810,10 @@ footer.main small {
     padding: 0 0.75rem;
   }
   header.main nav ul li.home a {
-    background-size: 3rem 3rem;
-    background-position: left top;
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    background-size: 611px 393px;
     height: 3rem;
     width: 3rem;
   }
@@ -3899,6 +3899,10 @@ footer.main small {
     padding: 1rem 0;
   }
   header.main nav ul li.home a {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    background-size: 700px 450px;
     padding-left: 4rem;
     text-indent: 0;
     width: auto;

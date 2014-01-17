@@ -310,15 +310,6 @@ header.main {
                     opacity: 1;
                 }
             }
-
-            li.home {
-
-                a {
-                    background-image: url('/assets/img/style/e_white.png');
-                    background-repeat: no-repeat;
-                    background-position: left 8px;
-                }
-            }
         }
     }
 
@@ -924,7 +915,7 @@ footer.main {
             li.home {
 
                 a {
-                    background-size: 2rem 2rem;
+                    @include spriteBg(0, 8px, 407px, 262px);
                     text-indent: -999em;
                     width: 2rem;
                 }
@@ -990,8 +981,7 @@ footer.main {
                     padding: 0 0.75rem;
 
                     a {
-                        background-size: 3rem 3rem;
-                        background-position: left top;
+                        @include spriteBg(-1px, -1px, 611px, 393px);
                         height: 3rem;
                         width: 3rem;
                     }
@@ -1105,6 +1095,8 @@ footer.main {
             ul {
                 li.home {
                     a {
+                        @include spriteBg(-1px, -1px, 700px, 450px);
+
                         padding-left: 4rem;
                         text-indent: 0;
                         width: auto;
