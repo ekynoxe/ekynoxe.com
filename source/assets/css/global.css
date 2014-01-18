@@ -4088,6 +4088,7 @@ footer.main small {
     background-repeat: no-repeat;
     background-position: 0 8px;
     background-size: 407px 262px;
+    width: 2.1rem;
   }
 
   header.home span.tagline {
@@ -4117,6 +4118,7 @@ footer.main small {
     background-repeat: no-repeat;
     background-position: -1px -1px;
     background-size: 611px 393px;
+    width: 3.1rem;
   }
 
   header.home span.tagline {
@@ -4149,6 +4151,7 @@ footer.main small {
     background-position: -1px -1px;
     background-size: 619px 398px;
     height: 3.1rem;
+    width: auto;
   }
 
   header.home span.tagline {
