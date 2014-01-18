@@ -2957,7 +2957,7 @@ header.main nav ul:after {
 }
 
 html {
-  background: white url("/assets/img/style/bg_f3f3f3.png") repeat;
+  background: #2c2c2c;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -3191,7 +3191,6 @@ a.more {
 header.main {
   background: #fbaa19 url("/assets/img/style/sunrays.png") bottom center no-repeat;
   color: white;
-  margin-bottom: 1rem;
   position: relative;
   text-align: center;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
@@ -3239,7 +3238,6 @@ header.main p {
 }
 
 header.home {
-  margin-bottom: 0;
   padding-bottom: 2.5rem;
 }
 header.home span.tagline {
@@ -3649,6 +3647,38 @@ footer.main small {
   padding-top: 1rem;
 }
 
+.errorPage {
+  background: #fbaa19;
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+.errorPage h1, .errorPage h2, .errorPage a {
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+.errorPage h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.errorPage h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+.errorPage p {
+  margin: 0 auto;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+  width: 57%;
+}
+.errorPage a {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+.errorPage a:hover {
+  border-bottom: 2px solid white;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 568px) and (max-width: 768px) {
   .tag_list ul {
@@ -3800,9 +3830,6 @@ footer.main small {
     width: 90%;
   }
 
-  header.main {
-    margin-bottom: 0;
-  }
   header.main nav {
     padding: 0.5rem 0;
   }

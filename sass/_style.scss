@@ -34,11 +34,12 @@ header.main nav ul:after { clear: both; }
 .clearfix { zoom: 1; }
 
 html {
-    background: $white url('/assets/img/style/bg_f3f3f3.png') repeat;
+    background: #2c2c2c;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     background: $white url('/assets/img/style/bg_f3f3f3.png') repeat;
     border-top: 6px solid $dark-highlight;
@@ -261,7 +262,6 @@ a.more {
 header.main {
     background: $highlight url("/assets/img/style/sunrays.png") bottom center no-repeat;
     color: $white;
-    margin-bottom: 1rem;
 
     position: relative;
     text-align: center;
@@ -318,7 +318,6 @@ header.main {
 }
 
 header.home {
-    margin-bottom: 0;
     padding-bottom: 2.5rem;
 
     nav ul {
@@ -783,6 +782,42 @@ footer.main {
     }
 }
 
+.errorPage {
+    background: $highlight;
+    color: $white;
+    padding: 6rem 0;
+    text-align: center;
+
+    h1, h2, a {
+        color: $white;
+        text-align: center;
+        text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    p {
+        margin: 0 auto;
+        text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+        width: 57%;
+    }
+
+    a {
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        color: $white;
+    }
+    a:hover {
+        border-bottom: 2px solid rgba(255,255,255,1);
+    }
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 568px) and (max-width : 768px) {
@@ -965,7 +1000,6 @@ footer.main {
     }
 
     header.main {
-        margin-bottom: 0;
 
         nav {
             padding: 0.5rem 0;
