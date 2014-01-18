@@ -47,10 +47,10 @@ Here&#8217;s a letter to Brittany Ferries I make open because it&#8217;s really 
 
 First reply (seems automated) 2011-09-14 12:11:
 
-*Good afternoon,*
+> Good afternoon,
 
-*Thank you for your email which has been forwarded to our Customer Service team who will reply to you within 7-10 working days.*
+> Thank you for your email which has been forwarded to our Customer Service team who will reply to you within 7-10 working days.
 
-*Kind regards*
+> Kind regards
 
-*Kerry*
+> Kerry
