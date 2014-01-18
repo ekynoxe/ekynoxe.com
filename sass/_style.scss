@@ -125,8 +125,7 @@ a:visited {
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: $light-grey;
-    -webkit-transition-property: color border;
-    -webkit-transition-duration: .4s;
+    @include transition(all, .4s, ease-in-out);
 }
 a:hover,
 a:active {

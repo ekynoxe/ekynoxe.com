@@ -3027,7 +3027,7 @@ h6 {
 hr {
   background-image: url("/assets/img/style/sprite.png");
   background-repeat: no-repeat;
-  background-position: 55% -310px;
+  background-position: 50% -84px;
   border: none;
   height: 1rem;
   margin-left: 1rem;
@@ -3053,8 +3053,11 @@ a:visited {
   border-style: solid;
   border-width: 0 0 2px 0;
   border-color: #aaaaaa;
-  -webkit-transition-property: color border;
-  -webkit-transition-duration: .4s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 a:hover,
@@ -3862,12 +3865,14 @@ footer.main small {
   }
 
   hr {
-    background-size: 1011px 1638px;
-    background-position: 55% -1363px;
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 50% -84px;
     border: none;
-    height: 1.5rem;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   a#scrollToTop {
@@ -4063,7 +4068,114 @@ footer.main small {
 @media screen and (min-width: 106.875em) and (min-height: 50em) {
   /*1710px X 800px*/
 }
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  hr {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 50% -84px;
+    background-size: 700px 450px;
+  }
+
+  a#scrollToTop {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: -347px 0px;
+    background-size: 452px 290px;
+  }
+
+  header.main nav ul li.home a {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    background-size: 407px 262px;
+  }
+
+  header.home span.tagline {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 50% -62px;
+    background-size: 330px 212px;
+  }
+
+  footer.main dl dd a {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 0 -147px;
+    background-size: 560px 360px;
+  }
+  footer.main dl .twitter a {
+    background-position: 0 -293px;
+  }
+  footer.main dl .linkedin a {
+    background-position: -512px -293px;
+  }
+}
+@media only screen and (min-width: 25em) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 25em) and (min-resolution: 144dpi) {
+  /*320px*/
+  header.main nav ul li.home a {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    background-size: 611px 393px;
+  }
+
+  header.home span.tagline {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 50% -76px;
+    background-size: 401px 258px;
+  }
+}
+@media only screen and (min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 37.5em) and (min-resolution: 144dpi) {
+  /*600px*/
+  hr {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 50% -167px;
+    background-size: 1400px 900px;
+    height: 2rem;
+  }
+
+  a#scrollToTop {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: -537px 0px;
+    background-size: 700px 450px;
+  }
+
+  header.main nav ul li.home a {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    background-size: 619px 398px;
+    height: 3.1rem;
+  }
+
+  header.home span.tagline {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: 50% -115px;
+    background-size: 619px 398px;
+  }
+
+  footer.main dl dd a {
+    background-image: url("/assets/img/style/sprite2x.png");
+    background-repeat: no-repeat;
+    background-position: -200px 0px;
+    background-size: 700px 450px;
+  }
+  footer.main dl .twitter a {
+    background-position: 0 -365px;
+    height: 66px;
+  }
+  footer.main dl .linkedin a {
+    background-position: -640px -365px;
+    height: 66px;
+  }
+  footer.main dl .twitter a:hover {
+    background-position: 10px -365px;
+  }
+  footer.main dl .linkedin a:hover {
+    background-position: -630px -365px;
+  }
 }
