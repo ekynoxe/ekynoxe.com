@@ -233,14 +233,29 @@ a.more {
         display: inline-block;
         line-height: 1.5rem;
 
+        &.next:before,
+        &.next:after,
+        &.previous:before,
+        &.previous:after {
+            display: inline-block;
+              font-family: "icons";
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              line-height: 1.5rem;
+              text-decoration: inherit;
+              text-transform: none;
+              -moz-osx-font-smoothing: grayscale;
+              -webkit-font-smoothing: antialiased;
+        }
+
         &.next {
             float: right;
             text-align: right;
             width: 95px;
 
             &:after {
-                content:"\00A0" "\276f";
-                font-size: 1.5rem;
+                content:"\00A0" "\f101";
                 float: right;
                 margin-left: 0.3rem;
                 margin-right: 0.2rem;
@@ -253,8 +268,7 @@ a.more {
             width: 125px;
 
             &:before{
-                content:"\276e" "\00A0";
-                font-size: 1.5rem;
+                content:"\f100" "\00A0";
                 float: left;
                 margin-left: 0.2rem;
                 margin-right: 0.3rem;
@@ -1133,8 +1147,7 @@ footer.main {
                 width: 5.75em;
 
                 &:before{
-                    content:"\00A0" "\276f";
-                    font-size: 1.5rem;
+                    content:"\00A0" "\f101";
                     float: left;
                     margin-left: 0.5rem;
                 }
@@ -1154,8 +1167,7 @@ footer.main {
                 width: 7.75em;
 
                 &:after {
-                    content:"\276e" "\00A0";
-                    font-size: 1.5rem;
+                    content:"\f100" "\00A0";
                     float: right;
                     margin-right: 0.5rem;
                 }

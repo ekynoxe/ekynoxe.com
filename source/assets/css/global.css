@@ -25,6 +25,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "icons";
+  src: url("/assets/fonts/icons/icons.eot");
+  src: url("/assets/fonts/icons/icons.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/icons/icons.woff") format("woff"), url("/assets/fonts/icons/icons.ttf") format("truetype"), url("/assets/fonts/icons/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "icons";
+    src: url("/assets/fonts/icons/icons.svg#icons") format("svg");
+}
+}
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -3167,14 +3181,25 @@ a.more {
   display: inline-block;
   line-height: 1.5rem;
 }
+.pagination a.button.next:before, .pagination a.button.next:after, .pagination a.button.previous:before, .pagination a.button.previous:after {
+  display: inline-block;
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1.5rem;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
 .pagination a.button.next {
   float: right;
   text-align: right;
   width: 95px;
 }
 .pagination a.button.next:after {
-  content: "\00A0" "\276f";
-  font-size: 1.5rem;
+  content: "\00A0" "\f101";
   float: right;
   margin-left: 0.3rem;
   margin-right: 0.2rem;
@@ -3185,8 +3210,7 @@ a.more {
   width: 125px;
 }
 .pagination a.button.previous:before {
-  content: "\276e" "\00A0";
-  font-size: 1.5rem;
+  content: "\f100" "\00A0";
   float: left;
   margin-left: 0.2rem;
   margin-right: 0.3rem;
@@ -3937,8 +3961,7 @@ footer.main small {
     width: 5.75em;
   }
   .pagination a.button.next:before {
-    content: "\00A0" "\276f";
-    font-size: 1.5rem;
+    content: "\00A0" "\f101";
     float: left;
     margin-left: 0.5rem;
   }
@@ -3955,8 +3978,7 @@ footer.main small {
     width: 7.75em;
   }
   .pagination a.button.previous:after {
-    content: "\276e" "\00A0";
-    font-size: 1.5rem;
+    content: "\f100" "\00A0";
     float: right;
     margin-right: 0.5rem;
   }
