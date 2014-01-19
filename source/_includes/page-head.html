@@ -1,8 +1,4 @@
     <head>
-        <script type="text/javascript">
-            var doc = document.documentElement;
-            doc.className = doc.className.replace(/(\s|^)no-js(\s|$)/ig, '');
-        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
         <meta name="robots" content="noindex, nofollow">
@@ -26,6 +22,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/style/apple-touch-icon-76x76-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/style/apple-touch-icon-72x72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="/assets/img/style/apple-touch-icon-precomposed.png">
+
+        <!--[if IE 8 ]>
+            <link href="/assets/css/ie8.css" rel="stylesheet" type="text/css">
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script>
+                document.createElement('header');
+                document.createElement('nav');
+                document.createElement('section');
+                document.createElement('article');
+                document.createElement('aside');
+                document.createElement('footer');
+                document.createElement('time');
+            </script>
+        <![endif]-->
 
         {% comment %}
         Original source for the retina touch icons above is from http://mathiasbynens.be/notes/touch-icons

@@ -1,32 +1,4 @@
 @import "compass";
 @import "fonts";
-
-@mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -moz-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
-}
-
-@mixin spriteBg($x:0, $y:0, $w:false, $h:false) {
-    background-image: url('/assets/img/style/sprite.png');
-    background-repeat: no-repeat;
-    background-position: $x $y;
-
-    @if $w != false and $h != false {
-        background-size: $w $h;
-    }
-}
-
-@mixin spriteBg2x($x:0, $y:0, $w:false, $h:false) {
-    background-image: url('/assets/img/style/sprite2x.png');
-    background-repeat: no-repeat;
-    background-position: $x $y;
-
-    @if $w != false and $h != false {
-        background-size: $w $h;
-    }
-}
-
+@import "mixins";
 @import "style";

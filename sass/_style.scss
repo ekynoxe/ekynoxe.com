@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*------------------------------------*\
-    STYLE.CSS
-\*------------------------------------*/
-/**
- *
- * sass --watch style.scss:style.min.css --style compressed
- *
- */
 
-
-/**
- * Setup
- */
 @import "vars";
 @import "inuit.css/inuit";
 
@@ -1233,8 +1221,6 @@ footer.main {
             ul {
                 li.home {
                     a {
-                        /*@include spriteBg(-1px, -1px, 700px, 450px);*/
-
                         padding-left: 4rem;
                         text-indent: 0;
                         width: auto;

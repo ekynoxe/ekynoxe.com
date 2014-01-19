@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if inuit.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. inuit.css ignores its own variables in favour of
+ * using your own, so you can completely modify how inuit.css works without ever
+ * having to alter the framework itself.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of inuit.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override inuit.css’ defaults here.
+ */
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Colors
+ */
+/* TODO clean thos up */
+header,
+footer,
+section,
+article,
+time {
+  display: block;
+}
+
+/*html,
+body {
+    overflow-x: auto;
+}*/
+.content {
+  width: 850px;
+  max-width: 850px;
+}
+
+body {
+  font-size: 112.5%;
+  line-height: 1.6;
+}
+
+.pagination a.button {
+  display: block;
+  background: #aaaaaa;
+  border: none;
+  color: white;
+  line-height: 24px;
+  max-width: none;
+  padding: 8px 19px;
+  position: fixed;
+  top: 12em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.pagination a.button:hover {
+  background-color: #fbaa19;
+}
+.pagination a.button.next {
+  margin-right: -64px;
+  padding: 8px 19px 8px 0;
+  right: 0;
+  text-align: right;
+  width: 106px;
+}
+.pagination a.button.next:before {
+  content: "\f101";
+  float: left;
+  margin-left: 12px;
+  margin-right: 8px;
+}
+.pagination a.button.next:after {
+  content: "";
+  margin-left: 0;
+  margin-right: 0;
+}
+.pagination a.button.previous {
+  margin-left: -98px;
+  padding: 8px 0 8px 19px;
+  left: 0;
+  text-align: left;
+  width: 140px;
+}
+.pagination a.button.previous:after {
+  content: "\f100";
+  float: right;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+.pagination a.button.previous:before {
+  content: "";
+  margin-left: 0;
+  margin-right: 0;
+}
+.pagination a.button.next:hover {
+  margin-right: 0;
+}
+.pagination a.button.previous:hover {
+  margin-left: 0;
+}
+
+hr {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 50% -84px;
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+a#scrollToTop {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -537px 0px;
+  background-size: 700px 450px;
+  height: 63px;
+  width: 63px;
+}
+
+a.button {
+  padding: 8px;
+}
+
+a.more {
+  margin: 24px auto 0;
+}
+
+.attachement a,
+.attachement img,
+.attachement iframe,
+.attachement span {
+  border: 8px solid #e1e1e1;
+}
+.attachement a img,
+.attachement span img,
+.attachement span span,
+.attachement a span {
+  border: none;
+}
+
+header.main .content {
+  width: 90%;
+}
+header.main nav {
+  background-color: #fab12f;
+  padding: 16px 0;
+}
+header.main nav ul li {
+  padding: 0 16px;
+}
+header.main nav ul li a,
+header.main nav ul li a:visited {
+  color: #fde7c0;
+  height: 54px;
+  line-height: 54px;
+  margin-bottom: 3px;
+  padding-bottom: 2px;
+}
+header.main nav ul li a:hover,
+header.main nav ul li a:active,
+header.main nav ul li a.selected {
+  border-bottom: 3px solid #fff;
+  color: #fff;
+  margin-bottom: 0;
+}
+header.main nav ul li.home {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -1px -1px;
+  background-size: 611px 393px;
+  margin-left: -20px;
+  padding-left: 90px;
+}
+header.main nav ul li.home a {
+  padding-left: 0;
+  text-indent: 0;
+  width: auto;
+}
+header.main p {
+  font-size: 35px;
+  padding: 0 32px;
+  max-width: 700px;
+}
+
+header.home span.tagline {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 50% -115px;
+  background-size: 619px 398px;
+  margin-top: 64px;
+  margin-bottom: 40px;
+  font-size: 29px;
+  padding-top: 120px;
+}
+
+section {
+  padding: 24px 0;
+}
+section header {
+  padding: 0 16px 16px;
+}
+section header h1 {
+  text-align: left;
+}
+section footer {
+  padding: 24px 16px 16px;
+}
+section article {
+  margin: 24px 0 64px;
+  padding-bottom: 24px;
+}
+section article header {
+  padding: 0 16px;
+}
+section article header h1 {
+  font-size: 28px;
+  padding: 0 3px 8px;
+}
+section article header h1 span.draft {
+  font-size: 8px;
+  margin-left: 8px;
+  line-height: 32px;
+}
+section article blockquote {
+  border-left: 8px solid #fbaa19;
+  margin: 0 48px 24px 48px;
+  padding-left: 16px;
+}
+section article iframe,
+section article img {
+  max-width: 100%;
+  width: auto;
+}
+section article img {
+  margin-bottom: 24px;
+}
+section article > p {
+  font-size: 22px;
+}
+section article .gallery {
+  margin: 16px;
+}
+section article .gallery-item {
+  margin-top: 16px;
+}
+section article .gallery-item a span {
+  font-size: 12px;
+}
+section p, section ul, section h2, section h3, section h4 {
+  padding: 0 16px;
+}
+section pre {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 0 0 24px 0;
+  padding: 16px;
+  white-space: pre;
+}
+
+.tag_list ul {
+  font-size: 19px;
+}
+.tag_list ul li {
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+footer.main header h1, footer.main header a {
+  font-size: 29px;
+}
+footer.main header a {
+  border-bottom: 2px solid transparent;
+}
+footer.main header a:hover {
+  border-bottom: 2px solid #fbaa19;
+}
+footer.main .overlay {
+  background: transparent url("/assets/img/style/black80.png");
+}
+footer.main dl {
+  margin: 16px 32px 16px 0;
+}
+footer.main dl dd {
+  margin: 0 32px 16px 0;
+}
+footer.main dl dd a {
+  background-image: url("/assets/img/style/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -200px 0px;
+  background-size: 700px 450px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 80px;
+}
+footer.main dl .twitter a {
+  background-position: 0 -365px;
+  height: 66px;
+}
+footer.main dl .linkedin a {
+  background-position: -640px -365px;
+  height: 66px;
+}
+footer.main dl .twitter a:hover {
+  background-position: 10px -365px;
+}
+footer.main dl .linkedin a:hover {
+  background-position: -630px -365px;
+}
+
+section.work header,
+section.work article header,
+section.work article p {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+section.work > header {
+  padding-top: 56px;
+}
+section.work article {
+  padding: 40px 0;
+}
+section.work article header {
+  margin-bottom: 40px;
+  padding: 32px 0;
+}
+section.work article ul {
+  font-size: 13px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+section.work .details {
+  padding-bottom: 72px;
+}
+section.work .details p {
+  margin: 32px auto 32px;
+}
+section.work .details ul {
+  margin: 0 0 48px;
+}
+
+section.testimonials header {
+  padding: 0 16px;
+}
+section.testimonials header h1 {
+  margin-bottom: 16px;
+}
+section.testimonials article {
+  margin: 0 0 24px 0;
+}
