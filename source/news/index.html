@@ -30,11 +30,11 @@ section: news
     {% else %}
         {% assign prev_path=paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' %}
     {% endif %}
-    <a class="button previous" href="{{ prev_path }}" title="Previous posts">Previous posts</a>
+    <a class="button previous" href="{{ prev_path }}" title="Previous posts">previous </a>
   {% endif %}
 
   {% if paginator.next_page %}
-    <a class="button next" href="{{ paginator.next_page_path }}" title="Next posts">Next posts</a>
+    <a class="button next" href="{{ paginator.next_page_path }}" title="Next posts"> next</a>
   {% endif %}
 </nav>
 {% endif %}

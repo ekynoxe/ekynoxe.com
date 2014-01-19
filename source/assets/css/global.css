@@ -2928,6 +2928,7 @@ label,
 }
 /* endif */
 .clearfix:before, .clearfix:after,
+.pagination:before, .pagination:after,
 header.main:before, header.main:after,
 section:before, section:after,
 .gallery:before, .gallery:after,
@@ -2942,6 +2943,7 @@ header.main nav ul:before, header.main nav ul:after {
 }
 
 .clearfix:after,
+.pagination:after,
 header.main:after,
 section:after,
 .gallery:after,
@@ -3138,10 +3140,6 @@ h1 {
   text-align: left;
 }
 
-p, ul, pre {
-  /*font-size: 1.2rem;*/
-}
-
 a.button {
   background-color: #fbaa19;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -3165,27 +3163,33 @@ a.more {
   width: 50%;
 }
 
-.pagination {
-  text-align: center;
-}
 .pagination a.button {
   display: inline-block;
-}
-.pagination a.button.next, .pagination a.button.previous {
-  max-width: 200px;
-  width: 38%;
+  line-height: 1.5rem;
 }
 .pagination a.button.next {
-  margin-left: 0.5rem;
+  float: right;
+  text-align: right;
+  width: 95px;
 }
 .pagination a.button.next:after {
-  content: "\00A0" "\00BB";
+  content: "\00A0" "\276f";
+  font-size: 1.5rem;
+  float: right;
+  margin-left: 0.3rem;
+  margin-right: 0.2rem;
 }
 .pagination a.button.previous {
-  margin-right: 0.5rem;
+  float: left;
+  text-align: left;
+  width: 125px;
 }
 .pagination a.button.previous:before {
-  content: "\00AB" "\00A0";
+  content: "\276e" "\00A0";
+  font-size: 1.5rem;
+  float: left;
+  margin-left: 0.2rem;
+  margin-right: 0.3rem;
 }
 
 header.main {
@@ -3213,8 +3217,6 @@ header.main nav ul {
 header.main nav ul li {
   display: inline-block;
   margin: 0;
-  /*padding: 0 0.75rem;*/
-  /*width: 17%;*/
 }
 header.main nav ul li a,
 header.main nav ul li a:visited {
@@ -3324,7 +3326,6 @@ section article iframe, section article img {
 }
 section article blockquote {
   border-left: 0.5rem solid #fbaa19;
-  /*#f4f4f4;*/
   font-style: italic;
   margin: 0 1rem 1.5rem;
   padding-left: 1rem;
@@ -3701,7 +3702,7 @@ footer.main small {
     width: auto;
   }
 }
-/* ANYTHING BEFORE IS "MOBILE FIRST" */
+/* ANYTHING BEFORE SHOULD BE "MOBILE FIRST" */
 /* Very small screens ----------- */
 @media screen and (max-width: 15em) {
   /*240px*/
@@ -3716,7 +3717,6 @@ footer.main small {
     float: none;
     font-size: 0.8rem;
     margin: 0 0.15rem;
-    /*.sep { display: none; }*/
   }
   header.main nav ul li {
     display: block;
@@ -3830,6 +3830,25 @@ footer.main small {
     width: 90%;
   }
 
+  .pagination {
+    text-align: center;
+  }
+  .pagination a.button {
+    display: inline-block;
+    max-width: 200px;
+    width: 42%;
+  }
+  .pagination a.button.next {
+    float: none;
+    margin-left: 0.5rem;
+    width: 125px;
+  }
+  .pagination a.button.previous {
+    float: none;
+    margin-right: 0.5rem;
+    width: 125px;
+  }
+
   header.main nav {
     padding: 0.5rem 0;
   }
@@ -3891,6 +3910,68 @@ footer.main small {
     line-height: 1.6;
   }
 
+  .pagination a.button {
+    display: block;
+    background: #aaaaaa;
+    border: none;
+    color: white;
+    line-height: 1.5rem;
+    max-width: none;
+    padding: 0.5rem 1.2rem;
+    position: fixed;
+    top: 12em;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .pagination a.button:hover {
+    background-color: #fbaa19;
+  }
+  .pagination a.button.next {
+    margin-right: -3.5em;
+    padding: 0.5rem 1.2rem 0.5rem 0;
+    right: 0;
+    text-align: right;
+    width: 5.75em;
+  }
+  .pagination a.button.next:before {
+    content: "\00A0" "\276f";
+    font-size: 1.5rem;
+    float: left;
+    margin-left: 0.5rem;
+  }
+  .pagination a.button.next:after {
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pagination a.button.previous {
+    margin-left: -5.5em;
+    padding: 0.5rem 0 0.5rem 1.2rem;
+    left: 0;
+    text-align: left;
+    width: 7.75em;
+  }
+  .pagination a.button.previous:after {
+    content: "\276e" "\00A0";
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 0.5rem;
+  }
+  .pagination a.button.previous:before {
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pagination a.button.next:hover {
+    margin-right: 0;
+  }
+  .pagination a.button.previous:hover {
+    margin-left: 0;
+  }
+
   hr {
     background-image: url("/assets/img/style/sprite.png");
     background-repeat: no-repeat;
@@ -3931,10 +4012,7 @@ footer.main small {
     padding: 1rem 0;
   }
   header.main nav ul li.home a {
-    background-image: url("/assets/img/style/sprite.png");
-    background-repeat: no-repeat;
-    background-position: -1px -1px;
-    background-size: 700px 450px;
+    /*@include spriteBg(-1px, -1px, 700px, 450px);*/
     padding-left: 4rem;
     text-indent: 0;
     width: auto;
@@ -4050,7 +4128,24 @@ footer.main small {
     font-size: 1.15rem;
   }
 
+  .pagination a.button {
+    max-width: auto;
+    width: auto;
+  }
+  .pagination a.button.next {
+    margin-right: -3.75em;
+    width: 6em;
+  }
+  .pagination a.button.previous {
+    margin-left: -5.75em;
+    width: 8em;
+  }
+
   header.main nav ul li.home a {
+    background-image: url("/assets/img/style/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    background-size: 700px 450px;
     text-indent: 0;
     width: auto;
   }
