@@ -22,14 +22,12 @@ section: news
             <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{% if post.draft %}<span class="draft">draft</span>{% endif %}</h1>
         </header>
 
-        {% comment %}
         {% if post.content contains '<!--more-->' %}
-            {{ post.content | split: '<!--more-->' | first }}
+            {{ post.content | markdownify | split: '<!--more-->' | first}}
             <a class="button more" href="{{ post.url }}" title="read more">read more</a>
         {% else %}
-            {{ post.content }}
+            {{ post.content | markdownify }}
         {% endif %}
-        {% endcomment %}
 
     </article>
     {% endfor %}
