@@ -1,0 +1,14 @@
+<article>
+    <header>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{% if post.draft %}<span class="draft">draft</span>{% endif %}</h1>
+    </header>
+
+    {% if post.content contains '<!--more-->' %}
+        {{ post.content | markdownify | split: '<!--more-->' | first}}
+        <a class="button more" href="{{ post.url }}" title="read more">read more</a>
+    {% else %}
+        {{ post.content | markdownify }}
+    {% endif %}
+
+</article>

@@ -2,12 +2,16 @@ root: /
 permalink: /:title
 markdown: rdiscount
 lsi: false
-title: Ekynoxe - Web development in London
-paginate: 7
-paginate_path: "news/page:num"
-cdn: http://cdn.ekynoxe.com
-hostname: ekynoxe.com
-category_dir: /categories
-
 rdiscount:
     extensions: [smart]
+
+cdn: http://cdn.ekynoxe.com
+hostname: ekynoxe.com
+title: Ekynoxe - Web development in London
+
+paginate: 7
+paginate_path: "news/page:num"
+
+paginate_categories: 4
+category_path: "categories/:cat"
+category_page_path: "page:num"

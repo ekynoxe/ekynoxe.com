@@ -3,6 +3,7 @@ layout: post
 title: "Ellen now ready for home visits"
 date: 2014-01-06 21:01
 categories:
+- work
 ---
 
 Hi all!
