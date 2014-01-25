@@ -51,7 +51,7 @@
 
 module Jekyll
 
-  class CategoryPagination < Generator
+  class CategoryPagesGenerator < Generator
     safe true
 
     # Generate category pages, paginated if necessary
