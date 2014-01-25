@@ -1,9 +1,39 @@
 # encoding: utf-8
 #
-# Based on https://github.com/mwotton/lambdamechanic-jekyll and modified to suit
-#   a different site architecture
+# Jekyll categories pages generator
+# http://www.ekynoxe.com/
+# Version: 0.0.1 (2014-01-25)
 #
-# If you want to print pagination links, simply add the following in your
+# Copyright (c) 2014 Mathieu Davy - ekynoxe - http://ekynoxe.com/
+# Licensed under the MIT license
+# (http://www.opensource.org/licenses/mit-license.php)
+#
+# Initially based on https://github.com/mwotton/lambdamechanic-jekyll and
+#   modified to suit a different site and categories architecture
+#
+#
+# This plugin generates pages for each of the categories of your site, as
+#   defined in their YAML front matter.
+# If enabled through configuration, it will also generate the appropriate pagination
+#
+# To enable category pages generation, add the following in your _config.yml
+#
+#     category_path: "categories/:cat"
+#
+# If you want to customise the numbered page name, you can use the following:
+# Default is "page:num"
+#
+#     category_page_path: "page:num"
+#
+# Customise those to suit your needs, but you need to keep the placeholders
+#   as they are:  ":cat" ad ":num"
+#
+# To enable pagination and define the number of posts per page, use:
+#
+#     paginate_categories: 4
+#
+# This plugin uses the standard Jekyll paginator, so you can also print
+#   pagination links by simply add the following in your
 #   category_index.html template:
 #
 #
@@ -24,8 +54,11 @@ module Jekyll
   class CategoryPagination < Generator
     safe true
 
+    # Generate category pages, paginated if necessary
+    #
+    # site - the Jekyll::Site object
     def generate(site)
-      if CategoryPager.pagination_enabled?(site)
+      if enabled?(site)
         site.categories.each do |category, posts|
           paginate(site, category, posts)
         end
@@ -36,9 +69,9 @@ module Jekyll
     # directories, ie: page2/index.html, page3/index.html, etc and adds more
     # site-wide data.
     #
-    #  +site+         is the Jekyll Site instance.
-    #  +category+     is the category currently being processed.
-    #  +posts+        is an array of that category's posts
+    # site        - the Jekyll::Site object
+    # category    - the String category currently being processed
+    # posts       - an array of that category's posts
     #
     # {"paginator" => { "page" => <Number>,
     #                   "per_page" => <Number>,
@@ -54,7 +87,11 @@ module Jekyll
       all_posts = posts.sort_by { |p| p.date }
       all_posts.reverse!
 
-      pages = CategoryPager.calculate_pages(all_posts, site.config['paginate_categories'].to_i)
+      if CategoryPager.pagination_enabled?(site)
+        pages = CategoryPager.calculate_pages(all_posts, site.config['paginate_categories'].to_i)
+      else
+        pages = 1
+      end
 
       (1..pages).each do |num_page|
         pager = CategoryPager.new(site, num_page, all_posts, category, pages)
@@ -66,16 +103,27 @@ module Jekyll
         site.pages << page
       end
     end
+
+    # Determine if category pages generation is enabled
+    #
+    # site - the Jekyll::Site object
+    #
+    # Returns true if the category_path config value is set
+    #   and if there are cateories, false otherwise.
+    def enabled?(site)
+      !site.config['category_path'].nil? &&
+       site.categories.size > 0
+    end
   end
 
   class CategoryPage < Page
 
     # Initializes a new CategoryPage.
     #
-    #  +site+         is the Jekyll Site instance.
-    #  +base+         is the String path to the <source>.
-    #  +category_dir+ is the String path between <source> and the category folder.
-    #  +category+     is the category currently being processed.
+    # site          - the Jekyll::Site object
+    # base          - the String path to the <source>
+    # category_dir  - the String path between <source> and the category folder
+    # category      - the String category currently being processed
     def initialize(site, base, category_dir, category)
       @site = site
       @base = base
@@ -85,7 +133,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
 
-      self.data['title']       = "#{category}"
+      self.data['title'] = "#{category}"
     end
   end
 
@@ -93,11 +141,17 @@ module Jekyll
     attr_reader :page, :per_page, :posts, :total_posts, :total_pages,
       :previous_page, :previous_page_path, :next_page_path, :next_page, :category
 
+    # Calculate the number of pages.
+    #
+    # all_posts - the Array of all Posts.
+    # per_page  - the Integer of entries per page.
+    #
+    # Returns the Integer number of pages.
     def self.calculate_pages(all_posts, per_page)
       (all_posts.size.to_f / per_page.to_i).ceil
     end
 
-    # Determine if category pagination is enabled the site.
+    # Determine if category pagination is enabled
     #
     # site - the Jekyll::Site object
     #
@@ -111,17 +165,18 @@ module Jekyll
     # Static: Return the pagination path of the page
     #
     # site     - the Jekyll::Site object
-    # num_page - the pagination page number
-    # category - the category currently being processed.
+    # num_page - the Integer number of pages in the pagination
+    # category - the String category currently being processed
     #
     # Returns the pagination path as a string
     def self.paginate_path(site, num_page, category)
       return nil if num_page.nil?
 
       format = site.config['category_path'].sub(':cat', category)
+      pagePath = site.config['category_page_path'] ? site.config['category_page_path'] : "page:num"
 
       if num_page > 1
-        format = File.join(format, site.config['category_page_path'])
+        format = File.join(format, pagePath)
         format = format.sub(':num', num_page.to_s)
       end
 
@@ -139,6 +194,14 @@ module Jekyll
       path[0..0] == "/" ? path : "/#{path}"
     end
 
+    # Initialize a new Pager.
+    #
+    # site      - the Jekyll::Site object
+    # page      - the Integer page number.
+    # all_posts - the Array of all the site's Posts.
+    # category  - the category currently being processed. As a String
+    # num_pages - the Integer number of pages or nil if you'd like the number
+    #             of pages calculated.
     def initialize(site, page, all_posts, category, num_pages = nil)
 
       @category = category
@@ -161,6 +224,9 @@ module Jekyll
       @next_page_path = CategoryPager.paginate_path(site, @next_page, category)
     end
 
+    # Convert this Pager's data to a Hash suitable for use by Liquid.
+    #
+    # Returns the Hash representation of this Pager.
     def to_liquid
       {
         'page' => page,
