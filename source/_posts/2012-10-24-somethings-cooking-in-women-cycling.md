@@ -1,5 +1,5 @@
 ---
-title: 'Something's cooking in women cycling'
+title: Something's cooking in women cycling
 author: Matt
 layout: post
 categories:
