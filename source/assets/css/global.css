@@ -3366,6 +3366,12 @@ section article .gallery-item {
 section article .gallery-item a span {
   font-size: 0.75rem;
 }
+section article .gallery-item:nth-child(2n) {
+  /* no clear here */
+}
+section article .gallery-item:nth-child(2n+1) {
+  clear: left;
+}
 section p, section ul, section h2, section h3, section h4 {
   padding: 0 1rem;
 }
@@ -4053,6 +4059,15 @@ footer.main small {
     margin-right: 2.5%;
     margin-left: 2.5%;
     width: 28%;
+  }
+  section article .gallery-item:nth-child(2n) {
+    /* no clear here */
+  }
+  section article .gallery-item:nth-child(2n+1) {
+    clear: none;
+  }
+  section article .gallery-item:nth-child(3n+1) {
+    clear: left;
   }
   section article .attachement a {
     display: inline-block;
