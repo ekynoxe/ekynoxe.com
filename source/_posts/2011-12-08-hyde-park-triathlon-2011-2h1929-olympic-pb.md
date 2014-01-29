@@ -123,4 +123,4 @@ Total: 2h19'29" (82nd overall in the men race, 25th in my age group.)
     </dl>
 </div>
 
- [1]: http://blog.ekynoxe.com/2011/05/31/the-2011-swashbuckler-or-how-to-spend-5h-racing/ "The 2011 Swashbuckler – Or how to spend 5h racing"
+ [1]: /the-2011-swashbuckler-or-how-to-spend-5h-racing "The 2011 Swashbuckler – Or how to spend 5h racing"

@@ -17,7 +17,7 @@ Ellen and I registered for the Ironman 70.3 Austria in Zell am See a very long t
 
 Zell am See is a gorgeous place. It looks like there are hundreds of Km of ski slopes and XC ski tracks around for winter, and loads of roads and MTB tracks for summer, along with the beautiful lake and an absolutely gorgeous, lush, green nature surrounding it. Although we stayed only a few days, we're keen to come back for more!
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2013/09/IMG_3013.png" rel="lightbox[6275]"><img class="aligncenter size-medium wp-image-6296" title="IMG_3013" src="http://blog.ekynoxe.com/wp-content/uploads/2013/09/IMG_3013-225x300.png" alt="" width="225" height="300" /></a></p>
+<p class="attachement"><a href="{{ "IMG_3013.png" | image_path | cdn }}" title="IMG_3013" rel="lightbox[6275]"><img src="{{ "IMG_3013_r300.png" | image_path | cdn }}" alt="IMG_3013" /></a></p>
 
 During these couple of days we managed to get in a check of the swim course in water that didn't feel as warm as they were saying it was, a few short laps around the lake on the bike, plus one full lap of the bike course. That one is flat. Yes, flat! (Ok, some will say undulating... for me it was flat) We're in the middle of the mountains with numerous 3000m peaks around us, and the race course is flat! The course was changed from last year to avoid a cobblestone section that was probably dangerous in the wet, and it also got lengthened on the far south-west end. As this was not changed on the map, we missed the false-flat going down to and back up from the turnaround point during our recce. That's something to keep in mind if you're racing it next year! On the other hand, the road surface was fantastic on pretty much all the route, and even the "bad" bits were better than most our roads in the UK and it was definitely going to be a fast ride.
 
@@ -74,7 +74,7 @@ But looking at my transitions times, which altogether for me nearly account for 
 After the race, I refuelled aplenty chatting to other guys around who were still pretty cold and all wrapped in thermal foil, and the nice soup and plenty of local pizzas helped getting back on our feet. After a nice warm shower (I'm glad I wasn't too far down the ranking, showers weren't too full of crap yet!) I headed out on the run course to see were Ellen was, and it was great to push her around.
 She was visibly hurting, and I'm guessing that's a lot because of the weather, but she was still going well and it was fantastic to see her cross the line after last year's disappointment in Lanzarote.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2013/09/IMG_3018.png" rel="lightbox[6275]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2013/09/IMG_3018-225x300.png" alt="Ellen crosses the line" title="Ellen crosses the line" width="225" height="300" /><span>Ellen crosses the line</span></a></p>
+<p class="attachement"><a href="{{ "IMG_3018.png" | image_path | cdn }}" title="Ellen crosses the line" rel="lightbox[6275]"><img src="{{ "IMG_3018_r300.png" | image_path | cdn }}" alt="Ellen crosses the line" /><span>Ellen crosses the line</span></a></p>
 
 The shoes cables are now replaced, I got myself some new shoes too (without any complex system to break!), and I'm ready for the next one. Bring on Lanzarote 70.3 (again)!
 
@@ -369,5 +369,5 @@ The shoes cables are now replaced, I got myself some new shoes too (without any 
     </dl>
 </div>
 
- [1]: http://blog.ekynoxe.com/2013/05/30/ironman-lanzarote-2013-race-report/ "Ironman Lanzarote 2013 – race report"
+ [1]: /ironman-lanzarote-2013-race-report/ "Ironman Lanzarote 2013 – race report"
  [2]: http://www.stevenlord.me.uk/STL/Blog/files/2013-09-09-IronmanWalesRaceAnalysis.php "Ironman Wales Race Analysis by Steven Lord"

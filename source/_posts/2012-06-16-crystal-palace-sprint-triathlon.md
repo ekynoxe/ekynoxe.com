@@ -319,4 +319,4 @@ This is also a race to do absolutely! Friendly marshals, no over the top organis
 
 **Photos by myself, <a href="http://www.stuweb.co.uk/">http://www.stuweb.co.uk/</a> and <a href="http://www.prosportphotos.com/">http://www.prosportphotos.com/</a>**
 
- [1]: http://blog.ekynoxe.com/2012/06/16/the-swashbuckler-2012-the-forest-wins-again/ "The Swashbuckler 2012 – The forest wins again"
+ [1]: /the-swashbuckler-2012-the-forest-wins-again "The Swashbuckler 2012 – The forest wins again"

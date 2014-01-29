@@ -24,4 +24,4 @@ Are you in?
 
 You can read on the Matrix/Prendas website <a href="http://www.onthedrops.cc/fanbackedwomensteam/">the key points about the Fan Backed Womens Cycling</a> and follow Stef on Twitter <a title="Stef Wyman on Twitter" href="http://www.twitter.com/@ds_stef">@DS_Stef</a>
 
- [1]: http://blog.ekynoxe.com/2012/10/24/the-real-heroes/ "The real heroes"
+ [1]: /the-real-heroes/ "The real heroes"

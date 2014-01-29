@@ -26,4 +26,4 @@ road.cc user tony_farelly has <a title="road.cc comments" href="http://road.cc/c
 
 Maybe, only maybe, the column intended to be humorous, but you've got to weigh your words for your audience, and this one wasn't funny at all. In the most cycle friendly borough in London, with the best place to leisure cycle and train in the capital with Richmond Park in its centre, I think it's fair enough to publicise it. It is after all our own right of free press too.
 
- [1]: http://blog.ekynoxe.com/2012/09/06/the-only-good-cyclist-is-a-dead-one-editor-of-the-richmond-magazine-september-issue/ "“… the only good cyclist is a dead one …” – Editor of the Richmond Magazine – September issue"
+ [1]: /the-only-good-cyclist-is-a-dead-one-editor-of-the-richmond-magazine-september-issue/ "“… the only good cyclist is a dead one …” – Editor of the Richmond Magazine – September issue"

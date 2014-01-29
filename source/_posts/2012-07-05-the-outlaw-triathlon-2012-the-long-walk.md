@@ -14,7 +14,7 @@ Colin from my D3 triathlon club inspired everyone last year by going 12h37 and 
 
 <!--more-->
 
-The training for an amateur long distance triathlon is always a bit of a gamble given all the parameters that have to be crammed into an already impossibly packed schedule. I've learnt that the hard way this year. After California and a bit of respite, work took over and the amount of induced stress crippled my training and recovery. I love my job, but I allowed it to take too much of my life and it showed in May when I took part in 3 races over 3 week ends, 2 of which yielded organisational and relaxation problems. <a title="The Swashbuckler 2012" href="http://blog.ekynoxe.com/2012/06/16/the-swashbuckler-2012-the-forest-wins-again/">Cold in the swashbuckler</a> and had too much fluids and/or a bit of heatstroke at the <a title="Nuffield Health Challenge" href="http://blog.ekynoxe.com/2012/06/17/nuffield-health-challenge-dorney-lake/">Nuffield triathlon challenge</a> will not be my best racing memories. But they showed that I was doing some things wrong. How worse could it be? Well... What about twisting one's left ankle 2 weeks before an ironman distance race in a pothole on a 12 mile slow run, while your right knee has already been bugging you for almost a month and a half?
+The training for an amateur long distance triathlon is always a bit of a gamble given all the parameters that have to be crammed into an already impossibly packed schedule. I've learnt that the hard way this year. After California and a bit of respite, work took over and the amount of induced stress crippled my training and recovery. I love my job, but I allowed it to take too much of my life and it showed in May when I took part in 3 races over 3 week ends, 2 of which yielded organisational and relaxation problems. <a title="The Swashbuckler 2012" href="/the-swashbuckler-2012-the-forest-wins-again/">Cold in the swashbuckler</a> and had too much fluids and/or a bit of heatstroke at the <a title="Nuffield Health Challenge" href="/nuffield-health-challenge-dorney-lake/">Nuffield triathlon challenge</a> will not be my best racing memories. But they showed that I was doing some things wrong. How worse could it be? Well... What about twisting one's left ankle 2 weeks before an ironman distance race in a pothole on a 12 mile slow run, while your right knee has already been bugging you for almost a month and a half?
 
 Triathletes are stubborn. I'm no exception. My left ankle was the worry, but it didn't even give a hint that it had a problem during the whole race. My right knee on the other hand, wasn't happy at all and made it pretty clear!
 
@@ -82,7 +82,7 @@ As I said above, this is not just my victory over my own body, it's my challeng
 
 Next on the calendar is cheering up Ellen on her first middle distance at 70.3 Antwerp in Belgium, where I'm sure she'll have a blast given her progress in training. Then a leisurely summer with an end of year target of 70.3 Lanzarote, which promises to be a cracker, if only for the scenery! In the mean time I shall also do a long 220Km sportive with my ever impressive dad who cycles more than I do at 62 years young. Talk about an inspiration...
 
-*Oh, and I just found out... That prickly thing under the big ring shifter that I noticed after less than 1Km on the bike... It was actually the gear cable housing already fraying and bits hanging out!! Glad I spent most of the day in the big ring without changing then... Disaster avoided, but I'll contact Yokozuna about the longevity of their stuff... Only 100miles on the bike before the race...*
+<small>Oh, and I just found out... That prickly thing under the big ring shifter that I noticed after less than 1Km on the bike... It was actually the gear cable housing already fraying and bits hanging out!! Glad I spent most of the day in the big ring without changing then... Disaster avoided, but I'll contact Yokozuna about the longevity of their stuff... Only 100miles on the bike before the race...</small>
 
 ## Results and data
 
@@ -239,7 +239,7 @@ Next on the calendar is cheering up Ellen on her first middle distance at 70.3 
 
 **Finish Overall position: 169th and 35th in my age group.**
 
-**Rank data obtained from <a href="http://www.tritalk.co.uk/forums/viewtopic.php?p=1402677&#038;sid=cc944bee78f4429ce1dfb1846f9d0091#1402677" title="The Outlaw Iron Distance, Nottingham - 1st July 2012">Tritalk.co.uk</a> forum [excel spreadsheet][1] provided by <a href="http://www.tritalk.co.uk/forums/profile.php?mode=viewprofile&#038;u=9143" title="Poet en tritalk">Poet</a>**
+**Rank data obtained from <a href="http://www.tritalk.co.uk/forums/viewtopic.php?p=1402677&#038;sid=cc944bee78f4429ce1dfb1846f9d0091#1402677" title="The Outlaw Iron Distance, Nottingham - 1st July 2012">Tritalk.co.uk</a> forum <a href="{{ "Outlaw2012Results.xls" | image_path | cdn }}" title="excel results">excel spreadsheet</a>   provided by <a href="http://www.tritalk.co.uk/forums/profile.php?mode=viewprofile&#038;u=9143" title="Poet en tritalk">Poet</a>**
 
 <div class='gallery'>
     <dl class='gallery-item'>
@@ -383,5 +383,3 @@ Next on the calendar is cheering up Ellen on her first middle distance at 70.3 
     </dt>
   </dl>
 </div>
-
- [1]: http://blog.ekynoxe.com/wp-content/uploads/2012/07/Outlaw2012Results.xls

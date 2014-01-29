@@ -63,7 +63,7 @@ She then said: "I bloody hate this place, but I'll be back to finish what I star
 
 Dan's friends all finished shortly after and we all figured on the live tracker as a happy group of finishers (although wrongly labeled as being from Italy!!!) Happy indeed! Tough day out there, but all go around what we had planned.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2013/10/7b29c6c8-0164-41f6-8b8e-0be1aee082b3.jpg" rel="lightbox[6345]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2013/10/7b29c6c8-0164-41f6-8b8e-0be1aee082b3-300x224.jpg" alt="All done an still smiling!" title="All done an still smiling!" width="300" height="224" /><span>All done an still smiling!</span></a></p>
+<p class="attachement"><a href="{{ "7b29c6c8-0164-41f6-8b8e-0be1aee082b3.jpg" | image_path | cdn }}" title="All done an still smiling!" rel="lightbox[6345]"><img src="{{ "7b29c6c8-0164-41f6-8b8e-0be1aee082b3_r300.jpg" | image_path | cdn }}" alt="All done an still smiling!" /><span>All done an still smiling!</span></a></p>
 
 I was 10th in my age group and with that there was a slim chance to get a roll down world champs slot. So despite the usual itchiness and impatience of my other half, we stayed at Club La Santa after the race to go to the slot allocation. During that time, sitting around a nice steak and chips at the crowded grill in La Santa, we bumped into the Dane that finished right behind me in my age group! We exchanged a few things about the race and the placements, and of course the slot allocation. I'd have to be lucky to get one, but he was one more place down.
 The women's slot went all pretty much to the first of each age group without a hitch, but the same can't be said for the men!
@@ -74,7 +74,7 @@ When my group's results came around, the first two guys took their slot. Two slo
 
 Yes! Yes! Yes! I'm going! That might be my only chance! Yes! Yes! Here! Yes! Where do I sign?
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2013/10/IMG_3058.jpg" rel="lightbox[6345]"><img src="http://blog.ekynoxe.com/wp-content/uploads/2013/10/IMG_3058-300x225.jpg" alt="Qualifier!" title="Qualifier!" width="300" height="225" /><span>Qualifier!</span></a></p>
+<p class="attachement"><a href="{{ "IMG_3058.jpg" | image_path | cdn }}" title="Qualifier!" rel="lightbox[6345]"><img src="{{ "IMG_3058_r300.jpg" | image_path | cdn }}" alt="Qualifier!" /><span>Qualifier!</span></a></p>
 
 As there were 4 slots in my age group with the re-allocation, Thierry, our new Danish acquaintance got one slot as well! So we'll meet again in Canada next year!
 As crazy as it sounds, only in my age group did the slots rolled down to 11th place. Top spots claimed their slots in all other groups, including Dan's 25-29, who got one place better than me with 9th. It will come for him I'm sure if he keeps at it!

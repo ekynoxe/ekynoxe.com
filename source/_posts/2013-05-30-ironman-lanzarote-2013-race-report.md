@@ -388,4 +388,4 @@ On my calendar, after a week of doing absolutely NOTHING until last Monday, I've
     </dl>
 </div>
 
- [1]: http://blog.ekynoxe.com/2012/12/29/ironman-70-3-lanzarote/ "Ironman 70.3 Lanzarote"
+ [1]: /ironman-70-3-lanzarote/ "Ironman 70.3 Lanzarote"

@@ -38,7 +38,7 @@ I decided to be a smurf on race day with the brilliant <a title="D3 Triathlon" h
 
 For the start, we probably went down the lagoon a bit too late, and I didn't have the warmup I wanted (slaps wrist... Again). Also, I crucially didn't take enough time to understand where people where seeding themselves. When the gun went, I was only towards the front of the second AG pack, when I should really have been at the back of the sub 30min group that started ahead. That prove to be an error that saw me fighting my way through arms, elbows and feet for the next 1.6Km, until I finally found a bit of clear water to "sprint" towards the swim exit. The watch was saying around 33min, which was fantastic news considering the scrap for clear water and my usual swim times. What we expected from reccing the swim course did come true: plenty of swimmers got caught in the net (literally) that was on the right hand side of the first leg, and plenty more stood up in the lagoon and walked around the blockage. This photo is a zone about 300m AFTER the start... And people are standing.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/12/image.jpeg" rel="lightbox[6049]"><img class="size-medium wp-image-6067" title="In the net..." src="http://blog.ekynoxe.com/wp-content/uploads/2012/12/image-300x199.jpeg" alt="In the net..." width="300" height="199" /><span>In the net...</span></a></p>
+<p class="attachement"><a href="{{ "image.jpeg" | image_path | cdn }}" title="In the net..." rel="lightbox[6049]"><img src="{{ "image_r300.jpeg" | image_path | cdn }}" alt="In the net..." /><span>In the net...</span></a></p>
 
 Knowing about it I managed to swim around, but I did have to slow down quite a bit, so that wasn't the best course design for sure!
 
@@ -55,7 +55,7 @@ The part next to the beach before the start of the climb to Teguise was also cov
 Climbimg to Teguise I felt ok and caught up quite a few people. It was fairly easy given that the wind was now almost behind, and I settled comfortably all the way up to the village before the first speedy part of the day. Teguise was already buzzing with support crews, being so close to transition and with slow passing athletes, so it was nice to soak up some cheer! From Teguise to Tahiche I reached 75kph in the tailwind and my 53-12 was too small to keep pedalling. But after this nice respite, it all changed with the left turn towards the bottom of the Tabayesco climb: strong head wind for the next 25Km. What looks like a nice long descent on the course profile ended up being possibly the hardest bit of the course, pushing almost 240W to maintain only 28kph downhill!! Wind, wind, wind and more wind. Funnelled between each side of the road all the way to the turnaround, there was no escaping from the 25mph gusts! Well, no legal one anyways and the muppet who sucked my wheel for about 1.5km down there got what he deserved when the officials came by. One caught, at last!!
 Turning around at the petrol station before the big climb of the day was a relief! Tail wind for a massive 500m (!!) before 10K at 4.5% average... I loved that climb! Well, I love climbing full stop, but I had never been on a proper mountain climb on "Jaelousy" so I was a bit apprehensive. But the 39-27 was "just" right and I'm glad the gradients didn't go steeper. Overall it was fantastic! The views are gorgeous and you wouldn't believe once you're at the top that the little white squares you see at the bottom are the houses you passed some 40min earlier! Great, great climb! I never went overboard and I believe I could rven have pushed a bit harder, but I felt comfortable all the way up passing everyone that was in view.
 
-<p class="attachement"><a href="http://blog.ekynoxe.com/wp-content/uploads/2012/12/Screen-Shot-2012-12-29-at-11.11.59.png" rel="lightbox[6049]"><img class="size-medium wp-image-6068" title="The only way is up" src="http://blog.ekynoxe.com/wp-content/uploads/2012/12/Screen-Shot-2012-12-29-at-11.11.59-300x233.png" alt="The only way is up" width="300" height="233" /><span>The only way is up</span></a></p>
+<p class="attachement"><a href="{{ "Screen-Shot-2012-12-29-at-11.11.59.png" | image_path | cdn }}" title="The only way is up" rel="lightbox[6049]"><img src="{{ "Screen-Shot-2012-12-29-at-11.11.59_r300.png" | image_path | cdn }}" alt="The only way is up" /><span>The only way is up</span></a></p>
 
 Then, for the reward! Tail wind down the other side, hold on to your hats, leave the brake levers alone, and test your nerves!!! 82kph top speed on the tri bars, super smooth roads, nice long bends and a grin big like THAT!!
 
@@ -277,7 +277,7 @@ I'm now very much looking forward to the full IM in May next year. That's going 
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/12/image.jpeg" title='In the net...' rel="lightbox[6049]"><img width="150" height="150" src="http://blog.ekynoxe.com/wp-content/uploads/2012/12/image-150x150.jpeg" class="attachment-thumbnail" alt="In the net..." /><span>In the net...</span></a>
+            <a href="{{ "image.jpeg" | image_path | cdn }}" title="In the net..." rel="lightbox[6049]"><img src="{{ "image_r300.jpeg" | image_path | cdn }}" alt="In the net..." /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
@@ -287,7 +287,7 @@ I'm now very much looking forward to the full IM in May next year. That's going 
     </dl>
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
-            <a href="http://blog.ekynoxe.com/wp-content/uploads/2012/12/Screen-Shot-2012-12-29-at-11.11.59.png" title='The only way is up' rel="lightbox[6049]"><img width="150" height="150" src="http://blog.ekynoxe.com/wp-content/uploads/2012/12/Screen-Shot-2012-12-29-at-11.11.59-150x150.png" class="attachment-thumbnail" alt="The only way is up" /><span>The only way is up</span></a>
+            <a href="{{ "Screen-Shot-2012-12-29-at-11.11.59.png" | image_path | cdn }}" title="The only way is up" rel="lightbox[6049]"><img src="{{ "Screen-Shot-2012-12-29-at-11.11.59_r300.png" | image_path | cdn }}" alt="The only way is up" /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
