@@ -3181,7 +3181,6 @@ a.more {
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  line-height: 1.5rem;
   text-decoration: inherit;
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
@@ -3566,7 +3565,7 @@ section.testimonials article a:hover {
 .comments ul {
   list-style-type: none;
   margin-left: 0;
-  padding-left: 0;
+  padding: 0;
 }
 .comments ul ul {
   border-left: 2px solid #e1e1e1;
