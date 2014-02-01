@@ -22,18 +22,24 @@
         {{ content }}
         <script>
 
-        if (document.documentElement.clientWidth > 768) {
+        if (document.documentElement.clientWidth >= 768) {
             var jQueryJs = document.createElement("script"),
-                mainJs = document.createElement("script");
+                mainJs = document.createElement("script"),
+                lightboxJs = document.createElement("script");
 
             jQueryJs.type = "text/javascript";
             jQueryJs.src = "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js";
 
             mainJs.type = "text/javascript";
-            mainJs.src = "/assets/js/main.js";
+            mainJs.src = "{{ "assets/js/main.min.js" | cdn }}";
+
+            lightboxJs.type = "text/javascript";
+            lightboxJs.src = "{{ "assets/js/lightbox-2.6.min.js" | cdn }}";
 
             jQueryJs.onload = function () {
                 document.body.appendChild(mainJs);
+                $('head').append('<link rel="stylesheet" href="{{ "assets/css/lightbox/lightbox.min.css" | cdn }}" type="text/css" />');
+                document.body.appendChild(lightboxJs);
             }
 
             document.body.appendChild(jQueryJs);
