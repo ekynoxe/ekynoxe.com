@@ -191,6 +191,11 @@ h1 {
     text-align: left;
 }
 
+.notice {
+    background-color: $white;
+    padding: 0.5rem 1rem;
+}
+
 a.button {
     background-color: $highlight;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -672,6 +677,54 @@ section.testimonials {
 .comments,
 .ads {
     border-top: 5px solid #e1e1e1;
+}
+
+.comments {
+
+    h2 {
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+
+        ul {
+            border-left: 2px solid #e1e1e1;
+            margin-top: 1.25rem;
+
+            li {
+                margin-left: 1rem;
+            }
+        }
+    }
+    li {
+        border-top: 3px solid #e1e1e1;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        paddingg-top: 1.25rem;
+    }
+
+    h3 {
+        font-size: 17px;
+        font-size: 1.0625rem; /* 1.25rem; */
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+        margin-top: 0;
+        padding-top: 1.25rem;
+    }
+
+    small {
+        color: $light-grey;
+        font-weight: normal;
+        padding-left: 1rem;
+    }
+
+    pre {
+        background-color: rgba(0,0,0,0.3);
+        font-size: 0.8rem;
+    }
 }
 
 .tag_list {
@@ -1407,6 +1460,10 @@ footer.main {
         p {
             width: 70%;
         }
+    }
+
+    .comments {
+        margin: 0 3rem;
     }
 }
 
