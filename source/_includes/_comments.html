@@ -9,7 +9,7 @@
         <a href="{{ comment.comment_author_url }}" title="{{ comment.comment_author }}">{{ comment.comment_author }}</a>
     {% endif %}
         <small>{{ comment.comment_date }}</small></h3>
-        <p>{{ comment.comment_content | replace: "<code>", "<pre><code>" | replace: "</code>", "</code></pre>" | urlize }}</p>
+        <p>{{ comment.comment_content | replace: "<code>", "</p><pre><code>" | replace: "</code>", "</code></pre><p>" | urlize }}</p>
 
         {% if comment.replies.size == 0 %}
         {% else %}
