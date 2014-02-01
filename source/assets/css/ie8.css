@@ -269,7 +269,7 @@ section p, section ul, section h2, section h3, section h4 {
   padding: 0 16px;
 }
 section pre {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: #2d2d2d;
   color: white;
   margin: 0 0 24px 0;
   padding: 16px;
@@ -282,6 +282,30 @@ section pre {
 .tag_list ul li {
   float: left;
   margin: 0 16px 16px 0;
+}
+
+.comments ul ul {
+  margin-top: 20px;
+}
+.comments ul ul li {
+  margin-left: 16px;
+}
+.comments li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.comments h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+.comments small {
+  padding-left: 16px;
+}
+.comments pre {
+  background: #a1a1a1;
+  font-size: 13px;
 }
 
 footer.main header h1, footer.main header a {
