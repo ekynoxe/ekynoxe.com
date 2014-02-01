@@ -5,4 +5,3 @@ gem "compass"
 gem "jekyll"
 gem "rdiscount"
 gem "stringex"
-#gem 'mr_poole'
