@@ -26,41 +26,7 @@ section: news
     {% elsif page.comments.size %}
     <section class="comments">
         <h2>comments</h2>
-        <ul>
-        {% assign sorted_comments = page.comments|sort:'comment_date' %}
-        {% for comment in sorted_comments %}
-            <li>
-                <h3>
-            {% if comment.comment_author_url == "" %}
-                {{ comment.comment_author }}
-            {% else %}
-                <a href="{{ comment.comment_author_url }}" title="{{ comment.comment_author }}">{{ comment.comment_author }}</a>
-            {% endif %}
-                <small>{{ comment.comment_date }}</small></h3>
-                <p>{{ comment.comment_content | replace: "<code>", "<pre><code>" | replace: "</code>", "</code></pre>" }}</p>
-
-                {% if comment.replies.size == 0 %}
-                {% else %}
-                <ul>
-                    {% assign sorted_replies = comment.replies|sort:'comment_date' %}
-                    {% for reply in sorted_replies %}
-                    <li>
-                        <h3>
-                    {% if reply.comment_author_url == "" %}
-                        {{ reply.comment_author }}
-                    {% else %}
-                        <a href="{{ reply.comment_author_url }}" title="{{ reply.comment_author }}">{{ reply.comment_author }}</a>
-                    {% endif %}
-                        <small>{{ reply.comment_date }}</small></h3>
-                        <p>{{ reply.comment_content | replace: "<code>", "<pre><code>" | replace: "</code>", "</code></pre>" }}</p>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-
-            </li>
-        {% endfor %}
-        </ul>
+        {% include _comments.html comments=page.comments %}
     </section>
     {% endif %}
         <p class="notice"><small>Comments are disabled temporarily until I find a suitable system, but you can still <a href="mailto:hello@ekynoxe.com?subject={{ page.title }}">send a comment by email</a> and I'll add it to this post. Thanks!</small></p>
