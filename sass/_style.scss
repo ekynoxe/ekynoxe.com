@@ -25,7 +25,6 @@ header.main nav ul:after { clear: both; }
 
 html {
     background: #2c2c2c;
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -96,6 +95,35 @@ hr {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+/* table classes taken from inuit.css/base/_tables.scss */
+table{
+    width:100%;
+}
+th,
+td{
+    padding:$base-spacing-unit / 4;
+    @media screen and (min-width:480px){
+        padding:$half-spacing-unit;
+    }
+    text-align:left;
+}
+
+/**
+ * Cell alignments
+ */
+[colspan]{
+    text-align:center;
+}
+[colspan="1"]{
+    text-align:left;
+}
+[rowspan]{
+    vertical-align:middle;
+}
+[rowspan="1"]{
+    vertical-align:top;
+}
+/* End table classes taken from inuit.css/base/_tables.scss */
 
 em {
     border-bottom: 2px solid $dark-grey;

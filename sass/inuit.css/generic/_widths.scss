@@ -99,7 +99,9 @@
     .#{$namespace}eleven-twelfths   { width:91.666%; }
 }
 
+@if $use-grids == true{
 @include grid-setup();
+}
 
 
 

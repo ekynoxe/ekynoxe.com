@@ -5,6 +5,8 @@
  * `.brand` is a quick and simple way to apply your brand face and/or color to
  * any element using a handy helper class.
  */
+
+@if $use-brand == true{
 .brand{
     font-family:$brand-face +!important;
     color:$brand-color +!important;
@@ -15,4 +17,5 @@
 .brand-color,
 .brand-colour{
     color:$brand-color +!important;
+}
 }
