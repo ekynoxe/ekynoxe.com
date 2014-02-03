@@ -20,6 +20,11 @@
  * and introducing objects and abstractions is as simple as switching the
  * following variables to `true`.
  */
+$responsive:        false;
+$push:              false;
+$pull:              false;
+$use-helper:        false;
+$use-brand:         false;
 $use-grids:         false;
 $use-flexbox:       false;
 $use-columns:       false;
@@ -54,21 +59,16 @@ $use-greybox:       false;
  */
 
 $debug-mode:        false;
-$base-font-family: Ubuntu, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+$base-font-family: Georgia, Times, "Times New Roman", serif;
 $title-font-family: "Montserrat", "nexa_boldregular", Helvetica, Arial, sans-serif;
 
 
 /*------------------------------------*\
     $CUSTOM
 \*------------------------------------*/
-/**
- * Colors
- */
 
-/* TODO clean thos up */
 $white: #FFF;
 $black: #000;
-$base-background: #FFF;
 $highlight: #FBAA19;
 $highlight_rgba: rgba(251,170,25,0.7);
 $highlight_rgba_over: rgba(251,170,25,1);
@@ -78,5 +78,3 @@ $text-color: #000;
 $very-light-grey: #ececec;
 $light-grey: #aaa;
 $dark-grey: #444;
-$warning: #ED2058;
-$lime-green: #32CD32;
