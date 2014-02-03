@@ -11,6 +11,7 @@
  * out over other selectors.
  */
 
+@if $use-helper == true{
 
 /**
  * Add/remove floats
@@ -153,6 +154,7 @@
     text-transform:uppercase!important;
 }
 
+}
 
 /**
  * Hide content off-screen without resorting to `display:none;`, also provide

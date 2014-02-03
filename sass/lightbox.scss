@@ -1,0 +1,159 @@
+body:after {
+    content: url(close.png) url(loading.gif) url(prev.png) url(next.png);
+    display: none;
+}
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #000;
+    filter: alpha(Opacity=80);
+    opacity: .8;
+    display: none;
+}
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: 400;
+
+    .lb-image {
+      display: block;
+      height: auto;
+      max-width: inherit;
+    }
+
+    a img {
+      border: 0;
+    }
+
+    a,
+    a:visited {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+        border: 0;
+    }
+}
+.lb-outerContainer {
+    position: relative;
+    background-color: #e1e1e1;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.lb-container {
+    padding: 4px;
+}
+.lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(loading.gif) no-repeat;
+}
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+
+    a {
+        outline: 0;
+    }
+}
+.lb-container>.nav {
+    left: 0;
+}
+.lb-next, .lb-prev {
+    width: 49%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+.lb-prev {
+    left: 0;
+    float: left;
+}
+.lb-prev:hover {
+    background: url(prev.png) left 48% no-repeat;
+}
+.lb-next {
+    right: 0;
+    float: right;
+}
+.lb-next:hover {
+    background: url(next.png) right 48% no-repeat;
+}
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    *zoom: 1;
+    width: 100%}
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.lb-data {
+    padding: 0 4px;
+    color: #bbb;
+
+    .lb-details {
+        width: 85%;
+        float: left;
+        text-align: left;
+        line-height: 1.1em;
+    }
+    .lb-caption {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1em;
+    }
+    .lb-number {
+        display: block;
+        clear: left;
+        padding-bottom: 1em;
+        font-size: 12px;
+        color: #999;
+    }
+    .lb-close {
+        display: block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        background: url(close.png) top right no-repeat;
+        text-align: right;
+        outline: 0;
+        filter: alpha(Opacity=70);
+        opacity: .7;
+    }
+    .lb-close:hover {
+        cursor: pointer;
+        filter: alpha(Opacity=100);
+        opacity: 1;
+    }
+}
