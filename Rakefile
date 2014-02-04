@@ -10,6 +10,7 @@ public_dir      = "public"  # compiled site directory
 source_dir      = "source"  # source file directory
 posts_dir       = "_posts"  # directory for blog files
 server_port     = "4000"    # port for preview server eg. localhost:4000
+deploy_to_local = "/Users/matt/Sites/ekynoxe/ekynoxe.github.io/"
 # remote_server   = "pegasus" # remote server for deployment
 # remote_path     = "sites/kitchen/public"    # remote path for deployment
 
@@ -39,6 +40,7 @@ task :generate do
     print "Generating Site with Jekyll…\t"
     system "compass compile --css-dir #{source_dir}/assets/css"
     system "jekyll build --source ./#{source_dir} --destination ./#{public_dir}"
+    system "cp -R public/* #{deploy_to_local}"
     puts "[DONE!]\n"
 end
 
