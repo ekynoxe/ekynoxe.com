@@ -39,8 +39,8 @@ module Jekyll
         safe true
         priority :low
 
-        @@sourceDomain = "http://blog.ekynoxe.com"
-        @@targetDomain = "http://local.ekynoxe.com"
+        @@sourceDomain = ""
+        @@targetDomain = "http://www.ekynoxe.com"
         @@UrlsFileName = "mapped-urls.csv"
 
         def generate(site)
@@ -50,7 +50,7 @@ module Jekyll
                 post_name = post.name.gsub(/\.md$/, "")
                 url_parts = post_name.match(/([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)/i)
 
-                mappedUrls << File.join(@@sourceDomain, url_parts[1], url_parts[2], url_parts[3], url_parts[4]) + ", " + File.join(@@targetDomain, url_parts[4]) + "/"
+                mappedUrls << "Redirect 301 " + File.join(@@sourceDomain, url_parts[1], url_parts[2], url_parts[3], url_parts[4]) + " " + File.join(@@targetDomain, url_parts[4]) + "/"
             end
 
             site_folder = site.config['destination']
