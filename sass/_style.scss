@@ -790,13 +790,13 @@ section.testimonials {
 }
 
 footer.main {
-    background-image: url('/assets/img/style/map.jpg');
+    background-image: url('http://cdn.ekynoxe.com/content/2013-05-17-lanzarote-day-2/mirador_del_rio.jpg');
     background-position: center center;
     background-repeat: no-repeat;
 
     .overlay {
         background: $dark-grey;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.5);
 
         color: $white;
         padding: 1rem;
@@ -862,6 +862,7 @@ footer.main {
         dd a:hover { opacity: 1; }
         .twitter a { background-position: 0 -146px; height: 25px; }
         .linkedin a { background-position: -256px -146px; height: 25px; }
+        .facebook a { background-position: -256px 0; height: 25px; }
     }
 
     small{
@@ -1076,6 +1077,7 @@ footer.main {
             }
             .twitter a { background-position: 0 -293px; height: 49px; }
             .linkedin a { background-position: -512px -293px; height: 49px; }
+            .facebook a { background-position: -512px 0; height: 49px; }
         }
     }
 }
@@ -1398,8 +1400,10 @@ footer.main {
             }
             .twitter a { background-position: 0 -365px; height: 66px; }
             .linkedin a { background-position: -640px -365px; height: 66px; }
+            .facebook a { background-position: -640px 2px; height: 66px; }
             .twitter a:hover { background-position: 10px -365px; }
             .linkedin a:hover { background-position: -630px -365px; }
+            .facebook a:hover { background-position: -630px 2px; }
         }
     }
 }
@@ -1536,6 +1540,7 @@ footer.main {
             }
             .twitter a { background-position: 0 -293px; }
             .linkedin a { background-position: -512px -293px; }
+            .facebook a { background-position: -512px 0; }
         }
     }
 
@@ -1591,8 +1596,10 @@ footer.main {
             }
             .twitter a { background-position: 0 -365px; height: 66px; }
             .linkedin a { background-position: -640px -365px; height: 66px; }
+            .facebook a { background-position: -640px 0; height: 66px; }
             .twitter a:hover { background-position: 10px -365px; }
             .linkedin a:hover { background-position: -630px -365px; }
+            .facebook a:hover { background-position: -630px 0; }
         }
     }
 }

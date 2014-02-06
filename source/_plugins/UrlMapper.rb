@@ -40,7 +40,7 @@ module Jekyll
         priority :low
 
         @@sourceDomain = ""
-        @@targetDomain = "http://www.ekynoxe.com"
+        @@targetDomain = "http://tri.ekynoxe.com"
         @@UrlsFileName = "mapped-urls.csv"
 
         def generate(site)
