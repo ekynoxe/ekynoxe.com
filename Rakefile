@@ -10,7 +10,7 @@ public_dir      = "public"  # compiled site directory
 source_dir      = "source"  # source file directory
 posts_dir       = "_posts"  # directory for blog files
 server_port     = "4000"    # port for preview server eg. localhost:4000
-deploy_to_local = "/Users/matt/Sites/ekynoxe/ekynoxe.github.io/"
+deploy_to_local = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
 # remote_server   = "pegasus" # remote server for deployment
 # remote_path     = "sites/kitchen/public"    # remote path for deployment
 
