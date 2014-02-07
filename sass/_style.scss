@@ -11,7 +11,8 @@ section:before, section:after,
 form:before, form:after,
 nav:before, nav:after,
 footer.main .inner:before, footer.main .inner:after,
-header.main nav ul:before, header.main nav ul:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+header.main nav ul:before, header.main nav ul:after,
+.ads:before, .ads:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
 .clearfix:after,
 .pagination:after,
 header.main:after,
@@ -20,7 +21,8 @@ section:after,
 form:after,
 nav:after,
 footer.main .inner:after,
-header.main nav ul:after { clear: both; }
+header.main nav ul:after,
+.ads:after { clear: both; }
 .clearfix { zoom: 1; }
 
 html {
@@ -778,11 +780,15 @@ section.testimonials {
     a {
         background-color: #e1e1e1;
         border-bottom: 0;
-        display: inline-block;
+        display: block;
         line-height: 0;
         margin: 0 auto;
         padding: 1rem;
         text-decoration: none;
+
+        img{
+            max-width: 100%;
+        }
     }
     a:hover {
         background-color: #d3d3d3;
@@ -1402,6 +1408,15 @@ footer.main {
             .linkedin a:hover { background-position: -630px -365px; }
         }
     }
+
+    .ads {
+        display: block;
+
+        a {
+            float: left;
+            width: 50%;
+        }
+    }
 }
 
 @media screen and (min-height:43.750em) { /* min-height: 700px */
@@ -1409,8 +1424,8 @@ footer.main {
 }
 
 @media screen and (min-width : 43.750em) {/* min-width: 700px */
-    .ads {
-        display: block;
+    .ads a {
+        width: 25%;
     }
 }
 
