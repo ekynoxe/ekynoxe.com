@@ -3,10 +3,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}<url>
-        <loc>http://www.ekynoxe.com{{ post.url | remove: 'index.html' }}</loc>
+        <loc>http://tri.ekynoxe.com{{ post.url | remove: 'index.html' }}</loc>
     </url>{% endfor %}
 
     {% for page in site.pages %}{% if page.layout != nil %}{% if page.layout != 'feed' %}{% if page.url contains 'page' %}{% else %}<url>
-        <loc>http://www.ekynoxe.com{{ page.url | remove: 'index.html' }}</loc>
+        <loc>http://tri.ekynoxe.com{{ page.url | remove: 'index.html' }}</loc>
     </url>{% endif %}{% endif %}{% endif %}{% endfor %}
 </urlset>
