@@ -59,6 +59,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  highline
   jekyll
   rake
   rdiscount
