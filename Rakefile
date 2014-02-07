@@ -28,6 +28,7 @@ task :new_post, :title do |t, args|
     print "Creating new post: #{filename}…\t"
     open(filename, 'w') do |post|
         post.puts "---"
+        post.puts "draft: true"
         post.puts "layout: post"
         post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
         post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
