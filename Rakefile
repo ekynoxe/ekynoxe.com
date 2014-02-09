@@ -3,29 +3,33 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require 'highline/import'
 
 domain          = "ekynoxe.com"
 
 public_dir      = "public"  # compiled site directory
 source_dir      = "source"  # source file directory
 posts_dir       = "_posts"  # directory for blog files
+drafts_dir      = "_drafts" # directory for draft posts
 server_port     = "4000"    # port for preview server eg. localhost:4000
 deploy_to_local = "/Users/matt/Sites/ekynoxe/ekynoxe.github.io/"
 # remote_server   = "pegasus" # remote server for deployment
 # remote_path     = "sites/kitchen/public"    # remote path for deployment
 
-desc "Begin a new post in #{source_dir}/#{posts_dir}"
+# use like this:   rake new_post["post title goes here"]
+desc "Begin a new post in #{source_dir}/#{drafts_dir}"
 task :new_post, :title do |t, args|
-    mkdir_p "#{source_dir}/#{posts_dir}"
+    mkdir_p "#{source_dir}/#{drafts_dir}"
     args.with_defaults(:title => 'new-post')
     title = args.title
-    filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
+    filename = "#{source_dir}/#{drafts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
     if File.exist?(filename)
         abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
     end
     print "Creating new post: #{filename}…\t"
     open(filename, 'w') do |post|
         post.puts "---"
+        post.puts "draft: true"
         post.puts "layout: post"
         post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
         post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
@@ -35,6 +39,7 @@ task :new_post, :title do |t, args|
     puts "[DONE!]\n"
 end
 
+# use like this:   rake generate
 desc "Generate jekyll site"
 task :generate do
     print "Generating Site with Jekyll…\t"
@@ -44,6 +49,7 @@ task :generate do
     puts "[DONE!]\n"
 end
 
+# use like this:   rake preview
 desc "Preview the site in a web browser"
 task :preview do
     jekyll_pid = Process.spawn("jekyll serve --watch --trace --drafts --source ./#{source_dir} --destination ./#{public_dir} --port #{server_port}")
@@ -61,13 +67,3 @@ task :preview do
 
     [jekyll_pid, compass_pid].each { |pid| Process.wait(pid) }
 end
-
-# desc "Deploy the site to the configured remote destination"
-# task :deploy do
-#     if ENV['remote']
-#         remote_server = ENV['remote']
-#     end
-#     puts "Deploying site to #{remote_server}:#{remote_path}…\n"
-#     # system "rsync -av ./#{public_dir}/ #{remote_server}:#{remote_path}"
-#     puts "[DONE!]\n"
-# end
