@@ -69,7 +69,7 @@ This was only the first race in the series of 4. The next one is on December 7th
             <tr>
                 <td>Run1 (10K)</td>
                 <td>49'11"</td>
-                <td><a title="swim data" href="http://connect.garmin.com/activity/404859691">data</a></td>
+                <td><a title="run1 data" href="http://connect.garmin.com/activity/404859691">data</a></td>
             </tr>
             <tr>
                 <td>T1</td>
@@ -89,7 +89,7 @@ This was only the first race in the series of 4. The next one is on December 7th
             <tr>
                 <td>Run2 (5K)</td>
                 <td>28'25"</td>
-                <td><a title="run data" href="http://connect.garmin.com/activity/404859733">data</a></td>
+                <td><a title="run2 data" href="http://connect.garmin.com/activity/404859733">data</a></td>
             </tr>
         </tbody>
     </table>

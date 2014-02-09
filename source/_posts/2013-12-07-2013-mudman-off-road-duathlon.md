@@ -86,7 +86,7 @@ Dan, Christine and Sarah were also happy to finish it off, Sarah taking a 2nd sp
             <tr>
                 <td>Run1 (7.5K)</td>
                 <td>36'43"</td>
-                <td><a title="swim data" href="http://connect.garmin.com/activity/413148416">data</a></td>
+                <td><a title="run1 data" href="http://connect.garmin.com/activity/413148416">data</a></td>
             </tr>
             <tr>
                 <td>T1</td>
@@ -106,7 +106,7 @@ Dan, Christine and Sarah were also happy to finish it off, Sarah taking a 2nd sp
             <tr>
                 <td>Run2 (7.5K)</td>
                 <td>36'22"</td>
-                <td><a title="run data" href="http://connect.garmin.com/activity/413148442">data</a></td>
+                <td><a title="run2 data" href="http://connect.garmin.com/activity/413148442">data</a></td>
             </tr>
         </tbody>
     </table>
