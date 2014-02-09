@@ -5,7 +5,6 @@ layout: post
 categories:
   - CSS
   - design
-  - triathlon
   - wordpress
   - work project
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "Closing the Hammersmith Barrier website"
 date: 2014-02-09 13:36
 categories:
+- work project
+- cycling
 ---
 In December 2011, I got fed up with the Hammersmith council and TFL not rising up to take ownership of the Hammersmith bridge barriers being constantly broken.
 I was cycling to work through the bridge every day, and most of the time, the bus lane barriers would be broken, on the side of the road, if not dangling from their support.
