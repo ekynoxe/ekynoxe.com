@@ -36,7 +36,7 @@ Below is what the site description read when it was up and running:
 > The Hammersmith bridge bus lanes feature barriers to prevent HGVs and other heavy vehicles to access the bridge, as it's not been designed to withstand the weight.
 
 > However, these barriers are broken, out of order, or removed regularly, sometimes posing serious risks to passers by. [The barrier strikes back][1] shows this, where the barrier falls in front of 3 cyclists that were going through the lane. Dangling from a cable inside the tube, the barrier was simply swinging one side to the other, and pedestrians could have been injured as well.
-> Fairly recent articles on [Focus transport][2], the [BBC][3] and the [Fulham and Hammersmith Chronicle][4] have shown that bus drivers themselves sometimes remove the barriers so they can go over the bridge. They claim it's because the barriers don't work.
+> Fairly recent articles on [Focus transport][2], the [BBC][3] and the [Fulham and Hammersmith Chronicle (now the Get West London website)][4] have shown that bus drivers themselves sometimes remove the barriers so they can go over the bridge. They claim it's because the barriers don't work.
 
 > **The rationale**
 
@@ -46,7 +46,7 @@ Below is what the site description read when it was up and running:
 
 > **Solutions**
 
-> For the cycle lane design issue, simply shortening the barrier by a feet or two would allow cyclists to pass by (when the barrier works, obviously) while still preventing large vehicles to go through.
+> For the cycle lane design issue, simply shortening the barrier by a foot or two would allow cyclists to pass by (when the barrier works, obviously) while still preventing large vehicles to go through.
 
 > A solution to the barrier itself would be to use rising bollards instead of a barrier. Maybe there would be a higher upfront cost, but that would be offset by not spending money on constant repairs. They certainly seem to [work well in Manchester][7]
 
@@ -55,7 +55,7 @@ Below is what the site description read when it was up and running:
 [1]: http://vimeo.com/37791955 "the barrier strikes back"
 [2]: http://focustransport2011.blogspot.co.uk/2011/11/calls-to-tackle-bus-drivers-over-bridge.html "Focus transport on the Hammersmith barrier"
 [3]: http://www.bbc.co.uk/news/uk-england-london-15843353 "BBC article"
-[4]: http://www.fulhamchronicle.co.uk/fulham-and-hammersmith-news/2011/11/23/bus-drivers-caught-tearing-down-hammersmith-bridge-safety-barrier-82029-29828153/ "Fulham and Hammersmith news: Bus drivers caught tearing down Hammersmith bridge safety barrier"
+[4]: http://www.getwestlondon.co.uk/news/local-news/bus-drivers-caught-tearing-down-5982157 "Fulham and Hammersmith news: Bus drivers caught tearing down Hammersmith bridge safety barrier"
 [5]: http://vimeo.com/35142018 "Misleading road markings"
 [6]: http://www.richmondlcc.co.uk/2010/11/08/another-veloteer-review-hammersmith-bridge/ "Richmond Cycling Campaign: Another veloteer review Hammersmith bridge"
 [7]: http://www.youtube.com/watch?v=PRCA8MvedIo "Another solution"
