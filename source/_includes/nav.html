@@ -1,13 +1,17 @@
 {% assign homeclass='' %}
+{% assign raceresultsclass='' %}
 {% assign contactclass='' %}
 
 {% if page.section == "contact" %}
     {% assign contactclass='class="selected"' %}
+{% elsif page.section == "raceresults" %}
+    {% assign raceresultsclass='class="selected"' %}
 {% else %}
     {% assign homeclass='class="selected"' %}
 {% endif %}
 
 <ul>
     <li class="home"><a title="home" {{ homeclass }} href="/">HOME</a></li>
+    <li><a title="my race results" {{ raceresultsclass }} href="/race-results">RACE RESULTS</a></li>
     <li><a title="contact me" {{ contactclass }} href="/#contact">CONTACT</a></li>
 </ul>
