@@ -11,6 +11,10 @@ module Jekyll
             "#{@context.registers[:site].config['cdn']}/#{input}"
         end
 
+        def local(input)
+            "/assets/drafts/#{input}"
+        end
+
         def urlize(text)
             text.gsub(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/i,"<a href='\\1'>\\1</a>")
         end
