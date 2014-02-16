@@ -451,9 +451,10 @@ section {
         >p {
             font-size: 1.2rem;
         }
-        iframe, img {
+        iframe {
             width: 100%;
         }
+        img { max-width: 100%; }
 
         blockquote {
             border-left: 0.5rem solid $highlight;
