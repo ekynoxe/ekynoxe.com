@@ -16,7 +16,7 @@ For the terrain and the weather, I'll take it!!
 
 * Richmond park 2 laps &#8211; 23K: 1h37&#8217;29&#8243; [garmin data][77]
 
-### The Iceman off road duathlon &#8211; 25 January
+### [The Iceman off road duathlon](/2014-iceman-off-road-duathlon/) &#8211; 25 January
 
 **2h19'14" (20th overall, 18th male and 6th in M30-34)**
 
@@ -30,7 +30,7 @@ Easier overall than the Mudman, but no ice, and a lot more mud! I started mid-pa
 
 ## 2013
 
-### The Mudman off road duathlon &#8211; 7 November
+### [The Mudman off road duathlon](/2013-mudman-off-road-duathlon/) &#8211; 7 November
 
 **2h14&#8217;53&#8243; (36th overall, 33rd male and 7th in M30-34)**
 
@@ -54,7 +54,7 @@ Super fast course on pavements and in Perivale park. I couldn&#8217;t catch the 
 
 Held on army training grounds, that was a fun race in mud, on lose gravel and in massive and deep trenches filled with very cold water, some chest high! Started at the back but picked my way up as I could and finished strong.
 
-### The Wildman off road duathlon &#8211; 16 November
+### [The Wildman off road duathlon](/2013-wildman-off-road-duathlon/) &#8211; 16 November
 
 **2h27&#8217;03&#8243; (50th overall, 12th in age group / 39)**
 
@@ -78,7 +78,7 @@ Very fast opening first run straight into the red zone. It took me a while to se
 
 *&#8212; End of season break of 5 weeks without training &#8212;*
 
-### Ironman 70.3 Lanzarote &#8211; 05 October
+### [Ironman 70.3 Lanzarote](/lanzarote-70-3-2013-hot-windy-hard-yet-the-perfect-end/) &#8211; 05 October
 
 **4h58&#8217;53&#8243; (50th overall, 10th in age group)**
 
@@ -90,7 +90,7 @@ Very fast opening first run straight into the red zone. It took me a while to se
 *   T2: 2&#8217;10&#8243; [T2 data][14]
 *   Run 21.1K: 1h35&#8217;34&#8243; [run data][15]
 
-### Thorpe park sprint triathlon &#8211; 22nd September
+### [Thorpe park sprint triathlon](/thorpe-park-sprint-triathlon/) &#8211; 22nd September
 
 Replacing the original Big Cow Events club relays that got cancelled because of blue algae and subsequent numbers of cancellations.
 
@@ -104,7 +104,7 @@ PB in every leg and overall, and this time, transitions went almost well! A bit 
 *   T2: 0&#8217;59&#8243; [T2 data][19]
 *   Run 5K: 18&#8217;50&#8243; [run data][20]
 
-### Ironman 70.3 Zell Am See &#8211; 01 Septembre
+### [Ironman 70.3 Zell Am See](/ironman-70-3-zell-am-see-2013-the-wet-one/) &#8211; 01 Septembre
 
 **4h39&#8217;41&#8243; (139th overall, 126th male and 31th in age group)**
 
@@ -124,7 +124,7 @@ PB in every leg and overall, but bad transitions yet again. T1 being cold and tr
 
 Very hot and a lot of waiting to start at the hottest time of the day ~2:30pm.
 
-### The New Forest Swashbuckler &#8211; 02 June 2013
+### [The New Forest Swashbuckler](/the-swashbuckler-2013-finally-incident-free/) &#8211; 02 June 2013
 
 **4h43&#8217;00&#8243; (39th overall, 20th in age group)**
 
@@ -136,7 +136,7 @@ Average swim, took my time in T1 to put on all layers properly. Pushed hard on t
 *   T2: 3&#8217;14&#8243; [T2 data][30]
 *   Run 22.5K: 1h40&#8217;38&#8243; [run data][31]
 
-### Ironman Lanzarote &#8211; 18 May 2013
+### [Ironman Lanzarote](/ironman-lanzarote-2013-race-report/) &#8211; 18 May 2013
 
 **10h37&#8217;10&#8243; (117th overall, 112th male and 25th in age group)**
 
@@ -156,7 +156,7 @@ Fiesty swim, strong winds and 2500m+ of ascent. Very well executed race!
 
 ## 2012
 
-### Ironman 70.3 Lanzarote &#8211; 10 Novembre 2012
+### [Ironman 70.3 Lanzarote](/ironman-70-3-lanzarote/) &#8211; 10 Novembre 2012
 
 **5:12:24 (80th overall, 15th in age group)**
 
@@ -174,7 +174,7 @@ Very fiesty swim, very strong winds and 1500m+ of ascent and a very big cramp on
 
 No time goal, as this was the first long run since the Outlaw <a title="garmin data" href="http://connect.garmin.com/activity/223579303" target="_blank">garmin data</a>
 
-### The outlaw triathlon &#8211; 1st July 2012
+### [The outlaw triathlon](/the-outlaw-triathlon-2012-the-long-walk/) &#8211; 1st July 2012
 
 **11:34:50 (194th overall, 35th in age group)**
 
@@ -186,7 +186,7 @@ Walked a lot of the marathon due to a right knee injury and a twisted left ankle
 *   T2: 3:17
 *   run 42.2K: 4:44:53 <a title="garmin data" href="http://connect.garmin.com/activity/195336546" target="_blank">garmin data</a>
 
-### Nuffield health challenge &#8211; 27 May 2012
+### [Nuffield health challenge](/nuffield-health-challenge-dorney-lake/) &#8211; 27 May 2012
 
 **2:24:02 (19th overall, 10th in age group)**
 
@@ -198,7 +198,7 @@ Drank too much on the bike and paid for it on the run feeling sick.
 *   T2: 0:58
 *   run 10K: 49:04 <a title="garmin data" href="http://connect.garmin.com/activity/182820392" target="_blank">garmin data</a>
 
-### Crystal Palace sprint triathlon &#8211; 20 May 2012
+### [Crystal Palace sprint triathlon](/crystal-palace-sprint-triathlon/) &#8211; 20 May 2012
 
 **1:11:35 (20th overall, 15th in age group)**
 
@@ -210,7 +210,7 @@ Bloody hill, but great fast race!
 *   T2: 1:01
 *   run 5K: 20:18 [garmin data][40]
 
-### The Swashbuckler middle distance triathlon &#8211; 12 May 2012
+### [The Swashbuckler middle distance triathlon](/the-swashbuckler-2012-the-forest-wins-again/) &#8211; 12 May 2012
 
 **4:44:30 (29th in age group)**
 
@@ -220,7 +220,7 @@ Frozen on the bike and shivering uncontrollably. Stopped 15min to warm up before
 *   bike 80Km + T2: 2:40:52 [garmin data][42]
 *   run 22.8K: 1:40:19 [garmin data][43]
 
-### Ironman 70.3 california &#8211; 30 March 2012
+### [Ironman 70.3 california](/ironman-70-3-california/) &#8211; 30 March 2012
 
 **4:55:21 (22th in age group)**
 
@@ -240,7 +240,7 @@ Crap weather, did a huge detour on the swim to avoid packs of slower swimmers an
 
 ## 2011
 
-### Challenge Barcelona
+### [Challenge Barcelona](/challenge-barcelona-race-report/)
 
 **10:34:12 (180th overall)**
 
@@ -256,7 +256,7 @@ Crap weather, did a huge detour on the swim to avoid packs of slower swimmers an
 
 **1:11:43 [garmin data][52]**
 
-### Hyde park Olympic triathlon &#8211; 6 August 2011
+### [Hyde park Olympic triathlon](/hyde-park-triathlon-2011-2h1929-olympic-pb/) &#8211; 6 August 2011
 
 **2:19:29 (25th in age group)**
 
@@ -266,7 +266,7 @@ Crap weather, did a huge detour on the swim to avoid packs of slower swimmers an
 *   T2: 2:07
 *   run 10K: 40:09 [garmin data][55]
 
-### Hillingdon sprint &#8211; 17 July 2011
+### [Hillingdon sprint](/hillingdon-sprint-or-my-first-dnf/) &#8211; 17 July 2011
 
 **DNF 2.5Km from the finish line, but should have been roughly 1:25:30)**
 
@@ -278,7 +278,7 @@ DNF because of broken rear mech hanger after the chain and rear mech went throug
 *   T2: 0:25
 *   bike 25K: 40:19 (for only 22.6K before breakage) [garmin data][58]
 
-### The Swashbuckler middle distance triathlon &#8211; 13 May 2011
+### [The Swashbuckler middle distance triathlon](/the-2011-swashbuckler-or-how-to-spend-5h-racing/) &#8211; 13 May 2011
 
 **5:16:15 (29th age group)**
 
