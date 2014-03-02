@@ -41,7 +41,7 @@ module Jekyll
 
         @@sourceDomain = ""
         @@targetDomain = "http://www.ekynoxe.com"
-        @@UrlsFileName = "mapped-urls.csv"
+        @@UrlsFileName = "htaccess_redirects"
 
         def generate(site)
             mappedUrls = []
@@ -50,7 +50,7 @@ module Jekyll
                 post_name = post.name.gsub(/\.md$/, "")
                 url_parts = post_name.match(/([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)/i)
 
-                mappedUrls << "Redirect 301 " + File.join(@@sourceDomain, url_parts[1], url_parts[2], url_parts[3], url_parts[4]) + " " + File.join(@@targetDomain, url_parts[4]) + "/"
+                mappedUrls << "RedirectMath 301 " + File.join(@@sourceDomain, url_parts[1], url_parts[2], url_parts[3], url_parts[4]) + "/? " + File.join(@@targetDomain, url_parts[4]) + "/"
             end
 
             site_folder = site.config['destination']
