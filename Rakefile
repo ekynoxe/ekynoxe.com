@@ -13,11 +13,9 @@ source_dir      = "source"  # source file directory
 posts_dir       = "_posts"  # directory for blog files
 drafts_dir      = "_drafts" # directory for draft posts
 server_port     = "4000"    # port for preview server eg. localhost:4000
-deploy_to_local = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
-# remote_server   = "pegasus" # remote server for deployment
-# remote_path     = "sites/kitchen/public"    # remote path for deployment
+local_target = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
 
-# use like this:   rake new_post["post title goes here"]
+# usage:   rake new_post["post title goes here"]
 desc "Begin a new post in #{source_dir}/#{drafts_dir}"
 task :new_post, :title do |t, args|
     mkdir_p "#{source_dir}/#{drafts_dir}"
@@ -40,17 +38,17 @@ task :new_post, :title do |t, args|
     puts "[DONE!]\n"
 end
 
-# use like this:   rake generate
+# usage:   rake generate
 desc "Generate jekyll site"
 task :generate do
     print "Generating Site with Jekyll…\t"
     system "compass compile --css-dir #{source_dir}/assets/css"
     system "jekyll build --source ./#{source_dir} --destination ./#{public_dir}"
-    system "cp -R public/* #{deploy_to_local}"
+    system "cp -R public/* #{local_target}"
     puts "[DONE!]\n"
 end
 
-# use like this:   rake preview
+# usage:   rake preview
 desc "Preview the site in a web browser"
 task :preview do
     jekyll_pid = Process.spawn("jekyll serve --watch --trace --drafts --source ./#{source_dir} --destination ./#{public_dir} --port #{server_port}")
@@ -69,7 +67,8 @@ task :preview do
     [jekyll_pid, compass_pid].each { |pid| Process.wait(pid) }
 end
 
-# use like this:   rake publish
+
+# usage:   rake publish
 #   and follow the prompts
 desc "Publish posts currently written as drafts"
 task :publish do
@@ -174,4 +173,18 @@ def print_drafts drafts
 
     puts "q - exit"
     puts ""
+end
+
+
+# usage:   rake deploy
+desc "Deploy the current generated website to its target"
+task :deploy do
+    puts "First, let's make sure we have the correct website version generated"
+    Rake::Task["generate"].invoke
+
+    # Switch in to the tmp dir.
+    Dir.chdir local_target
+
+    system "git add . && git commit -m 'Site updated at #{Time.now.utc}'"
+    system "git push origin master"
 end
