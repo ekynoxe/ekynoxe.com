@@ -1,15 +1,14 @@
 # encoding: utf-8
 #
-# Jekyll urls mapping plugin for site migration
+# Jekyll 301 Redirects Generator plugin for Wordpress site migration
 # http://www.ekynoxe.com/
-# Version: 0.0.1 (2014-01-26)
+# Version: 0.0.1 (2014-03-04)
 #
 # Copyright (c) 2014 Mathieu Davy - ekynoxe - http://ekynoxe.com/
 # Licensed under the MIT license
 # (http://www.opensource.org/licenses/mit-license.php)
 #
-# This plugin creates a csv file in the site's public directory
-#   containing mappings from old urls to the new ones.
+# This plugin creates a list of 301 redirects from old Wordpress urls to new ones.
 # It currently only supports one source url structure
 #   and one target structure:
 #
@@ -23,25 +22,25 @@
 module Jekyll
 
     # Sub-class Jekyll::StaticFile to allow recovery from unimportant exception
-    #   when writing the sitemap file.
+    #   when writing the redirects file.
     # I don't like this but that seems to be the only way to get around Jekyll
     #   StaticFile class using "cp" instead of "rename"
     # Found on the SiteMap Generator at
     #   https://github.com/recurser/jekyll-plugins/blob/master/generate_sitemap.rb
-    class StaticSitemapFile < StaticFile
+    class RedirectsFile < StaticFile
         def write(dest)
             super(dest) rescue ArgumentError
             true
         end
     end
 
-    class UrlMapper < Generator
+    class RedirectsGenerator < Generator
         safe true
         priority :low
 
         @@sourceDomain = ""
         @@targetDomain = "http://tri.ekynoxe.com"
-        @@UrlsFileName = "htaccess_redirects"
+        @@RedirectsFileName = "htaccess_redirects"
 
         def generate(site)
             mappedUrls = []
@@ -59,7 +58,7 @@ module Jekyll
                 p.mkdir
             end
 
-            File.open(File.join( site_folder, @@UrlsFileName ), 'w') do |f|
+            File.open(File.join( site_folder, @@RedirectsFileName ), 'w') do |f|
                 mappedUrls.each do |line|
                     f.write line + "\n"
                 end
@@ -67,7 +66,7 @@ module Jekyll
                 f.close
             end
 
-            site.static_files << Jekyll::StaticSitemapFile.new(site, site.dest, '/', @@UrlsFileName)
+            site.static_files << Jekyll::RedirectsFile.new(site, site.dest, '/', @@RedirectsFileName)
         end
     end
 end

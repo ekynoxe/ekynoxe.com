@@ -6,13 +6,14 @@ require "stringex"
 require "highline/import"
 require "fileutils"
 
-domain          = "ekynoxe.com"
+domain            = "ekynoxe.com"
 
-public_dir      = "public"  # compiled site directory
-source_dir      = "source"  # source file directory
-posts_dir       = "_posts"  # directory for blog files
-drafts_dir      = "_drafts" # directory for draft posts
-server_port     = "4000"    # port for preview server eg. localhost:4000
+public_dir        = "public"  # compiled site directory
+source_dir        = "source"  # source file directory
+posts_dir         = "_posts"  # directory for blog files
+drafts_dir        = "_drafts" # directory for draft posts
+drafts_assets_dir = "assets/drafts/content" # directory for drafts assets
+server_port       = "4000"    # port for preview server eg. localhost:4000
 local_target = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
 
 # usage:   rake new_post["post title goes here"]
@@ -21,12 +22,13 @@ task :new_post, :title do |t, args|
     mkdir_p "#{source_dir}/#{drafts_dir}"
     args.with_defaults(:title => 'new-post')
     title = args.title
-    filename = "#{source_dir}/#{drafts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
-    if File.exist?(filename)
-        abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+    filename = "#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}"
+    filepath = "#{source_dir}/#{drafts_dir}/#{filename}.md"
+    if File.exist?(filepath)
+        abort("rake aborted!") if ask("#{filepath} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
     end
-    print "Creating new post: #{filename}…\t"
-    open(filename, 'w') do |post|
+    print "Creating new post: #{filepath}...\n"
+    open(filepath, 'w') do |post|
         post.puts "---"
         post.puts "draft: true"
         post.puts "layout: post"
@@ -35,6 +37,9 @@ task :new_post, :title do |t, args|
         post.puts "categories: "
         post.puts "---"
     end
+
+    print "Creating new post draft asset folder for: #{filename}\n"
+    mkdir_p "#{source_dir}/#{drafts_assets_dir}/#{filename}"
     puts "[DONE!]\n"
 end
 
