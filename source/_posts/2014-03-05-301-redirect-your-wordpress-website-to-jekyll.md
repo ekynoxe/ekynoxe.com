@@ -1,4 +1,46 @@
-# encoding: utf-8
+---
+layout: post
+title: "301 redirect your Wordpress website to Jekyll"
+written_on: 2014-03-03 19:38
+date: 2014-03-05 21:49
+categories:
+- Jekyll
+---
+
+If you're migrating a Wordpress install to Jekyll, and changing your URLs structure at the same time, you'll need to generate redirects for your old URLs.
+
+<p class="attachement"><span><img src="{{ "301.png" | image_path | cdn }}" alt="301 permanent redirect" /></span></p>
+
+<!--more-->
+Here's a plugin that does that for you: give it the source and destination domains, and when you generate your Jekyll website, it creates a file pre-formatted with all you need to migrate your old URLs.
+
+Simply drop the result in the .htaccess of an Apache install and you're good to go.
+
+At the time of writing, this plugin only supports one source URL scheme, and one destination scheme:
+The source URLs must be formatted as **<olddomain>/year/month/day/post-slug**, while the destination will be**<newdomain>/post-slug**
+
+The configuration options are directly inside the code and speak for themselves. You might not need to set a value at all for the source domain, but it's there if you need it.
+
+<pre><code>@@sourceDomain = ""
+@@targetDomain = "http://www.ekynoxe.com"
+@@RedirectsFileName = "htaccess_redirects"
+</code></pre>
+
+Here's a sample of what it generated for my own site:
+<pre><code>...
+RedirectMath 301 /2010/08/09/mastermind/? http://www.ekynoxe.com/mastermind/
+RedirectMath 301 /2010/09/01/what-really-motivates-us/? http://www.ekynoxe.com/what-really-motivates-us/
+RedirectMath 301 /2010/09/06/extending-contact-form-7/? http://www.ekynoxe.com/extending-contact-form-7/
+RedirectMath 301 /2010/09/12/create-a-deep-space-background-in-photoshop/? http://www.ekynoxe.com/create-a-deep-space-background-in-photoshop/
+RedirectMath 301 /2010/10/24/this-is-it/? http://www.ekynoxe.com/this-is-it/
+...
+</code></pre>
+
+The source code is on Github in the [Jekyll 301 Redirects Generator](https://github.com/ekynoxe/JekyllRedirectsGenerator)
+
+If you prefer copy / paste, here it is too:
+
+<pre><code># encoding: utf-8
 #
 # Jekyll 301 Redirects Generator plugin for Wordpress site migration
 # http://www.ekynoxe.com/
@@ -67,3 +109,4 @@ module Jekyll
         end
     end
 end
+</code></pre>
