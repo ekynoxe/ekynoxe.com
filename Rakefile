@@ -14,7 +14,8 @@ posts_dir         = "_posts"  # directory for blog files
 drafts_dir        = "_drafts" # directory for draft posts
 drafts_assets_dir = "assets/drafts/content" # directory for drafts assets
 server_port       = "4000"    # port for preview server eg. localhost:4000
-local_target = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
+local_target      = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
+s3_bucket         = "s3://com.ekynoxe.www/content/"
 
 # usage:   rake new_post["post title goes here"]
 desc "Begin a new post in #{source_dir}/#{drafts_dir}"
@@ -49,7 +50,7 @@ task :generate do
     print "Generating Site with Jekyll…\t"
     system "compass compile --css-dir #{source_dir}/assets/css"
     system "jekyll build --source ./#{source_dir} --destination ./#{public_dir}"
-    system "cp -R public/* #{local_target}"
+    system "rsync -av --exclude 'assets/drafts' public/ #{local_target}"
     puts "[DONE!]\n"
 end
 
@@ -140,27 +141,36 @@ task :publish do
         next if line.chomp == "draft: true"
 
         if line.chomp =~ /title: .+/
-            title = line.chomp.to_url
+            title = line.chomp.gsub("title: ", "").to_url
         end
 
         if line.chomp =~ /date: .+/
             out_file.puts "written_on: " + line.chomp.match(/date: (.+)/)[1]
             out_file.puts "date: " + Time.now.strftime('%Y-%m-%d %H:%M')
         else
-            out_file.puts line
+            out_file.puts line.gsub("| local", "| cdn") # Replacing file urls for CDN urls. Images are uploaded by the s3cmd call below.
         end
+
+
       end
     end
 
-    output_file = File.join(source_dir, posts_dir, Time.now.strftime('%Y-%m-%d') + "-#{title}")
+    output_file_name = Time.now.strftime('%Y-%m-%d') + "-#{title}"
+    output_file = File.join(source_dir, posts_dir, output_file_name+".md")
 
     if File.exist?(output_file)
         abort("publication aborted") if ask("/!\\/!\\ \"#{output_file}\" already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
     end
 
-    puts "Overwritting #{output_file}"
+    puts "Writting #{output_file}"
 
     FileUtils.mv(temp_file, output_file)
+
+    puts "Uploading images to amazon S3"
+
+    draft_assets_dir = File.join(source_dir, drafts_assets_dir, draft.gsub(".md","/"))
+
+    system "s3cmd put --acl-public --guess-mime-type #{draft_assets_dir}* #{s3_bucket}#{output_file_name}/"
 
     puts "Publication complete!"
 end
