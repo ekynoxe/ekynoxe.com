@@ -793,13 +793,13 @@ footer.main {
 
         a {
             border-bottom: 2px solid rgba(0,0,0,0);
-            color: $highlight;
+            color: $orange;
             font-family: $title-font-family;
             font-weight: 400;
         }
         a:hover {
-            border-bottom: 2px solid $highlight_rgba_over;
-            color: $highlight;
+            border-bottom: 2px solid $orange;
+            color: $orange;
         }
     }
 
