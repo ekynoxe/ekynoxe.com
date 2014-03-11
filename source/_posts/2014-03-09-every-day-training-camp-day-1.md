@@ -43,5 +43,5 @@ Lanzarote - Over and out.
 <h3>Today's stats for me</h3>
 
 * Swim: 2.1Km (one lap of the IM course + extra at start)
-* Bike: 103Km, 1500m ascent
+* [Bike: 103Km, 1500m ascent](http://connect.garmin.com/activity/458041343)
 * Run: 35min, 7.3Km

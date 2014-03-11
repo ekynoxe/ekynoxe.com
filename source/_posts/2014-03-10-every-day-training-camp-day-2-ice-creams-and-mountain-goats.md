@@ -38,7 +38,7 @@ Tired now, I need some sleep: tomorrow, there's an aqauthlon and that one will h
 <h3>Today's stats for me</h3>
 
 * Swim: 800m (only, but crazy sprinting)
-* Bike: 140Km, 2000m ascent
+* [Bike: 140Km, 2000m ascent](http://connect.garmin.com/activity/458826817)
 * Run: 1h, 12.3Km.
 
 <div class="gallery">
