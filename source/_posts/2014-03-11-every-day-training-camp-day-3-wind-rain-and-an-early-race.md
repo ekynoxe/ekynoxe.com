@@ -8,7 +8,7 @@ categories:
 - Every Day Training
 ---
 
-Today on <a href="http://www.everydaytraining.org.uk/" title="EDT Camp day two">EDT</a> camp, it was all about the early morning race: an aquathlon on the sea front of Puerto del Carmen. Then a simple ride just above 100K to make things right!
+Today on <a href="http://www.everydaytraining.org.uk/" title="EDT Camp day three">EDT</a> camp, it was all about the early morning race: an aquathlon on the sea front of Puerto del Carmen. Then a simple ride just above 100K to make things right!
 
 <p class="attachement"><a href="{{ "Aquathlon_transition.jpg" | image_path | cdn }}" title="Aquathlon transition" rel="lightbox[20140311]"><img src="{{ "Aquathlon_transition_r500.jpg" | image_path | cdn }}" alt="Aquathlon transition" /></a></p>
 
