@@ -5,6 +5,21 @@ section: raceresults
 ---
 ## 2014
 
+### EDT Camp 10K run race
+Handicapped race part of the [everyday training camp 2014](http://everydaytraining.org.uk)
+
+* 38'34" [run data](http://connect.garmin.com/activity/460405130)
+
+### EDT Camp 10K Hill climb TT: Tabayesco and Mirador de Haria
+Handicapped race part of the [everyday training camp 2014](http://everydaytraining.org.uk)
+
+* 28'59" [hill climb is the 3rd split of this ride](http://connect.garmin.com/activity/461239822)
+
+### EDT Camp 10mi TT: El-Golfo loop
+Straight rolling TT around the El Golfo loop, which is the southern part of the ironman course. Part of the [everyday training camp 2014](http://everydaytraining.org.uk)
+
+* 25'05" [TT is the 3r split of this ride](http://connect.garmin.com/activity/458041343)
+
 ### The Trailman off road duathlon &#8211; 22 February
 **Cancelled due to flooding.** Well, delayed, but I won't be in the UK on the new race date of 15 March :-(
 
