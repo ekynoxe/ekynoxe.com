@@ -12,7 +12,8 @@ form:before, form:after,
 nav:before, nav:after,
 footer.main .inner:before, footer.main .inner:after,
 header.main nav ul:before, header.main nav ul:after,
-.ads:before, .ads:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.ads:before, .ads:after,
+.partners:before, .partners:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
 .clearfix:after,
 .pagination:after,
 header.main:after,
@@ -22,7 +23,8 @@ form:after,
 nav:after,
 footer.main .inner:after,
 header.main nav ul:after,
-.ads:after { clear: both; }
+.ads:after,
+.partners:after { clear: both; }
 .clearfix { zoom: 1; }
 
 html {
@@ -677,7 +679,8 @@ section.work {
 
 .tag_list,
 .comments,
-.ads {
+.ads,
+.partners {
     border-top: 5px solid #e1e1e1;
 }
 
@@ -747,12 +750,15 @@ section.work {
 
 .ads {
     display: none;
+}
+
+.ads, .partners {
     text-align: center;
 
     a {
         background-color: #e1e1e1;
         border-bottom: 0;
-        display: block;
+        display: inline-block;
         line-height: 0;
         margin: 0 auto;
         padding: 1rem;
@@ -764,6 +770,13 @@ section.work {
     }
     a:hover {
         background-color: #d3d3d3;
+    }
+}
+
+.partners {
+
+    a {
+        width: 75%;
     }
 }
 
@@ -1395,6 +1408,13 @@ footer.main {
             width: 50%;
         }
     }
+
+    .partners {
+
+        a {
+            width: 35%;
+        }
+    }
 }
 
 @media screen and (min-height:43.750em) { /* min-height: 700px */
@@ -1402,9 +1422,7 @@ footer.main {
 }
 
 @media screen and (min-width : 43.750em) {/* min-width: 700px */
-    .ads a {
-        width: 25%;
-    }
+    .ads a { width: 25%; }
 }
 
 /* iPads (landscape) ----------- */

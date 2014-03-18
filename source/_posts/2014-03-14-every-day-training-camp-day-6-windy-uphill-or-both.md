@@ -24,6 +24,10 @@ But today was honestly a long struggle. The wind was quite strong, making the as
 
 The initial idea was to get around the course in about 6h30, but it took us 7h15. Still, we were pretty pleased with that given the conditions!!
 
+In 2 months time, I hope to get around in 5h30 max if I want to get close to the 10h mark overall... This little reminder will always be on my mind:
+
+<p class="attachement"><a href="{{ "run_boy_run.jpg" | image_path | cdn }}" title="Run boy Run" rel="lightbox[2014-03-14]"><img src="{{ "run_boy_run_r500.jpg" | image_path | cdn }}" alt="Run boy Run" /></a></p>
+
 Everyone from all groups made it through the course, and it's a pleasure to see that although it's been a long, hard ride at the end of a very busy training week, it's been enjoyable.
 
 With each one of us having done more than 30 hours of training this week, EDT Camp has now been completed! We were all very much looking forward to a nice meal out altogether, and proper grilled meat was on most plates tonight!
@@ -65,6 +69,11 @@ See you next year, I'm off for a rest now!
     <dl class='gallery-item'>
         <dt class='gallery-icon attachement'>
             <a href="{{ "Mirador_del_Rio_as_ever_impressive.png" | image_path | cdn }}" title="Mirador del Rio: as ever impressive" rel="lightbox[2014-03-14]"><img src="{{ "Mirador_del_Rio_as_ever_impressive_r300.png" | image_path | cdn }}" alt="Mirador del Rio: as ever impressive" /></a>
+        </dt>
+    </dl>
+    <dl class='gallery-item'>
+        <dt class='gallery-icon attachement'>
+            <a href="{{ "run_boy_run.jpg" | image_path | cdn }}" title="Run boy Run" rel="lightbox[2014-03-14]"><img src="{{ "run_boy_run_r500.jpg" | image_path | cdn }}" alt="Run boy Run" /></a>
         </dt>
     </dl>
     <dl class='gallery-item'>
