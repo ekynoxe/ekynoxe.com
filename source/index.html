@@ -16,8 +16,8 @@ layout: index
         <div class="content">
             <header>
                 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-                <h1>{{ post.title }}</h1>
-                <a title="Link to {{ post.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
+                <h1>{{ post.project.title }}</h1>
+                <a title="Link to {{ post.project.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
             </header>
             <img src="{{ asset | cdn }}" alt="{{post.project.url}}" />
             <ul>

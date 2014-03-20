@@ -7,6 +7,7 @@ categories:
   - projects
 project:
     featured: true
+    title: Ellen Physiotherapy
     classname: physioellen
     hero: physioellen.png
     url: www.physioellen.co.uk
