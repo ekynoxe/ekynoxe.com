@@ -5,12 +5,23 @@ layout: post
 categories:
   - shopify
   - work project
+  - projects
 tags:
   - business
   - shopify
   - sister
   - web development
   - work
+project:
+    featured: true
+    title: Instants Tiss&eacute;s
+    classname: instantstisses
+    hero: instantstisses.png
+    url: www.instantstisses.com
+    summary: <p>My sister launched her business early 2013 and we worked together to produce her online shop using shopify as the e-commerce platform.</p><p>She produced the designs under my guidance and I did the integration alongside the custom coding necessary to offer to her customers the functionality she wanted.</p>
+    work:
+        - Development
+        - shopify e-commerce
 ---
 Several months in the making to sort out all the details and go around the inevitable changes of mind that my sister always goes through, her business online store, [Instants Tissés][1], is now open!
 

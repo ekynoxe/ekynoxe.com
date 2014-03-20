@@ -1,6 +1,5 @@
 ---
 layout: index
-<!-- styles: index-page -->
 ---
 
 <section class="work">
@@ -9,42 +8,28 @@ layout: index
             <h1>recent work</h1>
         </div>
     </header>
-    <article class="physioellen">
+
+{% for post in site.categories.projects %}
+{% if post.project.featured %}
+{% assign asset = "content/" | append: post.name | append: "/" | append: post.project.hero %}
+    <article class="{{post.project.classname}}">
         <div class="content">
             <header>
-                <time datetime="2013-05-01">May 01, 2013</time>
-                <h1>Ellen physiotherapy</h1>
-                <a title="Link to Ellen physiotherapy website" href="http://www.physioellen.co.uk/">www.physioellen.co.uk</a>
+                <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                <h1>{{ post.title }}</h1>
+                <a title="Link to {{ post.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
             </header>
-            <img src="/assets/img/content/sites/physioellen.png" alt="www.physioellen.co.uk" />
-            {% comment %}
-            <!-- <p>A simple yet effective single page layout to launch Ellen's business as as self employed physiotherapist in the South West London area. Ellen had some initial ideas so this made the design phase quite quick. The logo was done from her original ideas that I have adapted, and we have also created business cards to go with the website. I used a pure ruby application using sinatra for this small site to make it fast and easy to develop.</p> -->
-            {% endcomment %}
+            <img src="{{ asset | cdn }}" alt="{{post.project.url}}" />
             <ul>
-                <li>Graphic Design</li>
-                <li>HTML/SCSS</li>
-                <li>Ruby/Sinatra development</li>
+            {% for item in post.project.work %}
+                <li>{{item}}</li>
+            {% endfor %}
             </ul>
         </div>
     </article>
-    <article class="instantstisses">
-        <div class="content">
-            <header>
-                <time datetime="2013-05-01">May 01, 2013</time>
-                <h1>Instants Tiss&eacute;s</h1>
-                <a title="Link to Instants tisses website" href="http://www.instantstisses.com" title="www.instantstisses.com">www.instantstisses.com</a>
-            </header>
-            <img src="/assets/img/content/sites/instantstisses.png" alt="www.instantstisses.com" />
-            {% comment %}
-            <!-- <p>My sister launched her business early 2013 and we worked together to produce her online shop using shopify as the e-commerce platform.</p>
-            <p>She produced the designs under my guidance and I did the integration alongside the custom coding necessary to offer to her customers the functionality she wanted.</p> -->
-            {% endcomment %}
-            <ul>
-                <li>Development</li>
-                <li>shopify e-commerce</li>
-            </ul>
-        </div>
-    </article>
+{% endif %}
+{% endfor %}
+
     {% comment %}
     <!-- <a class="button" href="/work" title="see more work">see more work</a> -->
     {% endcomment %}
