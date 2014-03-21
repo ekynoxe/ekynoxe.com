@@ -2,27 +2,22 @@
 layout: page
 section: work
 ---
-<section class="work">
+<section class="projects">
     <header>
-        <h1>previous clients</h1>
+        <h1>previous projects</h1>
     </header>
 
 {% for post in site.categories.projects %}
-{% assign asset = "content/" | append: post.name | append: "/" | append: post.project.hero %}
-    <article class="{{post.project.classname}}">
+    {% assign asset = "content/" | append: post.name | append: "/" | append: post.project.hero %}
+    <article>
+        <a title="Link to {{ post.project.title }}" href="{{ post.url }}">
+            <img src="{{ asset | cdn }}" alt="{{ post.project.title }}" />
+        </a>
         <header>
             <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
             <h1>{{ post.project.title }}</h1>
             <a title="Link to {{ post.project.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
         </header>
-        <img src="{{ asset | cdn }}" alt="{{post.project.url}}" />
-
-        <p class="content-text">{{post.project.summary}}</p>
-        <ul>
-        {% for item in post.project.work %}
-            <li>{{item}}</li>
-        {% endfor %}
-        </ul>
     </article>
 {% endfor %}
 </section>

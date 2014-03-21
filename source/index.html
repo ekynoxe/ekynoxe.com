@@ -19,7 +19,9 @@ layout: index
                 <h1>{{ post.project.title }}</h1>
                 <a title="Link to {{ post.project.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
             </header>
-            <img src="{{ asset | cdn }}" alt="{{post.project.url}}" />
+            <a title="Link to {{ post.project.title }}" href="{{ post.url }}">
+                <img src="{{ asset | cdn }}" alt="{{post.project.url}}" />
+            </a>
             <ul>
             {% for item in post.project.work %}
                 <li>{{item}}</li>
@@ -30,9 +32,7 @@ layout: index
 {% endif %}
 {% endfor %}
 
-    {% comment %}
-    <!-- <a class="button" href="/work" title="see more work">see more work</a> -->
-    {% endcomment %}
+<a class="button" href="/work" title="see more work">see more work</a>
 </section>
 {% comment %}
 <!-- <section class="testimonials">

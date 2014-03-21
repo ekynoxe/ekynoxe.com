@@ -540,12 +540,11 @@ section {
         }
     }
 }
-section.work {
+section.work,
+section.projects {
     padding: 0;
 
-    header,
-    article header,
-    article p {
+    header {
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -559,6 +558,62 @@ section.work {
             text-shadow: 1px 2px 0 $white;
         }
     }
+
+    article header,
+    article p {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+section.projects {
+    article {
+        border-bottom: 5px solid #e1e1e1;
+        float: left;
+        font-size: 0.8rem;
+        margin: 0 0 4rem;
+        text-align: center;
+        width: 50%;
+
+        &:last-child {
+            border-bottom: 5px solid #e1e1e1;
+        }
+
+        a {
+            border: none;
+            display: block;
+            padding: 1rem;
+
+            &:hover {
+                background-color: rgba(0,0,0,0.025);
+            }
+
+            img {
+                max-width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        header {
+            text-align: center;
+
+            h1 {
+                color: #666;
+                font-size: 1.2rem;
+                text-align: center;
+                text-shadow: 1px 1px 0 $white;
+                margin-bottom: 0;
+            }
+
+            a {
+                padding: 0;
+            }
+        }
+    }
+}
+
+section.work {
+    padding: 0;
 
     article {
         margin: 0;
@@ -575,6 +630,14 @@ section.work {
                 text-align: center;
                 text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
             }
+
+            a {
+                border-width: 0 0 2px 0;
+            }
+        }
+
+        a {
+            border-width: 0;
         }
 
         ul {
@@ -1289,6 +1352,15 @@ footer.main {
         iframe,
         span {
             border: 0.5rem solid #e1e1e1;
+        }
+
+        &.noborder {
+            a,
+            img,
+            iframe,
+            span {
+                border: none;
+            }
         }
 
         a img,

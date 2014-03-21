@@ -28,3 +28,5 @@ We have also created business cards to go with the website using the wonderful [
 <p class="attachement"><img src="{{ "business_cards.png" | image_path | cdn }}" alt="Ellen Physiotherapy business cards" /></p>
 
 As there was no requirement to quickly update the site, I simply used a pure ruby application using sinatra. This makes this small site very fast and as her partner, easy to update for me!
+
+<p class="attachement noborder"><a href="http://www.physioellen.co.uk/" title="Ellen Physiotherapy"><img src="{{ "physioellen.png" | image_path | cdn }}" alt="Go to Ellen Physiotherapy website" /></a></p>
