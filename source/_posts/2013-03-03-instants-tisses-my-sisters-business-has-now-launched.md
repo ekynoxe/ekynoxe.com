@@ -18,7 +18,7 @@ project:
     classname: instantstisses
     hero: instantstisses.png
     url: www.instantstisses.com
-    summary: <p>My sister launched her business early 2013 and we worked together to produce her online shop using shopify as the e-commerce platform.</p><p>She produced the designs under my guidance and I did the integration alongside the custom coding necessary to offer to her customers the functionality she wanted.</p>
+    summary: <p>Marrying high quality printed paper and light fabrics is the core of my sister's business. While she took care of the graphics design under my guidance to make it translate well on the web (she's a print and clothe designer), I took care of creating the online store using Shopify as the underlying platform. Plenty of Javascript development and minute details were required on the site, but hopefully this transmits well what she offers.</p>
     work:
         - Development
         - shopify e-commerce

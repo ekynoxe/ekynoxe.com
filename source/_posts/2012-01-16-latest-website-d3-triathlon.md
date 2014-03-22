@@ -7,8 +7,19 @@ categories:
   - design
   - wordpress
   - work project
+  - projects
+project:
+    title: D3 Triathlon
+    summary: <p>After a successful but simple first version of their site, D3 triathlon needed something a little more refined and working across different devices. Augmented with new features for accessing race details quickly, this new version hopefully will bring D3 triathlon the audience they deserve!</p>
+    classname: d3triathlon
+    hero: d3triathlon.png
+    url: www.d3triathlon.com
+    work:
+        - Graphic Design
+        - HTML/CSS
+        - Custom Wordpress integration
 ---
-After a successful but simple first version of their site, <a title="New D3 triathlon website" href="http://d3triathlon.com/" target="_blank">D3 triathlon</a> needed something a little more refined and working across different devices. Augmented with new features for accessing race details quickly, this new version hopefully will bring D3 triathlon the audience they deserve!
+After a successful but simple first version of their site, <a title="New D3 triathlon website" href="http://d3triathlon.com/">D3 triathlon</a> needed something a little more refined and working across different devices. Augmented with new features for accessing race details quickly, this new version hopefully will bring D3 triathlon the audience they deserve!
 
 <p class="attachement"><a href="{{ "d3.png" | image_path | cdn }}" title="D3 triathlon" rel="lightbox[892]"><img src="{{ "d3_r500.png" | image_path | cdn }}" alt="D3 triathlon" /></a></p>
 

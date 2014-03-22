@@ -4,6 +4,7 @@ author: Matt
 date: 2013-05-01 21:43
 layout: post
 categories:
+  - work project
   - projects
 project:
     featured: true

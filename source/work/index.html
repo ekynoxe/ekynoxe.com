@@ -10,14 +10,20 @@ section: work
 {% for post in site.categories.projects %}
     {% assign asset = "content/" | append: post.name | append: "/" | append: post.project.hero %}
     <article>
-        <a title="Link to {{ post.project.title }}" href="{{ post.url }}">
-            <img src="{{ asset | cdn }}" alt="{{ post.project.title }}" />
-        </a>
+        <img src="{{ asset | cdn }}" alt="{{ post.project.title }}" />
+
         <header>
             <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-            <h1>{{ post.project.title }}</h1>
+            <a title="Link to {{ post.project.title }}" href="{{ post.url }}">
+                <h1>{{ post.project.title }}</h1>
+            </a>
             <a title="Link to {{ post.project.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
         </header>
+        <ul>
+        {% for item in post.project.work %}
+            <li>{{item}}</li>
+        {% endfor %}
+        </ul>
     </article>
 {% endfor %}
 </section>

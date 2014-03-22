@@ -559,34 +559,49 @@ section.projects {
         }
     }
 
-    article header,
-    article p {
-        padding-right: 1rem;
-        padding-left: 1rem;
+    article {
+        header,
+        p {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        ul {
+            margin: 0;
+            font-family: $title-font-family;
+            font-size: 0.8rem;
+            text-align: center;
+            border-top: 1px dotted #ccc;
+            padding-top: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px dotted #ccc;
+
+            text-align: center;
+
+            li {
+                display: block;
+                list-style-type: none;
+                padding: 0;
+            }
+        }
     }
 }
 
 section.projects {
     article {
         border-bottom: 5px solid #e1e1e1;
-        float: left;
         font-size: 0.8rem;
         margin: 0 0 4rem;
         text-align: center;
-        width: 50%;
 
         &:last-child {
-            border-bottom: 5px solid #e1e1e1;
+            border-bottom: none;
         }
 
         a {
             border: none;
             display: block;
             padding: 1rem;
-
-            &:hover {
-                background-color: rgba(0,0,0,0.025);
-            }
 
             img {
                 max-width: 100%;
@@ -596,6 +611,7 @@ section.projects {
 
         header {
             text-align: center;
+            margin-bottom: 2rem;
 
             h1 {
                 color: #666;
@@ -608,6 +624,10 @@ section.projects {
             a {
                 padding: 0;
             }
+        }
+
+        ul {
+            color: #666;
         }
     }
 }
@@ -638,25 +658,6 @@ section.work {
 
         a {
             border-width: 0;
-        }
-
-        ul {
-            margin: 0;
-            font-family: $title-font-family;
-            font-size: 0.8rem;
-            text-align: center;
-            border-top: 1px dotted #eee;
-            padding-top: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px dotted #eee;
-
-            text-align: center;
-
-            li {
-                display: block;
-                list-style-type: none;
-                padding: 0;
-            }
         }
     }
 
@@ -1226,7 +1227,8 @@ footer.main {
         }
     }
 
-    section.work {
+    section.work,
+    section.projects {
         article {
             ul {
                 li {
