@@ -10,7 +10,9 @@ section: work
 {% for post in site.categories.projects %}
     {% assign asset = "content/" | append: post.name | append: "/" | append: post.project.hero %}
     <article>
-        <img src="{{ asset | cdn }}" alt="{{ post.project.title }}" />
+        <a title="Link to {{ post.project.title }}" href="{{ post.url }}">
+            <img src="{{ asset | cdn }}" alt="{{ post.project.title }}" />
+        </a>
 
         <header>
             <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
