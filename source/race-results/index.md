@@ -5,6 +5,21 @@ section: raceresults
 ---
 ## 2014
 
+### Ironman 70.3 UK &#8211; 15 June 2014
+
+**5h10&#8217;10&#8243; (53rd overall, 47th male and 15th in age group)**
+
+No pressure race for me since qualifying for Mt Tremblant at Lanza 70.3 last year.
+First wave, front of the pack start, for the most civilised swim I've ever had in a 70.3 before hitting the brutal part of the race. 23rd out of the water. Surpriiise!!!
+Not a flat section on the bike course, barely getting over THE hill on a 39x27, and more ascent than Lanza 70.3: that course packs a punch! 9th after the bike... This is going well!
+Nevermind the bike, the run's worse! A bit down mentally in the first lap, I regained conciousness for the last two. I didn't manage to sprint for the line but that was still enough for a good time. So happy days!
+
+*   Swim 1.9K: 31&#8217;47&#8243; [swim data][83]
+*   T1: 3&#8217;51&#8243; [T1 data][84]
+*   Bike 90.1K: 2h53&#8217;32&#8243; [bike data][85]
+*   T2: 2&#8217;40&#8243; [T2 data][86]
+*   Run 21.1K: 1h38&#8217;20&#8243; [run data][87]
+
 ### [Ironman Lanzarote](/ironman-lanzarote-2014/) &#8211; 17 May 2014
 
 **10h21&#8217;18&#8243; (121th overall, 114th male and 21st in age group)**
@@ -13,9 +28,9 @@ Slow swim, stronger winds, too many stops on the run. Good result, but not what 
 
 *   Swim 3.8K: 1h07&#8217;59&#8243; [swim data][78]
 *   T1: 5&#8217;46&#8243; [T1 data][79]
-*   Bike 180K: 33&#8217;14&#8243; [bike data][80]
+*   Bike 180K: 5h33&#8217;14&#8243; [bike data][80]
 *   T2: 6&#8217;08&#8243; [T2 data][81]
-*   Run 42.2K: 3h29&#8217;12&#8243; [run data][82]
+*   Run 42.2K: 3h28&#8217;12&#8243; [run data][82]
 
 ### EDT Camp 10K run race
 Handicapped race part of the [everyday training camp 2014](http://everydaytraining.org.uk)
@@ -523,3 +538,8 @@ Running instead of Arthur with old worn out shoes and no preparation
 [80]: http://connect.garmin.com/modern/activity/501286069 "bike data"
 [81]: http://connect.garmin.com/modern/activity/501286090 "T2 data"
 [82]: http://connect.garmin.com/modern/activity/501286094 "run data"
+[83]: http://connect.garmin.com/modern/activity/521831714 "swim data"
+[84]: http://connect.garmin.com/modern/activity/521831715 "T1 data"
+[85]: http://connect.garmin.com/modern/activity/521831716 "bike data"
+[86]: http://connect.garmin.com/modern/activity/521831718 "T2 data"
+[87]: http://connect.garmin.com/modern/activity/521831719 "run data"
