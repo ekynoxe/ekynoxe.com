@@ -1,1 +1,1512 @@
-{"2009-11-04-api-token-access-with-authlogic-and-login":{"slug":"2009-11-04-api-token-access-with-authlogic-and-login","comments":[{"id":"213","comment_date":"2010-04-05 16:19:01","comment_date_gmt":"2010-04-05 15:19:01","comment_author":"Paul","comment_author_email":"pftg@mail.ru","comment_author_url":"","comment_content":"Hi,\n\nI see that in your solution there is one tricks, when user first authenticated through client and then through Web, then they cannot works in parallel, because you reset single token, maybe better, reset it only for format xml.\n\nBut also you cannot logged in  parallel through two clients. Otherwise maybe better use toke of session not user's model.\n\nPaul","comment_parent":"0","replies":[]},{"id":"214","comment_date":"2010-04-05 17:48:48","comment_date_gmt":"2010-04-05 16:48:48","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Paul,\n\nI agree with you, this solution is no where near universal and has its problems as you pointed out.\n\nHowever, it has been working fine for me with two clients (a web client and an XML API client) logged in at the same, as both use different authentication methods.\n\nThe XML API uses the single_access_token, while in my application, I use the excellent authlogic, which I think uses the persistence_token of the user model. As both are different in the DB, this works well.\n\nAlso, admitting that both solutions would use the same single_access_token, resetting it only for one format would lead to strange results, and an inconsistent behavior for the user.\n\nNow, if you want to access a website both on a web desktop and lets say on a web mobile, for sure, there will be a problem with my solution, but my guess is this will not happen often.","comment_parent":"0","replies":[]},{"id":"2547","comment_date":"2011-06-16 13:25:04","comment_date_gmt":"2011-06-16 12:25:04","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Chris, appologies for the delay in coming back to you.\nI have now updated the code above with things to add in the application controller.\n\nbasically, I created a helper method in there and registered it with the helper_method call at the top of my application controller.\n\nThe code is below, and assumes you've got a named login route. The syntax highlighted version is up there in the post.\n\nI hope this helps!\n\n<code>helper_method :check\n\ndef check\n    if current_user==nil\n        respond_to do |format|\n        format.html {redirect_to login_path} #assuming you have a named login route\n        format.xml {render :xml=>'<?xml version=\"1.0\" encoding=\"UTF-8\"?><response><status>401</status><error>unauthorized</error></response>',:status=>:unauthorized}\n        end\n    end\nend</code>","comment_parent":"0","replies":[]},{"id":"2401","comment_date":"2011-05-24 15:38:39","comment_date_gmt":"2011-05-24 14:38:39","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Chris,\n\nSorry I didn't see your comment comming for some reason.\nI think you may have spotted something I forgot to add.\n\nIt's been a while now, and I'll have to dig up the code again to find that out, but as far as I remember from the top of my head, it was indeed a method in the application controller.\n\nI'll find that out for you.\nMatt","comment_parent":"0","replies":[]},{"id":"2341","comment_date":"2011-05-08 20:39:49","comment_date_gmt":"2011-05-08 19:39:49","comment_author":"Chris Kimpton","comment_author_email":"chris@kimptoc.net","comment_author_url":"http://kimptoc.net","comment_content":"Hi,\n\nThanks for the great article (although I am coming to it late).\n\nOne query, what is:\n\n  before_filter :check\n\nIs that an AppController method to ensure the user is logged in?\n\nThanks,\nChris","comment_parent":"0","replies":[]}]},"2009-11-19-orange-snapshot-mms-to-share-photos-on-twitter":{"slug":"2009-11-19-orange-snapshot-mms-to-share-photos-on-twitter","comments":[{"id":"65","comment_date":"2009-11-19 16:42:54","comment_date_gmt":"2009-11-19 16:42:54","comment_author":"Mark Watts-Jones","comment_author_email":"mwjmail@gmail.com","comment_author_url":"http://www.twitter.com/mwj","comment_content":"It is great to get Snapshot to market and a great way to work with our teams I thought. Lets do more!","comment_parent":"0","replies":[]},{"id":"66","comment_date":"2009-11-19 16:49:25","comment_date_gmt":"2009-11-19 16:49:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Mark,\n\nI agree, we should do more exchanges like this as Snapshot really proves we can deliver quickly.\n\nI liked working on it and I like even more that it made it out!\n\nThanks","comment_parent":"0","replies":[]}]},"2010-08-09-mastermind":{"slug":"2010-08-09-mastermind","comments":[{"id":"468","comment_date":"2010-08-15 14:07:47","comment_date_gmt":"2010-08-15 13:07:47","comment_author":"detronizator","comment_author_email":"detronizator@gmail.com","comment_author_url":"","comment_content":"I love it man!\nWhat about the competition? When the winner will be announced?","comment_parent":"0","replies":[]},{"id":"469","comment_date":"2010-08-15 15:15:53","comment_date_gmt":"2010-08-15 14:15:53","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hey dude! Thanks :)\n\nIt's all explained there: http://js1k.com/home\n\nEntries close on 10th September.\nHave your own ready!","comment_parent":"0","replies":[]}]},"2010-09-01-what-really-motivates-us":{"slug":"2010-09-01-what-really-motivates-us","comments":[{"id":"479","comment_date":"2010-09-04 11:51:11","comment_date_gmt":"2010-09-04 10:51:11","comment_author":"Detronizator","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Subliminal message to someone? ;)","comment_parent":"0","replies":[]},{"id":"480","comment_date":"2010-09-06 22:59:37","comment_date_gmt":"2010-09-06 21:59:37","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Guess!\n\n<em>The name lies in the links</em>","comment_parent":"0","replies":[]}]},"2010-09-06-extending-contact-form-7":{"slug":"2010-09-06-extending-contact-form-7","comments":[{"id":"485","comment_date":"2010-09-11 21:52:18","comment_date_gmt":"2010-09-11 20:52:18","comment_author":"Detronizator","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"OT: You do program Ruby and PHP. What's wrong with Python then? ;)","comment_parent":"0","replies":[]},{"id":"486","comment_date":"2010-09-12 13:59:25","comment_date_gmt":"2010-09-12 12:59:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"@Detronizator: Did I ever say anything about python being wrong? =D","comment_parent":"0","replies":[]},{"id":"762","comment_date":"2010-10-31 11:06:34","comment_date_gmt":"2010-10-31 11:06:34","comment_author":"Dan","comment_author_email":"d.stramer@hotmail.com","comment_author_url":"","comment_content":"Hi\nI tried using this addon but it didn't work\nI added this code in the form area:\n[pagetitle field_name]\n\nand this code in the message area:\n[field_name]\n\nAny ideas what am I doing wrong?\n\nThanks,\nDan","comment_parent":"0","replies":[]},{"id":"763","comment_date":"2010-10-31 11:12:00","comment_date_gmt":"2010-10-31 11:12:00","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Dan, the code you wrote and the places you put them seem correct.\nDid you add the code above in a pagetitle.php file in the contact-form-7 plugin modules directory as explained in the post above?\n\nIf you did, try deactivating the plugin and reactivating it again.","comment_parent":"0","replies":[]},{"id":"764","comment_date":"2010-10-31 11:19:17","comment_date_gmt":"2010-10-31 11:19:17","comment_author":"Dan","comment_author_email":"d.stramer@hotmail.com","comment_author_url":"","comment_content":"WOW!\nwhat a speedy reply.\nI reactivated the plugin as you said and now it works\n\nThanks alot\n\nDan","comment_parent":"0","replies":[]},{"id":"765","comment_date":"2010-10-31 11:23:07","comment_date_gmt":"2010-10-31 11:23:07","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"No probs, glad it works for you!","comment_parent":"0","replies":[]},{"id":"2958","comment_date":"2011-08-01 11:23:56","comment_date_gmt":"2011-08-01 10:23:56","comment_author":"Aure","comment_author_email":"ditnet@gmail.com","comment_author_url":"","comment_content":"Hi, good job m8. It was fine until I upgraded my CF7 plugin to 2.4.6 version. Now \"Hidden page title\" gone from dropdown menu :\\","comment_parent":"0","replies":[{"id":"3122","comment_date":"2011-08-18 11:11:54","comment_date_gmt":"2011-08-18 10:11:54","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Aure,\nThe problem you have is that I haven't submitted my change to the official plugin, so when you updated CF7, the change you have done simply disappeared.\nI'll try to contact the plugin author see if this can be integrated!\nUntil then you will have to apply the change again I'm afraid.","comment_parent":"2958","replies":[]}]},{"id":"3136","comment_date":"2011-08-19 09:58:43","comment_date_gmt":"2011-08-19 08:58:43","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Aure, the author of the plugin pointed me towards this\nhttp://wordpress.org/extend/plugins/contact-form-7-modules/\n\nI haven't tried it yet, but it certainly looks on paper to do what I needed when I extended CF7 in the first place!\n\nYou might want to give it a go!","comment_parent":"0","replies":[]},{"id":"4757","comment_date":"2012-02-01 22:48:48","comment_date_gmt":"2012-02-01 22:48:48","comment_author":"Miriam de Paula","comment_author_email":"wpmidia@gmail.com","comment_author_url":"","comment_content":"Hi Matt...\n\nThanks for responding.\nI created a  field that lists posts from custom post type. It is working. But I can not send the selected data in the email.\n\nWhat I did wrong?","comment_parent":"0","replies":[]},{"id":"4758","comment_date":"2012-02-01 22:56:06","comment_date_gmt":"2012-02-01 22:56:06","comment_author":"Miriam de Paula","comment_author_email":"wpmidia@gmail.com","comment_author_url":"","comment_content":"Hi Matt.\n\nVery Thank you!\n\nI looked at the plugin's version, and there was an update (3.1). After upgrading, I got to the extra field work!\n\nThank you! Thank you!\n\n=)","comment_parent":"0","replies":[]},{"id":"4755","comment_date":"2012-02-01 21:47:08","comment_date_gmt":"2012-02-01 21:47:08","comment_author":"Miriam de Paula","comment_author_email":"wpmidia@gmail.com","comment_author_url":"","comment_content":"Hi ...\n\nI'm having the same problem as Dan:\nhttp://blog.ekynoxe.com/2010/09/06/extending-contact-form-7/#div-comment-762\n\nPlease, somebody help me?\nThe extra field data are not sent in the mail .... =(","comment_parent":"0","replies":[{"id":"4756","comment_date":"2012-02-01 22:02:25","comment_date_gmt":"2012-02-01 22:02:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Miriam, which version of WPCF7 are you using? It seems there is support for a hidden field now. If you are still using an older version and try to implement the change documented above, have you uninstalled and re-installed the plugin like Dan did? It solved his problem apparently.","comment_parent":"4755","replies":[]}]},{"id":"4762","comment_date":"2012-02-02 07:08:25","comment_date_gmt":"2012-02-02 07:08:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"That's brilliant!! Glad you sorted out.\nAl the best!","comment_parent":"0","replies":[]},{"id":"22727","comment_date":"2013-03-16 08:05:41","comment_date_gmt":"2013-03-16 08:05:41","comment_author":"davetiye","comment_author_email":"golgeadam@gmail.com","comment_author_url":"http://www.beyazdavetiye.com","comment_content":"i want to put title in contact form but i couldnt. i also searching this problem on google and i find this page.\nthank you a lot i solve the problem.","comment_parent":"0","replies":[]}]},"2010-10-24-this-is-it":{"slug":"2010-10-24-this-is-it","comments":[{"id":"711","comment_date":"2010-10-24 22:48:46","comment_date_gmt":"2010-10-24 21:48:46","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Man, it's going to be LE-GEN-... wait for it...\nDARY! :D","comment_parent":"0","replies":[]},{"id":"716","comment_date":"2010-10-25 06:50:04","comment_date_gmt":"2010-10-25 05:50:04","comment_author":"Chabi","comment_author_email":"louis@chabardes.net","comment_author_url":"","comment_content":"Nice, congrats on your move. Can't wait to hear about your new gig.","comment_parent":"0","replies":[]}]},"2010-11-15-going-very-long":{"slug":"2010-11-15-going-very-long","comments":[{"id":"880","comment_date":"2010-11-16 08:21:11","comment_date_gmt":"2010-11-16 08:21:11","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"<blockquote>\n... not wait for anyone else to maybe come along with me.\n</blockquote>\nI'll come with you! :P\n\nMan, you ARE the man.\nAnd I wish you very good luck.\n\nToday, when I finally leave this desk, shower and come to work, let me know the days in which will be hold: I could actually organise an holiday there enough in advance to go cheap ;)\n\nSee you in... 40 minutes :)","comment_parent":"0","replies":[]},{"id":"881","comment_date":"2010-11-16 08:22:31","comment_date_gmt":"2010-11-16 08:22:31","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Btw, about the picture, looks like the guy on the right is whipping the guys on the left.\n\nHope it's how Ironman works :)","comment_parent":"0","replies":[]}]},"2010-11-17-git-sync-via-usb":{"slug":"2010-11-17-git-sync-via-usb","comments":[{"id":"893","comment_date":"2010-11-17 23:26:22","comment_date_gmt":"2010-11-17 23:26:22","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"I used to do this.\nBut I had to share code between mac, and windows, and linux machines.\nSo I had to use FAT32.\n\nResult?\nSoon I got corruptions all over the place.\n\nIf you can, use a proper filesystem.\n\nProblem is: where is a PROPER filesystem that is shared across those OS?","comment_parent":"0","replies":[]}]},"2011-02-23-a-little-bit-guilty":{"slug":"2011-02-23-a-little-bit-guilty","comments":[{"id":"1755","comment_date":"2011-02-23 12:02:11","comment_date_gmt":"2011-02-23 12:02:11","comment_author":"Luca","comment_author_email":"lucabox@gmail.com","comment_author_url":"","comment_content":"I am more of a mix:\n* first type (take a bunch)\n* periodically poll to see whether there are still more left ( the polling interval length is inverse proportional to how piggish I feel that day :D )","comment_parent":"0","replies":[]},{"id":"1756","comment_date":"2011-02-23 12:35:47","comment_date_gmt":"2011-02-23 12:35:47","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"You are welcome ;)","comment_parent":"0","replies":[]}]},"2011-03-09-percent-w-and-other-ruby-percent-syntax":{"slug":"2011-03-09-percent-w-and-other-ruby-percent-syntax","comments":[{"id":"1845","comment_date":"2011-03-10 22:47:12","comment_date_gmt":"2011-03-10 22:47:12","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Let me say 2 things here:\n1) Thanks for helping us with the Chef recipe: your Ruby-ness was very helpful\n2) This syntax is awful","comment_parent":"0","replies":[]}]},"2011-03-21-frustration":{"slug":"2011-03-21-frustration","comments":[{"id":"2035","comment_date":"2011-03-29 21:31:51","comment_date_gmt":"2011-03-29 20:31:51","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Well, not really expected, I truly believed this one would go out given that everyone in the lab was so enthusiastic. But as we discussed outside, it seems some people need to grow a pair and stand high and proud about their identity and what they do.\n\nUnfortunately this is not my call, but I'll play a clause in my contract where i can release screenshots of the site as part of my work as it has been agreed that way.\n\nThis would not be the site itself as I cannot host a full working copy or even a mock indefinitely, but I think a few pages should be enough to illustrate.\n\nThis work is by no means confidential as it has always been intended to be the front facing site of the lab.\n\nWe'll see!","comment_parent":"0","replies":[]},{"id":"1966","comment_date":"2011-03-21 23:55:50","comment_date_gmt":"2011-03-21 23:55:50","comment_author":"IvanDM","comment_author_email":"Detronizator@gmail.com","comment_author_url":"","comment_content":"Expected, given the client, but still very disappointed.\n\nIf it can help, I can say that was a great work.","comment_parent":"0","replies":[]},{"id":"1963","comment_date":"2011-03-21 22:16:55","comment_date_gmt":"2011-03-21 22:16:55","comment_author":"luca","comment_author_email":"lucabox@gmail.com","comment_author_url":"","comment_content":"seriously?","comment_parent":"0","replies":[]},{"id":"1964","comment_date":"2011-03-21 22:24:08","comment_date_gmt":"2011-03-21 22:24:08","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Seriously...","comment_parent":"0","replies":[]}]},"2011-03-26-the-one-who-stopped-replying":{"slug":"2011-03-26-the-one-who-stopped-replying","comments":[{"id":"2037","comment_date":"2011-03-30 00:41:34","comment_date_gmt":"2011-03-29 23:41:34","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Well, what can I say.\nIn 7 months a lot of things have changed for you (as for me), and even if this \"idiot\" doesn't come back... you are left with the pleasure of having built something really good.\n\nToo bad he is an idiot.\n\nI remember when you showed me some of the work in progress: it's really good.","comment_parent":"0","replies":[]}]},"2011-03-29-sweet-success":{"slug":"2011-03-29-sweet-success","comments":[{"id":"2038","comment_date":"2011-03-30 00:45:30","comment_date_gmt":"2011-03-29 23:45:30","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Shur-I-kan is one of the best nick name I have ever come across ;)","comment_parent":"0","replies":[{"id":"2042","comment_date":"2011-03-30 06:10:06","comment_date_gmt":"2011-03-30 05:10:06","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"It's like the answer to a dare! And He's also really good!","comment_parent":"2038","replies":[]}]}]},"2011-03-30-100-days":{"slug":"2011-03-30-100-days","comments":[{"id":"2043","comment_date":"2011-03-30 08:04:34","comment_date_gmt":"2011-03-30 07:04:34","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"I imagined you looking at the rising sun from the window, sipping a super nice coffee from our espresso maker.\n\nThe only shame: you would have used Illy Coffee Beans :P","comment_parent":"0","replies":[]},{"id":"2047","comment_date":"2011-03-30 11:54:43","comment_date_gmt":"2011-03-30 10:54:43","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"HAHAHAHA! Yeah, I use posh beans =P I should grow my own ;-)","comment_parent":"0","replies":[]}]},"2011-04-27-rewriter":{"slug":"2011-04-27-rewriter","comments":[{"id":"2286","comment_date":"2011-04-27 18:06:09","comment_date_gmt":"2011-04-27 17:06:09","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"AMAZING!\n\nAdd to your TODO list (if not already there):\n1) Ensure that the \"href\" field after generated the link points to your service, not to the final URL\n2) Add a \"share\" button to the page the user sees after generation, to quickly publicise the link (use AddThis - it's really good http://www.addthis.com/)\n\nKeep up the good work mate ;)","comment_parent":"0","replies":[]},{"id":"2289","comment_date":"2011-04-28 15:21:19","comment_date_gmt":"2011-04-28 14:21:19","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hey Ivan,\nThanks for the feedback. Your first point is now covered and deployed.\nThe sharing capability is on the list of many things to do and will indeed be added in the near future!\n\nIt's getting there!","comment_parent":"0","replies":[]}]},"2011-05-03-kodes":{"slug":"2011-05-03-kodes","comments":[{"id":"2316","comment_date":"2011-05-03 13:18:22","comment_date_gmt":"2011-05-03 12:18:22","comment_author":"IvanDM","comment_author_email":"Detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Unsued? ;)","comment_parent":"0","replies":[]},{"id":"2317","comment_date":"2011-05-03 14:17:30","comment_date_gmt":"2011-05-03 13:17:30","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Woops! Corrected =) Thks","comment_parent":"0","replies":[]}]},"2011-05-06-orange":{"slug":"2011-05-06-orange","comments":[{"id":"2343","comment_date":"2011-05-09 10:13:40","comment_date_gmt":"2011-05-09 09:13:40","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Well done! ;)","comment_parent":"0","replies":[]}]},"2011-07-21-hillingdon-sprint-or-my-first-dnf":{"slug":"2011-07-21-hillingdon-sprint-or-my-first-dnf","comments":[{"id":"2839","comment_date":"2011-07-21 11:07:36","comment_date_gmt":"2011-07-21 10:07:36","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Next time you will walk.\nNo, actually, next time you will not break. ;)","comment_parent":"0","replies":[]}]},"2011-07-29-im-a-front-end-dev":{"slug":"2011-07-29-im-a-front-end-dev","comments":[{"id":"3595","comment_date":"2011-10-16 13:44:16","comment_date_gmt":"2011-10-16 12:44:16","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"yepee!","comment_parent":"0","replies":[]},{"id":"2968","comment_date":"2011-08-02 00:55:16","comment_date_gmt":"2011-08-01 23:55:16","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"How couldn't I just subscribe to what you just said?\n\nIt's a massive, disgraceful pain in the ass.","comment_parent":"0","replies":[]}]},"2011-08-17-recruiters-scammers":{"slug":"2011-08-17-recruiters-scammers","comments":[{"id":"3432","comment_date":"2011-09-26 13:31:10","comment_date_gmt":"2011-09-26 12:31:10","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"","comment_content":"I specially like the fact that one sent me an email 'having liked my rant' but still telling me they had a *great* position...\nDuuhh...","comment_parent":"0","replies":[]},{"id":"3117","comment_date":"2011-08-17 22:05:54","comment_date_gmt":"2011-08-17 21:05:54","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"What about that one that pretended to be from downstairs, asking for what we did in our team?\n\nBloody recruiters!\nOr maybe they are not even recruiters: they gather inside informations about public companies.\nShitty bastards &gt;:(","comment_parent":"0","replies":[]}]},"2011-09-14-how-to-be-a-successfull-business-make-every-customer-feel-special":{"slug":"2011-09-14-how-to-be-a-successfull-business-make-every-customer-feel-special","comments":[{"id":"3324","comment_date":"2011-09-15 16:11:38","comment_date_gmt":"2011-09-15 15:11:38","comment_author":"FD","comment_author_email":"francoise@ekynoxe.com","comment_author_url":"","comment_content":"Bien dit !","comment_parent":"0","replies":[]}]},"2011-09-30-shake-that-body-up":{"slug":"2011-09-30-shake-that-body-up","comments":[{"id":"3464","comment_date":"2011-10-01 11:01:42","comment_date_gmt":"2011-10-01 10:01:42","comment_author":"mike","comment_author_email":"mjandrews22@googlemail.com","comment_author_url":"","comment_content":"Looking good - sounds like you've got it all under control. Wish I was therre although its 28 c here and no wind - swim this am and out on the kebel with aero wheels this pm. I hope all goes well and best of luck - I will follow on the website.\n\nMike","comment_parent":"0","replies":[]}]},"2011-10-07-challenge-barcelona-race-report":{"slug":"2011-10-07-challenge-barcelona-race-report","comments":[{"id":"3521","comment_date":"2011-10-07 22:07:50","comment_date_gmt":"2011-10-07 21:07:50","comment_author":"Simon","comment_author_email":"simonski@gmail.com","comment_author_url":"","comment_content":"Congratulations! - what an inspiration Matt!.  Tomorrow, I go for a run for sure.  Well done to you.  What a guy.","comment_parent":"0","replies":[]},{"id":"3551","comment_date":"2011-10-11 14:49:39","comment_date_gmt":"2011-10-11 13:49:39","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"To both of you, Kima and Simon: You have been the persons behind my start in triathlon and my motivation to keep pushing. You are so inspiring to me!\n\n@Simon: I really need to kick your butt up a hill of yours some day soon! Now that the race is done, I think we need to arrange a meeting around Haslemere to check those \"climbs\" out ;-)\n\n@Kim, can't wait to see you next year! It's going to be great! All the best to you, hopefully you'll be cycling with us then!","comment_parent":"0","replies":[]},{"id":"3524","comment_date":"2011-10-08 21:03:23","comment_date_gmt":"2011-10-08 20:03:23","comment_author":"Kim","comment_author_email":"kim.sian@sunstar1.com","comment_author_url":"","comment_content":"Hi Matt,\n\nThanks for your kind words.  I am sooo proud of you.  Well done!!!  Thanks for sharing the whole event it is most inspiring.  You are really good at writing.  I think this was a great breakdown and a joy to read.  I am very happy to hear you and Ellen are still together.  You have such a good heart and great potential and I am glad that both are shining.\n\nWe look forward to you and Ellen coming to California next year and want to wish you all the best on your training.\n\nGo get 'em champ.\n\nKeep smiling.","comment_parent":"0","replies":[]}]},"2011-10-11-challenge-barcelona-the-video":{"slug":"2011-10-11-challenge-barcelona-the-video","comments":[{"id":"3630","comment_date":"2011-10-19 07:56:50","comment_date_gmt":"2011-10-19 06:56:50","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Mamma mia!\nSome people look super-fit but arrive to the transitions barely walking normal...","comment_parent":"0","replies":[]},{"id":"3631","comment_date":"2011-10-19 08:00:56","comment_date_gmt":"2011-10-19 07:00:56","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Such is the world of ironman my friend! Look at me finishing!\nAt that point, I was SURE I was sprinting, literally!\n\nErr..... No... =D","comment_parent":"0","replies":[]},{"id":"3632","comment_date":"2011-10-19 08:03:19","comment_date_gmt":"2011-10-19 07:03:19","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"What minute you arrive?","comment_parent":"0","replies":[]},{"id":"3633","comment_date":"2011-10-19 08:05:22","comment_date_gmt":"2011-10-19 07:05:22","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"4:05 -&gt; 4:08 ?\nIs that you?\n\nYou were cheering :P","comment_parent":"0","replies":[]},{"id":"3634","comment_date":"2011-10-19 08:05:45","comment_date_gmt":"2011-10-19 07:05:45","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Read the post text!! =) On the second video:  14’22″\n\nOn the first one, I don't think you can miss me!!","comment_parent":"0","replies":[]}]},"2011-10-22-git-post-receive-for-multiple-remote-branches-and-work-trees":{"slug":"2011-10-22-git-post-receive-for-multiple-remote-branches-and-work-trees","comments":[{"id":"4062","comment_date":"2011-12-04 18:33:07","comment_date_gmt":"2011-12-04 18:33:07","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Peter, I've edited your comments so they look alright. They won't show indenting as I don't apply the pretty formatter to those. That's for another time!\n\nRegarding your code, I can confirm that the second one you posted (for a solution on the same server) does work properly and I've updated my original post as well to reflect those changes, which should help a few out there!\n\nThanks a lot!","comment_parent":"0","replies":[]},{"id":"10365","comment_date":"2012-07-01 14:01:01","comment_date_gmt":"2012-07-01 13:01:01","comment_author":"Marty","comment_author_email":"martin.klima@hqis.cz","comment_author_url":"","comment_content":"Many thanks for your solution and explanation.\n\nI tested it on Windows machine and had to do a little edit. I changed this row:\n<code>git --work-tree=/d/git_testing/webroot/public_webroot git checkout -f $branch</code>\nto this:\n\n<code>GIT_WORK_TREE=/d/git_testing/webroot/public_webroot git checkout -f $branch</code>\n\nAnd everything work fine.\nThanks again.","comment_parent":"0","replies":[{"id":"10441","comment_date":"2012-07-03 16:04:25","comment_date_gmt":"2012-07-03 15:04:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Happy to see these little tips still help!","comment_parent":"10365","replies":[]}]},{"id":"4030","comment_date":"2011-12-02 14:57:44","comment_date_gmt":"2011-12-02 14:57:44","comment_author":"Peter","comment_author_email":"pmeth@rogers.com","comment_author_url":"","comment_content":"To solve Matt's problem I think this whole script should be wrapped in a while loop.\n\nI took the post-receive script from http://book.git-scm.com/5_git_hooks.html and combined it with yours to come up with a new version.  I haven't tested it, but it should would work for multi-branch commits:<code>\n-----------------\n#!/bin/sh\n#\nwhile read oldrev newrev ref\ndo\n\tIFS='/' read -ra REF &lt;&lt;&lt; &quot;${ref}&quot;\n\n\tbranch=&quot;${REF[2]}&quot;\n\tif [ &quot;master&quot; == &quot;$branch&quot; ]; then\n\t\tgit --work-tree=/path/under/root/dir/live-site/ checkout -f $branch\n\t\techo &#039;Changes pushed live.&#039;\n\tfi\n\n\tif [ &quot;dev&quot; == &quot;$branch&quot; ]; then\n\t\tgit --work-tree=/path/under/root/dir/dev-site/ checkout -f $branch\n\t\techo &#039;Changes pushed to dev.&#039;\n\tfi\ndone</code>","comment_parent":"0","replies":[]},{"id":"4031","comment_date":"2011-12-02 15:03:09","comment_date_gmt":"2011-12-02 15:03:09","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi Peter, I'll give that one a go, that looks alright to me.\nI did not have time yet to investigate myself but that's what I had in mind as well.\n\nI'll try that asap and report.\n\nThanks!\n(And I'll have to find a way to format code in comments...)","comment_parent":"0","replies":[]},{"id":"4035","comment_date":"2011-12-02 18:38:43","comment_date_gmt":"2011-12-02 18:38:43","comment_author":"Peter","comment_author_email":"pmeth@rogers.com","comment_author_url":"","comment_content":"The last one I posted won't work unless you change the shabang.  Here's a better version that should be a little easier to read.  I have tested this one successfully.\n\n<code>#!/bin/bash\n#\nlivepath=\"/path/to/your/live\"\ndevpath=\"/path/to/your/dev\"\nwhile read oldrev newrev ref\ndo\n\tbranch=`echo $ref | cut -d/ -f3`\n\tif [[ \"master\" == \"$branch\" ]]; then\n\t\tgit --work-tree=$livepath checkout -f $branch\n\t\techo 'Changes pushed live.'\n\telif [[ \"development\" == \"$branch\" ]]; then\n\t\tgit --work-tree=$devpath checkout -f $branch\n\t\techo 'Changes pushed to dev.'\n\tfi\ndone</code>","comment_parent":"0","replies":[]},{"id":"4037","comment_date":"2011-12-02 18:56:47","comment_date_gmt":"2011-12-02 18:56:47","comment_author":"Peter","comment_author_email":"pmeth@rogers.com","comment_author_url":"","comment_content":"And here is a version you can use if your live site is <strong>on another server</strong>. Keep in mind that you will have to setup a user who can ssh to the other server using keys instead of passwords to authenticate. I’m sure you can find those instructions online.\n\n<code>#!/bin/bash\n# {oldrev} {newrev} {refname}\ntmpdir=/tmp/git\ndevpath=/path/to/dev\nlivepath=/path/to/live\nlivehost=somehostname\nwhile read oldrev newrev ref\ndo\n        branch=`echo $ref | cut -d/ -f3`\n        if [[ \"master\" == \"$branch\" ]]; then\n                mkdir -p $tmpdir$livepath\n                git --work-tree=$tmpdir$livepath checkout -f $branch\n                rsync -auv -e ssh --progress --delete $tmpdir$livepath/ $livehost:$livepath\n                rm -rf $tmpdir$livepath\n                echo 'Changes pushed live.'\n        elif [[ \"development\" == \"$branch\" ]]; then\n                git --work-tree=$devpath checkout -f $branch\n                echo 'Changes pushed to dev.'\n        fi\ndone\n</code>","comment_parent":"0","replies":[]},{"id":"3755","comment_date":"2011-11-01 23:46:30","comment_date_gmt":"2011-11-01 23:46:30","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"It seems that this version of the hook doesn't fully work in scenarios where I'm pushing both master and dev (read multi-branches push) to the remote.\nAs the script is executed once, I'm not sure if the references are correctly set.\nMaybe all this should go in a different hook?\n\nSuggestions?","comment_parent":"0","replies":[]},{"id":"10641","comment_date":"2012-07-17 09:12:26","comment_date_gmt":"2012-07-17 08:12:26","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hey Gustavo!\nOther than some permission issues, I don't see what could be wrong here, as your method looks ok to me.\n\nTo debug what is happening, instead of doing a checkout in the \"master branch block\", you could stick in there a bunch of logging lines of code that would print the git history being pushed and on which $ref you are etc.","comment_parent":"0","replies":[]},{"id":"10631","comment_date":"2012-07-16 03:13:57","comment_date_gmt":"2012-07-16 02:13:57","comment_author":"Gustavo","comment_author_email":"gustavo@burgi.com.ar","comment_author_url":"","comment_content":"I've a little problem here...\n\nHere is step by step that i'm doing:\n\n<code>server:\n--------------------\ncd /home/git/repositories\nmkdir project.git\ncd project.git\ngit init --bare\n\nlocalhost\n--------------------\ncd /var/www/project\ngit init\ngit remote add origin git@server.com:project.git\ngit add .\ngit commit -m \"first export\"\ngit push origin master</code>\n\nFor now, \"tutto bene\" (is fine). I want to use the master branch as development branch, so, any push to master branch, deploy to dev/test server, and i want to add another branch for production enviroment, \"production\" branch. So I edit my config and post-receive files in server:\n\n<code>Server\n-----------------------\ncd /home/git/repositories/project.git\ngit config core.bare false\ngit config receive.denycurrentbranch ignore\n\nnano hooks/post-receive\n--------------------------\n#!/bin/bash\n#\nlivepath=\"/path/to/your/live\"\ndevpath=\"/path/to/your/dev\"\nwhile read oldrev newrev ref\ndo\nbranch=`echo $ref | cut -d/ -f3`\nif [[ \"production\" == \"$branch\" ]]; then\ngit --work-tree=$livepath checkout -f $branch\necho 'Changes pushed live.'\nelif [[ \"master\" == \"$branch\" ]]; then\ngit --work-tree=$devpath checkout -f $branch\necho 'Changes pushed to dev.'\nfi\ndone\n--------------------------\n</code>\nNow I change some code and push it to test/dev (master):\n<code>git commit -a -m \"changed some files\"\ngit push origin master</code>\n\nFine, works for test/dev deploy, now test with production branch:\n\n<code>localhost\n-------------------------\ngit checkout -b production\ngit push origin production</code>\n\nI push production branch to the origin because, that way, other developers can merge and push to production your works...\n\nnow I merge master into production, for deploy a copy of test/dev into production enviroment:\n\ngit merge master\ngit push\n\nFine!!!, deployed into production server, awesome!!\n\nOK, here come the bad think, now i change to master branch to fix some bug, push to dev/test, and.... nothing, don't deploy to test/dev server... Try again and nothing...\n\n<code>git checkout master\nnano bad_file.php\n---\ngit commit -a -m \"fixed the bug 1\"\ngit push origin master</code>\n............. not deploy, como on mother f....\n<code>nano bad_file.php\n---\ngit commit -a -m \"fixed the bug 2\"\ngit push origin master</code>\n............. not deploy\n\nLet me try mergin master into production:\n<code>git checkout production\ngit merge master\ngit push origin production</code>\n............. deploy into production\n\nCome back to master an push some change...\n<code>git checkout master\nnano bad_file.php\n---\ngit commit -a -m \"fixed bug 3\"\ngit push origin master</code>\n............ deployed into dev/test server, but no the commit \"fixed bug 3\", instead the second commit .... :(\n\nAny suggestion?","comment_parent":"0","replies":[]},{"id":"28053","comment_date":"2013-08-15 01:02:02","comment_date_gmt":"2013-08-15 00:02:02","comment_author":"David","comment_author_email":"david.kerns@gmail.com","comment_author_url":"http://twitter.com/kerns","comment_content":"Thanks, Matt. Cleared up a lot for me. This solution is working great for me.\n\nI'd also like to recommend this write-up...\n\nhttp://toroid.org/ams/git-website-howto\n\n...which covers some of the fundamentals you cover in part I. You can use the script Peter came up with in this solution as well. Very clever.","comment_parent":"0","replies":[]},{"id":"30575","comment_date":"2013-10-01 08:25:53","comment_date_gmt":"2013-10-01 07:25:53","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://blog.ekynoxe.com","comment_content":"Norbert, I am unsure why this happens, but possible issues could include file permissions that could be different for whatever reason on the directories your master branch checks out into, or you may have had some files in there prior to deploying with git. If these files weren't in your repository before, then it's normal they won't get deleted since git doesn't track them.\nThat's only speculation though.\n\nMatt","comment_parent":"0","replies":[]},{"id":"11112","comment_date":"2014-03-21 15:38:45","comment_date_gmt":"2014-03-21 14:38:45","comment_author":"Guillaume Lang","comment_author_email":"toyo68@gmail.com","comment_author_url":"","comment_content":"Hello, i just wont to say big thanks to you for this tip, thank you very much, and sorry for my bad english, I'm french!","comment_parent":"0","replies":[]},{"id":"28005","comment_date":"2013-08-13 16:45:55","comment_date_gmt":"2013-08-13 15:45:55","comment_author":"David","comment_author_email":"david.kerns@gmail.com","comment_author_url":"http://twitter.com/kerns","comment_content":"Wonderful. Just a few questions...\n\nI'd like to incorporate this method without running or managing a git server like gitolite,... preferring to rely on GitHub and Bitbucket for things like collaboration, user management, rwx permissions, etc.\n\nSo...\n\na) Does a server running git and ssh qualify for using this, or is something like gitolite a must?\n\nb) Imagining a scenario in which you have some code that is part of a site that needs local =&gt; stage and =&gt; live branches, as well as a version that lives on Bitbucket or GH,...erhm...what might that look like?\n\nIn other words, is there a sensible way of managing both sharing/collaboration AND the convenience of \"push publishing\", or is that asking too much of one repo?","comment_parent":"0","replies":[]},{"id":"28006","comment_date":"2013-08-13 17:02:56","comment_date_gmt":"2013-08-13 16:02:56","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi David,\n\nI'll try to answer your questions below:\n\na)\nGitolite is only a permissions management system for repositories, not git itself. This is a git hook, so it should work on any git install providing that you modify the script to use the correct file system.\n\nYou can also write the same script in pretty much any language the shell of said server can interpret. This is bash, but you could use ruby and others.\n\nYou can find a more advanced script doign something else here: http://git-scm.com/book/en/Customizing-Git-An-Example-Git-Enforced-Policy\n\nb)\nThere is nothing that would prevent you from building a more complex script, checking what branch you are pushing to and deploying the right code to the right staging, integration, live etc servers. Just bare in mind that this particular hook above is only intended to work on the same machine than the repository is.\nBut because these hooks are essentially scripts, you can do whatever you want in them, even stuff completely unrelated to git itslef, like sending an email to all your team telling them you've pushed code etc.\n\nI don't have example of such scripts handy, but that's essentially how heroku or openshift work. The sharing/collaboration is the pure git branch part, the push-publish is in the hooks.\n\nI don't think the limitation will be in the repo here, but in how complex your hooks and management system will be.","comment_parent":"0","replies":[]},{"id":"28424","comment_date":"2013-08-22 19:55:47","comment_date_gmt":"2013-08-22 18:55:47","comment_author":"Vincent","comment_author_email":"vincent@bigsweaterdesign.com","comment_author_url":"http://bigsweaterdesign.com","comment_content":"This worked perfectly for me. I've been looking for exactly this sort of solution for months. Not sure how I didn't come across this earlier.\n\nI created a Gist with my slightly modified version.\n\nhttp://blog.ekynoxe.com/2011/10/22/git-post-receive-for-multiple-remote-branches-and-work-trees/\n\nHopefully that'll make it easier to contribute to this block of code in the future. Fork and modify to your heart's content.\n\nThanks again!","comment_parent":"0","replies":[{"id":"28425","comment_date":"2013-08-22 19:56:39","comment_date_gmt":"2013-08-22 18:56:39","comment_author":"Vincent","comment_author_email":"vincent@bigsweaterdesign.com","comment_author_url":"http://bigsweaterdesign.com","comment_content":"Oops--the link above is incorrect, obviously. It should be this:\n\nhttps://gist.github.com/bigsweater/6311240#file-post_receive","comment_parent":"28424","replies":[]}]},{"id":"30388","comment_date":"2013-09-29 12:07:22","comment_date_gmt":"2013-09-29 11:07:22","comment_author":"Norbert","comment_author_email":"norbiu@gmail.com","comment_author_url":"","comment_content":"I encountered a problem with pushing my master branch to the live site.\n\nMy workflow is as follows:\n\n- make changes locally on develop branch, test, commit, push to develop\n- test on server (develop url)\n- merge develop into master on local, push to master\n\nThe problem is that when I push to master, files that I deleted locally don't get removed on the server. New files are added as expected. This only happens when I push to master, pushing to develop works just fine.\n\nAny ideas?","comment_parent":"0","replies":[]},{"id":"23667","comment_date":"2013-04-10 18:38:53","comment_date_gmt":"2013-04-10 17:38:53","comment_author":"Jake","comment_author_email":"olandt@rsp.wisc.edu","comment_author_url":"","comment_content":"Sorry to post in an old page.\n\nI have been trying to set up a deployment similar to this, but I have been having an issue with speed.  With both the script I wrote and the script here, it will sometimes take 15 minutes for a push to complete.  It seems to me that the problem is when switching between the two working directories.  When I push the same branch as I had previously, it only takes a few seconds to make a small change.  However, if I had last pushed the master branch and now push the dev branch, it will take 15 minutes to complete, even just to make one change on a 2kB file.  Additionally, it this case, windows shows all the files in the directory as having been modified, rather than just the 1 file that had been changed and committed.","comment_parent":"0","replies":[{"id":"23668","comment_date":"2013-04-10 18:42:22","comment_date_gmt":"2013-04-10 17:42:22","comment_author":"Jake","comment_author_email":"olandt@rsp.wisc.edu","comment_author_url":"","comment_content":"EDIT: After the 15 minutes, the checkout is correct.","comment_parent":"23667","replies":[]}]},{"id":"23684","comment_date":"2013-04-11 08:49:39","comment_date_gmt":"2013-04-11 07:49:39","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hey Jake, I'm not sure what the problem could be here. Are you sure your machine has the correct permissions and that your filesystem is ok?","comment_parent":"0","replies":[]}]},"2011-10-22-automated-deployment-on-remote-server-with-git":{"slug":"2011-10-22-automated-deployment-on-remote-server-with-git","comments":[{"id":"5111","comment_date":"2012-03-13 13:41:03","comment_date_gmt":"2012-03-13 13:41:03","comment_author":"Chieroz","comment_author_email":"c.chierotti@gmail.com","comment_author_url":"http://www.chierotti.net","comment_content":"Thank you, great advice.\n\nJust a note: I work in a Mac environment and I had to change the order of the commands on the server:\nfirst -&gt; git config core.bare false\nthen -&gt; git config core.worktree /path/to/website/folder\n\nciao","comment_parent":"0","replies":[]},{"id":"5112","comment_date":"2012-03-13 14:01:18","comment_date_gmt":"2012-03-13 14:01:18","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Interesting Carlo, why do you think that is?\nDoes setting the \"bare\" configuration actually initialises the repo as bare at the same time or something like this?","comment_parent":"0","replies":[]},{"id":"3754","comment_date":"2011-11-01 23:45:00","comment_date_gmt":"2011-11-01 23:45:00","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Actually, it might be because you're not pushing anything to a branch named 'master' and git fails to recognise that... I think I need to check if git implies that the push has to be on a branch named 'master'","comment_parent":"0","replies":[]},{"id":"3746","comment_date":"2011-10-31 22:06:05","comment_date_gmt":"2011-10-31 22:06:05","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Ah, it might be because you tried to push without any content changes.\nDoing a git push origin master with no content will not push anything, and the hook will not get fired","comment_parent":"0","replies":[]},{"id":"3743","comment_date":"2011-10-31 21:53:12","comment_date_gmt":"2011-10-31 21:53:12","comment_author":"luca","comment_author_email":"lucabox@gmail.com","comment_author_url":"","comment_content":"thanks!\n\nI set up this environment in my dev server and works like a charm.\nYou might want to add an extra step:\n\nI had to checkout your branch (in this case master) before being able to do\n\ngit checkout -f\n\nwhich is in the post-receive hook.","comment_parent":"0","replies":[]},{"id":"3744","comment_date":"2011-10-31 21:54:25","comment_date_gmt":"2011-10-31 21:54:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"What do you mean \"checkout your branch\"? Where was this? On the server, your local machine?","comment_parent":"0","replies":[]},{"id":"3745","comment_date":"2011-10-31 21:56:42","comment_date_gmt":"2011-10-31 21:56:42","comment_author":"luca","comment_author_email":"lucabox@gmail.com","comment_author_url":"","comment_content":"sorry I meant my branch :)\n\nwhen you do (in your tutorial)\n\ngit push origin master\n\n\nin order for the post-receive hook to start working I had to run first\n\ngit checkout master\n\nthen it worked.\n\nWithout doing this step first, it looks the repo is not set to any branch and a call to git checkout -f will result in a:\n\n fatal: You are on a branch yet to be born","comment_parent":"0","replies":[]},{"id":"10720","comment_date":"2012-07-26 13:06:01","comment_date_gmt":"2012-07-26 12:06:01","comment_author":"aaki","comment_author_email":"achim.sperling@gmail.com","comment_author_url":"","comment_content":"You don't need to git config core.*, see http://toroid.org/ams/git-website-howto\nSeems to be easier, a bit.","comment_parent":"0","replies":[]},{"id":"10595","comment_date":"2012-07-12 17:44:28","comment_date_gmt":"2012-07-12 16:44:28","comment_author":"gustavo","comment_author_email":"gustavo@burgi.com.ar","comment_author_url":"","comment_content":"After deploy the files are inaccessible with browser, because now the user git is the owner, what can i do for change this? I want they are accessibles to apache.","comment_parent":"0","replies":[{"id":"10596","comment_date":"2012-07-12 18:04:07","comment_date_gmt":"2012-07-12 17:04:07","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hola Gustavo!\nAll you need to do is either make git a member of your apache group.\nYou could add a change of ownership in the same \"post-receive\" hook with chown apache:apache (assuming these are your user/group names for apache), but if git isn't in the apache group, you won't be able to deploy with git next time because the file isn't owned by git anymore.\n\nThe git hooks are (in this example) standard bash scripts, so you can use all your usual bash/unix knowledge to manage permissions.","comment_parent":"10595","replies":[]}]},{"id":"10598","comment_date":"2012-07-12 18:49:29","comment_date_gmt":"2012-07-12 17:49:29","comment_author":"gustavo","comment_author_email":"gustavo@burgi.com.ar","comment_author_url":"","comment_content":"Thanks a lot!\n\nI just only did:\n\n\n<code>chown -R git:www-data /var/www/gitdeploy</code>","comment_parent":"0","replies":[{"id":"10599","comment_date":"2012-07-12 19:05:54","comment_date_gmt":"2012-07-12 18:05:54","comment_author":"Matt","comment_author_email":"Matt@ekynoxe.com","comment_author_url":"","comment_content":"Spot on! Well done.","comment_parent":"10598","replies":[]}]},{"id":"11111","comment_date":"2012-08-22 10:37:07","comment_date_gmt":"2012-08-22 09:37:07","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Aaaki, if this is your first repository, then you might. I've taken the point of view that you're on a fresh install and having one repository.\nYour link seems however a good other approach whereby setting the GIT_WORK_TREE environment variable can be done on a per project basis.\n\nSomething to consider indeed!","comment_parent":"0","replies":[]},{"id":"11112","comment_date":"2014-03-21 15:38:45","comment_date_gmt":"2014-03-21 14:38:45","comment_author":"Guillaume Lang","comment_author_email":"toyo68@gmail.com","comment_author_url":"","comment_content":"Hello, i just wont to say big thanks to you for this tip, thank you very much, and sorry for my bad english, I'm french!","comment_parent":"0","replies":[]}]},"2011-12-07-cant-find-wpml-2-0-4-1-anywhere-here-it-is":{"slug":"2011-12-07-cant-find-wpml-2-0-4-1-anywhere-here-it-is","comments":[{"id":"5265","comment_date":"2012-04-02 21:34:43","comment_date_gmt":"2012-04-02 20:34:43","comment_author":"bryan","comment_author_email":"sad@asdfa.com","comment_author_url":"","comment_content":"but it doesnt support wp 3.3","comment_parent":"0","replies":[{"id":"5266","comment_date":"2012-04-02 21:37:16","comment_date_gmt":"2012-04-02 20:37:16","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"A bit of a useless comment you've made don't you think? Specially because you won't get any notification as you posted with a fake email address...\n\nFor me WPML 2.0.4.1 works on WP 3.3 without any problem.\nTrue, I haven't tried with 3.3.1 yet, but I'm sure you can try that.","comment_parent":"5265","replies":[]}]}]},"2012-03-20-so-i-got-myself-a-ticket-for-cycling-in-the-wrong-place":{"slug":"2012-03-20-so-i-got-myself-a-ticket-for-cycling-in-the-wrong-place","comments":[{"id":"5185","comment_date":"2012-03-21 13:00:18","comment_date_gmt":"2012-03-21 13:00:18","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"I'm sorry you almost froze but... I can't resist: LOOOOOL! :D","comment_parent":"0","replies":[]},{"id":"5186","comment_date":"2012-03-21 13:27:45","comment_date_gmt":"2012-03-21 13:27:45","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Yeah, I thought the same. I seriously was giggling at the guy struggling to fill in the thing.\n\nQuite a funny situation indeed =D","comment_parent":"0","replies":[]}]},"2012-04-02-ironman-70-3-california":{"slug":"2012-04-02-ironman-70-3-california","comments":[{"id":"5271","comment_date":"2012-04-02 21:55:59","comment_date_gmt":"2012-04-02 20:55:59","comment_author":"@Leigh_pilates","comment_author_email":"rsvpleigh@gmail.com","comment_author_url":"","comment_content":"Well done Matt! What an excellent achievement and like you said you now know where you stand in your AG!\n\nAm so glad the 910xt worked well for you!\n\nWell done yet again!","comment_parent":"0","replies":[{"id":"5272","comment_date":"2012-04-02 21:59:22","comment_date_gmt":"2012-04-02 20:59:22","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Thanks a lot for the help and support! Doing Thames Turbo next monday? If so good luck too!","comment_parent":"5271","replies":[]}]}]},"2012-04-18-more-california-photos":{"slug":"2012-04-18-more-california-photos","comments":[{"id":"6218","comment_date":"2012-05-01 10:57:25","comment_date_gmt":"2012-05-01 09:57:25","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"I screwed up the DNS entries... Fixing it now!","comment_parent":"0","replies":[]},{"id":"6216","comment_date":"2012-05-01 10:53:00","comment_date_gmt":"2012-05-01 09:53:00","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Even here: no pics. Only the vids.","comment_parent":"0","replies":[]}]},"2012-04-29-trp-t925-brakes-review":{"slug":"2012-04-29-trp-t925-brakes-review","comments":[{"id":"6143","comment_date":"2012-04-29 16:44:15","comment_date_gmt":"2012-04-29 15:44:15","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Dude, I think there is an issue with the images...","comment_parent":"0","replies":[]},{"id":"6144","comment_date":"2012-04-29 18:22:59","comment_date_gmt":"2012-04-29 17:22:59","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Mmhhh, indeed, I'll have a look when I'm back home. Thanks!","comment_parent":"0","replies":[]},{"id":"6145","comment_date":"2012-04-29 18:52:59","comment_date_gmt":"2012-04-29 17:52:59","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Ok, looks fixed now. I don't know what happened. Let me know!","comment_parent":"0","replies":[]},{"id":"6217","comment_date":"2012-05-01 10:57:04","comment_date_gmt":"2012-05-01 09:57:04","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"I screwed up the DNS entries... Fixing it now!","comment_parent":"0","replies":[]},{"id":"6215","comment_date":"2012-05-01 10:51:37","comment_date_gmt":"2012-05-01 09:51:37","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Still no image","comment_parent":"0","replies":[]}]},"2012-07-04-cycling-with-a-helmet-cam":{"slug":"2012-07-04-cycling-with-a-helmet-cam","comments":[{"id":"10468","comment_date":"2012-07-04 16:45:51","comment_date_gmt":"2012-07-04 15:45:51","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"","comment_content":"Keep it up!\nEven if ultimately this won't fix the whole cycling dangers issue, it was always fun to see how stupid some people can be :)\n\nOf course, until something bad happens to them :(","comment_parent":"0","replies":[]}]},"2012-07-05-the-outlaw-triathlon-2012-the-long-walk":{"slug":"2012-07-05-the-outlaw-triathlon-2012-the-long-walk","comments":[{"id":"10658","comment_date":"2012-07-18 17:53:17","comment_date_gmt":"2012-07-18 16:53:17","comment_author":"FD","comment_author_email":"francoise@ekynoxe.com","comment_author_url":"","comment_content":"Après avoir lu le récit de ta course, ton sourire sur toutes les photos m'a étonnée ! et pourtant il y a eu des obstacles : le temps, le genou en mauvais état, une crevaison, bref, de quoi perdre ta motivation ! et quand tu dis que tu t'es senti heureux pendant toute cette journée, je pense que tu as franchi un cap : profiter au maximum, trouver du plaisir, te sentir bien dans ta peau d'outlaw... et dans ta tête ! C'est le début de la sagesse.......... Encore bravo !","comment_parent":"0","replies":[]},{"id":"10603","comment_date":"2012-07-13 07:46:10","comment_date_gmt":"2012-07-13 06:46:10","comment_author":"Matt","comment_author_email":"Matt@ekynoxe.com","comment_author_url":"","comment_content":"Surprisingly, I was very happy all day. I knew my knee might not be in top form, but a puncture and not being able to walk wasn't exactly on the plan :-)\nBut this year has taught me a lot in enjoying what I do regardless of the results.\nI want to perform, but at the end of the day, I'm not a pro, so enjoying it and FINISHING is the best way to do a race!","comment_parent":"0","replies":[]},{"id":"10523","comment_date":"2012-07-07 03:49:25","comment_date_gmt":"2012-07-07 02:49:25","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"<blockquote>\nif you’re not deadly scared of water, then you can, and I know lots of people like that!\n</blockquote>\nehm...\n\nI'm sorry you had to walk/jog the last part, I know how much you want to perform. But your mindset is so well balanced, even in the face of an event like that, you deserve applauses.\n\nGreat stuff, grumpy Matt :)","comment_parent":"0","replies":[]}]},"2012-08-28-clients-your-choice":{"slug":"2012-08-28-clients-your-choice","comments":[{"id":"11261","comment_date":"2012-08-28 13:20:55","comment_date_gmt":"2012-08-28 12:20:55","comment_author":"Alberto","comment_author_email":"alberto.cartagena@gmail.com","comment_author_url":"","comment_content":"Just printed, for the meme-wall!","comment_parent":"0","replies":[]}]},"2012-08-30-brittany-ferries-the-reply-and-the-reply-to-the-reply":{"slug":"2012-08-30-brittany-ferries-the-reply-and-the-reply-to-the-reply","comments":[{"id":"11748","comment_date":"2012-09-15 17:29:19","comment_date_gmt":"2012-09-15 16:29:19","comment_author":"pete the builder","comment_author_email":"pandjwest@btinternet.com","comment_author_url":"http://mozilla","comment_content":"We have used brittany ferrys over 30 years They have all ways proven to be exceptional and honerable in all there dealings with us.They do what they say on the tin and if asked nicely a lot more .If you want to rewrite terms of tradeing bon chance.","comment_parent":"0","replies":[]},{"id":"11749","comment_date":"2012-09-15 18:40:48","comment_date_gmt":"2012-09-15 17:40:48","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Hi \"pete the builder\", thanks for your comment.\n\nI think you misread my post: I'm not looking into rewriting or asking them to change anything about their T&Cs. They are there to protect them, and it's fair enough, up to a point. What I'm criticising is the fact that customers have absolutely no way to make their rights valued.\n\nIn this case, the boat was late, as it has been many more times than is acceptable to deem them providing a good service on that particular line this summer. How is this acceptable?\n\nIf you never had a problem all these years, my guess is that you never tried to cross on foot or with a bike the last two years. Late arrivals, no time for turnaround and industrial actions have plagued the crossings. I lost count of how many people told me about being stuck on the other side, or missing connections and having to re-book tickets because their boats were late.\n\nThe staff on board is doing what it can and has always been nice. You seemed to have missed that too in my previous letter to them. They're just stretching it too far, and that's why it fails.\n\nMaybe I was unlucky to be on those crossings, but their customer service is just getting away lightly with recurring \"sorry for the inconvenience\" for my liking.\n\nEnjoy your crossings!","comment_parent":"0","replies":[]}]},"2012-09-06-the-only-good-cyclist-is-a-dead-one-editor-of-the-richmond-magazine-september-issue":{"slug":"2012-09-06-the-only-good-cyclist-is-a-dead-one-editor-of-the-richmond-magazine-september-issue","comments":[{"id":"11459","comment_date":"2012-09-06 10:37:31","comment_date_gmt":"2012-09-06 09:37:31","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Thanks Gavin, I've updated the post.","comment_parent":"0","replies":[]},{"id":"11457","comment_date":"2012-09-06 10:35:08","comment_date_gmt":"2012-09-06 09:35:08","comment_author":"Gavin","comment_author_email":"gspurling@gmail.com","comment_author_url":"","comment_content":"Just noticed you have the wrong Facebook link - should be https://www.facebook.com/Sheengate","comment_parent":"0","replies":[]}]},"2012-09-07-gorilla-signage":{"slug":"2012-09-07-gorilla-signage","comments":[{"id":"11661","comment_date":"2012-09-13 09:15:24","comment_date_gmt":"2012-09-13 08:15:24","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"I know that the people that had this idea has to stay \"secret\" because they would at least prosecute him/her/them.\n\nBut it's such a GENIUS thing and so well executed, they have my respect for life :)","comment_parent":"0","replies":[]}]},"2012-09-06-clarifications-on-the-richmond-magazine":{"slug":"2012-09-06-clarifications-on-the-richmond-magazine","comments":[{"id":"11663","comment_date":"2012-09-13 09:35:26","comment_date_gmt":"2012-09-13 08:35:26","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"You know me, and you know how I feel about dickheads.\nThis guy is one.\nAnd he deserves to lose his job.\n\nCyclist die in car accidents caused by cyclist and/or cars.\nCars get scratched by a accidents caused by cyclists. Maybe there are minor injuries for the strength of the seatbelt.\n\nBut while the driver his going into physio, the pieces of brain of the cyclist are collected with the spoon.","comment_parent":"0","replies":[]}]},"2012-09-15-the-day-one-image-brought-my-server-down":{"slug":"2012-09-15-the-day-one-image-brought-my-server-down","comments":[{"id":"11919","comment_date":"2012-09-20 10:33:40","comment_date_gmt":"2012-09-20 09:33:40","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Sorry, but I have to: LULZ!!!\n\nToo much \"success\" will kill you, as Freddy would say... :)","comment_parent":"0","replies":[]},{"id":"11921","comment_date":"2012-09-20 11:05:36","comment_date_gmt":"2012-09-20 10:05:36","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Oh I lolled a lot too! My server is so tiny it can't cope with that much traffic :p Bit of a stupid thing, but hey, it will push me to learn how to move EVERYTHING into S3 soon ;-)","comment_parent":"0","replies":[]}]},"2012-10-17-its-not-yet-the-off-season":{"slug":"2012-10-17-its-not-yet-the-off-season","comments":[{"id":"12999","comment_date":"2012-10-21 21:12:44","comment_date_gmt":"2012-10-21 20:12:44","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"Good luck dude ;)","comment_parent":"0","replies":[]}]},"2012-10-24-the-real-heroes":{"slug":"2012-10-24-the-real-heroes","comments":[{"id":"13129","comment_date":"2012-10-24 11:48:25","comment_date_gmt":"2012-10-24 10:48:25","comment_author":"IvanDM","comment_author_email":"detronizator@gmail.com","comment_author_url":"http://blog.ivandemarino.me","comment_content":"I think the word \"Hero\" itself should be reserved for people that \"sacrifice for greater good - a good that should stretch and benefit as many others as possible\".\n\nIt's the only kind of \"Hero\" that I'm willing to classify as such.\n\nI do see as heroes the collective effort here in this country for example, to push for an alternative, more environment friendly, more healthy mean of transportation. That is real heroism.\n\nWhile I do respect the sports men/women that do set amazing goal and work towards them, if those goals are \"personal challenges\", I can't see them as heroes. They are doing it for themselves.\n\nI know this was not your main point here, but here comes mine.\n\nAthletes that do what they do for money, fame and \"need to be better than anyone else\" are not only NOT HEROES, they are actually mean bastards. Armstrong is a shame: the man was drugged by success (that the only reason I can see at the moment). He didn't care that he had betrayed his own sport.","comment_parent":"0","replies":[]}]},"2013-02-21-the-norseman-10-years":{"slug":"2013-02-21-the-norseman-10-years","comments":[{"id":"21358","comment_date":"2013-02-22 17:54:07","comment_date_gmt":"2013-02-22 17:54:07","comment_author":"Ivan","comment_author_email":"detronizator@gmail.com","comment_author_url":"","comment_content":"wow","comment_parent":"0","replies":[]}]},"2013-05-17-lanzarote-days-3-and-4":{"slug":"2013-05-17-lanzarote-days-3-and-4","comments":[{"id":"24462","comment_date":"2013-05-17 11:41:01","comment_date_gmt":"2013-05-17 10:41:01","comment_author":"Anne","comment_author_email":"anne@ekynoxe.com","comment_author_url":"","comment_content":"So, goooooooooooo now !\nOn attend le live par ton coach personnel, c'est mon day off demain pour te suivre à fond !! ;)\nLove -et jum's power-","comment_parent":"0","replies":[]}]},"2013-05-30-ironman-lanzarote-2013-race-report":{"slug":"2013-05-30-ironman-lanzarote-2013-race-report","comments":[{"id":"24962","comment_date":"2013-06-02 20:33:19","comment_date_gmt":"2013-06-02 19:33:19","comment_author":"Ivan","comment_author_email":"detronizator@gmail.com","comment_author_url":"","comment_content":"Dude, you rocked. Let's say it :)","comment_parent":"0","replies":[]}]},"2013-06-09-solex-3800-something-to-restore-and-cherish":{"slug":"2013-06-09-solex-3800-something-to-restore-and-cherish","comments":[{"id":"25191","comment_date":"2013-06-09 22:35:30","comment_date_gmt":"2013-06-09 21:35:30","comment_author":"Ivan","comment_author_email":"detronizator@gmail.com","comment_author_url":"","comment_content":"Is it in your garage right now?","comment_parent":"0","replies":[]},{"id":"25192","comment_date":"2013-06-09 22:54:39","comment_date_gmt":"2013-06-09 21:54:39","comment_author":"Matt","comment_author_email":"matt@ekynoxe.com","comment_author_url":"http://ekynoxe.com","comment_content":"Yup :-) There's so much to do on it though. Everything is seized so nothing moves :-) First step is to get parts list and check what I miss.\n\nFrame first!","comment_parent":"0","replies":[]}]}}
+{
+    "2009-11-04-api-token-access-with-authlogic-and-login": {
+        "slug": "2009-11-04-api-token-access-with-authlogic-and-login",
+        "comments": [{
+            "id": "213",
+            "comment_date": "2010-04-05 16:19:01",
+            "comment_date_gmt": "2010-04-05 15:19:01",
+            "comment_author": "Paul",
+            "comment_author_email": "pftg@mail.ru",
+            "comment_author_url": "",
+            "comment_content": "Hi,\n\nI see that in your solution there is one tricks, when user first authenticated through client and then through Web, then they cannot works in parallel, because you reset single token, maybe better, reset it only for format xml.\n\nBut also you cannot logged in  parallel through two clients. Otherwise maybe better use toke of session not user's model.\n\nPaul",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "214",
+            "comment_date": "2010-04-05 17:48:48",
+            "comment_date_gmt": "2010-04-05 16:48:48",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi Paul,\n\nI agree with you, this solution is no where near universal and has its problems as you pointed out.\n\nHowever, it has been working fine for me with two clients (a web client and an XML API client) logged in at the same, as both use different authentication methods.\n\nThe XML API uses the single_access_token, while in my application, I use the excellent authlogic, which I think uses the persistence_token of the user model. As both are different in the DB, this works well.\n\nAlso, admitting that both solutions would use the same single_access_token, resetting it only for one format would lead to strange results, and an inconsistent behavior for the user.\n\nNow, if you want to access a website both on a web desktop and lets say on a web mobile, for sure, there will be a problem with my solution, but my guess is this will not happen often.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2547",
+            "comment_date": "2011-06-16 13:25:04",
+            "comment_date_gmt": "2011-06-16 12:25:04",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi Chris, appologies for the delay in coming back to you.\nI have now updated the code above with things to add in the application controller.\n\nbasically, I created a helper method in there and registered it with the helper_method call at the top of my application controller.\n\nThe code is below, and assumes you've got a named login route. The syntax highlighted version is up there in the post.\n\nI hope this helps!\n\n<code>helper_method :check\n\ndef check\n    if current_user==nil\n        respond_to do |format|\n        format.html {redirect_to login_path} #assuming you have a named login route\n        format.xml {render :xml=>'<?xml version=\"1.0\" encoding=\"UTF-8\"?><response><status>401</status><error>unauthorized</error></response>',:status=>:unauthorized}\n        end\n    end\nend</code>",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2401",
+            "comment_date": "2011-05-24 15:38:39",
+            "comment_date_gmt": "2011-05-24 14:38:39",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi Chris,\n\nSorry I didn't see your comment comming for some reason.\nI think you may have spotted something I forgot to add.\n\nIt's been a while now, and I'll have to dig up the code again to find that out, but as far as I remember from the top of my head, it was indeed a method in the application controller.\n\nI'll find that out for you.\nMatt",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2341",
+            "comment_date": "2011-05-08 20:39:49",
+            "comment_date_gmt": "2011-05-08 19:39:49",
+            "comment_author": "Chris Kimpton",
+            "comment_author_email": "chris@kimptoc.net",
+            "comment_author_url": "http://kimptoc.net",
+            "comment_content": "Hi,\n\nThanks for the great article (although I am coming to it late).\n\nOne query, what is:\n\n  before_filter :check\n\nIs that an AppController method to ensure the user is logged in?\n\nThanks,\nChris",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2009-11-19-orange-snapshot-mms-to-share-photos-on-twitter": {
+        "slug": "2009-11-19-orange-snapshot-mms-to-share-photos-on-twitter",
+        "comments": [{
+            "id": "65",
+            "comment_date": "2009-11-19 16:42:54",
+            "comment_date_gmt": "2009-11-19 16:42:54",
+            "comment_author": "Mark Watts-Jones",
+            "comment_author_email": "mwjmail@gmail.com",
+            "comment_author_url": "http://www.twitter.com/mwj",
+            "comment_content": "It is great to get Snapshot to market and a great way to work with our teams I thought. Lets do more!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "66",
+            "comment_date": "2009-11-19 16:49:25",
+            "comment_date_gmt": "2009-11-19 16:49:25",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi Mark,\n\nI agree, we should do more exchanges like this as Snapshot really proves we can deliver quickly.\n\nI liked working on it and I like even more that it made it out!\n\nThanks",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2010-08-09-mastermind": {
+        "slug": "2010-08-09-mastermind",
+        "comments": [{
+            "id": "468",
+            "comment_date": "2010-08-15 14:07:47",
+            "comment_date_gmt": "2010-08-15 13:07:47",
+            "comment_author": "detronizator",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "I love it man!\nWhat about the competition? When the winner will be announced?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "469",
+            "comment_date": "2010-08-15 15:15:53",
+            "comment_date_gmt": "2010-08-15 14:15:53",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hey dude! Thanks :)\n\nIt's all explained there: http://js1k.com/home\n\nEntries close on 10th September.\nHave your own ready!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2010-09-01-what-really-motivates-us": {
+        "slug": "2010-09-01-what-really-motivates-us",
+        "comments": [{
+            "id": "479",
+            "comment_date": "2010-09-04 11:51:11",
+            "comment_date_gmt": "2010-09-04 10:51:11",
+            "comment_author": "Detronizator",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Subliminal message to someone? ;)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "480",
+            "comment_date": "2010-09-06 22:59:37",
+            "comment_date_gmt": "2010-09-06 21:59:37",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Guess!\n\n<em>The name lies in the links</em>",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2010-09-06-extending-contact-form-7": {
+        "slug": "2010-09-06-extending-contact-form-7",
+        "comments": [{
+            "id": "485",
+            "comment_date": "2010-09-11 21:52:18",
+            "comment_date_gmt": "2010-09-11 20:52:18",
+            "comment_author": "Detronizator",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "OT: You do program Ruby and PHP. What's wrong with Python then? ;)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "486",
+            "comment_date": "2010-09-12 13:59:25",
+            "comment_date_gmt": "2010-09-12 12:59:25",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "@Detronizator: Did I ever say anything about python being wrong? =D",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "762",
+            "comment_date": "2010-10-31 11:06:34",
+            "comment_date_gmt": "2010-10-31 11:06:34",
+            "comment_author": "Dan",
+            "comment_author_email": "d.stramer@hotmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hi\nI tried using this addon but it didn't work\nI added this code in the form area:\n[pagetitle field_name]\n\nand this code in the message area:\n[field_name]\n\nAny ideas what am I doing wrong?\n\nThanks,\nDan",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "763",
+            "comment_date": "2010-10-31 11:12:00",
+            "comment_date_gmt": "2010-10-31 11:12:00",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Dan, the code you wrote and the places you put them seem correct.\nDid you add the code above in a pagetitle.php file in the contact-form-7 plugin modules directory as explained in the post above?\n\nIf you did, try deactivating the plugin and reactivating it again.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "764",
+            "comment_date": "2010-10-31 11:19:17",
+            "comment_date_gmt": "2010-10-31 11:19:17",
+            "comment_author": "Dan",
+            "comment_author_email": "d.stramer@hotmail.com",
+            "comment_author_url": "",
+            "comment_content": "WOW!\nwhat a speedy reply.\nI reactivated the plugin as you said and now it works\n\nThanks alot\n\nDan",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "765",
+            "comment_date": "2010-10-31 11:23:07",
+            "comment_date_gmt": "2010-10-31 11:23:07",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "No probs, glad it works for you!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2958",
+            "comment_date": "2011-08-01 11:23:56",
+            "comment_date_gmt": "2011-08-01 10:23:56",
+            "comment_author": "Aure",
+            "comment_author_email": "ditnet@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hi, good job m8. It was fine until I upgraded my CF7 plugin to 2.4.6 version. Now \"Hidden page title\" gone from dropdown menu :\\",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "3122",
+                "comment_date": "2011-08-18 11:11:54",
+                "comment_date_gmt": "2011-08-18 10:11:54",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "Hi Aure,\nThe problem you have is that I haven't submitted my change to the official plugin, so when you updated CF7, the change you have done simply disappeared.\nI'll try to contact the plugin author see if this can be integrated!\nUntil then you will have to apply the change again I'm afraid.",
+                "comment_parent": "2958",
+                "replies": []
+            }]
+        }, {
+            "id": "3136",
+            "comment_date": "2011-08-19 09:58:43",
+            "comment_date_gmt": "2011-08-19 08:58:43",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Aure, the author of the plugin pointed me towards this\nhttp://wordpress.org/extend/plugins/contact-form-7-modules/\n\nI haven't tried it yet, but it certainly looks on paper to do what I needed when I extended CF7 in the first place!\n\nYou might want to give it a go!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "4757",
+            "comment_date": "2012-02-01 22:48:48",
+            "comment_date_gmt": "2012-02-01 22:48:48",
+            "comment_author": "Miriam de Paula",
+            "comment_author_email": "wpmidia@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hi Matt...\n\nThanks for responding.\nI created a  field that lists posts from custom post type. It is working. But I can not send the selected data in the email.\n\nWhat I did wrong?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "4758",
+            "comment_date": "2012-02-01 22:56:06",
+            "comment_date_gmt": "2012-02-01 22:56:06",
+            "comment_author": "Miriam de Paula",
+            "comment_author_email": "wpmidia@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hi Matt.\n\nVery Thank you!\n\nI looked at the plugin's version, and there was an update (3.1). After upgrading, I got to the extra field work!\n\nThank you! Thank you!\n\n=)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "4755",
+            "comment_date": "2012-02-01 21:47:08",
+            "comment_date_gmt": "2012-02-01 21:47:08",
+            "comment_author": "Miriam de Paula",
+            "comment_author_email": "wpmidia@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hi ...\n\nI'm having the same problem as Dan:\nhttp://blog.ekynoxe.com/2010/09/06/extending-contact-form-7/#div-comment-762\n\nPlease, somebody help me?\nThe extra field data are not sent in the mail .... =(",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "4756",
+                "comment_date": "2012-02-01 22:02:25",
+                "comment_date_gmt": "2012-02-01 22:02:25",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "Hi Miriam, which version of WPCF7 are you using? It seems there is support for a hidden field now. If you are still using an older version and try to implement the change documented above, have you uninstalled and re-installed the plugin like Dan did? It solved his problem apparently.",
+                "comment_parent": "4755",
+                "replies": []
+            }]
+        }, {
+            "id": "4762",
+            "comment_date": "2012-02-02 07:08:25",
+            "comment_date_gmt": "2012-02-02 07:08:25",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "That's brilliant!! Glad you sorted out.\nAl the best!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "22727",
+            "comment_date": "2013-03-16 08:05:41",
+            "comment_date_gmt": "2013-03-16 08:05:41",
+            "comment_author": "davetiye",
+            "comment_author_email": "golgeadam@gmail.com",
+            "comment_author_url": "http://www.beyazdavetiye.com",
+            "comment_content": "i want to put title in contact form but i couldnt. i also searching this problem on google and i find this page.\nthank you a lot i solve the problem.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2010-10-24-this-is-it": {
+        "slug": "2010-10-24-this-is-it",
+        "comments": [{
+            "id": "711",
+            "comment_date": "2010-10-24 22:48:46",
+            "comment_date_gmt": "2010-10-24 21:48:46",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Man, it's going to be LE-GEN-... wait for it...\nDARY! :D",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "716",
+            "comment_date": "2010-10-25 06:50:04",
+            "comment_date_gmt": "2010-10-25 05:50:04",
+            "comment_author": "Chabi",
+            "comment_author_email": "louis@chabardes.net",
+            "comment_author_url": "",
+            "comment_content": "Nice, congrats on your move. Can't wait to hear about your new gig.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2010-11-15-going-very-long": {
+        "slug": "2010-11-15-going-very-long",
+        "comments": [{
+            "id": "880",
+            "comment_date": "2010-11-16 08:21:11",
+            "comment_date_gmt": "2010-11-16 08:21:11",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "<blockquote>\n... not wait for anyone else to maybe come along with me.\n</blockquote>\nI'll come with you! :P\n\nMan, you ARE the man.\nAnd I wish you very good luck.\n\nToday, when I finally leave this desk, shower and come to work, let me know the days in which will be hold: I could actually organise an holiday there enough in advance to go cheap ;)\n\nSee you in... 40 minutes :)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "881",
+            "comment_date": "2010-11-16 08:22:31",
+            "comment_date_gmt": "2010-11-16 08:22:31",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Btw, about the picture, looks like the guy on the right is whipping the guys on the left.\n\nHope it's how Ironman works :)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2010-11-17-git-sync-via-usb": {
+        "slug": "2010-11-17-git-sync-via-usb",
+        "comments": [{
+            "id": "893",
+            "comment_date": "2010-11-17 23:26:22",
+            "comment_date_gmt": "2010-11-17 23:26:22",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "I used to do this.\nBut I had to share code between mac, and windows, and linux machines.\nSo I had to use FAT32.\n\nResult?\nSoon I got corruptions all over the place.\n\nIf you can, use a proper filesystem.\n\nProblem is: where is a PROPER filesystem that is shared across those OS?",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-02-23-a-little-bit-guilty": {
+        "slug": "2011-02-23-a-little-bit-guilty",
+        "comments": [{
+            "id": "1755",
+            "comment_date": "2011-02-23 12:02:11",
+            "comment_date_gmt": "2011-02-23 12:02:11",
+            "comment_author": "Luca",
+            "comment_author_email": "lucabox@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "I am more of a mix:\n* first type (take a bunch)\n* periodically poll to see whether there are still more left ( the polling interval length is inverse proportional to how piggish I feel that day :D )",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "1756",
+            "comment_date": "2011-02-23 12:35:47",
+            "comment_date_gmt": "2011-02-23 12:35:47",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "You are welcome ;)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-03-09-percent-w-and-other-ruby-percent-syntax": {
+        "slug": "2011-03-09-percent-w-and-other-ruby-percent-syntax",
+        "comments": [{
+            "id": "1845",
+            "comment_date": "2011-03-10 22:47:12",
+            "comment_date_gmt": "2011-03-10 22:47:12",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Let me say 2 things here:\n1) Thanks for helping us with the Chef recipe: your Ruby-ness was very helpful\n2) This syntax is awful",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-03-21-frustration": {
+        "slug": "2011-03-21-frustration",
+        "comments": [{
+            "id": "2035",
+            "comment_date": "2011-03-29 21:31:51",
+            "comment_date_gmt": "2011-03-29 20:31:51",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Well, not really expected, I truly believed this one would go out given that everyone in the lab was so enthusiastic. But as we discussed outside, it seems some people need to grow a pair and stand high and proud about their identity and what they do.\n\nUnfortunately this is not my call, but I'll play a clause in my contract where i can release screenshots of the site as part of my work as it has been agreed that way.\n\nThis would not be the site itself as I cannot host a full working copy or even a mock indefinitely, but I think a few pages should be enough to illustrate.\n\nThis work is by no means confidential as it has always been intended to be the front facing site of the lab.\n\nWe'll see!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "1966",
+            "comment_date": "2011-03-21 23:55:50",
+            "comment_date_gmt": "2011-03-21 23:55:50",
+            "comment_author": "IvanDM",
+            "comment_author_email": "Detronizator@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Expected, given the client, but still very disappointed.\n\nIf it can help, I can say that was a great work.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "1963",
+            "comment_date": "2011-03-21 22:16:55",
+            "comment_date_gmt": "2011-03-21 22:16:55",
+            "comment_author": "luca",
+            "comment_author_email": "lucabox@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "seriously?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "1964",
+            "comment_date": "2011-03-21 22:24:08",
+            "comment_date_gmt": "2011-03-21 22:24:08",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Seriously...",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-03-26-the-one-who-stopped-replying": {
+        "slug": "2011-03-26-the-one-who-stopped-replying",
+        "comments": [{
+            "id": "2037",
+            "comment_date": "2011-03-30 00:41:34",
+            "comment_date_gmt": "2011-03-29 23:41:34",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Well, what can I say.\nIn 7 months a lot of things have changed for you (as for me), and even if this \"idiot\" doesn't come back... you are left with the pleasure of having built something really good.\n\nToo bad he is an idiot.\n\nI remember when you showed me some of the work in progress: it's really good.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-03-29-sweet-success": {
+        "slug": "2011-03-29-sweet-success",
+        "comments": [{
+            "id": "2038",
+            "comment_date": "2011-03-30 00:45:30",
+            "comment_date_gmt": "2011-03-29 23:45:30",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Shur-I-kan is one of the best nick name I have ever come across ;)",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "2042",
+                "comment_date": "2011-03-30 06:10:06",
+                "comment_date_gmt": "2011-03-30 05:10:06",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "It's like the answer to a dare! And He's also really good!",
+                "comment_parent": "2038",
+                "replies": []
+            }]
+        }]
+    },
+    "2011-03-30-100-days": {
+        "slug": "2011-03-30-100-days",
+        "comments": [{
+            "id": "2043",
+            "comment_date": "2011-03-30 08:04:34",
+            "comment_date_gmt": "2011-03-30 07:04:34",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "I imagined you looking at the rising sun from the window, sipping a super nice coffee from our espresso maker.\n\nThe only shame: you would have used Illy Coffee Beans :P",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2047",
+            "comment_date": "2011-03-30 11:54:43",
+            "comment_date_gmt": "2011-03-30 10:54:43",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "HAHAHAHA! Yeah, I use posh beans =P I should grow my own ;-)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-04-27-rewriter": {
+        "slug": "2011-04-27-rewriter",
+        "comments": [{
+            "id": "2286",
+            "comment_date": "2011-04-27 18:06:09",
+            "comment_date_gmt": "2011-04-27 17:06:09",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "AMAZING!\n\nAdd to your TODO list (if not already there):\n1) Ensure that the \"href\" field after generated the link points to your service, not to the final URL\n2) Add a \"share\" button to the page the user sees after generation, to quickly publicise the link (use AddThis - it's really good http://www.addthis.com/)\n\nKeep up the good work mate ;)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2289",
+            "comment_date": "2011-04-28 15:21:19",
+            "comment_date_gmt": "2011-04-28 14:21:19",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hey Ivan,\nThanks for the feedback. Your first point is now covered and deployed.\nThe sharing capability is on the list of many things to do and will indeed be added in the near future!\n\nIt's getting there!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-05-03-kodes": {
+        "slug": "2011-05-03-kodes",
+        "comments": [{
+            "id": "2316",
+            "comment_date": "2011-05-03 13:18:22",
+            "comment_date_gmt": "2011-05-03 12:18:22",
+            "comment_author": "IvanDM",
+            "comment_author_email": "Detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Unsued? ;)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2317",
+            "comment_date": "2011-05-03 14:17:30",
+            "comment_date_gmt": "2011-05-03 13:17:30",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Woops! Corrected =) Thks",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-05-06-orange": {
+        "slug": "2011-05-06-orange",
+        "comments": [{
+            "id": "2343",
+            "comment_date": "2011-05-09 10:13:40",
+            "comment_date_gmt": "2011-05-09 09:13:40",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Well done! ;)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-07-21-hillingdon-sprint-or-my-first-dnf": {
+        "slug": "2011-07-21-hillingdon-sprint-or-my-first-dnf",
+        "comments": [{
+            "id": "2839",
+            "comment_date": "2011-07-21 11:07:36",
+            "comment_date_gmt": "2011-07-21 10:07:36",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Next time you will walk.\nNo, actually, next time you will not break. ;)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-07-29-im-a-front-end-dev": {
+        "slug": "2011-07-29-im-a-front-end-dev",
+        "comments": [{
+            "id": "3595",
+            "comment_date": "2011-10-16 13:44:16",
+            "comment_date_gmt": "2011-10-16 12:44:16",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "yepee!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "2968",
+            "comment_date": "2011-08-02 00:55:16",
+            "comment_date_gmt": "2011-08-01 23:55:16",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "How couldn't I just subscribe to what you just said?\n\nIt's a massive, disgraceful pain in the ass.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-08-17-recruiters-scammers": {
+        "slug": "2011-08-17-recruiters-scammers",
+        "comments": [{
+            "id": "3432",
+            "comment_date": "2011-09-26 13:31:10",
+            "comment_date_gmt": "2011-09-26 12:31:10",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "",
+            "comment_content": "I specially like the fact that one sent me an email 'having liked my rant' but still telling me they had a *great* position...\nDuuhh...",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3117",
+            "comment_date": "2011-08-17 22:05:54",
+            "comment_date_gmt": "2011-08-17 21:05:54",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "What about that one that pretended to be from downstairs, asking for what we did in our team?\n\nBloody recruiters!\nOr maybe they are not even recruiters: they gather inside informations about public companies.\nShitty bastards &gt;:(",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-09-14-how-to-be-a-successfull-business-make-every-customer-feel-special": {
+        "slug": "2011-09-14-how-to-be-a-successfull-business-make-every-customer-feel-special",
+        "comments": [{
+            "id": "3324",
+            "comment_date": "2011-09-15 16:11:38",
+            "comment_date_gmt": "2011-09-15 15:11:38",
+            "comment_author": "FD",
+            "comment_author_email": "francoise@ekynoxe.com",
+            "comment_author_url": "",
+            "comment_content": "Bien dit !",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-09-30-shake-that-body-up": {
+        "slug": "2011-09-30-shake-that-body-up",
+        "comments": [{
+            "id": "3464",
+            "comment_date": "2011-10-01 11:01:42",
+            "comment_date_gmt": "2011-10-01 10:01:42",
+            "comment_author": "mike",
+            "comment_author_email": "mjandrews22@googlemail.com",
+            "comment_author_url": "",
+            "comment_content": "Looking good - sounds like you've got it all under control. Wish I was therre although its 28 c here and no wind - swim this am and out on the kebel with aero wheels this pm. I hope all goes well and best of luck - I will follow on the website.\n\nMike",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-10-07-challenge-barcelona-race-report": {
+        "slug": "2011-10-07-challenge-barcelona-race-report",
+        "comments": [{
+            "id": "3521",
+            "comment_date": "2011-10-07 22:07:50",
+            "comment_date_gmt": "2011-10-07 21:07:50",
+            "comment_author": "Simon",
+            "comment_author_email": "simonski@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Congratulations! - what an inspiration Matt!.  Tomorrow, I go for a run for sure.  Well done to you.  What a guy.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3551",
+            "comment_date": "2011-10-11 14:49:39",
+            "comment_date_gmt": "2011-10-11 13:49:39",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "To both of you, Kima and Simon: You have been the persons behind my start in triathlon and my motivation to keep pushing. You are so inspiring to me!\n\n@Simon: I really need to kick your butt up a hill of yours some day soon! Now that the race is done, I think we need to arrange a meeting around Haslemere to check those \"climbs\" out ;-)\n\n@Kim, can't wait to see you next year! It's going to be great! All the best to you, hopefully you'll be cycling with us then!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3524",
+            "comment_date": "2011-10-08 21:03:23",
+            "comment_date_gmt": "2011-10-08 20:03:23",
+            "comment_author": "Kim",
+            "comment_author_email": "kim.sian@sunstar1.com",
+            "comment_author_url": "",
+            "comment_content": "Hi Matt,\n\nThanks for your kind words.  I am sooo proud of you.  Well done!!!  Thanks for sharing the whole event it is most inspiring.  You are really good at writing.  I think this was a great breakdown and a joy to read.  I am very happy to hear you and Ellen are still together.  You have such a good heart and great potential and I am glad that both are shining.\n\nWe look forward to you and Ellen coming to California next year and want to wish you all the best on your training.\n\nGo get 'em champ.\n\nKeep smiling.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-10-11-challenge-barcelona-the-video": {
+        "slug": "2011-10-11-challenge-barcelona-the-video",
+        "comments": [{
+            "id": "3630",
+            "comment_date": "2011-10-19 07:56:50",
+            "comment_date_gmt": "2011-10-19 06:56:50",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Mamma mia!\nSome people look super-fit but arrive to the transitions barely walking normal...",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3631",
+            "comment_date": "2011-10-19 08:00:56",
+            "comment_date_gmt": "2011-10-19 07:00:56",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Such is the world of ironman my friend! Look at me finishing!\nAt that point, I was SURE I was sprinting, literally!\n\nErr..... No... =D",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3632",
+            "comment_date": "2011-10-19 08:03:19",
+            "comment_date_gmt": "2011-10-19 07:03:19",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "What minute you arrive?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3633",
+            "comment_date": "2011-10-19 08:05:22",
+            "comment_date_gmt": "2011-10-19 07:05:22",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "4:05 -&gt; 4:08 ?\nIs that you?\n\nYou were cheering :P",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3634",
+            "comment_date": "2011-10-19 08:05:45",
+            "comment_date_gmt": "2011-10-19 07:05:45",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Read the post text!! =) On the second video:  14’22″\n\nOn the first one, I don't think you can miss me!!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-10-22-git-post-receive-for-multiple-remote-branches-and-work-trees": {
+        "slug": "2011-10-22-git-post-receive-for-multiple-remote-branches-and-work-trees",
+        "comments": [{
+            "id": "11111",
+            "comment_date": "2014-09-15 20:37:07",
+            "comment_date_gmt": "2014-09-15 19:37:07",
+            "comment_author": "Jesse",
+            "comment_author_email": "jesse@kinoli.com",
+            "comment_author_url": "http://www.kinoli.com/",
+            "comment_content": "Great article. One problem I have, is I want all of my files to be backed up in the repo but I want to prevent certain files/directories from being checked out into the live directory. So gitignore doesn't seem to be the solution since it prevents certain directories from making it into the git backup. For instance, I have a '_db' directory where I store database backups. I want those to be registered in my git repo, but I don't want it to be accessible in my web root. Any ideas how to dot that?",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "11112",
+                "comment_date": "2014-09-15 22:47:25",
+                "comment_date_gmt": "2012-09-15 21:47:25",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "Hi Jesse,\n\nThanks for taking the time to comment.\n\nYou are right, .gitignore will only help in case you don't want to *commit* files to your repo.\nAs far as I'm aware, there isn't a way to tell checkout to ignore some files, that would complicate things a lot!\n\nHowever, since the hook is a bash script, you're free to do whatever you want in it.\nOne solution would be to use the --work-tree option to target a temporary folder, from which you would copy only what you really need to your web root:\n\nInstead of\n\n<code>git --work-tree=/path/under/root/dir/live-site/ checkout -f $branch</code>\n\nYou could have something like:\n\n<code>git --work-tree=/temp/path/ checkout -f $branch\nrsync -av /temp/path/ /web/root/ --exclude _db</code>\n\nThere are quite a few options to chose from. Rsync / cp / find with xargs / etc etc. Pick the one you prefer! And you're not bound to bash either, you can write your hooks in ruby perl etc as well. Whatever suits you, make those examples your own!\n\n/!\\/!\\ I haven't tried this code, so just make sure you know where you're going with it!",
+                "comment_parent": "1111",
+                "replies": []
+            }]
+        }, {
+            "id": "4062",
+            "comment_date": "2011-12-04 18:33:07",
+            "comment_date_gmt": "2011-12-04 18:33:07",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi Peter, I've edited your comments so they look alright. They won't show indenting as I don't apply the pretty formatter to those. That's for another time!\n\nRegarding your code, I can confirm that the second one you posted (for a solution on the same server) does work properly and I've updated my original post as well to reflect those changes, which should help a few out there!\n\nThanks a lot!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10365",
+            "comment_date": "2012-07-01 14:01:01",
+            "comment_date_gmt": "2012-07-01 13:01:01",
+            "comment_author": "Marty",
+            "comment_author_email": "martin.klima@hqis.cz",
+            "comment_author_url": "",
+            "comment_content": "Many thanks for your solution and explanation.\n\nI tested it on Windows machine and had to do a little edit. I changed this row:\n<code>git --work-tree=/d/git_testing/webroot/public_webroot git checkout -f $branch</code>\nto this:\n\n<code>GIT_WORK_TREE=/d/git_testing/webroot/public_webroot git checkout -f $branch</code>\n\nAnd everything work fine.\nThanks again.",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "10441",
+                "comment_date": "2012-07-03 16:04:25",
+                "comment_date_gmt": "2012-07-03 15:04:25",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "Happy to see these little tips still help!",
+                "comment_parent": "10365",
+                "replies": []
+            }]
+        }, {
+            "id": "4030",
+            "comment_date": "2011-12-02 14:57:44",
+            "comment_date_gmt": "2011-12-02 14:57:44",
+            "comment_author": "Peter",
+            "comment_author_email": "pmeth@rogers.com",
+            "comment_author_url": "",
+            "comment_content": "To solve Matt's problem I think this whole script should be wrapped in a while loop.\n\nI took the post-receive script from http://book.git-scm.com/5_git_hooks.html and combined it with yours to come up with a new version.  I haven't tested it, but it should would work for multi-branch commits:<code>\n-----------------\n#!/bin/sh\n#\nwhile read oldrev newrev ref\ndo\n\tIFS='/' read -ra REF &lt;&lt;&lt; &quot;${ref}&quot;\n\n\tbranch=&quot;${REF[2]}&quot;\n\tif [ &quot;master&quot; == &quot;$branch&quot; ]; then\n\t\tgit --work-tree=/path/under/root/dir/live-site/ checkout -f $branch\n\t\techo &#039;Changes pushed live.&#039;\n\tfi\n\n\tif [ &quot;dev&quot; == &quot;$branch&quot; ]; then\n\t\tgit --work-tree=/path/under/root/dir/dev-site/ checkout -f $branch\n\t\techo &#039;Changes pushed to dev.&#039;\n\tfi\ndone</code>",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "4031",
+            "comment_date": "2011-12-02 15:03:09",
+            "comment_date_gmt": "2011-12-02 15:03:09",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi Peter, I'll give that one a go, that looks alright to me.\nI did not have time yet to investigate myself but that's what I had in mind as well.\n\nI'll try that asap and report.\n\nThanks!\n(And I'll have to find a way to format code in comments...)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "4035",
+            "comment_date": "2011-12-02 18:38:43",
+            "comment_date_gmt": "2011-12-02 18:38:43",
+            "comment_author": "Peter",
+            "comment_author_email": "pmeth@rogers.com",
+            "comment_author_url": "",
+            "comment_content": "The last one I posted won't work unless you change the shabang.  Here's a better version that should be a little easier to read.  I have tested this one successfully.\n\n<code>#!/bin/bash\n#\nlivepath=\"/path/to/your/live\"\ndevpath=\"/path/to/your/dev\"\nwhile read oldrev newrev ref\ndo\n\tbranch=`echo $ref | cut -d/ -f3`\n\tif [[ \"master\" == \"$branch\" ]]; then\n\t\tgit --work-tree=$livepath checkout -f $branch\n\t\techo 'Changes pushed live.'\n\telif [[ \"development\" == \"$branch\" ]]; then\n\t\tgit --work-tree=$devpath checkout -f $branch\n\t\techo 'Changes pushed to dev.'\n\tfi\ndone</code>",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "4037",
+            "comment_date": "2011-12-02 18:56:47",
+            "comment_date_gmt": "2011-12-02 18:56:47",
+            "comment_author": "Peter",
+            "comment_author_email": "pmeth@rogers.com",
+            "comment_author_url": "",
+            "comment_content": "And here is a version you can use if your live site is <strong>on another server</strong>. Keep in mind that you will have to setup a user who can ssh to the other server using keys instead of passwords to authenticate. I’m sure you can find those instructions online.\n\n<code>#!/bin/bash\n# {oldrev} {newrev} {refname}\ntmpdir=/tmp/git\ndevpath=/path/to/dev\nlivepath=/path/to/live\nlivehost=somehostname\nwhile read oldrev newrev ref\ndo\n        branch=`echo $ref | cut -d/ -f3`\n        if [[ \"master\" == \"$branch\" ]]; then\n                mkdir -p $tmpdir$livepath\n                git --work-tree=$tmpdir$livepath checkout -f $branch\n                rsync -auv -e ssh --progress --delete $tmpdir$livepath/ $livehost:$livepath\n                rm -rf $tmpdir$livepath\n                echo 'Changes pushed live.'\n        elif [[ \"development\" == \"$branch\" ]]; then\n                git --work-tree=$devpath checkout -f $branch\n                echo 'Changes pushed to dev.'\n        fi\ndone\n</code>",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3755",
+            "comment_date": "2011-11-01 23:46:30",
+            "comment_date_gmt": "2011-11-01 23:46:30",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "It seems that this version of the hook doesn't fully work in scenarios where I'm pushing both master and dev (read multi-branches push) to the remote.\nAs the script is executed once, I'm not sure if the references are correctly set.\nMaybe all this should go in a different hook?\n\nSuggestions?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10641",
+            "comment_date": "2012-07-17 09:12:26",
+            "comment_date_gmt": "2012-07-17 08:12:26",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hey Gustavo!\nOther than some permission issues, I don't see what could be wrong here, as your method looks ok to me.\n\nTo debug what is happening, instead of doing a checkout in the \"master branch block\", you could stick in there a bunch of logging lines of code that would print the git history being pushed and on which $ref you are etc.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10631",
+            "comment_date": "2012-07-16 03:13:57",
+            "comment_date_gmt": "2012-07-16 02:13:57",
+            "comment_author": "Gustavo",
+            "comment_author_email": "gustavo@burgi.com.ar",
+            "comment_author_url": "",
+            "comment_content": "I've a little problem here...\n\nHere is step by step that i'm doing:\n\n<code>server:\n--------------------\ncd /home/git/repositories\nmkdir project.git\ncd project.git\ngit init --bare\n\nlocalhost\n--------------------\ncd /var/www/project\ngit init\ngit remote add origin git@server.com:project.git\ngit add .\ngit commit -m \"first export\"\ngit push origin master</code>\n\nFor now, \"tutto bene\" (is fine). I want to use the master branch as development branch, so, any push to master branch, deploy to dev/test server, and i want to add another branch for production enviroment, \"production\" branch. So I edit my config and post-receive files in server:\n\n<code>Server\n-----------------------\ncd /home/git/repositories/project.git\ngit config core.bare false\ngit config receive.denycurrentbranch ignore\n\nnano hooks/post-receive\n--------------------------\n#!/bin/bash\n#\nlivepath=\"/path/to/your/live\"\ndevpath=\"/path/to/your/dev\"\nwhile read oldrev newrev ref\ndo\nbranch=`echo $ref | cut -d/ -f3`\nif [[ \"production\" == \"$branch\" ]]; then\ngit --work-tree=$livepath checkout -f $branch\necho 'Changes pushed live.'\nelif [[ \"master\" == \"$branch\" ]]; then\ngit --work-tree=$devpath checkout -f $branch\necho 'Changes pushed to dev.'\nfi\ndone\n--------------------------\n</code>\nNow I change some code and push it to test/dev (master):\n<code>git commit -a -m \"changed some files\"\ngit push origin master</code>\n\nFine, works for test/dev deploy, now test with production branch:\n\n<code>localhost\n-------------------------\ngit checkout -b production\ngit push origin production</code>\n\nI push production branch to the origin because, that way, other developers can merge and push to production your works...\n\nnow I merge master into production, for deploy a copy of test/dev into production enviroment:\n\ngit merge master\ngit push\n\nFine!!!, deployed into production server, awesome!!\n\nOK, here come the bad think, now i change to master branch to fix some bug, push to dev/test, and.... nothing, don't deploy to test/dev server... Try again and nothing...\n\n<code>git checkout master\nnano bad_file.php\n---\ngit commit -a -m \"fixed the bug 1\"\ngit push origin master</code>\n............. not deploy, como on mother f....\n<code>nano bad_file.php\n---\ngit commit -a -m \"fixed the bug 2\"\ngit push origin master</code>\n............. not deploy\n\nLet me try mergin master into production:\n<code>git checkout production\ngit merge master\ngit push origin production</code>\n............. deploy into production\n\nCome back to master an push some change...\n<code>git checkout master\nnano bad_file.php\n---\ngit commit -a -m \"fixed bug 3\"\ngit push origin master</code>\n............ deployed into dev/test server, but no the commit \"fixed bug 3\", instead the second commit .... :(\n\nAny suggestion?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "28053",
+            "comment_date": "2013-08-15 01:02:02",
+            "comment_date_gmt": "2013-08-15 00:02:02",
+            "comment_author": "David",
+            "comment_author_email": "david.kerns@gmail.com",
+            "comment_author_url": "http://twitter.com/kerns",
+            "comment_content": "Thanks, Matt. Cleared up a lot for me. This solution is working great for me.\n\nI'd also like to recommend this write-up...\n\nhttp://toroid.org/ams/git-website-howto\n\n...which covers some of the fundamentals you cover in part I. You can use the script Peter came up with in this solution as well. Very clever.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "30575",
+            "comment_date": "2013-10-01 08:25:53",
+            "comment_date_gmt": "2013-10-01 07:25:53",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://blog.ekynoxe.com",
+            "comment_content": "Norbert, I am unsure why this happens, but possible issues could include file permissions that could be different for whatever reason on the directories your master branch checks out into, or you may have had some files in there prior to deploying with git. If these files weren't in your repository before, then it's normal they won't get deleted since git doesn't track them.\nThat's only speculation though.\n\nMatt",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "11112",
+            "comment_date": "2014-03-21 15:38:45",
+            "comment_date_gmt": "2014-03-21 14:38:45",
+            "comment_author": "Guillaume Lang",
+            "comment_author_email": "toyo68@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hello, i just wont to say big thanks to you for this tip, thank you very much, and sorry for my bad english, I'm french!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "28005",
+            "comment_date": "2013-08-13 16:45:55",
+            "comment_date_gmt": "2013-08-13 15:45:55",
+            "comment_author": "David",
+            "comment_author_email": "david.kerns@gmail.com",
+            "comment_author_url": "http://twitter.com/kerns",
+            "comment_content": "Wonderful. Just a few questions...\n\nI'd like to incorporate this method without running or managing a git server like gitolite,... preferring to rely on GitHub and Bitbucket for things like collaboration, user management, rwx permissions, etc.\n\nSo...\n\na) Does a server running git and ssh qualify for using this, or is something like gitolite a must?\n\nb) Imagining a scenario in which you have some code that is part of a site that needs local =&gt; stage and =&gt; live branches, as well as a version that lives on Bitbucket or GH,...erhm...what might that look like?\n\nIn other words, is there a sensible way of managing both sharing/collaboration AND the convenience of \"push publishing\", or is that asking too much of one repo?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "28006",
+            "comment_date": "2013-08-13 17:02:56",
+            "comment_date_gmt": "2013-08-13 16:02:56",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi David,\n\nI'll try to answer your questions below:\n\na)\nGitolite is only a permissions management system for repositories, not git itself. This is a git hook, so it should work on any git install providing that you modify the script to use the correct file system.\n\nYou can also write the same script in pretty much any language the shell of said server can interpret. This is bash, but you could use ruby and others.\n\nYou can find a more advanced script doign something else here: http://git-scm.com/book/en/Customizing-Git-An-Example-Git-Enforced-Policy\n\nb)\nThere is nothing that would prevent you from building a more complex script, checking what branch you are pushing to and deploying the right code to the right staging, integration, live etc servers. Just bare in mind that this particular hook above is only intended to work on the same machine than the repository is.\nBut because these hooks are essentially scripts, you can do whatever you want in them, even stuff completely unrelated to git itslef, like sending an email to all your team telling them you've pushed code etc.\n\nI don't have example of such scripts handy, but that's essentially how heroku or openshift work. The sharing/collaboration is the pure git branch part, the push-publish is in the hooks.\n\nI don't think the limitation will be in the repo here, but in how complex your hooks and management system will be.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "28424",
+            "comment_date": "2013-08-22 19:55:47",
+            "comment_date_gmt": "2013-08-22 18:55:47",
+            "comment_author": "Vincent",
+            "comment_author_email": "vincent@bigsweaterdesign.com",
+            "comment_author_url": "http://bigsweaterdesign.com",
+            "comment_content": "This worked perfectly for me. I've been looking for exactly this sort of solution for months. Not sure how I didn't come across this earlier.\n\nI created a Gist with my slightly modified version.\n\nhttp://blog.ekynoxe.com/2011/10/22/git-post-receive-for-multiple-remote-branches-and-work-trees/\n\nHopefully that'll make it easier to contribute to this block of code in the future. Fork and modify to your heart's content.\n\nThanks again!",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "28425",
+                "comment_date": "2013-08-22 19:56:39",
+                "comment_date_gmt": "2013-08-22 18:56:39",
+                "comment_author": "Vincent",
+                "comment_author_email": "vincent@bigsweaterdesign.com",
+                "comment_author_url": "http://bigsweaterdesign.com",
+                "comment_content": "Oops--the link above is incorrect, obviously. It should be this:\n\nhttps://gist.github.com/bigsweater/6311240#file-post_receive",
+                "comment_parent": "28424",
+                "replies": []
+            }]
+        }, {
+            "id": "30388",
+            "comment_date": "2013-09-29 12:07:22",
+            "comment_date_gmt": "2013-09-29 11:07:22",
+            "comment_author": "Norbert",
+            "comment_author_email": "norbiu@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "I encountered a problem with pushing my master branch to the live site.\n\nMy workflow is as follows:\n\n- make changes locally on develop branch, test, commit, push to develop\n- test on server (develop url)\n- merge develop into master on local, push to master\n\nThe problem is that when I push to master, files that I deleted locally don't get removed on the server. New files are added as expected. This only happens when I push to master, pushing to develop works just fine.\n\nAny ideas?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "23667",
+            "comment_date": "2013-04-10 18:38:53",
+            "comment_date_gmt": "2013-04-10 17:38:53",
+            "comment_author": "Jake",
+            "comment_author_email": "olandt@rsp.wisc.edu",
+            "comment_author_url": "",
+            "comment_content": "Sorry to post in an old page.\n\nI have been trying to set up a deployment similar to this, but I have been having an issue with speed.  With both the script I wrote and the script here, it will sometimes take 15 minutes for a push to complete.  It seems to me that the problem is when switching between the two working directories.  When I push the same branch as I had previously, it only takes a few seconds to make a small change.  However, if I had last pushed the master branch and now push the dev branch, it will take 15 minutes to complete, even just to make one change on a 2kB file.  Additionally, it this case, windows shows all the files in the directory as having been modified, rather than just the 1 file that had been changed and committed.",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "23668",
+                "comment_date": "2013-04-10 18:42:22",
+                "comment_date_gmt": "2013-04-10 17:42:22",
+                "comment_author": "Jake",
+                "comment_author_email": "olandt@rsp.wisc.edu",
+                "comment_author_url": "",
+                "comment_content": "EDIT: After the 15 minutes, the checkout is correct.",
+                "comment_parent": "23667",
+                "replies": []
+            }]
+        }, {
+            "id": "23684",
+            "comment_date": "2013-04-11 08:49:39",
+            "comment_date_gmt": "2013-04-11 07:49:39",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hey Jake, I'm not sure what the problem could be here. Are you sure your machine has the correct permissions and that your filesystem is ok?",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-10-22-automated-deployment-on-remote-server-with-git": {
+        "slug": "2011-10-22-automated-deployment-on-remote-server-with-git",
+        "comments": [{
+            "id": "5111",
+            "comment_date": "2012-03-13 13:41:03",
+            "comment_date_gmt": "2012-03-13 13:41:03",
+            "comment_author": "Chieroz",
+            "comment_author_email": "c.chierotti@gmail.com",
+            "comment_author_url": "http://www.chierotti.net",
+            "comment_content": "Thank you, great advice.\n\nJust a note: I work in a Mac environment and I had to change the order of the commands on the server:\nfirst -&gt; git config core.bare false\nthen -&gt; git config core.worktree /path/to/website/folder\n\nciao",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "5112",
+            "comment_date": "2012-03-13 14:01:18",
+            "comment_date_gmt": "2012-03-13 14:01:18",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Interesting Carlo, why do you think that is?\nDoes setting the \"bare\" configuration actually initialises the repo as bare at the same time or something like this?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3754",
+            "comment_date": "2011-11-01 23:45:00",
+            "comment_date_gmt": "2011-11-01 23:45:00",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Actually, it might be because you're not pushing anything to a branch named 'master' and git fails to recognise that... I think I need to check if git implies that the push has to be on a branch named 'master'",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3746",
+            "comment_date": "2011-10-31 22:06:05",
+            "comment_date_gmt": "2011-10-31 22:06:05",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Ah, it might be because you tried to push without any content changes.\nDoing a git push origin master with no content will not push anything, and the hook will not get fired",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3743",
+            "comment_date": "2011-10-31 21:53:12",
+            "comment_date_gmt": "2011-10-31 21:53:12",
+            "comment_author": "luca",
+            "comment_author_email": "lucabox@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "thanks!\n\nI set up this environment in my dev server and works like a charm.\nYou might want to add an extra step:\n\nI had to checkout your branch (in this case master) before being able to do\n\ngit checkout -f\n\nwhich is in the post-receive hook.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3744",
+            "comment_date": "2011-10-31 21:54:25",
+            "comment_date_gmt": "2011-10-31 21:54:25",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "What do you mean \"checkout your branch\"? Where was this? On the server, your local machine?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "3745",
+            "comment_date": "2011-10-31 21:56:42",
+            "comment_date_gmt": "2011-10-31 21:56:42",
+            "comment_author": "luca",
+            "comment_author_email": "lucabox@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "sorry I meant my branch :)\n\nwhen you do (in your tutorial)\n\ngit push origin master\n\n\nin order for the post-receive hook to start working I had to run first\n\ngit checkout master\n\nthen it worked.\n\nWithout doing this step first, it looks the repo is not set to any branch and a call to git checkout -f will result in a:\n\n fatal: You are on a branch yet to be born",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10720",
+            "comment_date": "2012-07-26 13:06:01",
+            "comment_date_gmt": "2012-07-26 12:06:01",
+            "comment_author": "aaki",
+            "comment_author_email": "achim.sperling@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "You don't need to git config core.*, see http://toroid.org/ams/git-website-howto\nSeems to be easier, a bit.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10595",
+            "comment_date": "2012-07-12 17:44:28",
+            "comment_date_gmt": "2012-07-12 16:44:28",
+            "comment_author": "gustavo",
+            "comment_author_email": "gustavo@burgi.com.ar",
+            "comment_author_url": "",
+            "comment_content": "After deploy the files are inaccessible with browser, because now the user git is the owner, what can i do for change this? I want they are accessibles to apache.",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "10596",
+                "comment_date": "2012-07-12 18:04:07",
+                "comment_date_gmt": "2012-07-12 17:04:07",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "Hola Gustavo!\nAll you need to do is either make git a member of your apache group.\nYou could add a change of ownership in the same \"post-receive\" hook with chown apache:apache (assuming these are your user/group names for apache), but if git isn't in the apache group, you won't be able to deploy with git next time because the file isn't owned by git anymore.\n\nThe git hooks are (in this example) standard bash scripts, so you can use all your usual bash/unix knowledge to manage permissions.",
+                "comment_parent": "10595",
+                "replies": []
+            }]
+        }, {
+            "id": "10598",
+            "comment_date": "2012-07-12 18:49:29",
+            "comment_date_gmt": "2012-07-12 17:49:29",
+            "comment_author": "gustavo",
+            "comment_author_email": "gustavo@burgi.com.ar",
+            "comment_author_url": "",
+            "comment_content": "Thanks a lot!\n\nI just only did:\n\n\n<code>chown -R git:www-data /var/www/gitdeploy</code>",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "10599",
+                "comment_date": "2012-07-12 19:05:54",
+                "comment_date_gmt": "2012-07-12 18:05:54",
+                "comment_author": "Matt",
+                "comment_author_email": "Matt@ekynoxe.com",
+                "comment_author_url": "",
+                "comment_content": "Spot on! Well done.",
+                "comment_parent": "10598",
+                "replies": []
+            }]
+        }, {
+            "id": "11111",
+            "comment_date": "2012-08-22 10:37:07",
+            "comment_date_gmt": "2012-08-22 09:37:07",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Aaaki, if this is your first repository, then you might. I've taken the point of view that you're on a fresh install and having one repository.\nYour link seems however a good other approach whereby setting the GIT_WORK_TREE environment variable can be done on a per project basis.\n\nSomething to consider indeed!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "11112",
+            "comment_date": "2014-03-21 15:38:45",
+            "comment_date_gmt": "2014-03-21 14:38:45",
+            "comment_author": "Guillaume Lang",
+            "comment_author_email": "toyo68@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Hello, i just wont to say big thanks to you for this tip, thank you very much, and sorry for my bad english, I'm french!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2011-12-07-cant-find-wpml-2-0-4-1-anywhere-here-it-is": {
+        "slug": "2011-12-07-cant-find-wpml-2-0-4-1-anywhere-here-it-is",
+        "comments": [{
+            "id": "5265",
+            "comment_date": "2012-04-02 21:34:43",
+            "comment_date_gmt": "2012-04-02 20:34:43",
+            "comment_author": "bryan",
+            "comment_author_email": "sad@asdfa.com",
+            "comment_author_url": "",
+            "comment_content": "but it doesnt support wp 3.3",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "5266",
+                "comment_date": "2012-04-02 21:37:16",
+                "comment_date_gmt": "2012-04-02 20:37:16",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "A bit of a useless comment you've made don't you think? Specially because you won't get any notification as you posted with a fake email address...\n\nFor me WPML 2.0.4.1 works on WP 3.3 without any problem.\nTrue, I haven't tried with 3.3.1 yet, but I'm sure you can try that.",
+                "comment_parent": "5265",
+                "replies": []
+            }]
+        }]
+    },
+    "2012-03-20-so-i-got-myself-a-ticket-for-cycling-in-the-wrong-place": {
+        "slug": "2012-03-20-so-i-got-myself-a-ticket-for-cycling-in-the-wrong-place",
+        "comments": [{
+            "id": "5185",
+            "comment_date": "2012-03-21 13:00:18",
+            "comment_date_gmt": "2012-03-21 13:00:18",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "I'm sorry you almost froze but... I can't resist: LOOOOOL! :D",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "5186",
+            "comment_date": "2012-03-21 13:27:45",
+            "comment_date_gmt": "2012-03-21 13:27:45",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Yeah, I thought the same. I seriously was giggling at the guy struggling to fill in the thing.\n\nQuite a funny situation indeed =D",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-04-02-ironman-70-3-california": {
+        "slug": "2012-04-02-ironman-70-3-california",
+        "comments": [{
+            "id": "5271",
+            "comment_date": "2012-04-02 21:55:59",
+            "comment_date_gmt": "2012-04-02 20:55:59",
+            "comment_author": "@Leigh_pilates",
+            "comment_author_email": "rsvpleigh@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Well done Matt! What an excellent achievement and like you said you now know where you stand in your AG!\n\nAm so glad the 910xt worked well for you!\n\nWell done yet again!",
+            "comment_parent": "0",
+            "replies": [{
+                "id": "5272",
+                "comment_date": "2012-04-02 21:59:22",
+                "comment_date_gmt": "2012-04-02 20:59:22",
+                "comment_author": "Matt",
+                "comment_author_email": "matt@ekynoxe.com",
+                "comment_author_url": "http://ekynoxe.com",
+                "comment_content": "Thanks a lot for the help and support! Doing Thames Turbo next monday? If so good luck too!",
+                "comment_parent": "5271",
+                "replies": []
+            }]
+        }]
+    },
+    "2012-04-18-more-california-photos": {
+        "slug": "2012-04-18-more-california-photos",
+        "comments": [{
+            "id": "6218",
+            "comment_date": "2012-05-01 10:57:25",
+            "comment_date_gmt": "2012-05-01 09:57:25",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "I screwed up the DNS entries... Fixing it now!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "6216",
+            "comment_date": "2012-05-01 10:53:00",
+            "comment_date_gmt": "2012-05-01 09:53:00",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Even here: no pics. Only the vids.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-04-29-trp-t925-brakes-review": {
+        "slug": "2012-04-29-trp-t925-brakes-review",
+        "comments": [{
+            "id": "6143",
+            "comment_date": "2012-04-29 16:44:15",
+            "comment_date_gmt": "2012-04-29 15:44:15",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Dude, I think there is an issue with the images...",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "6144",
+            "comment_date": "2012-04-29 18:22:59",
+            "comment_date_gmt": "2012-04-29 17:22:59",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Mmhhh, indeed, I'll have a look when I'm back home. Thanks!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "6145",
+            "comment_date": "2012-04-29 18:52:59",
+            "comment_date_gmt": "2012-04-29 17:52:59",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Ok, looks fixed now. I don't know what happened. Let me know!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "6217",
+            "comment_date": "2012-05-01 10:57:04",
+            "comment_date_gmt": "2012-05-01 09:57:04",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "I screwed up the DNS entries... Fixing it now!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "6215",
+            "comment_date": "2012-05-01 10:51:37",
+            "comment_date_gmt": "2012-05-01 09:51:37",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Still no image",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-07-04-cycling-with-a-helmet-cam": {
+        "slug": "2012-07-04-cycling-with-a-helmet-cam",
+        "comments": [{
+            "id": "10468",
+            "comment_date": "2012-07-04 16:45:51",
+            "comment_date_gmt": "2012-07-04 15:45:51",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Keep it up!\nEven if ultimately this won't fix the whole cycling dangers issue, it was always fun to see how stupid some people can be :)\n\nOf course, until something bad happens to them :(",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-07-05-the-outlaw-triathlon-2012-the-long-walk": {
+        "slug": "2012-07-05-the-outlaw-triathlon-2012-the-long-walk",
+        "comments": [{
+            "id": "10658",
+            "comment_date": "2012-07-18 17:53:17",
+            "comment_date_gmt": "2012-07-18 16:53:17",
+            "comment_author": "FD",
+            "comment_author_email": "francoise@ekynoxe.com",
+            "comment_author_url": "",
+            "comment_content": "Après avoir lu le récit de ta course, ton sourire sur toutes les photos m'a étonnée ! et pourtant il y a eu des obstacles : le temps, le genou en mauvais état, une crevaison, bref, de quoi perdre ta motivation ! et quand tu dis que tu t'es senti heureux pendant toute cette journée, je pense que tu as franchi un cap : profiter au maximum, trouver du plaisir, te sentir bien dans ta peau d'outlaw... et dans ta tête ! C'est le début de la sagesse.......... Encore bravo !",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10603",
+            "comment_date": "2012-07-13 07:46:10",
+            "comment_date_gmt": "2012-07-13 06:46:10",
+            "comment_author": "Matt",
+            "comment_author_email": "Matt@ekynoxe.com",
+            "comment_author_url": "",
+            "comment_content": "Surprisingly, I was very happy all day. I knew my knee might not be in top form, but a puncture and not being able to walk wasn't exactly on the plan :-)\nBut this year has taught me a lot in enjoying what I do regardless of the results.\nI want to perform, but at the end of the day, I'm not a pro, so enjoying it and FINISHING is the best way to do a race!",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "10523",
+            "comment_date": "2012-07-07 03:49:25",
+            "comment_date_gmt": "2012-07-07 02:49:25",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "<blockquote>\nif you’re not deadly scared of water, then you can, and I know lots of people like that!\n</blockquote>\nehm...\n\nI'm sorry you had to walk/jog the last part, I know how much you want to perform. But your mindset is so well balanced, even in the face of an event like that, you deserve applauses.\n\nGreat stuff, grumpy Matt :)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-08-28-clients-your-choice": {
+        "slug": "2012-08-28-clients-your-choice",
+        "comments": [{
+            "id": "11261",
+            "comment_date": "2012-08-28 13:20:55",
+            "comment_date_gmt": "2012-08-28 12:20:55",
+            "comment_author": "Alberto",
+            "comment_author_email": "alberto.cartagena@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Just printed, for the meme-wall!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-08-30-brittany-ferries-the-reply-and-the-reply-to-the-reply": {
+        "slug": "2012-08-30-brittany-ferries-the-reply-and-the-reply-to-the-reply",
+        "comments": [{
+            "id": "11748",
+            "comment_date": "2012-09-15 17:29:19",
+            "comment_date_gmt": "2012-09-15 16:29:19",
+            "comment_author": "pete the builder",
+            "comment_author_email": "pandjwest@btinternet.com",
+            "comment_author_url": "http://mozilla",
+            "comment_content": "We have used brittany ferrys over 30 years They have all ways proven to be exceptional and honerable in all there dealings with us.They do what they say on the tin and if asked nicely a lot more .If you want to rewrite terms of tradeing bon chance.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "11749",
+            "comment_date": "2012-09-15 18:40:48",
+            "comment_date_gmt": "2012-09-15 17:40:48",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Hi \"pete the builder\", thanks for your comment.\n\nI think you misread my post: I'm not looking into rewriting or asking them to change anything about their T&Cs. They are there to protect them, and it's fair enough, up to a point. What I'm criticising is the fact that customers have absolutely no way to make their rights valued.\n\nIn this case, the boat was late, as it has been many more times than is acceptable to deem them providing a good service on that particular line this summer. How is this acceptable?\n\nIf you never had a problem all these years, my guess is that you never tried to cross on foot or with a bike the last two years. Late arrivals, no time for turnaround and industrial actions have plagued the crossings. I lost count of how many people told me about being stuck on the other side, or missing connections and having to re-book tickets because their boats were late.\n\nThe staff on board is doing what it can and has always been nice. You seemed to have missed that too in my previous letter to them. They're just stretching it too far, and that's why it fails.\n\nMaybe I was unlucky to be on those crossings, but their customer service is just getting away lightly with recurring \"sorry for the inconvenience\" for my liking.\n\nEnjoy your crossings!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-09-06-the-only-good-cyclist-is-a-dead-one-editor-of-the-richmond-magazine-september-issue": {
+        "slug": "2012-09-06-the-only-good-cyclist-is-a-dead-one-editor-of-the-richmond-magazine-september-issue",
+        "comments": [{
+            "id": "11459",
+            "comment_date": "2012-09-06 10:37:31",
+            "comment_date_gmt": "2012-09-06 09:37:31",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Thanks Gavin, I've updated the post.",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "11457",
+            "comment_date": "2012-09-06 10:35:08",
+            "comment_date_gmt": "2012-09-06 09:35:08",
+            "comment_author": "Gavin",
+            "comment_author_email": "gspurling@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Just noticed you have the wrong Facebook link - should be https://www.facebook.com/Sheengate",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-09-07-gorilla-signage": {
+        "slug": "2012-09-07-gorilla-signage",
+        "comments": [{
+            "id": "11661",
+            "comment_date": "2012-09-13 09:15:24",
+            "comment_date_gmt": "2012-09-13 08:15:24",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "I know that the people that had this idea has to stay \"secret\" because they would at least prosecute him/her/them.\n\nBut it's such a GENIUS thing and so well executed, they have my respect for life :)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-09-06-clarifications-on-the-richmond-magazine": {
+        "slug": "2012-09-06-clarifications-on-the-richmond-magazine",
+        "comments": [{
+            "id": "11663",
+            "comment_date": "2012-09-13 09:35:26",
+            "comment_date_gmt": "2012-09-13 08:35:26",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "You know me, and you know how I feel about dickheads.\nThis guy is one.\nAnd he deserves to lose his job.\n\nCyclist die in car accidents caused by cyclist and/or cars.\nCars get scratched by a accidents caused by cyclists. Maybe there are minor injuries for the strength of the seatbelt.\n\nBut while the driver his going into physio, the pieces of brain of the cyclist are collected with the spoon.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-09-15-the-day-one-image-brought-my-server-down": {
+        "slug": "2012-09-15-the-day-one-image-brought-my-server-down",
+        "comments": [{
+            "id": "11919",
+            "comment_date": "2012-09-20 10:33:40",
+            "comment_date_gmt": "2012-09-20 09:33:40",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Sorry, but I have to: LULZ!!!\n\nToo much \"success\" will kill you, as Freddy would say... :)",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "11921",
+            "comment_date": "2012-09-20 11:05:36",
+            "comment_date_gmt": "2012-09-20 10:05:36",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Oh I lolled a lot too! My server is so tiny it can't cope with that much traffic :p Bit of a stupid thing, but hey, it will push me to learn how to move EVERYTHING into S3 soon ;-)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-10-17-its-not-yet-the-off-season": {
+        "slug": "2012-10-17-its-not-yet-the-off-season",
+        "comments": [{
+            "id": "12999",
+            "comment_date": "2012-10-21 21:12:44",
+            "comment_date_gmt": "2012-10-21 20:12:44",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "Good luck dude ;)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2012-10-24-the-real-heroes": {
+        "slug": "2012-10-24-the-real-heroes",
+        "comments": [{
+            "id": "13129",
+            "comment_date": "2012-10-24 11:48:25",
+            "comment_date_gmt": "2012-10-24 10:48:25",
+            "comment_author": "IvanDM",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "http://blog.ivandemarino.me",
+            "comment_content": "I think the word \"Hero\" itself should be reserved for people that \"sacrifice for greater good - a good that should stretch and benefit as many others as possible\".\n\nIt's the only kind of \"Hero\" that I'm willing to classify as such.\n\nI do see as heroes the collective effort here in this country for example, to push for an alternative, more environment friendly, more healthy mean of transportation. That is real heroism.\n\nWhile I do respect the sports men/women that do set amazing goal and work towards them, if those goals are \"personal challenges\", I can't see them as heroes. They are doing it for themselves.\n\nI know this was not your main point here, but here comes mine.\n\nAthletes that do what they do for money, fame and \"need to be better than anyone else\" are not only NOT HEROES, they are actually mean bastards. Armstrong is a shame: the man was drugged by success (that the only reason I can see at the moment). He didn't care that he had betrayed his own sport.",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2013-02-21-the-norseman-10-years": {
+        "slug": "2013-02-21-the-norseman-10-years",
+        "comments": [{
+            "id": "21358",
+            "comment_date": "2013-02-22 17:54:07",
+            "comment_date_gmt": "2013-02-22 17:54:07",
+            "comment_author": "Ivan",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "wow",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2013-05-17-lanzarote-days-3-and-4": {
+        "slug": "2013-05-17-lanzarote-days-3-and-4",
+        "comments": [{
+            "id": "24462",
+            "comment_date": "2013-05-17 11:41:01",
+            "comment_date_gmt": "2013-05-17 10:41:01",
+            "comment_author": "Anne",
+            "comment_author_email": "anne@ekynoxe.com",
+            "comment_author_url": "",
+            "comment_content": "So, goooooooooooo now !\nOn attend le live par ton coach personnel, c'est mon day off demain pour te suivre à fond !! ;)\nLove -et jum's power-",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2013-05-30-ironman-lanzarote-2013-race-report": {
+        "slug": "2013-05-30-ironman-lanzarote-2013-race-report",
+        "comments": [{
+            "id": "24962",
+            "comment_date": "2013-06-02 20:33:19",
+            "comment_date_gmt": "2013-06-02 19:33:19",
+            "comment_author": "Ivan",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Dude, you rocked. Let's say it :)",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    },
+    "2013-06-09-solex-3800-something-to-restore-and-cherish": {
+        "slug": "2013-06-09-solex-3800-something-to-restore-and-cherish",
+        "comments": [{
+            "id": "25191",
+            "comment_date": "2013-06-09 22:35:30",
+            "comment_date_gmt": "2013-06-09 21:35:30",
+            "comment_author": "Ivan",
+            "comment_author_email": "detronizator@gmail.com",
+            "comment_author_url": "",
+            "comment_content": "Is it in your garage right now?",
+            "comment_parent": "0",
+            "replies": []
+        }, {
+            "id": "25192",
+            "comment_date": "2013-06-09 22:54:39",
+            "comment_date_gmt": "2013-06-09 21:54:39",
+            "comment_author": "Matt",
+            "comment_author_email": "matt@ekynoxe.com",
+            "comment_author_url": "http://ekynoxe.com",
+            "comment_content": "Yup :-) There's so much to do on it though. Everything is seized so nothing moves :-) First step is to get parts list and check what I miss.\n\nFrame first!",
+            "comment_parent": "0",
+            "replies": []
+        }]
+    }
+}
