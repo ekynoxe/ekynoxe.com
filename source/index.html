@@ -15,7 +15,7 @@ layout: index
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-        {% assign prev_path="/news" %}
+        {% assign prev_path="/" %}
     {% else %}
         {% assign prev_path=paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' %}
     {% endif %}
