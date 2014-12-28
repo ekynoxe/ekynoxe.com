@@ -59,7 +59,7 @@ If you follow me a little bit, you know that I didn't stop there. But it's this 
 
 The point is: if you're setting yourselves great goals for next year, do think as well about the journey to get there. All training but no testing in actual races (smaller races), will not make you more confident in your ability to complete a harder / longer event.
 
-So if you've got a 10K goal, make sure you test yourself (whether physically or mentally, either smashing it just to check that you can complete) at smaller ones. Smaller means not only distance, but also "lower key".
+So if you've got a 10K goal, make sure you test yourself at smaller ones. Whether physically or mentally, either smashing it, or just to check that you can complete. "Smaller" means not only distance, but also "lower key".
 
 <p class="attachement"><a href="{{ "phoenix_marathon.jpg" | image_path | cdn }}" title="Phoenix marathon" rel="lightbox[20141228]"><img src="{{ "phoenix_marathon_r500.jpg" | image_path | cdn }}" alt="Phoenix marathon" /></a></p>
 
