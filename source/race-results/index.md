@@ -3,9 +3,47 @@ title: Race results
 layout: page
 section: raceresults
 ---
+# Race results
+
 ## 2014
 
-### Ironman 70.3 UK &#8211; 15 June 2014
+### The Wildman off-road duathlon &#8211; 22 Novembre 2014
+
+**2h27&#8217;03&#8243; (43th overall, 9th in age group / 28)**
+
+That felt a lot harder than last year on the bike. Having not ridden the MTB at all before the race, it was always going to be hard. Sticky mud and wrong tires didn't make it any easier, but the overall result was faster with a few higher places up the rankings!
+
+*   Run 1 &#8211; 10K: 44&#8217;54&#8243; [run 1 data][96]
+*   T1: 1&#8217;05&#8243; [T1 data][97]
+*   Bike &#8211; 18K: 1h11&#8217;44&#8243; [bike data][98]
+*   T2: 0&#8217;47&#8243; [T2 data][98]
+*   Run 2 &#8211; 5K: 25&#8217;46&#8243; [run 2 data][100]
+
+### Ironman 70.3 World Championship - Mt Tremblant, Canada &#8211; 09 Septembre 2014
+
+**5h10&#8217;10&#8243; (53rd overall, 47th male and 15th in age group)**
+
+A nice trip in a wonderfully quiet place, and a fantastic race result. I was never going to be a contender so I focused on doing the best I could and bagged myself a fantastic PB, including having ran the whole half marathon.
+That was all a bit shadowed by the un-sanctioned massive draft-fest on the bike. I don't understand how an event of this calibre lets this sort of thing happen, and how athletes keep on cheating like that at this level.
+But anyway, World champs finisher with a new half iron PB!
+
+*   Swim 1.9K: 31&#8217;10&#8243; [swim data][91]
+*   T1: 5&#8217;02&#8243; [T1 data][92]
+*   Bike 90.1K: 2h23&#8217;48&#8243; [bike data][93]
+*   T2: 1&#8217;55&#8243; [T2 data][94]
+*   Run 21.1K: 1h33&#8217;17&#8243; [run data][95]
+
+### Thorpe park sprint triahtlon &#8211; 21 Septembre 2014
+
+**1h06&#8217;16&#8243; (6th overall, 1st in age group)**
+
+Wanting to have a real go at this one after last year's 4th place overall. I had a "normal" swim for me, being, like last year, in front of the second pack, but nothing stellar. The bike went alright and I made progress, but the run is where I wanted to nail it, and I got a 5K and a sprint tri PB for the efforts! Only 6th, but first in M30-40! No prize for that sadly, so I'll have to wait before climbing on a podium!
+
+*   Swim 750m: 12&#8217;38&#8243; [swim data][88]
+*   Bike 21.5K: 34&#8217;04&#8243; [bike data][89]
+*   Run 4.7K: 17&#8217;16&#8243; [run data][90]
+
+### [Ironman 70.3 UK](/ironman-70-dot-3-uk-2014/) &#8211; 15 June 2014
 
 **5h10&#8217;10&#8243; (53rd overall, 47th male and 15th in age group)**
 
@@ -543,3 +581,16 @@ Running instead of Arthur with old worn out shoes and no preparation
 [85]: http://connect.garmin.com/modern/activity/521831716 "bike data"
 [86]: http://connect.garmin.com/modern/activity/521831718 "T2 data"
 [87]: http://connect.garmin.com/modern/activity/521831719 "run data"
+[88]: http://connect.garmin.com/modern/activity/595345766 "swim data"
+[89]: http://connect.garmin.com/modern/activity/595345773 "bike data"
+[90]: http://connect.garmin.com/modern/activity/595345778 "run data"
+[91]: http://connect.garmin.com/modern/activity/585418644 "swim data"
+[92]: http://connect.garmin.com/modern/activity/585418647 "T1 data"
+[93]: http://connect.garmin.com/modern/activity/585418648 "bike data"
+[94]: http://connect.garmin.com/modern/activity/585418657 "T2 data"
+[95]: http://connect.garmin.com/modern/activity/585418662 "run data"
+[96]: http://connect.garmin.com/modern/activity/637625270/1 "run 1 data"
+[97]: http://connect.garmin.com/modern/activity/637625270/2 "T1 data"
+[98]: http://connect.garmin.com/modern/activity/637625270/3 "bike data"
+[99]: http://connect.garmin.com/modern/activity/637625270/4 "T2 data"
+[100]: http://connect.garmin.com/modern/activity/637625270/5 "run 2 data"
