@@ -21,7 +21,7 @@ It has now been done! Coming out of the iceman, I was properly covered in sticky
 
 As the weather was so horrendous for the few weeks before the race with flooding everywhere, I elected to steal Ellen's wheels, since they had Contis Mountain King on them, which, even if not proper mud tyres, would work better than my shallower studded ones.
 I had a chuckle looking at them with their reflectors and chain guard, but that would prove the point that the machine doesn't play a massive role in having a great race.
-At more than 13Kg, I have a heavy entry level bike complete with reflectors and bell. It's obviously no match for full carbon bikes like [John's][1] Rose Psycho Path that weighs the best part of 6Kg less (!), but I'm having fun :-)
+At more than 13Kg, I have a heavy entry level bike complete with reflectors and bell. It's obviously no match for full carbon bikes like [John's][1] Rose Psycho Path that weighs the best part of 6Kg less than mine (!), but I'm having fun :-)
 
 On the morning of the race, I wasn't feeling that well rested after a week of hard training, but the weather helped a lot in feeling better. This time, it wasn't windy or too cold, and the sun was making an appearance, so there would only be a lot of mud to contend with.
 
