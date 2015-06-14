@@ -25,7 +25,7 @@ A very leisurly run witn Carel to pace him on a long training run for his ultra-
 
 ## 2014
 
-### The Wildman off-road duathlon &#8211; 22 Novembre 2014
+### [The Wildman off-road duathlon](/the-wildman-off-road-duathlon-2014/) &#8211; 22 Novembre 2014
 
 **2h27'03" (43th overall, 9th in age group / 28)**
 
@@ -37,7 +37,7 @@ That felt a lot harder than last year on the bike. Having not ridden the MTB at 
 *   T2: 0'47" [T2 data][99]
 *   Run 2 &#8211; 5K: 25'46" [run 2 data][100]
 
-### Ironman 70.3 World Championship - Mt Tremblant, Canada &#8211; 09 Septembre 2014
+### [Ironman 70.3 World Championship - Mt Tremblant, Canada](/ironman-70-dot-3-world-championship-2014-mont-tremblant-canada/) &#8211; 09 Septembre 2014
 
 **4h35'10" (484th overall, 101th in age group)**
 
