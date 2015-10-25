@@ -2,7 +2,7 @@
 layout: post
 title: "Triathlon Internacional Portocolom 111 2015"
 written_on: 2015-04-12 08:00
-date: 2015-10-25 08:28
+date: 2015-04-12 08:28
 categories:
   - triathlon
 tags:
