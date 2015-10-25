@@ -73,7 +73,6 @@ task :preview do
     [jekyll_pid, compass_pid].each { |pid| Process.wait(pid) }
 end
 
-
 # usage:   rake publish
 #   and follow the prompts
 desc "Publish posts currently written as drafts"
@@ -135,9 +134,12 @@ task :publish do
     input_file = File.join(source_dir, drafts_dir, draft)
 
     title = ""
+    date = Time.now.strftime('%Y-%m-%d %H:%M')
 
     File.open(temp_file, "w") do |out_file|
       File.foreach(input_file) do |line|
+        #   Ignore the draft line, we don't need to
+        #     carry that over in the published post
         next if line.chomp == "draft: true"
 
         if line.chomp =~ /title: .+/
@@ -145,17 +147,17 @@ task :publish do
         end
 
         if line.chomp =~ /date: .+/
-            out_file.puts "written_on: " + line.chomp.match(/date: (.+)/)[1]
-            out_file.puts "date: " + Time.now.strftime('%Y-%m-%d %H:%M')
+            out_file.puts "published_on: " + date
+            date = line.chomp.match(/(\d{4}-\d{1,2}-\d{1,2})(?:\s+)(?:.+)/)[1]
+            out_file.puts line
         else
             out_file.puts line.gsub("| local", "| cdn") # Replacing file urls for CDN urls. Images are uploaded by the s3cmd call below.
         end
 
-
       end
     end
 
-    output_file_name = Time.now.strftime('%Y-%m-%d') + "-#{title}"
+    output_file_name = "#{date}-#{title}"
     output_file = File.join(source_dir, posts_dir, output_file_name+".md")
 
     if File.exist?(output_file)
@@ -189,7 +191,6 @@ def print_drafts drafts
     puts "q - exit"
     puts ""
 end
-
 
 # usage:   rake deploy
 desc "Deploy the current generated website to its target"
