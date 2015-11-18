@@ -17,7 +17,8 @@ server_port       = "4000"    # port for preview server eg. localhost:4000
 local_target      = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
 s3_bucket         = "s3://com.ekynoxe.www/content/"
 
-# usage:   rake new_post["post title goes here"]
+# usage:   rake new_post['post title goes here']
+# use single quotes to avoid variable expansion if you want to use ! 
 desc "Begin a new post in #{source_dir}/#{drafts_dir}"
 task :new_post, :title do |t, args|
     mkdir_p "#{source_dir}/#{drafts_dir}"
