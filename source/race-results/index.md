@@ -7,6 +7,26 @@ section: raceresults
 
 ## 2015
 
+### [Ironman 70.3 Mallorca](/ironman-70-dot-3-mallorca/) &#8211; 9 May 2015
+
+**4h38'09" (91st overall, 12th in age group)**
+
+*   Swim &#8211; 1K: 31'06" [swim data][112]
+*   T1: 4'19" [T1 data][113]
+*   Bike &#8211; 90K: 2h31'43" [bike data][114]
+*   T2: 3'03" [T2 data][115]
+*   Run 2 &#8211; 21.1K: 1h27'37" [run data][116]
+
+### [Triathlon Internacional Portocolom 111](/triathlon-internacional-portocolom-111-2015/) &#8211; 12 April 2015
+
+**2h10'19" (16th overall)**
+
+*   Swim &#8211; 1K: 16'54" [swim data][106]
+*   T1: 1'55" [T1 data][107]
+*   Bike &#8211; 100K: 3h04'55" [bike data 1][108] [bike data 2][109]
+*   T2: 2'02" [T2 data][110]
+*   Run 2 &#8211; 10.4K: 41'3" [run data][111]
+
 ### [Wokingham half marathon](/wokingham-half-marathon-2015/) &#8211; 07 February 2015
 
 A very leisurly run witn Carel to pace him on a long training run for his ultra-training.
@@ -617,3 +637,14 @@ Running instead of Arthur with old worn out shoes and no preparation
 [103]: https://connect.garmin.com/modern/activity/691823823/3 "bike data"
 [104]: https://connect.garmin.com/modern/activity/691823823/4 "T2 data"
 [105]: https://connect.garmin.com/modern/activity/691823823/5 "run 2 data"
+[106]: https://connect.garmin.com/modern/activity/744547067/1 "swim data"
+[107]: https://connect.garmin.com/modern/activity/744547067/2 "T1 data"
+[108]: https://connect.garmin.com/modern/activity/744547067/3 "bike data"
+[109]: https://connect.garmin.com/modern/activity/744552544/3 "bike 2 data"
+[110]: https://connect.garmin.com/modern/activity/744552544/4 "T2 data"
+[111]: https://connect.garmin.com/modern/activity/744552544/5 "run data"
+[112]: https://connect.garmin.com/modern/activity/770043319/1 "swim data"
+[113]: https://connect.garmin.com/modern/activity/770043319/2 "T1 data"
+[114]: https://connect.garmin.com/modern/activity/770043319/3 "bike data"
+[115]: https://connect.garmin.com/modern/activity/770043319/4 "T2 data"
+[116]: https://connect.garmin.com/modern/activity/770043319/5 "run data"
