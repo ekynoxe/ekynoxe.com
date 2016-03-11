@@ -304,6 +304,7 @@ header.main {
     color: $white;
 
     position: relative;
+    padding-bottom: 2rem;
     text-align: center;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
 
@@ -543,6 +544,7 @@ section {
 
 section.work,
 section.projects {
+    margin-top: -2rem;
     padding: 0;
 
     header {
