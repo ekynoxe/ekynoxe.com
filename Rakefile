@@ -18,7 +18,7 @@ local_target      = "/Users/matt/Sites/ekynoxe/ekynoxial.github.io/"
 s3_bucket         = "s3://com.ekynoxe.www/content/"
 
 # usage:   rake new_post['post title goes here']
-# use single quotes to avoid variable expansion if you want to use ! 
+# use single quotes to avoid variable expansion if you want to use !
 desc "Begin a new post in #{source_dir}/#{drafts_dir}"
 task :new_post, :title do |t, args|
     mkdir_p "#{source_dir}/#{drafts_dir}"
@@ -194,6 +194,7 @@ def print_drafts drafts
 end
 
 # usage:   rake deploy
+# use 'ssh-add ~/.ssh/id_rsa_secondkey' before this one (for triathlon branch)
 desc "Deploy the current generated website to its target"
 task :deploy do
     puts "First, let's make sure we have the correct website version generated"
