@@ -4,8 +4,61 @@ layout: page
 section: raceresults
 ---
 # Race results
+## 2016
+
+### Ironman World Championship &#8211; Kona &#8211; 8 Octobre 2016
+
+**9h59'50" (451st overall, 102nd in age group)**
+
+*   Swim &#8211; 3.8K: 1h09'42"
+*   T1: 5'08"
+*   Bike &#8211; 180K: 5h20'29" [bike data][129]
+*   T2: 6'35"
+*   Run &#8211; 42.2K: 3h17'56" [run data][130]
+
+### Nottingham team relays &#8211; 27-28 August 2016
+
+### Thorpe park Olympic triathlon &#8211; 17 July 2016
+
+**2:08:35 (18th overall, 4th in age group)**
+
+*   swim 1500m: 25'58"
+*   T1: 0'58"
+*   bike 40Km: 1h00'22" [garmin data][128]
+*   T2: 1'02"
+*   run 10K: 40'14"
+
+### Ironman South Africa &#8211; 10 April 2016
+
+**9h45'52" (65th overall, 10th in age group)**
+
+*   Swim &#8211; 3.8K: 1h13'28"
+*   T1: 2'53"
+*   Bike &#8211; 180K: 5h03'23" [bike data][126]
+*   T2: 3'11"
+*   Run &#8211; 42.2K: 3h22'57" [run data][127]
 
 ## 2015
+
+### Ironman Wales &#8211; 13 Septembre 2015
+
+**10h50'50" (71st overall, 13th in age group)**
+
+*   Swim &#8211; 3.8K: 1h13'39" [swim data][122]
+*   T1: 8'29" [T1 data][123]
+*   Bike &#8211; 180K: 5h34'54" [bike data][124]
+*   T2: 3'26"
+*   Run &#8211; 42.2K: 3h50'12" [run data][125]
+
+### Ironman UK &#8211; 19 July 2015
+
+**10h06'02" (26th overall, 9th in age group)**
+
+*   Swim &#8211; 3.8K: 1h09'20" [swim data][117]
+*   T1: 4'20" [T1 data][118]
+*   Bike &#8211; 180K: 5h29'05" [bike data][119]
+*   T2: 3'41" [T2 data][120]
+*   Run &#8211; 42.2K: 3h19'36" [run data][121]
 
 ### [Ironman 70.3 Mallorca](/ironman-70-dot-3-mallorca/) &#8211; 9 May 2015
 
@@ -15,7 +68,7 @@ section: raceresults
 *   T1: 4'19" [T1 data][113]
 *   Bike &#8211; 90K: 2h31'43" [bike data][114]
 *   T2: 3'03" [T2 data][115]
-*   Run 2 &#8211; 21.1K: 1h27'37" [run data][116]
+*   Run &#8211; 21.1K: 1h27'37" [run data][116]
 
 ### [Triathlon Internacional Portocolom 111](/triathlon-internacional-portocolom-111-2015/) &#8211; 12 April 2015
 
@@ -25,7 +78,7 @@ section: raceresults
 *   T1: 1'55" [T1 data][107]
 *   Bike &#8211; 100K: 3h04'55" [bike data 1][108] [bike data 2][109]
 *   T2: 2'02" [T2 data][110]
-*   Run 2 &#8211; 10.4K: 41'3" [run data][111]
+*   Run &#8211; 10.4K: 41'3" [run data][111]
 
 ### [Wokingham half marathon](/wokingham-half-marathon-2015/) &#8211; 07 February 2015
 
@@ -41,7 +94,7 @@ A very leisurly run witn Carel to pace him on a long training run for his ultra-
 *   T1: 1'35" [T1 data][102]
 *   Bike &#8211; 18K: 59'21" [bike data][103]
 *   T2: 0'45" [T2 data][104]
-*   Run 2 &#8211; 5K: 22'33" [run 2 data][105]
+*   Run &#8211; 5K: 22'33" [run 2 data][105]
 
 ## 2014
 
@@ -280,11 +333,11 @@ Fiesty swim, strong winds and 2500m+ of ascent. Very well executed race!
 
 Very fiesty swim, very strong winds and 1500m+ of ascent and a very big cramp on the run around Km 13.
 
-*   swim 1900m: 33:54 <a title="garmin data" href="http://connect.garmin.com/activity/242515345" target="_blank">garmin data</a>
+*   swim 1900m: 33:54 <a title="garmin data" <a href="http://connect.garmin.com/activity/242515345" target="_blank">garmin data</a>
 *   T1: 4:17
-*   bike 90Km: 2:53:23 <a title="gramin data" href="http://connect.garmin.com/activity/242515365" target="_blank">garmin data</a>
+*   bike 90Km: 2:53:23 <a title="gramin data" <a href="http://connect.garmin.com/activity/242515365" target="_blank">garmin data</a>
 *   T2: 3:12
-*   run 21.1K: 1:37:40 <a title="garmin data" href="http://connect.garmin.com/activity/242515365" target="_blank">garmin data</a>
+*   run 21.1K: 1:37:40 <a title="garmin data" <a href="http://connect.garmin.com/activity/242515365" target="_blank">garmin data</a>
 
 ### Maidenhead half marathon &#8211; 16 Septembre 2012
 
@@ -648,3 +701,17 @@ Running instead of Arthur with old worn out shoes and no preparation
 [114]: https://connect.garmin.com/modern/activity/770043319/3 "bike data"
 [115]: https://connect.garmin.com/modern/activity/770043319/4 "T2 data"
 [116]: https://connect.garmin.com/modern/activity/770043319/5 "run data"
+[117]: https://connect.garmin.com/modern/activity/838183928/1 "swim data"
+[118]: https://connect.garmin.com/modern/activity/838183928/2 "T1 data"
+[119]: https://connect.garmin.com/modern/activity/838183928/3 "bike data"
+[120]: https://connect.garmin.com/modern/activity/838183928/4 "T2 data"
+[121]: https://connect.garmin.com/modern/activity/838183928/5 "run data"
+[122]: https://connect.garmin.com/modern/activity/898718055/1 "swim data"
+[123]: https://connect.garmin.com/modern/activity/898718055/2 "T1 data"
+[124]: https://connect.garmin.com/modern/activity/898747893/3 "bike data"
+[125]: https://connect.garmin.com/modern/activity/898747893/5 "run data"
+[126]: https://connect.garmin.com/modern/activity/1122284686 "bike data"
+[127]: https://connect.garmin.com/modern/activity/1121490137 "run data"
+[128]: https://connect.garmin.com/modern/activity/1259764689 "bike data"
+[129]: https://connect.garmin.com/modern/activity/1397410634 "bike data"
+[130]: https://connect.garmin.com/modern/activity/1397413382 "run data"
