@@ -134,7 +134,7 @@ So like everything that’s challenging, there were bits I loved, bits I hated. 
 
 More please!!
 
-If you want to do it yourself in your own time, here’s the GPX file. You’ll ask yourself a few times “Really? Through here?”. The answers are both “Yes”. Just follow the route!
+If you want to do it yourself in your own time, <a href="{{ "DorsetGravelDash100-2016-V2.gpx" | image_path | cdn }}">here’s the GPX file</a>. You’ll ask yourself a few times “Really? Through here?”. The answers are both “Yes”. Just follow the route!
 
 Good luck!
 
