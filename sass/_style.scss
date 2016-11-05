@@ -168,6 +168,7 @@ a#scrollToTop {
     height: 41px;
     width: 41px;
 }
+
 .attachement {
     margin-bottom: 2rem;
     padding: 0;
@@ -446,7 +447,6 @@ section {
             }
         }
 
-
         img {
             margin-bottom: 1.5rem;
         }
@@ -456,7 +456,6 @@ section {
         iframe {
             width: 100%;
         }
-        img { max-width: 100%; }
 
         blockquote {
             border-left: 0.5rem solid $highlight;
@@ -469,34 +468,36 @@ section {
                 margin-right: 0;
             }
         }
+    }
 
-        .gallery{
-            margin: 1rem;
-        }
-        .gallery-item {
-            border: none;
-            display: block;
-            float: left;
-            margin-top: 1rem;
-            margin-right: 2.5%;
-            margin-left: 2.5%;
-            margin-bottom: 0;
-            position: relative;
-            text-align: center;
-            text-decoration: none;
-            width: 45%;
+    img { max-width: 100%; }
 
-            a {
+    .gallery{
+        margin: 1rem;
+    }
+    .gallery-item {
+        border: none;
+        display: block;
+        float: left;
+        margin-top: 1rem;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        width: 45%;
 
-                span {
-                    font-size: 0.75rem;
-                }
+        a {
+
+            span {
+                font-size: 0.75rem;
             }
         }
-
-        .gallery-item:nth-child(2n) { /* no clear here */ }
-        .gallery-item:nth-child(2n+1) { clear: left;}
     }
+
+    .gallery-item:nth-child(2n) { /* no clear here */ }
+    .gallery-item:nth-child(2n+1) { clear: left;}
 
     p, ul, h2, h3, h4 {
         padding: 0 1rem;
@@ -1324,49 +1325,49 @@ footer.main {
         header h1 {
             text-align: left;
         }
-        article {
 
+        article {
             blockquote {
                 margin: 0 3rem 1.5rem 3rem;
             }
+        }
 
-            .gallery-item {
-                margin-top: 1rem;
-                margin-right: 2.5%;
-                margin-left: 2.5%;
-                width: 28%;
+        .gallery-item {
+            margin-top: 1rem;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+            width: 28%;
 
-                img {}
-                dd {}
+            img {}
+            dd {}
+        }
+
+        .gallery-item:nth-child(2n) { /* no clear here */ }
+        .gallery-item:nth-child(2n+1) { clear: none;}
+        .gallery-item:nth-child(3n+1) { clear: left;}
+
+        .attachement {
+            a {
+                display: inline-block;
+                margin-right: auto;
+                margin-left: auto;
             }
-
-            .gallery-item:nth-child(2n) { /* no clear here */ }
-            .gallery-item:nth-child(2n+1) { clear: none;}
-            .gallery-item:nth-child(3n+1) { clear: left;}
-
-            .attachement {
-                a {
-                    display: inline-block;
-                    margin-right: auto;
-                    margin-left: auto;
-                }
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
             }
-            .iframe_wrapper {
-                position: relative;
-                padding-bottom: 56.25%; /* 16/9 ratio */
-                padding-top: 30px; /* IE6 workaround*/
-                height: 0;
-                margin: 0 auto;
-                max-width: 80%;
-                overflow: hidden;
-            }
+        }
+        .iframe_wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16/9 ratio */
+            padding-top: 30px; /* IE6 workaround*/
+            height: 0;
+            margin: 0 auto;
+            max-width: 80%;
+            overflow: hidden;
         }
     }
 

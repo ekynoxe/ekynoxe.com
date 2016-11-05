@@ -1,11 +1,14 @@
 {% assign homeclass='' %}
 {% assign raceresultsclass='' %}
 {% assign contactclass='' %}
+{% assign forsale='' %}
 
 {% if page.section == "contact" %}
     {% assign contactclass='class="selected"' %}
 {% elsif page.section == "raceresults" %}
     {% assign raceresultsclass='class="selected"' %}
+{% elsif page.section == "for-sale" %}
+    {% assign forsale='class="selected"' %}
 {% else %}
     {% assign homeclass='class="selected"' %}
 {% endif %}
@@ -13,5 +16,6 @@
 <ul>
     <li class="home"><a title="home" {{ homeclass }} href="/">HOME</a></li>
     <li><a title="my race results" {{ raceresultsclass }} href="/race-results">RACE RESULTS</a></li>
+    <li><a title="for sale" {{ forsale }} href="/for-sale">FOR SALE</a></li>
     <li><a title="contact me" {{ contactclass }} href="/#contact">CONTACT</a></li>
 </ul>
