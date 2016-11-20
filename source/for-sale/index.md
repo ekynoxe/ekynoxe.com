@@ -6,9 +6,6 @@ section: for-sale
 # Equipment for sale
 
 <ul style="list-style-type: none; margin: 0; padding: 0;">
-<!--
-    <li><a href="#brompton"><img style="height: 80px; vertical-align: middle;" src="{{ "s-l1600_8_r500.jpg" | image_path | cdn }}" alt="s-l1600_8_r300.jpg" /> <small>Brompton M3L 2008 good condition (£500 OVNO)</small></a></a></li>
--->
     <li><a href="#powertap-p1"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7346_r300.jpg" | image_path | cdn }}" alt="IMG_7346_r300.jpg" /> <small>Powertap P1 pedals power meter (£800)</small></a></li>
     <li><a href="#powertap-gs"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7334_r300.jpg" | image_path | cdn }}" alt="IMG_7334_r300.jpg" /> <small>Powertap GS hub power meter (£350)</small></a></li>
     <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£35)</small></a></li>
@@ -17,123 +14,6 @@ section: for-sale
     <li><a href="#dhb-m1"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7229_r300.jpg" | image_path | cdn }}" alt="IMG_7229_r300.jpg" /> <small>DHB M1 MTB shoes size 43 EUR, 9 UK (£20)</small></a></li>
 </ul>
 
-<!--
-<a id="brompton"></a>
-## Brompton M3L 2008 good condition (£500 OVNO)
-
-Collection only from Hampton or arrange somewhere around Vauxhall.
-
-<p class="attachement"><a href="{{ "s-l1600_8.jpg" | image_path | cdn }}" title="Brompton M3L" rel="lightbox[for-sale]"><img src="{{ "s-l1600_8_r500.jpg" | image_path | cdn }}" alt="s-l1600_8_r500.jpg" /></a></p>
-
-This bike was used to do a train commute for about four years, and it has been in storage since 2012. It is fully functioning and benefits from a fairly new drive train and bottom bracket- 100 miles max. The sale also includes a Brompton pump.
-
-Slight issues include:
-
-* there is some rust to the frame where chain has scraped paint, on the hinges and also a penny sized spot under the bottom bracket, this is a steel frame and these are normal and are nothing to be concerned over…these do not photograph well.
-* the seat post has some spots of corrosion but as this is the extending post it can be replaced for 30 pounds but it is just aesthetic.
-* Grips are scraped at the tips and might need replacing, but they are perfectly useable and there are no scrapes on the perts you actually hold with your hands.
-
-Paypal goods or cash on collection.
-I live in Hampton and work in Vauxhall, so we can meet around either train station and you can ride away! (Bring lights and a helmet if you need them)
-
-<div class="gallery">
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7286.jpg" | image_path | cdn }}" title="IMG_7286_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7286_r300.jpg" | image_path | cdn }}" alt="IMG_7286_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7287.jpg" | image_path | cdn }}" title="IMG_7287_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7287_r300.jpg" | image_path | cdn }}" alt="IMG_7287_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7289.jpg" | image_path | cdn }}" title="IMG_7289_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7289_r300.jpg" | image_path | cdn }}" alt="IMG_7289_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7290.jpg" | image_path | cdn }}" title="IMG_7290_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7290_r300.jpg" | image_path | cdn }}" alt="IMG_7290_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7291.jpg" | image_path | cdn }}" title="IMG_7291_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7291_r300.jpg" | image_path | cdn }}" alt="IMG_7291_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7293.jpg" | image_path | cdn }}" title="IMG_7293_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7293_r300.jpg" | image_path | cdn }}" alt="IMG_7293_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7294.jpg" | image_path | cdn }}" title="IMG_7294_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7294_r300.jpg" | image_path | cdn }}" alt="IMG_7294_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7295.jpg" | image_path | cdn }}" title="IMG_7295_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7295_r300.jpg" | image_path | cdn }}" alt="IMG_7295_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7296.jpg" | image_path | cdn }}" title="IMG_7296_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7296_r300.jpg" | image_path | cdn }}" alt="IMG_7296_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7297.jpg" | image_path | cdn }}" title="IMG_7297_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7297_r300.jpg" | image_path | cdn }}" alt="IMG_7297_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7298.jpg" | image_path | cdn }}" title="IMG_7298_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7298_r300.jpg" | image_path | cdn }}" alt="IMG_7298_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7299.jpg" | image_path | cdn }}" title="IMG_7299_r300.jpg" rel="lightbox[brompton]"><img src="{{ "IMG_7299_r300.jpg" | image_path | cdn }}" alt="IMG_7299_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600_4.jpg" | image_path | cdn }}" title="s-l1600_4_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_4_r300.jpg" | image_path | cdn }}" alt="s-l1600_4_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600_5.jpg" | image_path | cdn }}" title="s-l1600_5_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_5_r300.jpg" | image_path | cdn }}" alt="s-l1600_5_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600_6.jpg" | image_path | cdn }}" title="s-l1600_6_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_6_r300.jpg" | image_path | cdn }}" alt="s-l1600_6_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600_7.jpg" | image_path | cdn }}" title="s-l1600_7_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_7_r300.jpg" | image_path | cdn }}" alt="s-l1600_7_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600_8.jpg" | image_path | cdn }}" title="s-l1600_8_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_8_r300.jpg" | image_path | cdn }}" alt="s-l1600_8_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600_9.jpg" | image_path | cdn }}" title="s-l1600_9_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_9_r300.jpg" | image_path | cdn }}" alt="s-l1600_9_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "s-l1600.jpg" | image_path | cdn }}" title="s-l1600_r300.jpg" rel="lightbox[brompton]"><img src="{{ "s-l1600_r300.jpg" | image_path | cdn }}" alt="s-l1600_r300.jpg" /></a>
-        </dt>
-    </dl>
-</div>
--->
 <a id="powertap-p1"></a>
 ## Powertap P1 pedals power meter (£800)
 \+ delivery charge if shipped
