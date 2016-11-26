@@ -18,7 +18,7 @@ section: raceresults
 
 ### Nottingham team relays &#8211; 27-28 August 2016
 
-### Thorpe park Olympic triathlon &#8211; 17 July 2016
+### [Thorpe park Olympic triathlon](/thorpe-park-olympic-triathlon/) &#8211; 17 July 2016
 
 **2:08:35 (18th overall, 4th in age group)**
 
@@ -28,7 +28,7 @@ section: raceresults
 *   T2: 1'02"
 *   run 10K: 40'14"
 
-### Ironman South Africa &#8211; 10 April 2016
+### [Ironman South Africa](/ironman-south-africa/) &#8211; 10 April 2016
 
 **9h45'52" (65th overall, 10th in age group)**
 
@@ -40,7 +40,7 @@ section: raceresults
 
 ## 2015
 
-### Ironman Wales &#8211; 13 Septembre 2015
+### [Ironman Wales](/ironman-wales-tenby/) &#8211; 13 Septembre 2015
 
 **10h50'50" (71st overall, 13th in age group)**
 
@@ -50,7 +50,7 @@ section: raceresults
 *   T2: 3'26"
 *   Run &#8211; 42.2K: 3h50'12" [run data][125]
 
-### Ironman UK &#8211; 19 July 2015
+### [Ironman UK](/ironman-uk-bolton/) &#8211; 19 July 2015
 
 **10h06'02" (26th overall, 9th in age group)**
 
