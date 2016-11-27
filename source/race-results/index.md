@@ -17,6 +17,19 @@ section: raceresults
 *   Run &#8211; 42.2K: 3h17'56" [run data][130]
 
 ### Nottingham team relays &#8211; 27-28 August 2016
+**Saturday individual events relay**
+
+*   swim 500m: 9'44" [swim data](https://connect.garmin.com/modern/activity/1324051807)
+*   bike 15Km: 21'10" [bike data](https://connect.garmin.com/modern/activity/1324050762)
+*   run 4.65K: 16'50" [run data](https://connect.garmin.com/modern/activity/1324052047)
+
+**Sunday short sprint relays - morning qualification**
+
+250m swim (4'54"), 5Km bike (7'39"), 1mi run (5'57") [race data](https://connect.garmin.com/modern/activity/1325614401)
+
+**Sunday short sprint relays - TTT**
+
+500m swim (10'13"), 10Km bike (16'21"), 2mi run (14'48") [race data](https://connect.garmin.com/modern/activity/1325616577)
 
 ### [Thorpe park Olympic triathlon](/thorpe-park-olympic-triathlon/) &#8211; 17 July 2016
 
