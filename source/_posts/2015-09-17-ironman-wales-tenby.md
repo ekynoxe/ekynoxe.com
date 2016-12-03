@@ -266,4 +266,9 @@ There are ironmans. There are hard ironmans. Then there is ironman Wales…
             <a href="{{ "32.JPG" | image_path | cdn }}" title="32_r300.JPG" rel="lightbox[ironman-wales-tenby]"><img src="{{ "32_r300.JPG" | image_path | cdn }}" alt="32_r300.JPG" /></a>
         </dt>
     </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "tenby.png" | image_path | cdn }}" title="tenby_r300.png" rel="lightbox[ironman-wales-tenby]"><img src="{{ "tenby_r300.png" | image_path | cdn }}" alt="tenby_r300.png" /></a>
+        </dt>
+    </dl>
 </div>

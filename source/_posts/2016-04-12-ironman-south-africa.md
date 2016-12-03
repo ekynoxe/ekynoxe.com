@@ -341,4 +341,9 @@ Kona baby!! Happy days.
             <a href="{{ "48.jpg" | image_path | cdn }}" title="48_r300.jpg" rel="lightbox[IM_SA_2016]"><img src="{{ "48_r300.jpg" | image_path | cdn }}" alt="48_r300.jpg" /></a>
         </dt>
     </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "sa.png" | image_path | cdn }}" title="sa_r300.png" rel="lightbox[IM_SA_2016]"><img src="{{ "sa_r300.png" | image_path | cdn }}" alt="sa_r300.png" /></a>
+        </dt>
+    </dl>
 </div>

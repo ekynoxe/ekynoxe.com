@@ -327,4 +327,9 @@ Roll on Ironman Wales!
             <a href="{{ "run_23.JPG" | image_path | cdn }}" title="run_23_r300.JPG" rel="lightbox[im_uk_2015]"><img src="{{ "run_23_r300.JPG" | image_path | cdn }}" alt="run_23_r300.JPG" /></a>
         </dt>
     </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "bolton.png" | image_path | cdn }}" title="bolton_r300.png" rel="lightbox[im_uk_2015]"><img src="{{ "bolton_r300.png" | image_path | cdn }}" alt="bolton_r300.png" /></a>
+        </dt>
+    </dl>
 </div>
