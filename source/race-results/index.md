@@ -6,7 +6,7 @@ section: raceresults
 # Race results
 ## 2016
 
-### Ironman World Championship &#8211; Kona &#8211; 8 Octobre 2016
+### [Ironman World Championship &#8211; Kona](/ironman-world-championship-kona-hawaii/) &#8211; 8 Octobre 2016
 
 **9h59'50" (451st overall, 102nd in age group)**
 
