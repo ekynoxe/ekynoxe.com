@@ -8,9 +8,9 @@ section: for-sale
 <ul style="list-style-type: none; margin: 0; padding: 0;">
     <li><a href="#powertap-p1"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7346_r300.jpg" | image_path | cdn }}" alt="IMG_7346_r300.jpg" /> <small>Powertap P1 pedals power meter (£800)</small></a></li>
     <li><a href="#powertap-gs"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7334_r300.jpg" | image_path | cdn }}" alt="IMG_7334_r300.jpg" /> <small>Powertap GS hub power meter (£350)</small></a></li>
-    <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£35)</small></a></li>
+    <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£30)</small></a></li>
     <!-- <li><a href="#s-works"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7252_r300.jpg" | image_path | cdn }}" alt="IMG_7252_r300.jpg" /> <small>Specialized s-works road shoes size 42.5 EUR / 8.5 UK (£75)</small></a></li> -->
-    <li><a href="#sidi-t2"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7235_r300.jpg" | image_path | cdn }}" alt="IMG_7235_r300.jpg" /> <small>Sidi T2 triathlon shoes (£50)</small></a></li>
+    <li><a href="#sidi-t2"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7235_r300.jpg" | image_path | cdn }}" alt="IMG_7235_r300.jpg" /> <small>Sidi T2 triathlon shoes (£40)</small></a></li>
     <li><a href="#dhb-m1"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7229_r300.jpg" | image_path | cdn }}" alt="IMG_7229_r300.jpg" /> <small>DHB M1 MTB shoes size 43 EUR, 9 UK (£20)</small></a></li>
 </ul>
 
@@ -127,7 +127,7 @@ It's the 24 holes, Shimano/SRAM freehub, ANT+ and bluetooth version.
 </div>
 
 <a id="shimano-sm-rt99"></a>
-## Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£35)
+## Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£30)
 \+ delivery charge if shipped
 
 <p class="attachement"><a href="{{ "IMG_7337.jpg" | image_path | cdn }}" title="Shimano SM-RT99 Icetech Freeza 140mm road disc brake" rel="lightbox[for-sale]"><img src="{{ "IMG_7337_r500.jpg" | image_path | cdn }}" alt="IMG_7337_r500.jpg" /></a></p>
@@ -256,7 +256,7 @@ It's the 24 holes, Shimano/SRAM freehub, ANT+ and bluetooth version.
 [//]: # </div>
 [//]: #
 <a id="sidi-t2"></a>
-## Sidi T2 triathlon shoes 43 EUR / 9 UK (£50)
+## Sidi T2 triathlon shoes 43 EUR / 9 UK (£40)
 \+ delivery charge if shipped
 
 <a href="{{ "IMG_7235.jpg" | image_path | cdn }}" title="Sidi T2 triathlon shoes" rel="lightbox[for-sale]"><img src="{{ "IMG_7235_r500.jpg" | image_path | cdn }}" alt="IMG_7235_r500.jpg" /></a>
