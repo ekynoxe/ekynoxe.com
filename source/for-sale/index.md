@@ -10,7 +10,6 @@ section: for-sale
     <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£30)</small></a></li>
     <!-- <li><a href="#s-works"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7252_r300.jpg" | image_path | cdn }}" alt="IMG_7252_r300.jpg" /> <small>Specialized s-works road shoes size 42.5 EUR / 8.5 UK (£75)</small></a></li> -->
     <li><a href="#sidi-t2"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7235_r300.jpg" | image_path | cdn }}" alt="IMG_7235_r300.jpg" /> <small>Sidi T2 triathlon shoes (£40)</small></a></li>
-    <li><a href="#dhb-m1"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7229_r300.jpg" | image_path | cdn }}" alt="IMG_7229_r300.jpg" /> <small>DHB M1 MTB shoes size 43 EUR, 9 UK (£20)</small></a></li>
 </ul>
 
 <a id="powertap-gs"></a>
@@ -266,48 +265,6 @@ Triathlon shoes used for half a season. The show the standard marks triathlon sh
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
             <a href="{{ "IMG_7244.jpg" | image_path | cdn }}" title="IMG_7244_r300.jpg" rel="lightbox[sidi-t2]"><img src="{{ "IMG_7244_r300.jpg" | image_path | cdn }}" alt="IMG_7244_r300.jpg" /></a>
-        </dt>
-    </dl>
-</div>
-
-<a id="dhb-m1"></a>
-## DHB M1 MTB shoes size 43 EUR, 9 UK (£20)
-\+ delivery charge if shipped
-
-<p class="attachement"><a href="{{ "IMG_7229.jpg" | image_path | cdn }}" title="DHB M1 Mountain bike shoes" rel="lightbox[for-sale]"><img src="{{ "IMG_7229_r500.jpg" | image_path | cdn }}" alt="IMG_7229_r500.jpg" /></a></p>
-
-* Lightly used SPD only entry level MTB shoes.
-* Used cleats included.
-
-<div class="gallery">
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7229.jpg" | image_path | cdn }}" title="IMG_7229_r300.jpg" rel="lightbox[dhb-m1]"><img src="{{ "IMG_7229_r300.jpg" | image_path | cdn }}" alt="IMG_7229_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7230.jpg" | image_path | cdn }}" title="IMG_7230_r300.jpg" rel="lightbox[dhb-m1]"><img src="{{ "IMG_7230_r300.jpg" | image_path | cdn }}" alt="IMG_7230_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7231.jpg" | image_path | cdn }}" title="IMG_7231_r300.jpg" rel="lightbox[dhb-m1]"><img src="{{ "IMG_7231_r300.jpg" | image_path | cdn }}" alt="IMG_7231_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7232.jpg" | image_path | cdn }}" title="IMG_7232_r300.jpg" rel="lightbox[dhb-m1]"><img src="{{ "IMG_7232_r300.jpg" | image_path | cdn }}" alt="IMG_7232_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7233.jpg" | image_path | cdn }}" title="IMG_7233_r300.jpg" rel="lightbox[dhb-m1]"><img src="{{ "IMG_7233_r300.jpg" | image_path | cdn }}" alt="IMG_7233_r300.jpg" /></a>
-        </dt>
-    </dl>
-    <dl class="gallery-item">
-        <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_7234.jpg" | image_path | cdn }}" title="IMG_7234_r300.jpg" rel="lightbox[dhb-m1]"><img src="{{ "IMG_7234_r300.jpg" | image_path | cdn }}" alt="IMG_7234_r300.jpg" /></a>
         </dt>
     </dl>
 </div>
