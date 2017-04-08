@@ -8,8 +8,8 @@ section: for-sale
 <ul style="list-style-type: none; margin: 0; padding: 0;">
     <li><a href="#powertap-gs"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7334_r300.jpg" | image_path | cdn }}" alt="IMG_7334_r300.jpg" /> <small>Powertap GS hub power meter (£350)</small></a></li>
     <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£30)</small></a></li>
-    <!-- <li><a href="#s-works"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7252_r300.jpg" | image_path | cdn }}" alt="IMG_7252_r300.jpg" /> <small>Specialized s-works road shoes size 42.5 EUR / 8.5 UK (£75)</small></a></li> -->
     <li><a href="#sidi-t2"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7235_r300.jpg" | image_path | cdn }}" alt="IMG_7235_r300.jpg" /> <small>Sidi T2 triathlon shoes (£40)</small></a></li>
+    <li><a href="#polaris-pod"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_6806_r300.jpg" | image_path | cdn }}" alt="IMG_6806_r300.jpg" /> <small>Polaris EVA bike pod(FREE)</small></a></li>
 </ul>
 
 <a id="powertap-gs"></a>
@@ -268,3 +268,22 @@ Triathlon shoes used for half a season. The show the standard marks triathlon sh
         </dt>
     </dl>
 </div>
+
+<a id="polaris-pod"></a>
+## Polaris EVA bike pod (FREE)
+\+ delivery charge if shipped
+
+<a href="{{ "IMG_6806.jpg" | image_path | cdn }}" title="Polaris EVA Bike Pod(FREE)" rel="lightbox[for-sale]"><img src="{{ "IMG_6806_r500.jpg" | image_path | cdn }}" alt="IMG_6806_r500.jpg" /></a>
+
+<!--
+    <div class="gallery">
+        <dl class="gallery-item">
+            <dt class="gallery-icon attachement">
+                <a href="{{ "IMG_6806.jpg" | image_path | local }}" title="IMG_6806_r300.jpg" rel="lightbox[xxx]"><img src="{{ "IMG_6806_r300.jpg" | image_path | cdn }}" alt="IMG_6806_r300.jpg" /></a>
+            </dt>
+        </dl>
+    </div>
+-->
+
+Old Polaris bike pod used for a year of traveling for triathlons.
+I only need to make space, so it’s free to take away!
