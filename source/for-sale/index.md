@@ -6,10 +6,62 @@ section: for-sale
 # Equipment for sale
 
 <ul style="list-style-type: none; margin: 0; padding: 0;">
+    <li><a href="#quarq"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_8062_r300.jpg" | image_path | local }}" alt="IMG_8062_r300.jpg" /> <small>Quarq crankset power meter (170mm) + 53/39 chainrings + spare batteries + hardware (£250)</small></a></li>
     <li><a href="#powertap-gs"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7334_r300.jpg" | image_path | cdn }}" alt="IMG_7334_r300.jpg" /> <small>Powertap GS hub power meter (£350)</small></a></li>
     <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£30)</small></a></li>
     <li><a href="#sidi-t2"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7235_r300.jpg" | image_path | cdn }}" alt="IMG_7235_r300.jpg" /> <small>Sidi T2 triathlon shoes (£40)</small></a></li>
 </ul>
+
+<a id="quarq"></a>
+## Quarq crankset power meter (170mm) + 53/39 chainrings + spare batteries + hardware (£250)
+\+ delivery charge if shipped
+
+<p class="attachement"><a href="{{ "IMG_8062.jpg" | image_path | local }}" title="IMG_8062_r500.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8062_r500.jpg" | image_path | local }}" alt="IMG_8062_r500.jpg" /></a></p>
+
+Used 2012 Quarq power meter cranks (cinqo) with used standard TT chainrings 53/39. Crank length is 170mm.
+
+Although this unit has been used for training and racing for several years, it has been tested last year by the technical service at Quarq and has a full clean bill of health. It has been in its box since then as I switched to another system.
+
+It comes complete in its original box including manuals, a Rotor standard BB english bottom bracket (bearings have ben changed, and have less than a year's use in them), standard (53/39) aero chainrings for time trialling or triathlon, all hardware including ring bolts, spare magnets, special glue, spacers, and 3 spare batteries (DL2450).
+
+This will be compatible with 11speed drivetrains.
+
+It's extremely easy to move from bike to bike providing they have a 24mm hollowtech compatible BB: all you need is a 5mm and an 8mm allen keys.
+
+It has been used successively and successfully with Garmin XT310, XT910, XT920, and Edge 520. It uses Ant+ (no bluetooth), and will be compatible with Zwitft and other computer programmes providing you have the Ant+ dongle.
+
+<div class="gallery">
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "IMG_8059.jpg" | image_path | local }}" title="IMG_8059_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8059_r300.jpg" | image_path | local }}" alt="IMG_8059_r300.jpg" /></a>
+        </dt>
+    </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "IMG_8060.jpg" | image_path | local }}" title="IMG_8060_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8060_r300.jpg" | image_path | local }}" alt="IMG_8060_r300.jpg" /></a>
+        </dt>
+    </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "IMG_8062.jpg" | image_path | local }}" title="IMG_8062_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8062_r300.jpg" | image_path | local }}" alt="IMG_8062_r300.jpg" /></a>
+        </dt>
+    </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "IMG_8063.jpg" | image_path | local }}" title="IMG_8063_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8063_r300.jpg" | image_path | local }}" alt="IMG_8063_r300.jpg" /></a>
+        </dt>
+    </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "IMG_8064.jpg" | image_path | local }}" title="IMG_8064_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8064_r300.jpg" | image_path | local }}" alt="IMG_8064_r300.jpg" /></a>
+        </dt>
+    </dl>
+    <dl class="gallery-item">
+        <dt class="gallery-icon attachement">
+            <a href="{{ "IMG_8065.jpg" | image_path | local }}" title="IMG_8065_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8065_r300.jpg" | image_path | local }}" alt="IMG_8065_r300.jpg" /></a>
+        </dt>
+    </dl>
+</div>
 
 <a id="powertap-gs"></a>
 ## Powertap GS hub power meter (£350)
