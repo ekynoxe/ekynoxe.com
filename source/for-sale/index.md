@@ -28,7 +28,7 @@ This will be compatible with 11speed drivetrains.
 
 It's extremely easy to move from bike to bike providing they have a 24mm hollowtech compatible BB: all you need is a 5mm and an 8mm allen keys.
 
-It has been used successively and successfully with Garmin XT310, XT910, XT920, and Edge 520. It uses Ant+ (no bluetooth), and will be compatible with Zwitft and other computer programmes providing you have the Ant+ dongle.
+It has been used successively and successfully with Garmin XT310, XT910, XT920, and Edge 520. It uses Ant+ (no bluetooth), and will be compatible with Zwift and other computer programmes providing you have the Ant+ dongle.
 
 <div class="gallery">
     <dl class="gallery-item">
