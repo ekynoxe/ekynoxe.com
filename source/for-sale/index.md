@@ -6,7 +6,7 @@ section: for-sale
 # Equipment for sale
 
 <ul style="list-style-type: none; margin: 0; padding: 0;">
-    <li><a href="#quarq"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_8062_r300.jpg" | image_path | local }}" alt="IMG_8062_r300.jpg" /> <small>Quarq crankset power meter (170mm) + 53/39 chainrings + spare batteries + hardware (£250)</small></a></li>
+    <li><a href="#quarq"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_8062_r300.jpg" | image_path | cdn }}" alt="IMG_8062_r300.jpg" /> <small>Quarq crankset power meter (170mm) + 53/39 chainrings + spare batteries + hardware (£250)</small></a></li>
     <li><a href="#powertap-gs"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7334_r300.jpg" | image_path | cdn }}" alt="IMG_7334_r300.jpg" /> <small>Powertap GS hub power meter (£350)</small></a></li>
     <li><a href="#shimano-sm-rt99"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7337_r300.jpg" | image_path | cdn }}" alt="IMG_7337_r300.jpg" /> <small>Shimano SM-RT99 Icetech Freeza 140mm road disc brake centre-lock rotor (£30)</small></a></li>
     <li><a href="#sidi-t2"><img style="height: 80px; vertical-align: middle;" src="{{ "IMG_7235_r300.jpg" | image_path | cdn }}" alt="IMG_7235_r300.jpg" /> <small>Sidi T2 triathlon shoes (£40)</small></a></li>
@@ -16,7 +16,7 @@ section: for-sale
 ## Quarq crankset power meter (170mm) + 53/39 chainrings + spare batteries + hardware (£250)
 \+ delivery charge if shipped
 
-<p class="attachement"><a href="{{ "IMG_8062.jpg" | image_path | local }}" title="IMG_8062_r500.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8062_r500.jpg" | image_path | local }}" alt="IMG_8062_r500.jpg" /></a></p>
+<p class="attachement"><a href="{{ "IMG_8062.jpg" | image_path | cdn }}" title="IMG_8062_r500.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8062_r500.jpg" | image_path | cdn }}" alt="IMG_8062_r500.jpg" /></a></p>
 
 Used 2012 Quarq power meter cranks (cinqo) with used standard TT chainrings 53/39. Crank length is 170mm.
 
@@ -33,32 +33,32 @@ It has been used successively and successfully with Garmin XT310, XT910, XT920, 
 <div class="gallery">
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_8059.jpg" | image_path | local }}" title="IMG_8059_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8059_r300.jpg" | image_path | local }}" alt="IMG_8059_r300.jpg" /></a>
+            <a href="{{ "IMG_8059.jpg" | image_path | cdn }}" title="IMG_8059_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8059_r300.jpg" | image_path | cdn }}" alt="IMG_8059_r300.jpg" /></a>
         </dt>
     </dl>
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_8060.jpg" | image_path | local }}" title="IMG_8060_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8060_r300.jpg" | image_path | local }}" alt="IMG_8060_r300.jpg" /></a>
+            <a href="{{ "IMG_8060.jpg" | image_path | cdn }}" title="IMG_8060_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8060_r300.jpg" | image_path | cdn }}" alt="IMG_8060_r300.jpg" /></a>
         </dt>
     </dl>
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_8062.jpg" | image_path | local }}" title="IMG_8062_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8062_r300.jpg" | image_path | local }}" alt="IMG_8062_r300.jpg" /></a>
+            <a href="{{ "IMG_8062.jpg" | image_path | cdn }}" title="IMG_8062_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8062_r300.jpg" | image_path | cdn }}" alt="IMG_8062_r300.jpg" /></a>
         </dt>
     </dl>
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_8063.jpg" | image_path | local }}" title="IMG_8063_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8063_r300.jpg" | image_path | local }}" alt="IMG_8063_r300.jpg" /></a>
+            <a href="{{ "IMG_8063.jpg" | image_path | cdn }}" title="IMG_8063_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8063_r300.jpg" | image_path | cdn }}" alt="IMG_8063_r300.jpg" /></a>
         </dt>
     </dl>
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_8064.jpg" | image_path | local }}" title="IMG_8064_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8064_r300.jpg" | image_path | local }}" alt="IMG_8064_r300.jpg" /></a>
+            <a href="{{ "IMG_8064.jpg" | image_path | cdn }}" title="IMG_8064_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8064_r300.jpg" | image_path | cdn }}" alt="IMG_8064_r300.jpg" /></a>
         </dt>
     </dl>
     <dl class="gallery-item">
         <dt class="gallery-icon attachement">
-            <a href="{{ "IMG_8065.jpg" | image_path | local }}" title="IMG_8065_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8065_r300.jpg" | image_path | local }}" alt="IMG_8065_r300.jpg" /></a>
+            <a href="{{ "IMG_8065.jpg" | image_path | cdn }}" title="IMG_8065_r300.jpg" rel="lightbox[quarq]"><img src="{{ "IMG_8065_r300.jpg" | image_path | cdn }}" alt="IMG_8065_r300.jpg" /></a>
         </dt>
     </dl>
 </div>
