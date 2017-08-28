@@ -23,3 +23,5 @@ name: Ekynoxe - Mathieu Davy's triathlon ramblings
 url: http://tri.ekynoxe.com
 author: hello@ekynoxe.com (Mathieu Davy)
 description: Mathieu Davy's triathlon ramblings
+
+plugins: [jekyll-paginate]

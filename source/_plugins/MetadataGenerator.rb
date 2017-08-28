@@ -15,8 +15,8 @@ module Jekyll
                 file.close
             end
 
-            site.posts.each do |post|
-                name = post.name.gsub!(/\.md$/, "")
+            site.posts.docs.each do |post|
+                name = post.basename_without_ext()
                 post.data['name'] = name
                 comments_source = posts_comments[name]
 
@@ -26,7 +26,7 @@ module Jekyll
 
             site.pages.each do |page|
                 if page.data['section']
-                    page.data['name'] = page.data['section']
+                    page.name = page.data['section']
                 end
             end
         end
