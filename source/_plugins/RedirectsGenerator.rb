@@ -45,8 +45,8 @@ module Jekyll
         def generate(site)
             mappedUrls = []
 
-            site.posts.each do |post|
-                post_name = post.name.gsub(/\.md$/, "")
+            site.posts.docs.each do |post|
+                post_name = post.basename_without_ext()
                 url_parts = post_name.match(/([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)/i)
 
                 mappedUrls << "RedirectMath 301 " + File.join(@@sourceDomain, url_parts[1], url_parts[2], url_parts[3], url_parts[4]) + "/? " + File.join(@@targetDomain, url_parts[4]) + "/"

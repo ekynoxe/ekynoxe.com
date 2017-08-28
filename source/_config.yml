@@ -18,8 +18,8 @@ paginate_categories: 4
 category_path: "categories/:cat"
 category_page_path: "page:num"
 
-# RSS plugin
 name: Ekynoxe - Web development in London
 url: http://ww.ekynoxe.com
 author: hello@ekynoxe.com (Mathieu Davy)
 description: Mathieu Davy's one man web studio
+plugins: [jekyll-paginate]
