@@ -14,7 +14,7 @@ posts_dir         = "_posts"  # directory for blog files
 drafts_dir        = "_drafts" # directory for draft posts
 drafts_assets_dir = "assets/drafts/content" # directory for drafts assets
 server_port       = "4000"    # port for preview server eg. localhost:4000
-local_target      = "/Users/matt/Sites/ekynoxe/ekynoxe.github.io/"
+local_target      = "/Users/matt/dev/ekynoxe/ekynoxe.github.io/"
 s3_bucket         = "s3://com.ekynoxe.www/content/"
 
 # usage:   rake new_post["post title goes here"]
