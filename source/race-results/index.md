@@ -4,9 +4,41 @@ layout: page
 section: raceresults
 ---
 # Race results
+
+## 2019
+
+### Cherbourg Olympic triathlon 2018 &#8211; 22 September 2019
+
+**2:10:28 (12th overall, 12th in age group)**
+
+*   swim 1500m: 26'08"
+*   T1: 1'04"
+*   bike 40Km: 1h04'23"
+*   T2: 1'03"
+*   run 10K: 37'52" (short!)
+
+
+## 2018
+
+### [Cherbourg Olympic triathlon 2018](/racing-for-the-family/) &#8211; 23 September 2018
+
+**2:15:24 (24th overall, 15th in age group)**
+
+*   swim 1500m: 28'24"
+*   T1: 1'46"
+*   bike 40Km: 1h04'36"
+*   T2: 0'34"
+*   run 10K: 40'04"
+
+## 2017
+
+### [3 peaks cyclocross](/3-peaks-cyclocross/) &#8211; 24 September 2017
+
+**4h33'12"**
+
 ## 2016
 
-### [Ironman World Championship &#8211; Kona](/ironman-world-championship-kona-hawaii/) &#8211; 8 Octobre 2016
+### [Ironman World Championship &#8211; Kona](/ironman-world-championship-kona-hawaii/) &#8211; 8 October 2016
 
 **9h59'50" (451st overall, 102nd in age group)**
 
