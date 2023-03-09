@@ -13,3 +13,10 @@ License
 <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">ekynoxe.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://timhuegdon.com" property="cc:attributionName" rel="cc:attributionURL">Mathieu Davy</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
 Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/nefarioustim/kitchen" rel="dct:source">https://github.com/nefarioustim/kitchen</a>.
+
+## Local dev
+
+- rvm use 3
+- bundle install
+- bundle exec jekyll serve -s source
+
