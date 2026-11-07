@@ -42,4 +42,4 @@ Although the conditions were absolutely perfect for a PB, the race this yer fell
 </div>
 
 
-[1]: /the-iceman-off-road-duathlon-2015/ "The iceman off-road duathlon"
+[1]: /the-iceman-off-road-duathlon-2015 "The iceman off-road duathlon"

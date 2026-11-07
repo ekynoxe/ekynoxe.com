@@ -10,7 +10,7 @@ tags:
   - race
   - triathlon
 ---
-Coming close to qualification last year in [Bolton](/ironman-uk-bolton/), and after the disappointment of [IM Wales](/ironman-wales-tenby/), I was ready to pack it all up. But being so close, and keeping improving, I followed friends' advice, and I "followed the slots" with my ticket to South Africa. At a championship race with 75 slots on offer, and ageing up for one of the largest age groups, I hoped I could get close to the top like at IM UK, and if not in the slots directly, get myself a roll-down.
+Coming close to qualification last year in [Bolton](/ironman-uk-bolton), and after the disappointment of [IM Wales](/ironman-wales-tenby), I was ready to pack it all up. But being so close, and keeping improving, I followed friends' advice, and I "followed the slots" with my ticket to South Africa. At a championship race with 75 slots on offer, and ageing up for one of the largest age groups, I hoped I could get close to the top like at IM UK, and if not in the slots directly, get myself a roll-down.
 
 <p class="attachement"><a href="{{ "25.JPG" | image_path | cdn }}" title="25.JPG" rel="lightbox[IM_SA_2016]"><img src="{{ "25.JPG" | image_path | cdn }}" alt="25.JPG" /></a></p>
 

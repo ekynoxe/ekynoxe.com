@@ -201,6 +201,6 @@ I can finally tick the Swashbuckler box off my list, as this year I had no issue
     </dl>
 </div>
 
- [1]: /ironman-lanzarote-2013-race-report/ "Ironman Lanzarote 2013 – race report"
- [2]: /the-2011-swashbuckler-or-how-to-spend-5h-racing/ "The 2011 Swashbuckler – Or how to spend 5h racing"
- [3]: /the-swashbuckler-2012-the-forest-wins-again/ "The Swashbuckler 2012 – The forest wins again"
+ [1]: /ironman-lanzarote-2013-race-report "Ironman Lanzarote 2013 – race report"
+ [2]: /the-2011-swashbuckler-or-how-to-spend-5h-racing "The 2011 Swashbuckler – Or how to spend 5h racing"
+ [3]: /the-swashbuckler-2012-the-forest-wins-again "The Swashbuckler 2012 – The forest wins again"

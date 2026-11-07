@@ -59,4 +59,4 @@ If you're like me and have little off-road experience, but will try pretty much 
 </div>
 
 
-[1]: /dorset-gravel-dash-100-harder-than-you-think/ "Dorset Gravel Dash"
+[1]: /dorset-gravel-dash-100-harder-than-you-think "Dorset Gravel Dash"

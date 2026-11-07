@@ -441,7 +441,7 @@ I finally broke my PB set in Barcelona 3 years ago on a flat course. Next one wi
     </dl>
 </div>
 
-[1]: /ironman-70-3-zell-am-see-2013-the-wet-one/ "Ironman 70.3 Zell Am See race report"
-[2]: /every-day-training-camp-day-1/ "Every day training camp. Day 1."
+[1]: /ironman-70-3-zell-am-see-2013-the-wet-one "Ironman 70.3 Zell Am See race report"
+[2]: /every-day-training-camp-day-1 "Every day training camp. Day 1."
 [3]: http://www.blacklinelondon.com "Follow the Black Line"
 [4]: http://www.joannacarritt.co.uk "Joanna Carritt"

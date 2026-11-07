@@ -43,7 +43,7 @@ Having ran the fastest time in the aquathlon, I therefore started last, which ga
 
 But to add a little more fun to the race, Jo and Steven asked each one of us to predict their times. The goal being to see how confident people feel they can run fast on the back of such a training week.
 
-I'm not really optimistic by nature (see [my post before the camp...](/every-day-training-camp-pre-camp/)), so I predicted something in the region of 3min slower than my all time PB of 38'15". Also, the lack of pacing could be problematic (or not).
+I'm not really optimistic by nature (see [my post before the camp...](/every-day-training-camp-pre-camp)), so I predicted something in the region of 3min slower than my all time PB of 38'15". Also, the lack of pacing could be problematic (or not).
 
 I saw everyone set off one after the other, and as Jo and Steven predicted: it was quite hard not to get disheartened at the seemingly huge lead they were getting, but when my turn finally came, I just went for it. My first target was already 37s ahead of me, and barely visible, but I wanted to catch as many people as I could, the cherry on the cake would have been to catch Jo.
 

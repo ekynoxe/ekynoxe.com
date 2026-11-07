@@ -11,7 +11,7 @@ tags:
   - triathlon
 ---
 
-Having qualified more than 12 months prior to this race, a lot has had the time to happen in the mean time, and the focus of the 2014 season was initially on longer distance with [Ironman Lanzarote](/ironman-lanzarote-2014/) in May. Jo therefore updated my training plan to re-focus on more speed over the summer, with the intermediate "target" of [70.3 UK in Wimbleball](/ironman-70-dot-3-uk-2014/).
+Having qualified more than 12 months prior to this race, a lot has had the time to happen in the mean time, and the focus of the 2014 season was initially on longer distance with [Ironman Lanzarote](/ironman-lanzarote-2014) in May. Jo therefore updated my training plan to re-focus on more speed over the summer, with the intermediate "target" of [70.3 UK in Wimbleball](/ironman-70-dot-3-uk-2014).
 
 <p class="attachement"><a href="{{ "703_wc_31.jpg" | image_path | cdn }}" title="703_wc_31_r300.jpg" rel="lightbox[20140907_703_wc]"><img src="{{ "703_wc_31_r300.jpg" | image_path | cdn }}" alt="703_wc_31_r300.jpg" /></a></p>
 

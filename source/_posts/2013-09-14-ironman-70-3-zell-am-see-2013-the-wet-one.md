@@ -369,5 +369,5 @@ The shoes cables are now replaced, I got myself some new shoes too (without any 
     </dl>
 </div>
 
- [1]: /ironman-lanzarote-2013-race-report/ "Ironman Lanzarote 2013 – race report"
+ [1]: /ironman-lanzarote-2013-race-report "Ironman Lanzarote 2013 – race report"
  [2]: http://www.stevenlord.me.uk/STL/Blog/files/2013-09-09-IronmanWalesRaceAnalysis.php "Ironman Wales Race Analysis by Steven Lord"

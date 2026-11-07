@@ -18,7 +18,7 @@ A place of myths, race "wars" and many a disappointment, it is THE one, the holy
 <p class="attachement"><a href="{{ "12.JPG" | image_path | cdn }}" title="'enjoying' the lava fields..." rel="lightbox[kona-wc-2016]"><img src="{{ "12_r500.JPG" | image_path | cdn }}" alt="'enjoying' the lava fields..." /></a>
 </p>
 
-After an amazing result last year at IM UK, the goal was to keep going a little bit longer, and I qualified in [South Africa](/ironman-south-africa/) earlier this year. For me, that's where the hard work was done, and I went to the the big island with no expectations, and no pressure.
+After an amazing result last year at IM UK, the goal was to keep going a little bit longer, and I qualified in [South Africa](/ironman-south-africa) earlier this year. For me, that's where the hard work was done, and I went to the the big island with no expectations, and no pressure.
 <!--more-->
 
 So you think you know hot? Then think again! It's not just the heat, but the humidity. And having done 4 very sweaty sessions in a heat chamber to get used to it right before going to the big island didn't really do much to prepare me for the constant suffocating feeling you get as you get off the plane.
