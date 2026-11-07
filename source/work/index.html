@@ -19,7 +19,9 @@ section: work
             <a title="Link to {{ post.project.title }}" href="{{ post.url }}">
                 <h1>{{ post.project.title }}</h1>
             </a>
+            {% if post.project.url %}
             <a title="Link to {{ post.project.title }}" href="http://{{ post.project.url }}">{{ post.project.url }}</a>
+            {% endif %}
         </header>
         <ul>
         {% for item in post.project.work %}

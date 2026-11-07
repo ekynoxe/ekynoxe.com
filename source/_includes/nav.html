@@ -1,14 +1,11 @@
 {% assign homeclass='' %}
 {% assign workclass='' %}
 {% assign newsclass='' %}
-{% assign contactclass='' %}
 
 {% if page.section == "work" %}
     {% assign workclass='class="selected"' %}
 {% elsif page.section == "news" %}
     {% assign newsclass='class="selected"' %}
-{% elsif page.section == "contact" %}
-    {% assign contactclass='class="selected"' %}
 {% else %}
     {% assign homeclass='class="selected"' %}
 {% endif %}

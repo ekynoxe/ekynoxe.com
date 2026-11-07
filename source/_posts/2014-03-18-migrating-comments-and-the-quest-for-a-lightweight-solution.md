@@ -8,7 +8,7 @@ categories:
 - work project
 ---
 
-When I [migrated to jekyll](/on-jekyll/), I also wanted to migrate all my comments. My site doesn't have that many of them, so I thought it should have been a doddle to do it, and I was initially firmly set on using [Disqus](http://disqus.com/). It seemed simple, the embedded code interface didn't look too bad within my new website's design, and I didn't care that much about the fact that it works only with javascript.
+When I [migrated to jekyll](/on-jekyll), I also wanted to migrate all my comments. My site doesn't have that many of them, so I thought it should have been a doddle to do it, and I was initially firmly set on using [Disqus](http://disqus.com/). It seemed simple, the embedded code interface didn't look too bad within my new website's design, and I didn't care that much about the fact that it works only with javascript.
 
 <p class="attachement"><span><img src="{{ "comment.png" | image_path | cdn }}" alt="comments" /></span></p>
 

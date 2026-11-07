@@ -188,6 +188,36 @@ a#scrollToTop {
     to { opacity: 1; visibility: visible; }
 }
 
+// Header parallax and fade on wide screens (previously done in main.js):
+// the background moves at 1/5 of the scroll speed and the header content
+// fades out over the first 800px. Browsers without scroll-driven
+// animations show a static header.
+@supports (animation-timeline: scroll()) {
+    @media screen and (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+        header.main {
+            animation: header-parallax linear both;
+            animation-timeline: scroll(root);
+            animation-range: 0 1000px;
+        }
+
+        header.main > .content {
+            animation: header-fade linear both;
+            animation-timeline: scroll(root);
+            animation-range: 0 800px;
+        }
+    }
+}
+
+@keyframes header-parallax {
+    from { background-position: center bottom 0; }
+    to { background-position: center bottom -200px; }
+}
+
+@keyframes header-fade {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 .attachement {
     margin-bottom: 2rem;
     padding: 0;
