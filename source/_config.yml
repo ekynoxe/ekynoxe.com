@@ -5,7 +5,7 @@ lsi: false
 rdiscount:
     extensions: [smart]
 
-cdn: http://cdn.ekynoxe.com
+cdn: https://cdn.ekynoxe.com
 hostname: ekynoxe.com
 title: Mathieu Davy's triathlon ramblings
 

@@ -169,6 +169,27 @@ a#scrollToTop {
     width: 41px;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+// Fade the scroll-to-top link in over the first 200px of scrolling.
+// Browsers without scroll-driven animations always show the link.
+@supports (animation-timeline: scroll()) {
+    a#scrollToTop {
+        animation: scroll-to-top-reveal linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 200px;
+    }
+}
+
+@keyframes scroll-to-top-reveal {
+    from { opacity: 0; visibility: hidden; }
+    to { opacity: 1; visibility: visible; }
+}
+
 .attachement {
     margin-bottom: 2rem;
     padding: 0;
