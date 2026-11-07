@@ -23,12 +23,6 @@ module Jekyll
                 post.data['comments'] = comments_source["comments"] unless comments_source.nil?
 
             end
-
-            site.pages.each do |page|
-                if page.data['section']
-                    page.name = page.data['section']
-                end
-            end
         end
     end
 end

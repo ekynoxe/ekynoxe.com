@@ -2,8 +2,11 @@ module Jekyll
     module AssetFilter
 
         def image_path(assetName)
-            # [page][name] should be set by the MetadataGenerator plugin
-            pageId = @context.environments.first['page']['name']
+            # Posts get [page][name] from the MetadataGenerator plugin; pages use their section.
+            # Pages are no longer renamed to their section: that stopped news/index.html
+            # from being used as the pagination template.
+            page = @context.environments.first['page']
+            pageId = page['section'] || page['name']
             "content/#{pageId}/#{assetName}"
         end
 
