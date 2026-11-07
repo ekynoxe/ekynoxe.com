@@ -39,7 +39,7 @@ module Jekyll
         priority :low
 
         @@sourceDomain = ""
-        @@targetDomain = "http://tri.ekynoxe.com"
+        @@targetDomain = "https://tri.ekynoxe.com"
         @@RedirectsFileName = "htaccess_redirects"
 
         def generate(site)
