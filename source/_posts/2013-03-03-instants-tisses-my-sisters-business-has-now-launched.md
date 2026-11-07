@@ -26,7 +26,7 @@ Several months in the making to sort out all the details and go around the inevi
 
 <p class="attachement"><img src="{{ "logo_IT.png" | image_path | cdn }}" alt="Instants Tissés" /></p>
 
-&#8220;Instants Tissés&#8221; is French for &#8220;Woven instants&#8221;, and her business is all about special occasion cards and paper supports with a twist: fabric! Marrying high quality printed paper and light fabrics should bring an extra personal touch to your special occasions. At the moment she has an extensive collection of [wedding][2] invitations, menus, dinner table plans and cards, but a [birth][3] section is coming as well.
+&#8220;Instants Tissés&#8221; is French for &#8220;Woven instants&#8221;, and her business is all about special occasion cards and paper supports with a twist: fabric! Marrying high quality printed paper and light fabrics should bring an extra personal touch to your special occasions. At the moment she has an extensive collection of wedding invitations, menus, dinner table plans and cards, but a birth section is coming as well.
 
 And if you don&#8217;t find anything that really tickles your fancy in the large existing collection, there is also a &#8220;custom&#8221; service that should let you get a quote on your ideal, personalised support for your special occasions.
 
@@ -36,6 +36,4 @@ For the techies of you who read this, her site has been done using the excellent
 
 <p class="attachement noborder"><img src="{{ "instantstisses.png" | image_path | cdn }}" alt="Instants Tiss&eacute;s" /></p>
 
- [2]: https://instants-tisses.myshopify.com/collections/mariage-pacs "Instants Tissés wedding section"
- [3]: https://instants-tisses.myshopify.com/collections/naissance "Instants Tissés birth section"
  [5]: http://shopify.com "Shopify"
